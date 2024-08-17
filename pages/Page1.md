@@ -2,4 +2,4 @@
 (prev)--(current)--(next)
 
 ## SE skin
-(Download)[root/assets/"SE custom skins.7z"]
+(Download)[https://github.com/areon546/NovaDriftCustomSkinRepository/blob/main/assets/"SE custom skins.7z"]

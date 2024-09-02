@@ -6,13 +6,27 @@ import (
 	"io"
 	"log"
 	"os"
+	"reflect"
 )
 
 func main() {
 	// fmt.Println("Hello World")
 
 	// reads what files are in the assets folder
-	readAssets()
+	directoryContents := readAssets()
+	count := len(directoryContents)
+	isFolder := make([]bool, count)
+
+	for i, dirContent := range directoryContents {
+		print(reflect.TypeOf(dirContent))
+		print(dirContent.IsDir())
+		isFolder[i] = dirContent.IsDir()
+	}
+
+	writePagePreffix("file.md", 0)
+
+	// load csv
+	
 
 	// if there are new files (files not present in the CSV file)
 
@@ -22,20 +36,24 @@ func main() {
 
 }
 
-func readAssets() {
-	readDirectory("../assets")
+func readAssets() []os.DirEntry {
+	return readDirectory("../assets", false)
 }
 
-func readDirectory(dirPath string) {
-		// read contents of a directory
-		entries, err := os.ReadDir(dirPath)
-		if err != nil {
-			log.Fatal(err)
-		}
-	
+func readDirectory(dirPath string, output bool) (entries []os.DirEntry) {
+	// read contents of a directory
+	entries, err := os.ReadDir(dirPath)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if output {
 		for _, e := range entries {
 			fmt.Println(e.Name())
 		}
+	}
+
+	return
 }
 
 func readCSV(fileName string) {
@@ -78,19 +96,32 @@ func constructMarkdownLink(embed bool, displayText, path string) (link string) {
 }
 
 func appendToFile(file os.File) {
-
+	// is supposed to add a 
 }
 
 func createNewPage() {}
 
-func writePagePreffix(file os.File) {
+func writePagePreffix(fileName string, pageNumber int) {
 	// write to file:
 	// Page #
 	// prev next
+	writePageNumber(fileName, pageNumber)
+	writePrevNextPage(fileName)
 }
 
-func writePrevNextPage() {
-	constructMarkdownLink(false, "Page 1", "pages/Page1.md")
+func writePageNumber(fileName string, n int) error { // TODO add error handling
+
+	writeFile(fileName, fmt.Sprintf("Page %d", n))
+	
+	return nil
+}
+
+func writePrevNextPage(fileName string) error {
+	link := constructMarkdownLink(false, "Page 1", "pages/Page1.md")
+
+	writeFile(fileName, link)
+
+	return nil
 }
 
 type CSVFile struct {
@@ -101,8 +132,6 @@ type CSVFile struct {
 // tell program page or have it have a csv of pages
 // use csv and have like 10 max per page
 // have it then use assets to place into page
-
-
 
 // helper functions
 

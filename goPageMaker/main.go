@@ -9,24 +9,38 @@ import (
 	"reflect"
 )
 
+// tell program page or have it have a csv of pages
+// use csv and have like 10 max per page
+// have it then use assets to place into page
+
 func main() {
-	// fmt.Println("Hello World")
 
 	// reads what files are in the assets folder
-	directoryContents := readAssets()
-	count := len(directoryContents)
+	assets := readAssets()
+	count := len(assets)
 	isFolder := make([]bool, count)
 
-	for i, dirContent := range directoryContents {
-		print(reflect.TypeOf(dirContent))
-		print(dirContent.IsDir())
-		isFolder[i] = dirContent.IsDir()
+	for i, asset := range assets {
+		print(reflect.TypeOf(asset))
+		print(asset.IsDir())
+		isFolder[i] = asset.IsDir()
 	}
 
-	writePagePreffix("file.md", 0)
+	/*
+	currently, assets is everything that is in the folder assets
+	I want it to save a list of all assets in the folder in a file locally
+
+	to do this i have to read the assets csv file and from it, compare against the assets slice
+	 */
+
 
 	// load csv
 	
+	
+	
+
+	// writePagePreffix("file.md", 0)
+
 
 	// if there are new files (files not present in the CSV file)
 
@@ -34,26 +48,6 @@ func main() {
 
 	// TODO reading: file, err := os.Open("../assets/file.txt") // For read access.
 
-}
-
-func readAssets() []os.DirEntry {
-	return readDirectory("../assets", false)
-}
-
-func readDirectory(dirPath string, output bool) (entries []os.DirEntry) {
-	// read contents of a directory
-	entries, err := os.ReadDir(dirPath)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	if output {
-		for _, e := range entries {
-			fmt.Println(e.Name())
-		}
-	}
-
-	return
 }
 
 func readCSV(fileName string) {
@@ -96,30 +90,31 @@ func constructMarkdownLink(embed bool, displayText, path string) (link string) {
 }
 
 func appendToFile(file os.File) {
-	// is supposed to add a 
+	// is supposed to add a
 }
 
 func createNewPage() {}
 
-func writePagePreffix(fileName string, pageNumber int) {
+func writePagePreffix(fileName string, pageNumber int) error {
 	// write to file:
 	// Page #
 	// prev next
-	writePageNumber(fileName, pageNumber)
-	writePrevNextPage(fileName)
+	writeFile(fileName, fmt.Sprintf("Page %d", pageNumber))
+	err := writePrevNextPage(fileName, pageNumber)
+
+	return err
 }
 
-func writePageNumber(fileName string, n int) error { // TODO add error handling
+func writePrevNextPage(fileName string, pageNumber int) error {
+	path := "../pages/"
+	links := ""
 
-	writeFile(fileName, fmt.Sprintf("Page %d", n))
-	
-	return nil
-}
+	if pageNumber > 1 {
 
-func writePrevNextPage(fileName string) error {
-	link := constructMarkdownLink(false, "Page 1", "../pages/Page1.md")
+		links += constructMarkdownLink(false, "Page 1", (path + fmt.Sprintf("Page%d.md", (pageNumber-1))))
+	}
 
-	writeFile(fileName, link)
+	writeFile(fileName, links)
 
 	return nil
 }
@@ -128,11 +123,3 @@ type CSVFile struct {
 	file     os.File
 	contents [][]byte
 }
-
-// tell program page or have it have a csv of pages
-// use csv and have like 10 max per page
-// have it then use assets to place into page
-
-// helper functions
-
-func print(a ...any) { fmt.Println(a...) }

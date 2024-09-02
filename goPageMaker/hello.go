@@ -117,7 +117,7 @@ func writePageNumber(fileName string, n int) error { // TODO add error handling
 }
 
 func writePrevNextPage(fileName string) error {
-	link := constructMarkdownLink(false, "Page 1", "pages/Page1.md")
+	link := constructMarkdownLink(false, "Page 1", "/pages/Page1.md")
 
 	writeFile(fileName, link)
 

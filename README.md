@@ -1,6 +1,7 @@
 # NovaDriftCustomSkinRepository
 Based off of [Voices of the Printer](https://github.com/madrod228/voicesoftheprinter) in spirit. 
 
+Go to [Page1](pages/Page1.md) to see the start of this project. 
 
 
 

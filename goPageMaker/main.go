@@ -7,6 +7,7 @@ import (
 	"io/fs"
 	"log"
 	"os"
+	"reflect"
 	"strings"
 	// "reflect"
 )
@@ -31,8 +32,9 @@ func main() {
 
 	// load csv and check which assets are new
 	isNew := make([]bool, count)
-	assetsInCSV := readCSV("assets.csv")
-	checkNewAssets(assetsInCSV, assets, isNew)
+	assetsCSVFile := readCSV("assets.csv")
+	preExistingAssets := determineAssets(assetsCSVFile)
+	checkNewAssets(preExistingAssets, assets, isNew)
 
 	// writePagePreffix("file.md", 0)
 
@@ -54,7 +56,25 @@ func main() {
 // 	return
 // }
 
-func checkNewAssets(preExistingAssets [][]string, assets []fs.DirEntry, newAssets []bool) {
+func determineAssets(csv CSVFile) (assets []string) {
+	// splits out the column in CSV file that refers to assets
+
+	// determines column of asset column
+	indexOfAssetColumn := 0
+	for i, heading := range csv.headings {
+		if reflect.DeepEqual(heading, "assetName") {
+			indexOfAssetColumn = i
+		}
+	}
+
+	for _,rowContents := range csv.contents {
+		assets = append(assets, rowContents[indexOfAssetColumn])
+	}
+
+	return
+}
+
+func checkNewAssets(preExistingAssets []string, assets []fs.DirEntry, newAssets []bool) {
 	// loop through assets, loop through
 
 	for range assets {
@@ -63,32 +83,39 @@ func checkNewAssets(preExistingAssets [][]string, assets []fs.DirEntry, newAsset
 	}
 }
 
-func readCSV(fileName string) (csv [][]string, err error) {
+// returns an array of headings and a 2d array of
+func readCSV(fileName string) (csv CSVFile) {
 	// read fileName into CSVFile
-	csv, err := readFile(assetsCSVPath())
+	fileContents := readFile(fileName)
 
-	// go through each line in CSV and 
+	// go through each line in CSV and
+	for i, csvCell := range fileContents {
+		// print("csv:", csvCell)
+		if i == 0 { // adds headings to headings attribute
+			csv.headings = strings.Split(csvCell, ",")
+		} else { // ads csv items to contents attribute
+			csv.contents = append(csv.contents, strings.Split(csvCell, ","))
+		}
+	}
 
-	return 
+	return
 }
 
-func readFile(fileName string) (lines []string, err error) {
+func readFile(fileName string) (lines []string) {
 	data, err := os.ReadFile(fileName) // For read access.
-	if err != nil {
-		log.Fatal(err)
-	}
+	checkError(err)
 
 	oneLine := strings.ReplaceAll(string(data), "\r", "")
-	print(oneLine)
-	print()
-	
-	for _,letter := range oneLine {
-		print(letter, string(letter))
-	}
+	// print(oneLine)
+	// print()
+
+	// for _,letter := range oneLine {
+	// 	print(letter, string(letter))
+	// }
 
 	// var fileContents []string = strings.Split(oneLine, "\n")
 	lines = strings.Split(oneLine, "\n")
-	
+
 	return
 }
 
@@ -150,7 +177,8 @@ func writePrevNextPage(fileName string, pageNumber int) error {
 }
 
 type CSVFile struct {
-	contents [][]byte
+	headings []string
+	contents [][]string
 }
 
 func assetsCSVPath() string {

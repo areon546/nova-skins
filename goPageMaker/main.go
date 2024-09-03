@@ -4,9 +4,11 @@ import (
 	// "bytes"
 	"fmt"
 	"io"
+	"io/fs"
 	"log"
 	"os"
-	"reflect"
+	"strings"
+	// "reflect"
 )
 
 // tell program page or have it have a csv of pages
@@ -18,29 +20,21 @@ func main() {
 	// reads what files are in the assets folder
 	assets := readAssets()
 	count := len(assets)
-	isFolder := make([]bool, count)
-
-	for i, asset := range assets {
-		print(reflect.TypeOf(asset))
-		print(asset.IsDir())
-		isFolder[i] = asset.IsDir()
-	}
+	// isFolder := checkIsFolder(count, assets)
 
 	/*
-	currently, assets is everything that is in the folder assets
-	I want it to save a list of all assets in the folder in a file locally
+		currently, assets is everything that is in the folder assets
+		I want it to save a list of all assets in the folder in a file locally
 
-	to do this i have to read the assets csv file and from it, compare against the assets slice
-	 */
+		to do this i have to read the assets csv file and from it, compare against the assets slice
+	*/
 
-
-	// load csv
-	
-	
-	
+	// load csv and check which assets are new
+	isNew := make([]bool, count)
+	assetsInCSV := readCSV("assets.csv")
+	checkNewAssets(assetsInCSV, assets, isNew)
 
 	// writePagePreffix("file.md", 0)
-
 
 	// if there are new files (files not present in the CSV file)
 
@@ -50,25 +44,61 @@ func main() {
 
 }
 
-func readCSV(fileName string) {
-	// read fileName into CSVFile
-	// fileContents := make([][]byte, 1)
+// func checkIsFolder(count int, assets []fs.DirEntry) (isFolder []bool) {
+// 	isFolder = make([]bool, count)
 
-	return
+// 	for i, asset := range assets {
+// 		isFolder[i] = asset.IsDir()
+// 	}
+
+// 	return
+// }
+
+func checkNewAssets(preExistingAssets [][]string, assets []fs.DirEntry, newAssets []bool) {
+	// loop through assets, loop through
+
+	for range assets {
+		// loopts through assets
+		// print("a", assets[0].IsDir())
+	}
 }
 
-func readFile(fileN os.File, b []byte, fileName string) (lengthOfLine int, err error) {
-	// read contents of a file
-	file, err := os.Open(fileName) // For read access.
+func readCSV(fileName string) (csv [][]string, err error) {
+	// read fileName into CSVFile
+	csv, err := readFile(assetsCSVPath())
+
+	// go through each line in CSV and 
+
+	return 
+}
+
+func readFile(fileName string) (lines []string, err error) {
+	data, err := os.ReadFile(fileName) // For read access.
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	oneLine := strings.ReplaceAll(string(data), "\r", "")
+	print(oneLine)
+	print()
+	
+	for _,letter := range oneLine {
+		print(letter, string(letter))
+	}
+
+	// var fileContents []string = strings.Split(oneLine, "\n")
+	lines = strings.Split(oneLine, "\n")
+	
+	return
+}
+
+func readLine(file fs.File, b []byte) (lengthOfLine int, err error) {
+	// read contents of a file
 	lengthOfLine, err = file.Read(b)
 	if err == io.EOF {
-		fmt.Println("End of file")
+		print("End of file")
 	} else if err != nil {
-		fmt.Println(err)
+		// print(err)
 		log.Fatal(err)
 	}
 
@@ -82,9 +112,9 @@ func writeFile(fileName, text string) {
 	}
 }
 
-func constructMarkdownLink(embed bool, displayText, path string) (link string) {
+func constructMarkdownLink(embed bool, displayText, path string) string {
 	if embed {
-		link += "!"
+		return fmt.Sprintf("![%s](%s)", displayText, path)
 	}
 	return fmt.Sprintf("[%s](%s)", displayText, path)
 }
@@ -120,6 +150,9 @@ func writePrevNextPage(fileName string, pageNumber int) error {
 }
 
 type CSVFile struct {
-	file     os.File
 	contents [][]byte
+}
+
+func assetsCSVPath() string {
+	return "assets.csv"
 }

@@ -3,6 +3,9 @@ Based off of [Voices of the Printer](https://github.com/madrod228/voicesofthepri
 
 Go to [Page1](pages/Page1.md) to see the start of this project. 
 
+[main.go](goPageMaker/main.go) is where the main program lies, it goes through every directory in assets and uses them as the basis to create
+[assets](goPageMaker/assets.csv) is a csv of all assets in the assets folder
+[](goPageMaker/readDirectory.go) is where the functions that read the assets folder lie
 
 
 Misc Links:

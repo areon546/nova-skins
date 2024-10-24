@@ -18,6 +18,7 @@ import (
 
 func main() {
 
+	print("Running")
 	// reads what files are in the assets folder
 	assets := readAssets()
 	count := len(assets)
@@ -33,10 +34,12 @@ func main() {
 	// load csv and check which assets are new
 	isNew := make([]bool, count)
 	assetsCSVFile := readCSV("assets.csv")
+
+	print(assetsCSVFile)
 	preExistingAssets := determineAssets(assetsCSVFile)
 	checkNewAssets(preExistingAssets, assets, isNew)
 
-	// writePagePreffix("file.md", 0)
+	writePagePreffix("file.md", 0)
 
 	// if there are new files (files not present in the CSV file)
 
@@ -67,7 +70,7 @@ func determineAssets(csv CSVFile) (assets []string) {
 		}
 	}
 
-	for _,rowContents := range csv.contents {
+	for _, rowContents := range csv.contents {
 		assets = append(assets, rowContents[indexOfAssetColumn])
 	}
 
@@ -77,10 +80,17 @@ func determineAssets(csv CSVFile) (assets []string) {
 func checkNewAssets(preExistingAssets []string, assets []fs.DirEntry, newAssets []bool) {
 	// loop through assets, loop through
 
-	for range assets {
+	print(assets, preExistingAssets)
+
+	for i, v := range assets {
 		// loopts through assets
 		// print("a", assets[0].IsDir())
+		print(i, v)
 	}
+
+	// for i, v := range preExistingAssets {
+
+	// }
 }
 
 // returns an array of headings and a 2d array of

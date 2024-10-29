@@ -20,7 +20,7 @@ func main() {
 
 	print("Running")
 	// reads what files are in the assets folder
-	assets := readAssets()
+	assets := readAssetsDirectory()
 	count := len(assets)
 	// isFolder := checkIsFolder(count, assets)
 
@@ -33,10 +33,10 @@ func main() {
 
 	// load csv and check which assets are new
 	isNew := make([]bool, count)
-	assetsCSVFile := readCSV("assets.csv")
+	assetFile := readAssets("assets.csv")
 
-	print(assetsCSVFile)
-	preExistingAssets := determineAssets(assetsCSVFile)
+	print(assetFile)
+	preExistingAssets := assetFile.determineAssets()
 	checkNewAssets(preExistingAssets, assets, isNew)
 
 	writePagePreffix("file.md", 0)
@@ -59,38 +59,40 @@ func main() {
 // 	return
 // }
 
-func determineAssets(csv CSVFile) (assets []string) {
-	// splits out the column in CSV file that refers to assets
-
-	// determines column of asset column
-	indexOfAssetColumn := 0
-	for i, heading := range csv.headings {
-		if reflect.DeepEqual(heading, "assetName") {
-			indexOfAssetColumn = i
-		}
-	}
-
-	for _, rowContents := range csv.contents {
-		assets = append(assets, rowContents[indexOfAssetColumn])
-	}
-
-	return
-}
-
 func checkNewAssets(preExistingAssets []string, assets []fs.DirEntry, newAssets []bool) {
 	// loop through assets, loop through
 
 	print(assets, preExistingAssets)
 
-	for i, v := range assets {
+	for _, v := range assets {
 		// loopts through assets
 		// print("a", assets[0].IsDir())
-		print(i, v)
+		// print(i, v)
+
+		if itemInArray(v.Name(), preExistingAssets) {
+
+			print("inArray", v.Name())
+		}
+
 	}
 
 	// for i, v := range preExistingAssets {
 
 	// }
+}
+
+func itemInArray(item string, arr []string) (inArray bool) {
+	inArray = false
+	for _, v := range arr {
+		if reflect.DeepEqual(v, item) {
+			inArray = true
+		}
+	}
+	return
+}
+
+func readAssets(filename string) (a AssetFile) {
+	return AssetFile{CSVFile: readCSV(filename)}
 }
 
 // returns an array of headings and a 2d array of
@@ -189,6 +191,45 @@ func writePrevNextPage(fileName string, pageNumber int) error {
 type CSVFile struct {
 	headings []string
 	contents [][]string
+}
+
+func (c *CSVFile) getIndexOfColumn(header string) (index int, err error) {
+	for i, heading := range c.headings {
+		if reflect.DeepEqual(heading, header) {
+			index = i
+		}
+	}
+
+	return
+}
+
+type AssetFile struct {
+	CSVFile
+}
+
+func (a *AssetFile) determineAssets() (assets []string) {
+	// splits out the column in CSV file that refers to assets
+
+	// determines column of asset column
+	iOfAssets, _ := a.getIndexOfColumn("assetName")
+	iOfFileType, _ := a.getIndexOfColumn("fileType")
+
+	for i, row := range a.contents {
+
+		if i > 0 {
+			item := row[iOfAssets]
+
+			if reflect.DeepEqual(row[iOfFileType], "folder") {
+			} else {
+				item += "." + row[iOfFileType]
+			}
+			assets = append(assets, item)
+		}
+	}
+
+	print("ass", assets)
+
+	return
 }
 
 func assetsCSVPath() string {

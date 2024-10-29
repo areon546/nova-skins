@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func readAssets() []os.DirEntry {
+func readAssetsDirectory() []os.DirEntry {
 	return readDirectory("../assets", false)
 }
 

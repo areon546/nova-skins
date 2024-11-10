@@ -1,27 +1,30 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 )
 
-func readAssetsDirectory() []os.DirEntry {
-	return readDirectory("../assets", false)
+func filterFiles(arr []os.DirEntry) (fs []File, folders []os.DirEntry) {
+
+	for _, v := range arr {
+
+		if !v.IsDir() { // for any files, turn them into files
+			vName, suffix := splitFileName(v.Name())
+			fs = append(fs, createFile(vName, suffix))
+		} else {
+			folders = append(folders, v)
+		}
+	}
+
+	return
 }
 
-func readDirectory(dirPath string, output bool) (entries []os.DirEntry) {
+func readDirectory(dirPath string) (entries []os.DirEntry) {
 	// read contents of a directory
 	entries, err := os.ReadDir(dirPath)
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	if output {
-		for _, e := range entries {
-			fmt.Println(e.Name())
-		}
-	}
-
 	return
 }

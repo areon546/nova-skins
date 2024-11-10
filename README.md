@@ -1,5 +1,7 @@
 # NovaDriftCustomSkinRepository
 
+To download all skins, click [here](https://download-directory.github.io/?url=https://github.com/areon546/NovaDriftCustomSkinRepository/tree/main/custom_skins) and the website shall download the custom skins. 
+
 Go to [Page1](pages/Page1.md) to see the start of this project. 
 
 [custom_skins](custom_skins) contains all the skins this project uses, updated periodically

@@ -19,8 +19,28 @@ type File struct {
 	lines    int
 }
 
-func createFile(fn string, suff string) File {
-	return File{filename: fn, suffix: suff}
+func NewFileWithSuffix(fn string, suff string) *File {
+	return &File{filename: fn, suffix: suff}
+}
+
+func NewFile(fn string) *File {
+	fn, suff := splitFileName(fn)
+	return &File{filename: fn, suffix: suff}
+}
+
+func splitFileName(filename string) (name, suffix string) {
+	stringSections := strings.Split(filename, ".")
+	// print(stringSections)
+
+	if len(stringSections) > 1 {
+		suffix = stringSections[len(stringSections)-1]
+	}
+
+	for i := 0; i < len(stringSections)-1; i++ {
+		name += stringSections[i]
+	}
+
+	return
 }
 
 func (f *File) GetFileName() string {
@@ -111,7 +131,7 @@ func readCSV(filePreffix string) (csv CSVFile) {
 	return
 }
 
-func (c *CSVFile) getIndexOfColumn(header string) (index int, err error) {
+func (c *CSVFile) getIndexOfColumn(header string) (index int) {
 	for i, heading := range c.headings {
 		if reflect.DeepEqual(heading, header) {
 			index = i
@@ -131,6 +151,10 @@ func (c *CSVFile) printContents() {
 	}
 }
 
+func (c *CSVFile) Rows() int {
+	return len(c.contents)
+}
+
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
 
 type AssetsPage struct {
@@ -140,30 +164,30 @@ type AssetsPage struct {
 	CustomSkin
 }
 
-func createAssetsPage(f File, pageNum int, c CustomSkin) AssetsPage {
-	return AssetsPage{File: f, pageNumber: pageNum, CustomSkin: c}
+func NewAssetsPage(f File, pageNum int, c CustomSkin) *AssetsPage {
+	return &AssetsPage{File: f, pageNumber: pageNum, CustomSkin: c}
 }
 
-func (p *AssetsPage) writePagePreffix(pageNumber int) error {
+func (a *AssetsPage) writePagePreffix(pageNumber int) error {
 	// write to file:
 	// Page #
 	// prev next
-	p.writeFile(fmt.Sprintf("Page %d", pageNumber))
-	err := p.writePrevNextPage(pageNumber)
+	a.writeFile(fmt.Sprintf("Page %d", pageNumber))
+	err := a.writePrevNextPage(pageNumber)
 
 	return err
 }
 
-func (p *AssetsPage) writePrevNextPage(pageNumber int) error {
+func (a *AssetsPage) writePrevNextPage(pageNumber int) error {
 	path := "../pages/"
 	links := ""
 
 	if pageNumber > 1 {
 
-		links += constructMarkdownLink(false, "Page 1", (path + fmt.Sprintf("Page%d.md", (pageNumber-1))))
+		links += constructMarkdownLink(false, "Page 1", (path + format("Page%d.md", (pageNumber-1))))
 	}
 
-	p.writeFile(links)
+	a.writeFile(links)
 
 	return nil
 }
@@ -178,8 +202,8 @@ func (a *AssetFile) determineAssets() (assets []string) {
 	// splits out the column in CSV file that refers to assets
 
 	// determines column of asset column
-	iOfAssets, _ := a.getIndexOfColumn("assetName")
-	iOfFileType, _ := a.getIndexOfColumn("fileType")
+	iOfAssets := a.getIndexOfColumn("assetName")
+	iOfFileType := a.getIndexOfColumn("fileType")
 
 	for i, row := range a.contents {
 

@@ -11,7 +11,7 @@ func filterFiles(arr []os.DirEntry) (fs []File, folders []os.DirEntry) {
 
 		if !v.IsDir() { // for any files, turn them into files
 			vName, suffix := splitFileName(v.Name())
-			fs = append(fs, createFile(vName, suffix))
+			fs = append(fs, *NewFileWithSuffix(vName, suffix))
 		} else {
 			folders = append(folders, v)
 		}

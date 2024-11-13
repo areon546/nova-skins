@@ -4,14 +4,16 @@ import (
 	"fmt"
 	"log"
 	"reflect"
-	"strings"
+	"strconv"
 )
 
 // helper functions
 
 func print(a ...any) { fmt.Println(a...) }
 
-func printf(format string, a ...any) { fmt.Printf("%s\n", (fmt.Sprintf(format, a...))) }
+func printf(s string, a ...any) { print(format(s, a...)) }
+
+func format(s string, a ...any) string { return fmt.Sprintf(s, a...) }
 
 func checkError(err error) {
 	if err != nil {
@@ -40,16 +42,11 @@ func search(item string, arr []string) (index int) {
 	return index
 }
 
-func splitFileName(filename string) (name, suffix string) {
-	stringSections := strings.Split(filename, ".")
-	// print(stringSections)
+func convertToInteger(s string) (i int) {
+	i, err := strconv.Atoi(s)
 
-	if len(stringSections) > 1 {
-		suffix = stringSections[len(stringSections)-1]
-	}
-
-	for i := 0; i < len(stringSections)-1; i++ {
-		name += stringSections[i]
+	if err != nil {
+		panic(err)
 	}
 
 	return

@@ -2,4 +2,4 @@ name,body_artwork,body_force_armor_artwork,drone_artwork,jet_angle,jet_distance
 Saris,saris.png,saris_force.png,saris_drone.png,115,46
 Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40
 Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35
-SE,SEbody.png,SEforce.png,missing,0,0
+SE,SEbody.png,SEforce.png,,0,30

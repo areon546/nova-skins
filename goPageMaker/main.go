@@ -5,11 +5,9 @@ import (
 	"io/fs"
 )
 
-// tell program page or have it have a csv of pages
-// use csv and have like 10 max per page
-// have it then use assets to place into page
-
 func main() {
+	var cs []CustomSkin
+
 	debug := false
 	// debug = !debug
 
@@ -22,33 +20,47 @@ func main() {
 	}
 
 	// reads what files are in the assets folder
-	assets := readDirectory(skinFolder())
-	assetsAsFiles, _ := filterFiles(assets)
+	// assets := readDirectory(skinFolder())
+	// assetsAsFiles, _ := filterFiles(assets)
 
-	print("assets", assets)
-	printf("%s", "abba")
+	// print("assets", assets)
+	// printf("%s", "abba")
+	// for _, v := range assetsAsFiles {
+	// 	print(v.toString())
+	// }
 
 	skinsCSV := readCSV(skinFolder() + "custom_skins")
-	skinsCSV.printHeaders()
+	names := skinsCSV.getIndexOfColumn("name")
+	angles := skinsCSV.getIndexOfColumn("jet_angle")
+	distances := skinsCSV.getIndexOfColumn("jet_distance")
+	skins := skinsCSV.getIndexOfColumn("body_artwork")
+	forces := skinsCSV.getIndexOfColumn("body_force_armor_artwork")
+	drones := skinsCSV.getIndexOfColumn("drone_artwork")
 
-	for _, v := range assetsAsFiles {
-		print(v.toString())
+	cs = make([]CustomSkin, skinsCSV.Rows())
+	print(cs, skinsCSV.Rows())
+
+	for i, v := range skinsCSV.contents {
+		print(i, v, skins, forces, drones)
+
+		name := v[names]
+		distance := convertToInteger(v[distances])
+		angle := convertToInteger(v[angles])
+
+		c := NewCustomSkin(name, distance, angle).addSkin(v[skins]).addForceA(v[forces]).addDrone(v[drones])
+
+		// print("c, ", c)
+
+		cs = append(cs, *c)
 	}
 
-	// for _, folder := range folders {
-	// 	print(folder)
-	// 	files, _ := filterFiles(readDirectory(skinFolder() + folder.Name()))
-	// 	print(files)
-
-	// 	c := CustomSkin{name: folder.Name()}
-	// 	print(c.toString())
-	// }
+	print(cs)
 
 }
 
 func runTest() {
 
-	testFile := createFile("file.md", "md")
+	testFile := NewFile("file.md")
 	fmt.Print(testFile.readLine(1))
 
 	return
@@ -78,13 +90,37 @@ type CustomSkin struct {
 
 	name        string
 	credit      string
-	skinPicture File
-	forceArmour File
-	drone       File
-	thrust      int
+	skinPicture string
+	forceArmour string
+	drone       string
+	distance    int
 	angle       int
 }
 
-func (c CustomSkin) toString() string {
+func NewCustomSkin(name string, distance, angle int) *CustomSkin {
+	return &CustomSkin{name: name, distance: distance, angle: angle}
+}
+
+func (c *CustomSkin) addSkin(s string) *CustomSkin {
+	c.skinPicture = s
+	return c
+}
+
+func (c *CustomSkin) addForceA(s string) *CustomSkin {
+	c.forceArmour = s
+	return c
+}
+
+func (c *CustomSkin) addDrone(s string) *CustomSkin {
+	c.drone = s
+	return c
+}
+
+func (c *CustomSkin) toString() string {
 	return c.name
+}
+
+func convertCSVLineToCustomSkin(ar []string) {
+
+	return
 }

@@ -4,3 +4,6 @@ run:
 
 hello:
 	echo "Hello, World"
+
+test: 
+	cd goPageMaker && go build && go test

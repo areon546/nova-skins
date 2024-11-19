@@ -64,17 +64,17 @@ func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
 	return &AssetsPage{File: *NewFileWithSuffix(filename, "md", path), pageNumber: pageNum}
 }
 
-func (a *AssetsPage) writePagePreffix() error {
+func (a *AssetsPage) bufferPagePreffix() error {
 	// write to file:
 	// Page #
 	// prev next
-	a.append(fmt.Sprintf("Page %d", a.pageNumber))
-	err := a.writePrevNextPage()
+	a.bufferAppend(fmt.Sprintf("Page %d", a.pageNumber))
+	err := a.bufferPrevNextPage()
 
 	return err
 }
 
-func (a *AssetsPage) writePrevNextPage() error {
+func (a *AssetsPage) bufferPrevNextPage() error {
 	path := "../pages/"
 	links := ""
 
@@ -93,7 +93,7 @@ func (a *AssetsPage) writePrevNextPage() error {
 	links += constructMarkdownLink(false, currD, (path + curr))
 	links += constructMarkdownLink(false, nextD, (path + next))
 
-	a.append(links)
+	a.bufferAppend(links)
 
 	return nil
 }
@@ -102,6 +102,20 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 	a.skins = cs
 }
 
-func (a *AssetsPage) writeCustomSkins(cs []CustomSkin) {
+func (a *AssetsPage) bufferCustomSkins(cs []CustomSkin) {
 	// TODO this writes to the custom skins stuff and adds the data, in markdown
+
+	for _, skin := range cs {
+		// append links to files
+
+		// append
+
+		a.bufferAppend(skin.toCSVLine())
+	}
+}
+
+func (a *AssetsPage) writeBuffer() {
+	a.writeFile()
+
+	print(a.contentBuffer)
 }

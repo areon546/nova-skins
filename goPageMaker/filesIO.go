@@ -10,22 +10,22 @@ import (
 
 // ~~~~~~~~~~~~~~~~ File
 
-type File struct {
-	filename string
-	suffix   string
-	relPath  string
-	contents []string
-	buffer   []string // considering writing to the file with a buffer
-	lines    int
+type File struct { // TODO UPDATE TO USING THE BUFFER
+	filename      string
+	suffix        string
+	relPath       string
+	contentBuffer []string
+	lines         int
+	hasBeenRead   bool
 }
 
-func NewFileWithSuffix(fn string, suff string) *File {
-	return &File{filename: fn, suffix: suff}
+func NewFileWithSuffix(fn string, suff string, path string) *File {
+	return &File{filename: fn, suffix: suff, relPath: path, hasBeenRead: false}
 }
 
 func NewFile(fn string) *File {
 	fn, suff := splitFileName(fn)
-	return &File{filename: fn, suffix: suff}
+	return &File{filename: fn, suffix: suff, hasBeenRead: false}
 }
 
 func splitFileName(filename string) (name, suffix string) {
@@ -48,21 +48,23 @@ func (f *File) GetFileName() string {
 }
 
 func (f *File) readFile() []string {
-	data, err := os.ReadFile(f.GetFileName()) // For read access.
-	checkError(err)
+	if !f.hasBeenRead {
+		data, err := os.ReadFile(f.GetFileName()) // For read access.
+		checkError(err)
 
-	oneLine := strings.ReplaceAll(string(data), "\r", "")
-	f.contents = strings.Split(oneLine, "\n")
-	f.lines = len(f.contents)
-
-	return f.contents
+		oneLine := strings.ReplaceAll(string(data), "\r", "")
+		f.contentBuffer = strings.Split(oneLine, "\n")
+		f.lines = len(f.contentBuffer)
+	}
+	return f.contentBuffer
 }
 
 func (f *File) isEmpty() bool {
-	return len(f.contents) == 0
+	return len(f.contentBuffer) == 0
 }
 
 func (f *File) readLine(lineNum int) (output string, err error) {
+	lineNum -= 1 // converted to index notation
 
 	if f.isEmpty() {
 		f.readFile()
@@ -72,34 +74,66 @@ func (f *File) readLine(lineNum int) (output string, err error) {
 		return "", err
 	}
 
-	output = f.contents[lineNum]
+	output = f.contentBuffer[lineNum]
 	print(output)
 
 	return
 }
 
-func (f *File) writeFile(text string) {
-	if err := os.WriteFile(f.GetFileName(), []byte(text), 0666); err != nil {
+func (f *File) writeFile() {
+	if err := os.WriteFile(f.GetFileName(), []byte(f.bufferToString()), 0666); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func (f *File) writeLines(arr []Stringable) {
+func (f *File) appendLines(arr []Stringable) {
+	s := ""
+	print(s)
 	for _, v := range arr {
-		f.writeFile(v.toString())
+		f.contentBuffer = append(f.contentBuffer, v.toString())
 	}
 }
 
-func (f *File) appendToFile() { // TODO
-	// is supposed to add lines to a file at the end
+func (f *File) bufferAppend(s string) {
+	f.appendLine(s, len(f.contentBuffer)) // TODO check that len is appropriate
+}
+
+func (f *File) bufferLines(arr []string) {
+	s := ""
+	print(s)
+	f.contentBuffer = make([]string, len(arr))
+	for i, v := range arr {
+		f.contentBuffer[i] = v
+	}
 }
 
 func (f *File) clearFile() {
-	f.writeFile("")
+	if err := os.WriteFile(f.GetFileName(), make([]byte, 0), 0666); err != nil {
+		log.Fatal(err)
+	}
 }
 
 func (f *File) toString() string {
 	return f.GetFileName()
+}
+
+func (f *File) bufferToString() string {
+	s := ""
+	for _, v := range f.contentBuffer {
+		s += v
+	}
+
+	return s
+}
+
+func (f *File) appendLine(s string, i int) {
+	// TODO
+
+	for i >= len(f.contentBuffer) {
+		f.contentBuffer = append(f.contentBuffer, "")
+	}
+
+	f.contentBuffer[i] = s + "\n"
 }
 
 // ~~~~~~~~~~~~~~~~~~~~ CSVFile
@@ -153,72 +187,4 @@ func (c *CSVFile) printContents() {
 
 func (c *CSVFile) Rows() int {
 	return len(c.contents)
-}
-
-// ~~~~~~~~~~~~~~~~~~~ AssetPage
-
-type AssetsPage struct {
-	File
-	pageNumber int
-
-	CustomSkin
-}
-
-func NewAssetsPage(f File, pageNum int, c CustomSkin) *AssetsPage {
-	return &AssetsPage{File: f, pageNumber: pageNum, CustomSkin: c}
-}
-
-func (a *AssetsPage) writePagePreffix(pageNumber int) error {
-	// write to file:
-	// Page #
-	// prev next
-	a.writeFile(fmt.Sprintf("Page %d", pageNumber))
-	err := a.writePrevNextPage(pageNumber)
-
-	return err
-}
-
-func (a *AssetsPage) writePrevNextPage(pageNumber int) error {
-	path := "../pages/"
-	links := ""
-
-	if pageNumber > 1 {
-
-		links += constructMarkdownLink(false, "Page 1", (path + format("Page%d.md", (pageNumber-1))))
-	}
-
-	a.writeFile(links)
-
-	return nil
-}
-
-// ~~~~~~~~~~~~~~~~~ Asset File
-
-type AssetFile struct {
-	CSVFile
-}
-
-func (a *AssetFile) determineAssets() (assets []string) {
-	// splits out the column in CSV file that refers to assets
-
-	// determines column of asset column
-	iOfAssets := a.getIndexOfColumn("assetName")
-	iOfFileType := a.getIndexOfColumn("fileType")
-
-	for i, row := range a.contents {
-
-		if i > 0 {
-			item := row[iOfAssets]
-
-			if reflect.DeepEqual(row[iOfFileType], "folder") {
-			} else {
-				item += "." + row[iOfFileType]
-			}
-			assets = append(assets, item)
-		}
-	}
-
-	print("assets", assets)
-
-	return
 }

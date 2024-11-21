@@ -101,14 +101,14 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 
 func (a *AssetsPage) bufferCustomSkins() {
 	// TODO this writes to the custom skins stuff and adds the data, in markdown
-	path := "https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/assets/"
+	path := "https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main"
 
 	for _, skin := range a.skins {
 		a.appendNewLine()
 		// append
 
 		a.append(skin.toCSVLine())
-		a.appendMarkdownEmbed(skin.body, skin.body)
+		a.appendMarkdownEmbed(constructPath(path, "assets", skin.body))
 
 		// append links to media TODO
 

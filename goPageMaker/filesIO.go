@@ -154,8 +154,8 @@ func (m *MarkdownFile) appendMarkdownLink(displayText, path string) {
 	m.append(constructMarkDownLink(false, displayText, path))
 }
 
-func (m *MarkdownFile) appendMarkdownEmbed(displayText, path string) {
-	m.append(constructMarkDownLink(true, displayText, path))
+func (m *MarkdownFile) appendMarkdownEmbed(path string) {
+	m.append(constructMarkDownLink(true, "", path))
 }
 
 func constructMarkDownLink(embed bool, displayText, path string) (s string) {

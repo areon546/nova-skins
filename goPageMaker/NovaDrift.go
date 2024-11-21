@@ -54,21 +54,21 @@ func (c *CustomSkin) toCSVLine() string {
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
 
 type AssetsPage struct {
-	File
+	MarkdownFile
 	pageNumber int
 
 	skins []CustomSkin
 }
 
 func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
-	return &AssetsPage{File: *NewFileWithSuffix(filename, "md", path), pageNumber: pageNum}
+	return &AssetsPage{MarkdownFile: *NewMarkdownFile(filename, path), pageNumber: pageNum}
 }
 
 func (a *AssetsPage) bufferPagePreffix() error {
 	// write to file:
 	// Page #
 	// prev next
-	a.bufferAppend(fmt.Sprintf("Page %d", a.pageNumber))
+	a.append(fmt.Sprintf("# Page %d", a.pageNumber))
 	err := a.bufferPrevNextPage()
 
 	return err
@@ -76,24 +76,21 @@ func (a *AssetsPage) bufferPagePreffix() error {
 
 func (a *AssetsPage) bufferPrevNextPage() error {
 	path := "../pages/"
-	links := ""
 
-	prev := format("Pade%d.md", a.pageNumber-1)
-	prevD := format("Page %d", a.pageNumber-1)
-	curr := format("Pade%d.md", a.pageNumber)
-	currD := format("Page %d", a.pageNumber-1)
-	next := format("Pade%d.md", a.pageNumber+1)
-	nextD := format("Page %d", a.pageNumber+1)
+	prev := format("Page_%d", a.pageNumber-1)
+	prevF := format("%s.md", prev)
+	curr := format("Page_%d", a.pageNumber)
+	currF := format("%s.md", curr)
+	next := format("Page_%d", a.pageNumber+1)
+	nextF := format("%s.md", next)
 
 	if a.pageNumber > 1 {
 
-		links += constructMarkdownLink(false, prevD, (path + prev))
+		a.appendMarkdownLink(prev, (path + prevF))
 	}
 
-	links += constructMarkdownLink(false, currD, (path + curr))
-	links += constructMarkdownLink(false, nextD, (path + next))
-
-	a.bufferAppend(links)
+	a.appendMarkdownLink(curr, (path + currF))
+	a.appendMarkdownLink(next, (path + nextF))
 
 	return nil
 }
@@ -102,15 +99,20 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 	a.skins = cs
 }
 
-func (a *AssetsPage) bufferCustomSkins(cs []CustomSkin) {
+func (a *AssetsPage) bufferCustomSkins() {
 	// TODO this writes to the custom skins stuff and adds the data, in markdown
+	path := "https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/assets/"
 
-	for _, skin := range cs {
-		// append links to files
-
+	for _, skin := range a.skins {
+		a.appendNewLine()
 		// append
 
-		a.bufferAppend(skin.toCSVLine())
+		a.append(skin.toCSVLine())
+		a.appendMarkdownEmbed(skin.body, skin.body)
+
+		// append links to media TODO
+
+		a.appendNewLine()
 	}
 }
 

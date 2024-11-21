@@ -86,16 +86,20 @@ func (f *File) writeFile() {
 	}
 }
 
-func (f *File) appendLines(arr []Stringable) {
+func (f *File) appendLines(arr []string) {
 	s := ""
 	print(s)
 	for _, v := range arr {
-		f.contentBuffer = append(f.contentBuffer, v.toString())
+		f.contentBuffer = append(f.contentBuffer, v)
 	}
 }
 
-func (f *File) bufferAppend(s string) {
-	f.appendLine(s, len(f.contentBuffer)) // TODO check that len is appropriate
+func (f *File) append(s string) {
+	f.appendLine(s, len(f.contentBuffer))
+}
+
+func (f *File) appendNewLine() {
+	f.append("")
 }
 
 func (f *File) bufferLines(arr []string) {
@@ -134,6 +138,36 @@ func (f *File) appendLine(s string, i int) {
 	}
 
 	f.contentBuffer[i] = s + "\n"
+}
+
+// ~~~~~~~~~~~~~~~~~~~~ MarkdownFile
+
+type MarkdownFile struct {
+	File
+}
+
+func NewMarkdownFile(name, path string) *MarkdownFile {
+	return &MarkdownFile{File: *NewFileWithSuffix(name, "md", path)}
+}
+
+func (m *MarkdownFile) appendMarkdownLink(displayText, path string) {
+	m.append(constructMarkDownLink(false, displayText, path))
+}
+
+func (m *MarkdownFile) appendMarkdownEmbed(displayText, path string) {
+	m.append(constructMarkDownLink(true, displayText, path))
+}
+
+func constructMarkDownLink(embed bool, displayText, path string) (s string) {
+	if embed {
+		s += "!"
+	}
+	s += fmt.Sprintf("[%s](%s)", displayText, path)
+	return
+}
+
+func constructPath(preffix, directory, fileName string) string {
+	return (preffix + "/" + directory + "/" + fileName)
 }
 
 // ~~~~~~~~~~~~~~~~~~~~ CSVFile

@@ -25,13 +25,6 @@ func assetsCSVPath() string {
 	return "assets.csv"
 }
 
-func constructMarkdownLink(embed bool, displayText, path string) string {
-	if embed {
-		return fmt.Sprintf("![%s](%s)", displayText, path)
-	}
-	return fmt.Sprintf("[%s](%s)", displayText, path)
-}
-
 func search(item string, arr []string) (index int) {
 	index = -1
 	for i, v := range arr {

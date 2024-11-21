@@ -169,8 +169,12 @@ func constructMarkDownLink(embed bool, displayText, path string) (s string) {
 	return
 }
 
-func constructPath(preffix, directory, fileName string) string {
-	return (preffix + "/" + directory + "/" + fileName)
+func constructPath(preffix, directory, fileName string) (s string) {
+	if !reflect.DeepEqual(preffix, "") {
+		s += preffix + "/"
+	}
+	s += directory + "/" + fileName
+	return s
 }
 
 // ~~~~~~~~~~~~~~~~~~~~ CSVFile

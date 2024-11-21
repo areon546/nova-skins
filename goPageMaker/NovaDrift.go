@@ -108,9 +108,11 @@ func (a *AssetsPage) bufferCustomSkins() {
 		// append
 
 		a.append(skin.toCSVLine())
+		a.appendNewLine()
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.body))
-
-		// append links to media TODO
+		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.forceArmour))
+		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.drone))
+		// TODO append links to media
 
 		a.appendNewLine()
 	}

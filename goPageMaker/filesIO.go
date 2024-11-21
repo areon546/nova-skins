@@ -87,15 +87,15 @@ func (f *File) writeFile() {
 }
 
 func (f *File) appendLines(arr []string) {
-	s := ""
-	print(s)
+
+	// f.contentBuffer = append(f.contentBuffer, arr...)
 	for _, v := range arr {
 		f.contentBuffer = append(f.contentBuffer, v)
 	}
 }
 
 func (f *File) append(s string) {
-	f.appendLine(s, len(f.contentBuffer))
+	f.appendLine(s, len(f.contentBuffer), true)
 }
 
 func (f *File) appendNewLine() {
@@ -130,14 +130,17 @@ func (f *File) bufferToString() string {
 	return s
 }
 
-func (f *File) appendLine(s string, i int) {
-	// TODO
+func (f *File) appendLine(s string, i int, nl bool) {
 
 	for i >= len(f.contentBuffer) {
 		f.contentBuffer = append(f.contentBuffer, "")
 	}
 
-	f.contentBuffer[i] = s + "\n"
+	if nl {
+		s += "\n"
+	}
+
+	f.contentBuffer[i] = s
 }
 
 // ~~~~~~~~~~~~~~~~~~~~ MarkdownFile

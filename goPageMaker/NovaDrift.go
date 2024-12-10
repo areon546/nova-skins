@@ -56,19 +56,28 @@ func (c *CustomSkin) toCSVLine() string {
 type AssetsPage struct {
 	MarkdownFile
 	pageNumber int
+	maxSkins   int
 
 	skins []CustomSkin
 }
 
 func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
-	return &AssetsPage{MarkdownFile: *NewMarkdownFile(filename, path), pageNumber: pageNum}
+	return &AssetsPage{MarkdownFile: *NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10}
 }
 
 func (a *AssetsPage) bufferPagePreffix() error {
 	// write to file:
 	// Page #
-	// prev next
 	a.append(fmt.Sprintf("# Page %d", a.pageNumber))
+	// prev next
+	err := a.bufferPrevNextPage()
+
+	return err
+}
+
+func (a *AssetsPage) bufferPageSuffix() error {
+	// write to file:
+	// prev next
 	err := a.bufferPrevNextPage()
 
 	return err

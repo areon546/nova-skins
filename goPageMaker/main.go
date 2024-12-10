@@ -47,10 +47,9 @@ func main() {
 	a := NewAssetsPage(constructPath("", getPagesFolder(), "test"), 0, "")
 
 	a.bufferPagePreffix()
-	a.bufferPrevNextPage()
 	a.addCustomSkins(skins)
 	a.bufferCustomSkins()
-	a.bufferPrevNextPage()
+	a.bufferPageSuffix()
 
 	a.writeBuffer()
 

@@ -27,19 +27,20 @@ func main() {
 	print(skins, skinsData.Rows())
 
 	for i, v := range skinsData.contents {
-		print(i, v, body, forces, drones)
+		if len(v) == 6 || len(v) == 7 {
+			// print(i, v, body, forces, drones)
 
-		name := v[names]
-		distance := convertToInteger(v[distances])
-		angle := convertToInteger(v[angles])
+			name := v[names]
+			distance := v[distances]
+			angle := v[angles]
 
-		skin := NewCustomSkin(name, distance, angle).addSkin(v[body]).addForceA(v[forces]).addDrone(v[drones])
+			skin := NewCustomSkin(name, distance, angle).addSkin(v[body]).addForceA(v[forces]).addDrone(v[drones])
+			skins[i] = *skin
 
-		// print("c, ", c)
-
-		skins[i] = *skin
-
-		print(skin.toString())
+			print(skin.toString())
+		} else {
+			printf("malformed csv, %s", v)
+		}
 	}
 
 	print(skins)

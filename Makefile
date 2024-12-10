@@ -5,5 +5,8 @@ run:
 hello:
 	echo "Hello, World"
 
-test: 
+test:
 	cd goPageMaker && go build && go test
+
+git:
+	git pull && git push

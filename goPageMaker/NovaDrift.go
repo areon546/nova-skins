@@ -14,11 +14,11 @@ type CustomSkin struct {
 	body        string
 	forceArmour string
 	drone       string
-	angle       int
-	distance    int
+	angle       string
+	distance    string
 }
 
-func NewCustomSkin(name string, angle, distance int) *CustomSkin {
+func NewCustomSkin(name, angle, distance string) *CustomSkin {
 	return &CustomSkin{name: name, angle: angle, distance: distance}
 }
 
@@ -43,7 +43,7 @@ func (c *CustomSkin) toString() string {
 
 func convertCSVLineToCustomSkin(s string) *CustomSkin {
 	ss := strings.Split(s, ",")
-	c := CustomSkin{name: ss[0], body: ss[1], forceArmour: ss[2], drone: ss[3], angle: convertToInteger(ss[4]), distance: convertToInteger(ss[5])}
+	c := CustomSkin{name: ss[0], body: ss[1], forceArmour: ss[2], drone: ss[3], angle: ss[4], distance: ss[5]}
 	return &c
 }
 
@@ -130,5 +130,5 @@ func (a *AssetsPage) bufferCustomSkins() {
 func (a *AssetsPage) writeBuffer() {
 	a.writeFile()
 
-	print(a.contentBuffer)
+	// print(a.contentBuffer)
 }

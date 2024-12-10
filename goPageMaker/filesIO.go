@@ -199,6 +199,12 @@ func readCSV(filePreffix string) (csv CSVFile) {
 		if i == 0 { // adds headings to headings attribute
 			csv.headings = strings.Split(csvCell, ",")
 		} else { // ads csv items to contents attribute
+
+			// check if the string is empty, if so skip
+			if reflect.DeepEqual(csvCell, "") {
+				continue
+			}
+
 			csv.contents = append(csv.contents, strings.Split(csvCell, ","))
 		}
 	}

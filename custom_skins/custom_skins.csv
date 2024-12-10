@@ -13,3 +13,13 @@ Dragon,dragon.png,dragon_force.png,,,, roborogue
 Spike,spike.png,spike_force.png,spike_drone.png,125,35, hadiros
 Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35, hadiros
 Celes,celes.png,celes_force.png,celes_drone.png,110,25, cinnamimitime
+Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50, addisonsynth xorloth
+Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30, addisonsynth xorloth
+Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0, addisonsynth xorloth
+Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20, anthraax
+Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45, addisonsynth xorloth
+Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40, addisonsynth xorloth
+Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42, addisonsynth xorloth
+Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35, _capstone
+Balm,balm.png,balm_force.png,balm_drone.png,160,30, cinnamimitime
+Scimitar,scimitar.png,scimitar_force.png,scimitar_drone.png,140,50, fauix

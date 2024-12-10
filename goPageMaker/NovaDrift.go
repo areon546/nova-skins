@@ -137,7 +137,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.appendNewLine()
 		// append
 
-		a.append(skin.toCSVLine())
+		a.append("`" + skin.toCSVLine() + "`")
 		a.appendNewLine()
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.body))
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.forceArmour))

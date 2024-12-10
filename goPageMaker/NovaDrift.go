@@ -23,8 +23,8 @@ func NewCustomSkin(name, angle, distance string) *CustomSkin {
 	return &CustomSkin{name: name, angle: angle, distance: distance}
 }
 
-func (c *CustomSkin) addSkin(s string) *CustomSkin {
-	c.body = s
+func (c *CustomSkin) addBody(b string) *CustomSkin {
+	c.body = b
 	return c
 }
 
@@ -38,7 +38,7 @@ func (c *CustomSkin) addDrone(s string) *CustomSkin {
 	return c
 }
 
-func (c *CustomSkin) toString() string {
+func (c *CustomSkin) String() string {
 	return c.name
 }
 
@@ -72,18 +72,56 @@ func (c *CustomSkin) getDistance() string {
 	}
 }
 
+// returns a list of CustomSkins based on whats in the custom_skins folder
+func getCustomSkins() (skins []CustomSkin) {
+	skinsData := readCSV(skinFolder() + "custom_skins")
+	names := skinsData.getIndexOfColumn("name")
+	angles := skinsData.getIndexOfColumn("jet_angle")
+	distances := skinsData.getIndexOfColumn("jet_distance")
+	body := skinsData.getIndexOfColumn("body_artwork")
+	forces := skinsData.getIndexOfColumn("body_force_armor_artwork")
+	drones := skinsData.getIndexOfColumn("drone_artwork")
+
+	skins = make([]CustomSkin, skinsData.Rows())
+	// print(skinsData.Rows())
+
+	for i, v := range skinsData.contents {
+		if len(v) == 6 || len(v) == 7 {
+			// print(i, v, body, forces, drones)
+
+			name := v[names]
+			distance := v[distances]
+			angle := v[angles]
+
+			skin := NewCustomSkin(name, distance, angle).addBody(v[body]).addForceA(v[forces]).addDrone(v[drones])
+			skins[i] = *skin
+
+			// print(skin.String())
+		} else {
+			printf("malformed csv, %s", v)
+		}
+	}
+
+	return
+}
+
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
 
 type AssetsPage struct {
 	MarkdownFile
 	pageNumber int
 	maxSkins   int
+	skinsC     int
 
 	skins []CustomSkin
 }
 
 func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
-	return &AssetsPage{MarkdownFile: *NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10}
+	return &AssetsPage{MarkdownFile: *NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10, skinsC: 0}
+}
+
+func (a *AssetsPage) String() string {
+	return a.filename
 }
 
 func (a *AssetsPage) bufferPagePreffix() error {
@@ -125,12 +163,8 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 	return nil
 }
 
-func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
-	a.skins = cs
-}
-
 func (a *AssetsPage) bufferCustomSkins() {
-	// TODO this writes to the custom skins stuff and adds the data, in markdown
+	// this writes to the custom skins stuff and adds the data, in markdown
 	path := "https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main"
 
 	for _, skin := range a.skins {
@@ -142,7 +176,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.body))
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.forceArmour))
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.drone))
-		// TODO append links to media
+		// TODO append links to media  but how do we determine if there are media files?
 
 		a.appendNewLine()
 	}
@@ -152,4 +186,40 @@ func (a *AssetsPage) writeBuffer() {
 	a.writeFile()
 
 	// print(a.contentBuffer)
+}
+
+func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
+	for a.skinsC < 10 {
+		a.skins = append(a.skins, cs[a.skinsC])
+		a.skinsC++
+	}
+}
+
+func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
+	print(len(skins))
+	numFiles := len(skins) / 10
+	if len(skins)%10 != 0 {
+		numFiles++
+	}
+	print(numFiles)
+
+	for i := range numFiles {
+		// create a new file
+		a := NewAssetsPage(format("Page_%d", i), i, "2")
+
+		a.addCustomSkins(skins[i*10 : (i+1)*10])
+
+		pages = append(pages, *a)
+		print(a)
+	}
+
+	// a := NewAssetsPage(constructPath("", getPagesFolder(), "test"), 0, "")
+
+	// a.bufferPagePreffix()
+	// a.addCustomSkins(skins)
+	// a.bufferCustomSkins()
+	// a.bufferPageSuffix()
+
+	// pages = append(pages, *a)
+	return
 }

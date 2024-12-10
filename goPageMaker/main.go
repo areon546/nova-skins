@@ -1,7 +1,6 @@
 package main
 
 func main() {
-	var skins []CustomSkin
 
 	print("Running")
 
@@ -12,48 +11,19 @@ func main() {
 	// print("assets", assets)
 	// printf("%s", "abba")
 	// for _, v := range assetsAsFiles {
-	// 	print(v.toString())
+	// 	print(v.String())
 	// }
 
-	skinsData := readCSV(skinFolder() + "custom_skins")
-	names := skinsData.getIndexOfColumn("name")
-	angles := skinsData.getIndexOfColumn("jet_angle")
-	distances := skinsData.getIndexOfColumn("jet_distance")
-	body := skinsData.getIndexOfColumn("body_artwork")
-	forces := skinsData.getIndexOfColumn("body_force_armor_artwork")
-	drones := skinsData.getIndexOfColumn("drone_artwork")
+	// returns a list of CustomSkins based on whats in the custom_skins folder
+	skins := getCustomSkins()
 
-	skins = make([]CustomSkin, skinsData.Rows())
-	print(skins, skinsData.Rows())
+	pages := constructAssetPages(skins[:20])
 
-	for i, v := range skinsData.contents {
-		if len(v) == 6 || len(v) == 7 {
-			// print(i, v, body, forces, drones)
+	print(pages)
 
-			name := v[names]
-			distance := v[distances]
-			angle := v[angles]
-
-			skin := NewCustomSkin(name, distance, angle).addSkin(v[body]).addForceA(v[forces]).addDrone(v[drones])
-			skins[i] = *skin
-
-			print(skin.toString())
-		} else {
-			printf("malformed csv, %s", v)
-		}
+	for _, p := range pages {
+		p.writeBuffer()
 	}
-
-	print(skins)
-
-	a := NewAssetsPage(constructPath("", getPagesFolder(), "test"), 0, "")
-
-	a.bufferPagePreffix()
-	a.addCustomSkins(skins)
-	a.bufferCustomSkins()
-	a.bufferPageSuffix()
-
-	a.writeBuffer()
-
 }
 
 func getPagesFolder() string {

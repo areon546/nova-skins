@@ -48,7 +48,3 @@ func convertToInteger(s string) (i int) {
 func skinFolder() string {
 	return "../custom_skins/"
 }
-
-type Stringable interface {
-	toString() string
-}

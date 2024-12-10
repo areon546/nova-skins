@@ -117,7 +117,7 @@ func (f *File) clearFile() {
 	}
 }
 
-func (f *File) toString() string {
+func (f *File) String() string {
 	return f.GetFileName()
 }
 

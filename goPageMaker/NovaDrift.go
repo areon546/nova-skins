@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -48,7 +49,27 @@ func convertCSVLineToCustomSkin(s string) *CustomSkin {
 }
 
 func (c *CustomSkin) toCSVLine() string {
-	return format("%s,%s,%s,%s,%d,%d", c.name, c.body, c.forceArmour, c.drone, c.angle, c.distance)
+	return format("%s,%s,%s,%s,%s,%s", c.name, c.body, c.forceArmour, c.drone, c.getAngle(), c.getDistance())
+}
+
+func (c *CustomSkin) getAngle() string {
+	// try to convert s to an integer, if it fails, return nothing
+	_, err := strconv.Atoi(c.angle)
+	if err != nil {
+		return ""
+	} else {
+		return c.angle
+	}
+}
+
+func (c *CustomSkin) getDistance() string {
+	// try to convert to an integer
+	_, err := strconv.Atoi(c.distance)
+	if err != nil {
+		return ""
+	} else {
+		return c.distance
+	}
 }
 
 // ~~~~~~~~~~~~~~~~~~~ AssetPage

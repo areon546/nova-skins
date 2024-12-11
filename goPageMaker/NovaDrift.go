@@ -143,7 +143,7 @@ func (a *AssetsPage) bufferPageSuffix() error {
 }
 
 func (a *AssetsPage) bufferPrevNextPage() error {
-	path := "../pages/"
+	path := "./"
 
 	prev := format("Page_%d", a.pageNumber-1)
 	prevF := format("%s.md", prev)
@@ -185,7 +185,8 @@ func (a *AssetsPage) bufferCustomSkins() {
 func (a *AssetsPage) writeBuffer() {
 	a.writeFile()
 
-	// print(a.contentBuffer)
+	print(a.contentBuffer)
+	print(a.GetFileName())
 }
 
 func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
@@ -205,12 +206,18 @@ func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 
 	for i := range numFiles {
 		// create a new file
-		a := NewAssetsPage(format("Page_%d", i), i, "2")
+		pageNum := i + 1
+		a := NewAssetsPage(constructPath("", getPagesFolder(), format("Page_%d", pageNum)), pageNum, "2")
 
+		a.bufferPagePreffix()
 		a.addCustomSkins(skins[i*10 : (i+1)*10])
+		a.bufferCustomSkins()
+		a.bufferPageSuffix()
 
 		pages = append(pages, *a)
-		print(a)
+		// print(a)
+
+		a.writeBuffer()
 	}
 
 	// a := NewAssetsPage(constructPath("", getPagesFolder(), "test"), 0, "")

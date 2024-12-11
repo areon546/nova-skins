@@ -17,13 +17,8 @@ func main() {
 	// returns a list of CustomSkins based on whats in the custom_skins folder
 	skins := getCustomSkins()
 
-	pages := constructAssetPages(skins[:20])
+	constructAssetPages(skins[:20])
 
-	print(pages)
-
-	for _, p := range pages {
-		p.writeBuffer()
-	}
 }
 
 func getPagesFolder() string {

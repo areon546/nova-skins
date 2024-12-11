@@ -143,6 +143,14 @@ func (f *File) appendLine(s string, i int, nl bool) {
 	f.contentBuffer[i] = s
 }
 
+func constructPath(preffix, directory, fileName string) (s string) {
+	if !reflect.DeepEqual(preffix, "") {
+		s += preffix + "/"
+	}
+	s += directory + "/" + fileName
+	return s
+}
+
 // ~~~~~~~~~~~~~~~~~~~~ MarkdownFile
 
 type MarkdownFile struct {
@@ -167,14 +175,6 @@ func constructMarkDownLink(embed bool, displayText, path string) (s string) {
 	}
 	s += fmt.Sprintf("[%s](%s)", displayText, path)
 	return
-}
-
-func constructPath(preffix, directory, fileName string) (s string) {
-	if !reflect.DeepEqual(preffix, "") {
-		s += preffix + "/"
-	}
-	s += directory + "/" + fileName
-	return s
 }
 
 // ~~~~~~~~~~~~~~~~~~~~ CSVFile

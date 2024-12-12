@@ -8,8 +8,8 @@ import (
 
 // ~~~~~~~~~~~~~~~~~ CustomSkin
 type CustomSkin struct {
-	// pictures []File
-	// credit      string
+	pictures []File
+	credit   *Credit
 
 	name        string
 	body        string
@@ -105,6 +105,13 @@ func getCustomSkins() (skins []CustomSkin) {
 	return
 }
 
+func (c *CustomSkin) formatCredits() string {
+	if c.credit == nil {
+		return ""
+	}
+	return constructMarkDownLink(false, c.credit.getCredit(), "")
+}
+
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
 
 type AssetsPage struct {
@@ -173,6 +180,9 @@ func (a *AssetsPage) bufferCustomSkins() {
 
 		a.append("`" + skin.toCSVLine() + "`")
 		a.appendNewLine()
+
+		a.append(format("*%s*: %s", skin.name, skin.formatCredits()))
+
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.body))
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.forceArmour))
 		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.drone))

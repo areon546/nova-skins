@@ -19,3 +19,4 @@ Misc Reading:
 - [fileIO](https://pkg.go.dev/os)
 - [file writing](https://gosamples.dev/write-file/)
 - [making a go program](https://go.dev/doc/tutorial/getting-started)
+- credits - discord https://www.followchain.org/discord-profile-link/

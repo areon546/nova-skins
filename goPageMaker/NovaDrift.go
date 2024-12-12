@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"strconv"
 	"strings"
@@ -82,11 +83,14 @@ func getCustomSkins() (skins []CustomSkin) {
 	forces := skinsData.getIndexOfColumn("body_force_armor_artwork")
 	drones := skinsData.getIndexOfColumn("drone_artwork")
 
-	skins = make([]CustomSkin, skinsData.Rows())
-	// print(skinsData.Rows())
+	print(skinsData.headings)
 
-	for i, v := range skinsData.contents {
-		if len(v) == 6 || len(v) == 7 {
+	skins = make([]CustomSkin, 0, skinsData.Rows())
+	print(skinsData.Rows())
+	reqLength := skinsData.numHeaders()
+
+	for _, v := range skinsData.contents {
+		if len(v) == reqLength || len(v) == 7 {
 			// print(i, v, body, forces, drones)
 
 			name := v[names]
@@ -94,11 +98,11 @@ func getCustomSkins() (skins []CustomSkin) {
 			angle := v[angles]
 
 			skin := NewCustomSkin(name, distance, angle).addBody(v[body]).addForceA(v[forces]).addDrone(v[drones])
-			skins[i] = *skin
+			skins = append(skins, *skin)
 
-			// print(skin.String())
+			printf("appropriate length: %d, %s", len(v), skin)
 		} else {
-			printf("malformed csv, %s", v)
+			printf("malformed csv, required length: %d, length: %d, %s,", reqLength, len(v), v)
 		}
 	}
 
@@ -196,21 +200,24 @@ func (a *AssetsPage) bufferCustomSkins() {
 func (a *AssetsPage) writeBuffer() {
 	a.writeFile()
 
-	print(a.contentBuffer)
-	print(a.GetFileName())
+	// print(a.contentBuffer)
+	print("Writing to: ", a)
 }
 
 func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
-	for a.skinsC < 10 {
+	numSkins := min(10, len(cs))
+	for a.skinsC < numSkins {
 		a.skins = append(a.skins, cs[a.skinsC])
 		a.skinsC++
 	}
 }
 
 func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
-	print(len(skins))
-	numFiles := len(skins) / 10
-	if len(skins)%10 != 0 {
+	numSkins := len(skins)
+	print("aa ", numSkins)
+	numFiles := numSkins / 10
+
+	if numSkins%10 != 0 {
 		numFiles++
 	}
 	print(numFiles)
@@ -221,7 +228,11 @@ func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 		a := NewAssetsPage(constructPath("", getPagesFolder(), format("Page_%d", pageNum)), pageNum, "2")
 
 		a.bufferPagePreffix()
-		a.addCustomSkins(skins[i*10 : (i+1)*10])
+
+		skinSlice, err := getNextSlice(skins, i)
+		handle(err)
+
+		a.addCustomSkins(skinSlice)
 		a.bufferCustomSkins()
 		a.bufferPageSuffix()
 
@@ -240,4 +251,20 @@ func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 
 	// pages = append(pages, *a)
 	return
+}
+
+func getNextSlice(skins []CustomSkin, i int) (subset []CustomSkin, err error) {
+	numSkins := len(skins)
+
+	if i < 0 || i > (len(skins)/10+1) {
+		err = errors.New("index out of bounds for CustomSkins array")
+	}
+
+	min, max := i*10, (i+1)*10
+
+	if max > numSkins {
+		max = numSkins
+	}
+
+	return skins[min:max], err
 }

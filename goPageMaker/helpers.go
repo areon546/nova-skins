@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 	"reflect"
 	"strconv"
 )
@@ -45,6 +46,9 @@ func convertToInteger(s string) (i int) {
 	return
 }
 
-func skinFolder() string {
-	return "../custom_skins/"
+func handle(err error) {
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 }

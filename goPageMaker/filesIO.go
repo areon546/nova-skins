@@ -222,6 +222,10 @@ func (c *CSVFile) getIndexOfColumn(header string) (index int) {
 	return
 }
 
+func (c *CSVFile) numHeaders() int {
+	return len(c.headings)
+}
+
 func (c *CSVFile) printHeaders() {
 	print(c.headings)
 }

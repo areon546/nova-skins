@@ -1,8 +1,8 @@
-name,body_artwork,body_force_armor_artwork,drone_artwork,jet_angle,jet_distance,person
-Saris,saris.png,saris_force.png,saris_drone.png,115,46, default
-Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40, default
-Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35, default
-SE,SEbody.png,SEforce.png,,0,30
+name,body_artwork,body_force_armor_artwork,drone_artwork,jet_angle,jet_distance,credit,creditInfo,creditType
+Saris,saris.png,saris_force.png,saris_drone.png,115,46, default,,default
+Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40, default,,default
+Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35, default,,default
+SE,SEbody.png,SEforce.png,,0,30, INSERT-CREDITS, INSERT-USER-NUM, discord
 Freefall,freefall.png,freefall_force.png,freefall_drone.png,115,35, akaevertone
 Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45, _capstone
 PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20, waypastfuture

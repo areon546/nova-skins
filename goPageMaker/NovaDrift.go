@@ -180,9 +180,8 @@ func (a *AssetsPage) bufferCustomSkins() {
 
 	for _, skin := range a.skins {
 		a.appendNewLine()
-		// append
 
-		a.append(format("*%s*: %s", skin.name, skin.formatCredits()))
+		a.append(format("# **%s**: %s", skin.name, skin.formatCredits()))
 		a.appendNewLine()
 
 		a.append("`" + skin.toCSVLine() + "`")

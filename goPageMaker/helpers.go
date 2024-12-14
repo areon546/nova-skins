@@ -36,14 +36,12 @@ func search[T any](item T, arr []T) (index int) {
 	return index
 }
 
-func convertToInteger(s string) (i int) {
+func convertToInteger(s string) (int, error) {
 	i, err := strconv.Atoi(s)
-
 	if err != nil {
-		panic(err)
+		return i, err
 	}
-
-	return
+	return i, err
 }
 
 func handle(err error) {

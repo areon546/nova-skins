@@ -2,11 +2,12 @@
 run:
 	cd goPageMaker && go build && go run .
 
-hello:
-	echo "Hello, World"
 
 test:
-	cd goPageMaker && go build && go test
+	cd goPageMaker && go test
+
+hello:
+	echo "Hello, World"
 
 git:
 	git pull && git push

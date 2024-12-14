@@ -3,7 +3,7 @@
 [Page_5](./Page_5.md)
 [Page_6](./Page_6.md)
 
-**Gyaraga**: [@evelo](discordapp.com/users/ 110564152539377664)
+**Gyaraga**: [@evelo](https://discord.com/users/110564152539377664)
 
 `Gyaraga,GalagaShip.png,GalagaShipShield.png,,35,90`
 
@@ -12,7 +12,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
 
 
-**Freefall**: [@akaevertone](discordapp.com/users/ 235458820845862912)
+**Freefall**: [@akaevertone](https://discord.com/users/235458820845862912)
 
 `Freefall,freefall.png,freefall_force.png,freefall_drone.png,40,152`
 
@@ -21,7 +21,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/freefall_drone.png)
 
 
-**Minotaur**: [@twinstick](discordapp.com/users/ 538017698861547521)
+**Minotaur**: [@twinstick](https://discord.com/users/538017698861547521)
 
 `Minotaur,minotaur.png,minotaur_force.png,,60,145`
 

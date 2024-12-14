@@ -3,7 +3,7 @@
 [Page_2](./Page_2.md)
 [Page_3](./Page_3.md)
 
-**Pinch**: [@hadiros](discordapp.com/users/ 266028842395631629)
+**Pinch**: [@hadiros](https://discord.com/users/266028842395631629)
 
 `Pinch,pinch.png,pinch_force.png,pinch_drone.png,35,140`
 
@@ -12,7 +12,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pinch_drone.png)
 
 
-**Celes**: [@cinnamimitime](discordapp.com/users/ 161502244284530688)
+**Celes**: [@cinnamimitime](https://discord.com/users/161502244284530688)
 
 `Celes,celes.png,celes_force.png,celes_drone.png,25,110`
 
@@ -48,7 +48,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Warden_drone.png)
 
 
-**Windseeker**: [@anthraax](discordapp.com/users/ 211671269882462218)
+**Windseeker**: [@anthraax](https://discord.com/users/211671269882462218)
 
 `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,20,110`
 
@@ -84,7 +84,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor_drone.png)
 
 
-**Engineer**: [@_capstone](discordapp.com/users/ 551431332253794304)
+**Engineer**: [@_capstone](https://discord.com/users/551431332253794304)
 
 `Engineer,engineer.png,engineer_frame.png,engineer_drone.png,35,60`
 

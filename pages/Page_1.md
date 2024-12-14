@@ -29,7 +29,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/ultra_c_drone.png)
 
 
-**Lobstar**: [@_capstone](discordapp.com/users/ 551431332253794304)
+**Lobstar**: [@_capstone](https://discord.com/users/551431332253794304)
 
 `Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,45,180`
 
@@ -38,7 +38,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/lobstar_drone.png)
 
 
-**PINGAS**: [@waypastfuture](discordapp.com/users/ 128605704813543424)
+**PINGAS**: [@waypastfuture](https://discord.com/users/128605704813543424)
 
 `PINGAS,PINGAS_body.png,PINGAS_force.png,,20,180`
 
@@ -47,7 +47,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
 
 
-**Skogul**: [@dragonstrive](discordapp.com/users/ 273142382181220353)
+**Skogul**: [@dragonstrive](https://discord.com/users/273142382181220353)
 
 `Skogul,skogul.png,skogul_force.png,skogul_drone.png,45,115`
 
@@ -56,7 +56,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/skogul_drone.png)
 
 
-**Lance**: [@roborogue](discordapp.com/users/ 690525302312534058)
+**Lance**: [@roborogue](https://discord.com/users/690525302312534058)
 
 `Lance,lance.png,lance_force.png,,,40`
 
@@ -65,7 +65,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
 
 
-**Thunderax**: [@roborogue](discordapp.com/users/ 690525302312534058)
+**Thunderax**: [@roborogue](https://discord.com/users/690525302312534058)
 
 `Thunderax,thunderax.png,thunderax.png,,,`
 
@@ -74,7 +74,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
 
 
-**Dragon**: [@roborogue](discordapp.com/users/ 690525302312534058)
+**Dragon**: [@roborogue](https://discord.com/users/690525302312534058)
 
 `Dragon,dragon.png,dragon_force.png,,,`
 
@@ -83,7 +83,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
 
 
-**Spike**: [@hadiros](discordapp.com/users/ 266028842395631629)
+**Spike**: [@hadiros](https://discord.com/users/266028842395631629)
 
 `Spike,spike.png,spike_force.png,spike_drone.png,35,125`
 

@@ -32,5 +32,5 @@ func (d DiscordCredit) constructName() string {
 }
 
 func (d DiscordCredit) constructLink() string {
-	return format("discordapp.com/users/%s", d.otherInfo)
+	return format("https://discord.com/users/%s", d.otherInfo)
 }

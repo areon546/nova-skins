@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-	"reflect"
 	"testing"
 )
 
@@ -12,15 +10,4 @@ func TestNewCustomSkin(t *testing.T) {
 
 	assertEquals(t, want, get)
 
-}
-
-func assertEquals(t testing.TB, want, get fmt.Stringer) {
-	t.Helper()
-	if reflect.DeepEqual(want, get) {
-		return
-	}
-
-	t.Log(want.String(), get.String())
-
-	t.Errorf("aaaaaaaaa")
 }

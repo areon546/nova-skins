@@ -26,7 +26,7 @@ func assetsCSVPath() string {
 	return "assets.csv"
 }
 
-func search(item string, arr []string) (index int) {
+func search[T any](item T, arr []T) (index int) {
 	index = -1
 	for i, v := range arr {
 		if reflect.DeepEqual(v, item) {

@@ -10,5 +10,6 @@ Misc Reading:
 - [fileIO](https://pkg.go.dev/os)
 - [file writing](https://gosamples.dev/write-file/)
 - [making a go program](https://go.dev/doc/tutorial/getting-started)
+- [errors](https://www.digitalocean.com/community/tutorials/creating-custom-errors-in-go)
 - credits
     - [discord](https://www.followchain.org/discord-profile-link/)

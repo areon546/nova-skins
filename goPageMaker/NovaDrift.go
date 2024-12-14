@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"reflect"
 	"strconv"
 	"strings"
 )
@@ -10,7 +11,7 @@ import (
 // ~~~~~~~~~~~~~~~~~ CustomSkin
 type CustomSkin struct {
 	pictures []File
-	credit   *Credit
+	credit   CreditType
 
 	name        string
 	body        string
@@ -37,6 +38,10 @@ func (c *CustomSkin) addForceA(s string) *CustomSkin {
 func (c *CustomSkin) addDrone(s string) *CustomSkin {
 	c.drone = s
 	return c
+}
+
+func (cs *CustomSkin) addCredits(c CreditType) {
+	cs.credit = c
 }
 
 func (c *CustomSkin) String() string {
@@ -73,6 +78,13 @@ func (c *CustomSkin) getDistance() string {
 	}
 }
 
+func (c *CustomSkin) formatCredits() string {
+	if c.credit == nil {
+		return ""
+	}
+	return constructMarkDownLink(false, c.credit.constructName(), c.credit.constructLink())
+}
+
 // returns a list of CustomSkins based on whats in the custom_skins folder
 func getCustomSkins() (skins []CustomSkin) {
 	skinsData := readCSV(skinFolder() + "custom_skins")
@@ -82,38 +94,69 @@ func getCustomSkins() (skins []CustomSkin) {
 	body := skinsData.getIndexOfColumn("body_artwork")
 	forces := skinsData.getIndexOfColumn("body_force_armor_artwork")
 	drones := skinsData.getIndexOfColumn("drone_artwork")
+	credits := skinsData.getIndexOfColumn("credit")
 
-	print(skinsData.headings)
+	discordUIDs := getDiscordUIDs()
+	infoMaps := []map[string]string{discordUIDs}
+	mapType := []string{"discord"}
 
 	skins = make([]CustomSkin, 0, skinsData.Rows())
-	print(skinsData.Rows())
 	reqLength := skinsData.numHeaders()
 
-	for _, v := range skinsData.contents {
-		if len(v) == reqLength || len(v) == 7 {
+	for _, s := range skinsData.contents {
+		if len(s) == reqLength {
 			// print(i, v, body, forces, drones)
 
-			name := v[names]
-			distance := v[distances]
-			angle := v[angles]
+			name := s[names]
+			distance := s[distances]
+			angle := s[angles]
+			skin := NewCustomSkin(name, distance, angle).addBody(s[body]).addForceA(s[forces]).addDrone(s[drones])
 
-			skin := NewCustomSkin(name, distance, angle).addBody(v[body]).addForceA(v[forces]).addDrone(v[drones])
+			credit, creditInfo, creditType := assignCredits(&s, credits, infoMaps, mapType)
+			if !reflect.DeepEqual(creditType, "default") {
+				skin.addCredits(NewCredit(credit, creditInfo, creditType))
+			}
+
 			skins = append(skins, *skin)
 
-			printf("appropriate length: %d, %s", len(v), skin)
+			// printf("appropriate length: %d, %s", len(v), skin)
 		} else {
-			printf("malformed csv, required length: %d, length: %d, %s,", reqLength, len(v), v)
+			// printf("malformed csv, required length: %d, length: %d, %s,", reqLength, len(s), s)
 		}
 	}
 
 	return
 }
 
-func (c *CustomSkin) formatCredits() string {
-	if c.credit == nil {
-		return ""
+func assignCredits(s *[]string, cI int, maps []map[string]string, mapTypes []string) (credit, creditInfo, creditType string) {
+	// assign credits
+	credit = (*s)[cI]
+
+	for i, m := range maps {
+		temp, exists := m[credit]
+		if exists {
+			creditInfo = temp
+			creditType = mapTypes[i]
+			return
+		}
 	}
-	return constructMarkDownLink(false, c.credit.getCredit(), "")
+
+	creditType = "default"
+
+	return
+}
+
+func getDiscordUIDs() map[string]string {
+	discordCreditData := readCSV("DISCORD_UIDS")
+	uidMap := make(map[string]string, discordCreditData.Rows())
+
+	for _, row := range discordCreditData.contents {
+		discordName := row[0]
+		UID := row[1]
+		uidMap[discordName] = UID
+	}
+
+	return uidMap
 }
 
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
@@ -181,7 +224,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 	for _, skin := range a.skins {
 		a.appendNewLine()
 
-		a.append(format("# **%s**: %s", skin.name, skin.formatCredits()))
+		a.append(format("**%s**: %s", skin.name, skin.formatCredits()))
 		a.appendNewLine()
 
 		a.append("`" + skin.toCSVLine() + "`")
@@ -213,13 +256,13 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 
 func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 	numSkins := len(skins)
-	print("aa ", numSkins)
+	// print("skins ", numSkins)
 	numFiles := numSkins / 10
 
 	if numSkins%10 != 0 {
 		numFiles++
 	}
-	print(numFiles)
+	// print("filesToCreate", numFiles)
 
 	for i := range numFiles {
 		// create a new file

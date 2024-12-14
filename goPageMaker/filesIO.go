@@ -152,7 +152,6 @@ func constructPath(preffix, directory, fileName string) (s string) {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~ MarkdownFile
-
 type MarkdownFile struct {
 	File
 }

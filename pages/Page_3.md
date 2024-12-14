@@ -3,24 +3,6 @@
 [Page_3](./Page_3.md)
 [Page_4](./Page_4.md)
 
-# **Deconstructor**: 
-
-`Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,42,155`
-
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor_drone.png)
-
-
-# **Engineer**: 
-
-`Engineer,engineer.png,engineer_frame.png,engineer_drone.png,35,60`
-
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer_frame.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer_drone.png)
-
-
 # **Balm**: 
 
 `Balm,balm.png,balm_force.png,balm_drone.png,30,160`
@@ -37,6 +19,78 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/scimitar.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/scimitar_force.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/scimitar_drone.png)
+
+
+# **SE**: 
+
+`SE,SEbody.png,SEforce.png,,30,0`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/SEbody.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/SEforce.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+
+
+# **BAD**: 
+
+`BAD,BAD.png,BAD_force.png,BAD_drone.png,50,140`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/BAD.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/BAD_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/BAD_drone.png)
+
+
+# **Lanius Cruiser**: 
+
+`Lanius Cruiser,LC.png,LC_force.png,LC_drone.png,40,145`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/LC.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/LC_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/LC_drone.png)
+
+
+# **Tracer**: 
+
+`Tracer,Tracer.png,Tracer_force.png,,0,0`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Tracer.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Tracer_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+
+
+# **Divine Avenger**: 
+
+`Divine Avenger,divineavenger.png,divineavenger_force.png,,160,180`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/divineavenger.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/divineavenger_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+
+
+# **Pew**: 
+
+`Pew,pewsquared.png,pewsquared_force.png,,35,155`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pewsquared.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pewsquared_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+
+
+# **Wyvern**: 
+
+`Wyvern,WyvernBody.png,WyvernForce.png,,46,115`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/WyvernBody.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/WyvernForce.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+
+
+# **Millenium Falcon**: 
+
+`Millenium Falcon,millenium_falcon.png,millenium_falcon_force.png,millenium_falcon_drone.png,50,180`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/millenium_falcon.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/millenium_falcon_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/millenium_falcon_drone.png)
 
 [Page_2](./Page_2.md)
 [Page_3](./Page_3.md)

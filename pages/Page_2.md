@@ -3,24 +3,6 @@
 [Page_2](./Page_2.md)
 [Page_3](./Page_3.md)
 
-# **Dragon**: 
-
-`Dragon,dragon.png,dragon_force.png,,,`
-
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/dragon.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/dragon_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
-
-
-# **Spike**: 
-
-`Spike,spike.png,spike_force.png,spike_drone.png,35,125`
-
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/spike.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/spike_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/spike_drone.png)
-
-
 # **Pinch**: 
 
 `Pinch,pinch.png,pinch_force.png,pinch_drone.png,35,140`
@@ -91,6 +73,24 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Artillery.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Artillery_force.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Artillery_drone.png)
+
+
+# **Deconstructor**: 
+
+`Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,42,155`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor_drone.png)
+
+
+# **Engineer**: 
+
+`Engineer,engineer.png,engineer_frame.png,engineer_drone.png,35,60`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer_frame.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer_drone.png)
 
 [Page_1](./Page_1.md)
 [Page_2](./Page_2.md)

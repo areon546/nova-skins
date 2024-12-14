@@ -29,24 +29,6 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/ultra_c_drone.png)
 
 
-# **SE**: 
-
-`SE,SEbody.png,SEforce.png,,30,0`
-
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/SEbody.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/SEforce.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
-
-
-# **Freefall**: 
-
-`Freefall,freefall.png,freefall_force.png,freefall_drone.png,35,115`
-
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/freefall.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/freefall_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/freefall_drone.png)
-
-
 # **Lobstar**: 
 
 `Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,45,180`
@@ -90,6 +72,24 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/thunderax.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/thunderax.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+
+
+# **Dragon**: 
+
+`Dragon,dragon.png,dragon_force.png,,,`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/dragon.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/dragon_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+
+
+# **Spike**: 
+
+`Spike,spike.png,spike_force.png,spike_drone.png,35,125`
+
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/spike.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/spike_force.png)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/spike_drone.png)
 
 [Page_1](./Page_1.md)
 [Page_2](./Page_2.md)

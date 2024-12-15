@@ -1,12 +1,12 @@
 package fileIO
 
 import (
-	"github.com/areon546/go-helpers"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 )
 
 // helper functions
 
-func Handle(err error) {
+func handle(err error) {
 	// helpers.Handle(err)
-	helpers.CheckError(err)
+	helpers.Handle(err)
 }

@@ -1,8 +1,6 @@
 package nova
 
-import (
-	"github.com/areon546/go-helpers"
-)
+import "github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 
 // helper functions
 

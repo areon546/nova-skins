@@ -55,7 +55,7 @@ func (f *File) GetContents() []string {
 func (f *File) readFile() []string {
 	if !f.hasBeenRead {
 		data, err := os.ReadFile(f.GetFileName()) // For read access.
-		Handle(err)
+		handle(err)
 
 		oneLine := strings.ReplaceAll(string(data), "\r", "")
 		f.contentBuffer = strings.Split(oneLine, "\n")

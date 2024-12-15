@@ -12,6 +12,5 @@ Go to [Page_1](pages/Page_1.md) to see the start of this project.
 [pages](pages) contains all the skins for display that you can look through and download the contents of manually
 
 ---
-
-Based off of [Voices of the Printer](https://github.com/madrod228/voicesoftheprinter) in spirit. 
+Inspired by [Voices of the Printer](https://github.com/madrod228/voicesoftheprinter)
 

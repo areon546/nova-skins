@@ -4,7 +4,11 @@ run:
 
 
 test:
-	cd goPageMaker && go test
+	cd goPageMaker && go test -cover
+
+testCoverageHTML:
+	cd goPageMaker && go test -cover && go tool cover -html=cover.out
+
 
 hello:
 	echo "Hello, World"

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"log"
 	"os"
@@ -71,7 +72,7 @@ func (f *File) readLine(lineNum int) (output string, err error) {
 	}
 
 	if lineNum > f.lines {
-		return "", err
+		return "", errors.New("Index out of bounds for File length")
 	}
 
 	output = f.contentBuffer[lineNum]
@@ -103,12 +104,13 @@ func (f *File) appendNewLine() {
 }
 
 func (f *File) bufferLines(arr []string) {
-	s := ""
-	print(s)
-	f.contentBuffer = make([]string, len(arr))
-	for i, v := range arr {
-		f.contentBuffer[i] = v
+
+	if f.isEmpty() {
+		f.contentBuffer = make([]string, len(arr))
 	}
+
+	f.contentBuffer = append(f.contentBuffer, arr...)
+
 }
 
 func (f *File) clearFile() {
@@ -223,16 +225,6 @@ func (c *CSVFile) getIndexOfColumn(header string) (index int) {
 
 func (c *CSVFile) numHeaders() int {
 	return len(c.headings)
-}
-
-func (c *CSVFile) printHeaders() {
-	print(c.headings)
-}
-
-func (c *CSVFile) printContents() {
-	for _, v := range c.contents {
-		print(v)
-	}
 }
 
 func (c *CSVFile) Rows() int {

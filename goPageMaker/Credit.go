@@ -21,8 +21,6 @@ func NewCredit(name, other, cType string) CreditType {
 		return DiscordCredit{Credit: Credit{name: name, otherInfo: other}}
 	}
 	return &Credit{name: name, otherInfo: other}
-
-	return nil
 }
 
 type DiscordCredit struct{ Credit }

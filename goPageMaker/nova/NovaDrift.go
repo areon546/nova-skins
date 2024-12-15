@@ -1,4 +1,4 @@
-package main
+package nova
 
 import (
 	"errors"
@@ -6,12 +6,16 @@ import (
 	"reflect"
 	"strconv"
 	"strings"
+
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 )
 
 // ~~~~~~~~~~~~~~~~~ CustomSkin
 type CustomSkin struct {
-	pictures []File
-	credit   CreditType
+	pictures []fileIO.File
+	credit   cred.CreditType
 
 	name        string
 	body        string
@@ -40,7 +44,7 @@ func (c *CustomSkin) addDrone(s string) *CustomSkin {
 	return c
 }
 
-func (cs *CustomSkin) addCredits(c CreditType) {
+func (cs *CustomSkin) addCredits(c cred.CreditType) {
 	cs.credit = c
 }
 
@@ -78,32 +82,33 @@ func (c *CustomSkin) getDistance() string {
 	}
 }
 
-func (c *CustomSkin) formatCredits() string {
+func (c *CustomSkin) FormatCredits() string {
 	if c.credit == nil {
 		return ""
 	}
-	return constructMarkDownLink(false, c.credit.constructName(), c.credit.constructLink())
+	return fileIO.ConstructMarkDownLink(false, c.credit.ConstructName(), c.credit.ConstructLink())
 }
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
-func getCustomSkins() (skins []CustomSkin) {
-	skinsData := readCSV(skinFolder() + "custom_skins")
-	names := skinsData.getIndexOfColumn("name")
-	angles := skinsData.getIndexOfColumn("jet_angle")
-	distances := skinsData.getIndexOfColumn("jet_distance")
-	body := skinsData.getIndexOfColumn("body_artwork")
-	forces := skinsData.getIndexOfColumn("body_force_armor_artwork")
-	drones := skinsData.getIndexOfColumn("drone_artwork")
-	credits := skinsData.getIndexOfColumn("credit")
+func GetCustomSkins() (skins []CustomSkin) {
+	skinsData := fileIO.ReadCSV(skinFolder() + "custom_skins")
+	names := skinsData.GetIndexOfColumn("name")
+	angles := skinsData.GetIndexOfColumn("jet_angle")
+	distances := skinsData.GetIndexOfColumn("jet_distance")
+	body := skinsData.GetIndexOfColumn("body_artwork")
+	forces := skinsData.GetIndexOfColumn("body_force_armor_artwork")
+	drones := skinsData.GetIndexOfColumn("drone_artwork")
+	credits := skinsData.GetIndexOfColumn("credit")
+	customSkinCSVContents := skinsData.GetContents()
 
 	discordUIDs := getDiscordUIDs()
 	infoMaps := []map[string]string{discordUIDs}
-	mapType := []string{"discord"}
+	mapType := []cred.CreditSource{cred.Discord}
 
 	skins = make([]CustomSkin, 0, skinsData.Rows())
-	reqLength := skinsData.numHeaders()
+	reqLength := skinsData.NumHeaders()
 
-	for _, s := range skinsData.contents {
+	for _, s := range customSkinCSVContents {
 		if len(s) == reqLength {
 			// print(i, v, body, forces, drones)
 
@@ -114,7 +119,7 @@ func getCustomSkins() (skins []CustomSkin) {
 
 			credit, creditInfo, creditType := assignCredits(&s, credits, infoMaps, mapType)
 			if !reflect.DeepEqual(creditType, "default") {
-				skin.addCredits(NewCredit(credit, creditInfo, creditType))
+				skin.addCredits(cred.NewCredit(credit, creditInfo, creditType))
 			}
 
 			skins = append(skins, *skin)
@@ -128,7 +133,7 @@ func getCustomSkins() (skins []CustomSkin) {
 	return
 }
 
-func assignCredits(s *[]string, cI int, maps []map[string]string, mapTypes []string) (credit, creditInfo, creditType string) {
+func assignCredits(s *[]string, cI int, maps []map[string]string, mapTypes []cred.CreditSource) (credit, creditInfo string, creditType cred.CreditSource) {
 	// assign credits
 	credit = (*s)[cI]
 
@@ -141,16 +146,18 @@ func assignCredits(s *[]string, cI int, maps []map[string]string, mapTypes []str
 		}
 	}
 
-	creditType = "default"
+	creditType = cred.Default
 
 	return
 }
 
 func getDiscordUIDs() map[string]string {
-	discordCreditData := readCSV("DISCORD_UIDS")
+	discordCreditData := fileIO.ReadCSV("DISCORD_UIDS")
+	fileContents := discordCreditData.GetContents()
+
 	uidMap := make(map[string]string, discordCreditData.Rows())
 
-	for _, row := range discordCreditData.contents {
+	for _, row := range fileContents {
 		discordName := row[0]
 		UID := row[1]
 		uidMap[discordName] = UID
@@ -162,7 +169,7 @@ func getDiscordUIDs() map[string]string {
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
 
 type AssetsPage struct {
-	MarkdownFile
+	fileIO.MarkdownFile
 	pageNumber int
 	maxSkins   int
 	skinsC     int
@@ -171,17 +178,17 @@ type AssetsPage struct {
 }
 
 func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
-	return &AssetsPage{MarkdownFile: *NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10, skinsC: 0}
+	return &AssetsPage{MarkdownFile: *fileIO.NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10, skinsC: 0}
 }
 
 func (a *AssetsPage) String() string {
-	return a.filename
+	return a.GetFileName()
 }
 
 func (a *AssetsPage) bufferPagePreffix() error {
 	// write to file:
 	// Page #
-	a.append(fmt.Sprintf("# Page %d", a.pageNumber))
+	a.Append(fmt.Sprintf("# Page %d", a.pageNumber))
 	// prev next
 	err := a.bufferPrevNextPage()
 
@@ -208,11 +215,11 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 
 	if a.pageNumber > 1 {
 
-		a.appendMarkdownLink(prev, (path + prevF))
+		a.AppendMarkdownLink(prev, (path + prevF))
 	}
 
-	a.appendMarkdownLink(curr, (path + currF))
-	a.appendMarkdownLink(next, (path + nextF))
+	a.AppendMarkdownLink(curr, (path + currF))
+	a.AppendMarkdownLink(next, (path + nextF))
 
 	return nil
 }
@@ -222,25 +229,25 @@ func (a *AssetsPage) bufferCustomSkins() {
 	path := "https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main"
 
 	for _, skin := range a.skins {
-		a.appendNewLine()
+		a.AppendNewLine()
 
-		a.append(format("**%s**: %s", skin.name, skin.formatCredits()))
-		a.appendNewLine()
+		a.Append(format("**%s**: %s", skin.name, skin.FormatCredits()))
+		a.AppendNewLine()
 
-		a.append("`" + skin.toCSVLine() + "`")
-		a.appendNewLine()
+		a.Append("`" + skin.toCSVLine() + "`")
+		a.AppendNewLine()
 
-		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.body))
-		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.forceArmour))
-		a.appendMarkdownEmbed(constructPath(path, "custom_skins", skin.drone))
+		a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body))
+		a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.forceArmour))
+		a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone))
 		// TODO append links to media  but how do we determine if there are media files?
 
-		a.appendNewLine()
+		a.AppendNewLine()
 	}
 }
 
 func (a *AssetsPage) writeBuffer() {
-	a.writeFile()
+	a.WriteFile()
 
 	// print(a.contentBuffer)
 	print("Writing to: ", a)
@@ -254,7 +261,7 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 	}
 }
 
-func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
+func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 	numSkins := len(skins)
 	// print("skins ", numSkins)
 	numFiles := numSkins / 10
@@ -267,12 +274,12 @@ func constructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 	for i := range numFiles {
 		// create a new file
 		pageNum := i + 1
-		a := NewAssetsPage(constructPath("", getPagesFolder(), format("Page_%d", pageNum)), pageNum, "2")
+		a := NewAssetsPage(fileIO.ConstructPath("", pagesFolder(), format("Page_%d", pageNum)), pageNum, "2")
 
 		a.bufferPagePreffix()
 
 		skinSlice, err := getNextSlice(skins, i)
-		handle(err)
+		helpers.Handle(err)
 
 		a.addCustomSkins(skinSlice)
 		a.bufferCustomSkins()

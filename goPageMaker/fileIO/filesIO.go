@@ -1,4 +1,4 @@
-package main
+package fileIO
 
 import (
 	"errors"
@@ -11,7 +11,7 @@ import (
 
 // ~~~~~~~~~~~~~~~~ File
 
-type File struct { // TODO UPDATE TO USING THE BUFFER
+type File struct {
 	filename      string
 	suffix        string
 	relPath       string
@@ -48,10 +48,14 @@ func (f *File) GetFileName() string {
 	return (fmt.Sprintf("%s.%s", f.filename, f.suffix))
 }
 
+func (f *File) GetContents() []string {
+	return f.contentBuffer
+}
+
 func (f *File) readFile() []string {
 	if !f.hasBeenRead {
 		data, err := os.ReadFile(f.GetFileName()) // For read access.
-		checkError(err)
+		Handle(err)
 
 		oneLine := strings.ReplaceAll(string(data), "\r", "")
 		f.contentBuffer = strings.Split(oneLine, "\n")
@@ -81,7 +85,7 @@ func (f *File) readLine(lineNum int) (output string, err error) {
 	return
 }
 
-func (f *File) writeFile() {
+func (f *File) WriteFile() {
 	if err := os.WriteFile(f.GetFileName(), []byte(f.bufferToString()), 0666); err != nil {
 		log.Fatal(err)
 	}
@@ -95,12 +99,12 @@ func (f *File) appendLines(arr []string) {
 	}
 }
 
-func (f *File) append(s string) {
-	f.appendLine(s, len(f.contentBuffer), true)
+func (f *File) Append(s string) {
+	f.AppendLine(s, len(f.contentBuffer), true)
 }
 
-func (f *File) appendNewLine() {
-	f.append("")
+func (f *File) AppendNewLine() {
+	f.Append("")
 }
 
 func (f *File) bufferLines(arr []string) {
@@ -132,7 +136,7 @@ func (f *File) bufferToString() string {
 	return s
 }
 
-func (f *File) appendLine(s string, i int, nl bool) {
+func (f *File) AppendLine(s string, i int, nl bool) {
 
 	for i >= len(f.contentBuffer) {
 		f.contentBuffer = append(f.contentBuffer, "")
@@ -145,7 +149,7 @@ func (f *File) appendLine(s string, i int, nl bool) {
 	f.contentBuffer[i] = s
 }
 
-func constructPath(preffix, directory, fileName string) (s string) {
+func ConstructPath(preffix, directory, fileName string) (s string) {
 	if !reflect.DeepEqual(preffix, "") {
 		s += preffix + "/"
 	}
@@ -162,15 +166,15 @@ func NewMarkdownFile(name, path string) *MarkdownFile {
 	return &MarkdownFile{File: *NewFileWithSuffix(name, "md", path)}
 }
 
-func (m *MarkdownFile) appendMarkdownLink(displayText, path string) {
-	m.append(constructMarkDownLink(false, displayText, path))
+func (m *MarkdownFile) AppendMarkdownLink(displayText, path string) {
+	m.Append(ConstructMarkDownLink(false, displayText, path))
 }
 
-func (m *MarkdownFile) appendMarkdownEmbed(path string) {
-	m.append(constructMarkDownLink(true, "", path))
+func (m *MarkdownFile) AppendMarkdownEmbed(path string) {
+	m.Append(ConstructMarkDownLink(true, "", path))
 }
 
-func constructMarkDownLink(embed bool, displayText, path string) (s string) {
+func ConstructMarkDownLink(embed bool, displayText, path string) (s string) {
 	if embed {
 		s += "!"
 	}
@@ -187,8 +191,8 @@ type CSVFile struct {
 }
 
 // returns an array of headings and a 2d array of
-func readCSV(filePreffix string) (csv CSVFile) {
-	file := File{filename: filePreffix, suffix: "csv"}
+func ReadCSV(fileName string) (csv CSVFile) {
+	file := File{filename: fileName, suffix: "csv"}
 	// read fileName into CSVFile
 
 	// file := makeFile(fileName)
@@ -213,7 +217,7 @@ func readCSV(filePreffix string) (csv CSVFile) {
 	return
 }
 
-func (c *CSVFile) getIndexOfColumn(header string) (index int) {
+func (c *CSVFile) GetIndexOfColumn(header string) (index int) {
 	for i, heading := range c.headings {
 		if reflect.DeepEqual(heading, header) {
 			index = i
@@ -223,10 +227,14 @@ func (c *CSVFile) getIndexOfColumn(header string) (index int) {
 	return
 }
 
-func (c *CSVFile) numHeaders() int {
+func (c *CSVFile) NumHeaders() int {
 	return len(c.headings)
 }
 
 func (c *CSVFile) Rows() int {
 	return len(c.contents)
+}
+
+func (c *CSVFile) GetContents() [][]string {
+	return c.contents
 }

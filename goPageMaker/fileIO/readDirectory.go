@@ -1,4 +1,4 @@
-package main
+package fileIO
 
 import (
 	"log"

@@ -19,6 +19,9 @@ func main() {
 
 	print("Running")
 
+	// zips custom_skins folder
+	fileIO.ZipFolder("../custom_skins", "../custom_skins")
+
 	// delete the entirety of the pages' folder's contents if present
 
 	// returns a list of CustomSkins based on whats in the custom_skins folder

@@ -27,7 +27,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/razorflight.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/razorflight_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Squidship**: []()
@@ -45,7 +45,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Executor.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Executor_Force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Jester**: []()

@@ -9,7 +9,7 @@ import (
 func main() {
 	testing := false
 
-	if !testing {
+	if testing {
 		print("Testing")
 
 		test()

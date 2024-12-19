@@ -4,7 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"reflect"
-	"strconv"
 	"testing"
 
 	"github.com/areon546/go-helpers"
@@ -18,26 +17,12 @@ func Printf(s string, a ...any) { helpers.Printf(s, a...) }
 
 func Format(s string, a ...any) string { return helpers.Format(s, a...) }
 
-func AssetsCSVPath() string {
-	return "assets.csv"
+func Search[T any](item T, arr []T) (index int) {
+	return helpers.Search(item, arr)
 }
 
-func search[T any](item T, arr []T) (index int) {
-	index = -1
-	for i, v := range arr {
-		if reflect.DeepEqual(v, item) {
-			index = i
-		}
-	}
-	return index
-}
-
-func convertToInteger(s string) (int, error) {
-	i, err := strconv.Atoi(s)
-	if err != nil {
-		return i, err
-	}
-	return i, err
+func ConvertToInteger(s string) (int, error) {
+	return helpers.ConvertToInteger(s)
 }
 
 func Handle(err error) {

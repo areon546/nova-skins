@@ -8,3 +8,7 @@ func handle(err error) {
 	// helpers.Handle(err)
 	helpers.Handle(err)
 }
+
+func print(a ...any) {
+	helpers.Print(a)
+}

@@ -22,6 +22,8 @@ func ZipFolder(path, output string) *ZipFile {
 	}
 	defer file.Close()
 
+	print(file.Name())
+
 	w := zip.NewWriter(file)
 	defer w.Close()
 

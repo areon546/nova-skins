@@ -20,7 +20,8 @@ func filterFiles(arr []os.DirEntry) (fs []File, folders []os.DirEntry) {
 	return
 }
 
-func readDirectory(dirPath string) (entries []os.DirEntry) {
+// This function
+func ReadDirectory(dirPath string) (entries []os.DirEntry) {
 	// read contents of a directory
 	entries, err := os.ReadDir(dirPath)
 	if err != nil {

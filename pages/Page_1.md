@@ -44,7 +44,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/PINGAS_body.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/PINGAS_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Skogul**: []()
@@ -62,7 +62,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/lance.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/lance_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Thunderax**: []()
@@ -71,7 +71,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/thunderax.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/thunderax.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Dragon**: []()
@@ -80,7 +80,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/dragon.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/dragon_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Spike**: []()

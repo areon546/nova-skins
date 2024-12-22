@@ -91,7 +91,7 @@ func (c *CustomSkin) FormatCredits() string {
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
 func GetCustomSkins() (skins []CustomSkin) {
-	skinsData := fileIO.ReadCSV(skinFolder() + "custom_skins")
+	skinsData := fileIO.ReadCSV(inSkinsFolder("custom_skins"))
 	names := skinsData.GetIndexOfColumn("name")
 	angles := skinsData.GetIndexOfColumn("jet_angle")
 	distances := skinsData.GetIndexOfColumn("jet_distance")
@@ -152,7 +152,7 @@ func assignCredits(s *[]string, cI int, maps []map[string]string, mapTypes []cre
 }
 
 func getDiscordUIDs() map[string]string {
-	discordCreditData := fileIO.ReadCSV("DISCORD_UIDS")
+	discordCreditData := fileIO.ReadCSV(inAssetsFolder("DISCORD_UIDS"))
 	fileContents := discordCreditData.GetContents()
 
 	uidMap := make(map[string]string, discordCreditData.Rows())

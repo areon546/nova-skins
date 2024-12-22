@@ -1,5 +1,10 @@
 
 .vscode/*
+
 goPageMaker/NovaDriftCustomSkins
 goPageMaker/goPageMaker
 goPageMaker/cover.out
+
+
+*.zip
+!custom_skins.zip

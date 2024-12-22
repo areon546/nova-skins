@@ -1,6 +1,9 @@
 package nova
 
-import "github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+import (
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+)
 
 // helper functions
 
@@ -21,6 +24,14 @@ func pagesFolder() string {
 
 }
 
-func skinFolder() string {
-	return "../custom_skins/"
+func inSkinsFolder(file string) string {
+	return fileIO.ConstructPath("..", "custom_skins", file)
+}
+
+func inAssetsFolder(file string) string {
+	return fileIO.ConstructPath("..", "assets", file)
+}
+
+func AssetsCSVPath() string {
+	return inAssetsFolder("assets.csv")
 }

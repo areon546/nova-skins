@@ -27,7 +27,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/SEbody.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/SEforce.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **BAD**: []()
@@ -54,7 +54,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Tracer.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Tracer_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Divine Avenger**: []()
@@ -63,7 +63,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/divineavenger.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/divineavenger_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Pew**: []()
@@ -72,7 +72,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pewsquared.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pewsquared_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Wyvern**: []()
@@ -81,7 +81,7 @@
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/WyvernBody.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/WyvernForce.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/)
+![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Millenium Falcon**: []()

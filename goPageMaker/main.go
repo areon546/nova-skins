@@ -9,7 +9,7 @@ import (
 func main() {
 	testing := false
 
-	if !testing {
+	if testing {
 		print("Testing")
 
 		test()
@@ -18,6 +18,9 @@ func main() {
 	}
 
 	print("Running")
+
+	// zips custom_skins folder
+	fileIO.ZipFolder("../custom_skins", "../custom_skins")
 
 	// delete the entirety of the pages' folder's contents if present
 

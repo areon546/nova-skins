@@ -26,7 +26,7 @@ func main() {
 
 	// returns a list of CustomSkins based on whats in the custom_skins folder
 	print("Compiling Skins")
-	skins := nova.GetCustomSkins()
+	skins := nova.GetCustomSkins(fileIO.ReadDirectory("../custom_skins"))
 
 	// print(skins)
 	_ = nova.ConstructZipFiles(skins) // zipFiles
@@ -36,9 +36,12 @@ func main() {
 }
 
 func test() {
-	fileIO.ZipFolder("../goPageMaker/helpers", "../helpers")
+	fs := fileIO.ReadDirectory("../custom_skins")
+	for _, file := range fs {
+		print(file.Name())
+	}
 }
 
 func print(a ...any) {
-	helpers.Print(a)
+	helpers.Print(a...)
 }

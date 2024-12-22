@@ -5,7 +5,7 @@
 
 **Curvewing**: []()
 
-`Curvewing,curvewing.png,curvewing_force.png,curvewing_drone.png,31,142`
+`Curvewing,curvewing.png,curvewing_force.png,curvewing_drone.png,142,31`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/curvewing.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/curvewing_force.png)
@@ -23,11 +23,10 @@
 
 **Razorflight**: []()
 
-`Razorflight,razorflight.png,razorflight_force.png,,100,50`
+`Razorflight,razorflight.png,razorflight_force.png,,50,100`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/razorflight.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/razorflight_force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Squidship**: []()
@@ -41,11 +40,10 @@
 
 **Executor**: []()
 
-`Executor,Executor.png,Executor_Force.png,,135,1`
+`Executor,Executor.png,Executor_Force.png,,1,135`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Executor.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Executor_Force.png)
-![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins)
 
 
 **Jester**: []()
@@ -59,7 +57,7 @@
 
 **Eater of Worlds**: []()
 
-`Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_of_worlds_drone.png,40,181`
+`Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_of_worlds_drone.png,181,40`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/eater_of_worlds.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/eater_of_worlds_force.png)
@@ -86,7 +84,7 @@
 
 **Poly**: []()
 
-`Poly,poly.png,poly_force.png,poly_drone.png,-45,0`
+`Poly,poly.png,poly_force.png,poly_drone.png,0,-45`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/poly.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/poly_force.png)

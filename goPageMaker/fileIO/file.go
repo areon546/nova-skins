@@ -13,12 +13,15 @@ import (
 // ~~~~~~~~~~~~~~~~ File
 
 type File struct {
-	filename      string
-	suffix        string
-	relPath       string
+	filename string
+	suffix   string
+	relPath  string
+
 	contentBuffer []string
 	lines         int
 	hasBeenRead   bool
+
+	osFile os.File
 }
 
 func NewFileWithSuffix(fn string, suff string, path string) *File {

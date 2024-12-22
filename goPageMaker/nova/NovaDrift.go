@@ -3,6 +3,7 @@ package nova
 import (
 	"errors"
 	"fmt"
+	"io/fs"
 	"reflect"
 	"strconv"
 	"strings"
@@ -18,9 +19,9 @@ type CustomSkin struct {
 	credit   cred.CreditType
 
 	name        string
-	body        string
-	forceArmour string
-	drone       string
+	body        fs.DirEntry
+	forceArmour fs.DirEntry
+	drone       fs.DirEntry
 	angle       string
 	distance    string
 }
@@ -29,18 +30,18 @@ func NewCustomSkin(name, angle, distance string) *CustomSkin {
 	return &CustomSkin{name: name, angle: angle, distance: distance}
 }
 
-func (c *CustomSkin) addBody(b string) *CustomSkin {
-	c.body = b
+func (c *CustomSkin) addBody(f fs.DirEntry) *CustomSkin {
+	c.body = f
 	return c
 }
 
-func (c *CustomSkin) addForceA(s string) *CustomSkin {
+func (c *CustomSkin) addForceA(s fs.DirEntry) *CustomSkin {
 	c.forceArmour = s
 	return c
 }
 
-func (c *CustomSkin) addDrone(s string) *CustomSkin {
-	c.drone = s
+func (c *CustomSkin) addDrone(f fs.DirEntry) *CustomSkin {
+	c.drone = f
 	return c
 }
 
@@ -52,14 +53,50 @@ func (c *CustomSkin) String() string {
 	return c.name
 }
 
-func convertCSVLineToCustomSkin(s string) *CustomSkin {
+func convertCSVLineToCustomSkin(s string, custom_skin_dir []fs.DirEntry, reqLength int) (c *CustomSkin, err error) {
 	ss := strings.Split(s, ",")
-	c := CustomSkin{name: ss[0], body: ss[1], forceArmour: ss[2], drone: ss[3], angle: ss[4], distance: ss[5]}
-	return &c
+
+	if len(ss) == reqLength {
+
+		bodyS, forceArmourS, droneS := ss[1], ss[2], ss[3]
+
+		body, forceArmour, drone := fileIn(bodyS, custom_skin_dir), fileIn(forceArmourS, custom_skin_dir), fileIn(droneS, custom_skin_dir)
+		c = NewCustomSkin(ss[0], ss[4], ss[5]).addBody(body).addForceA(forceArmour).addDrone(drone)
+
+		return
+	}
+	err = errors.New("malformed Row")
+	// helpers.Print(len(ss))
+
+	return
+}
+
+func fileIn(s string, arr []fs.DirEntry) fs.DirEntry {
+
+	for _, v := range arr {
+		if reflect.DeepEqual(s, v.Name()) {
+			return v
+		}
+	}
+
+	return nil
 }
 
 func (c *CustomSkin) toCSVLine() string {
-	return format("%s,%s,%s,%s,%s,%s", c.name, c.body, c.forceArmour, c.drone, c.getAngle(), c.getDistance())
+	body, fA, drone := "", "", ""
+
+	if c.body != nil {
+		body = c.body.Name()
+	}
+
+	if c.forceArmour != nil {
+		fA = c.forceArmour.Name()
+	}
+
+	if c.drone != nil {
+		drone = c.drone.Name()
+	}
+	return format("%s,%s,%s,%s,%s,%s", c.name, body, fA, drone, c.getAngle(), c.getDistance())
 }
 
 func (c *CustomSkin) getAngle() string {
@@ -90,34 +127,26 @@ func (c *CustomSkin) FormatCredits() string {
 }
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
-func GetCustomSkins() (skins []CustomSkin) {
+func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 	skinsData := fileIO.ReadCSV(inSkinsFolder("custom_skins"))
-	names := skinsData.GetIndexOfColumn("name")
-	angles := skinsData.GetIndexOfColumn("jet_angle")
-	distances := skinsData.GetIndexOfColumn("jet_distance")
-	body := skinsData.GetIndexOfColumn("body_artwork")
-	forces := skinsData.GetIndexOfColumn("body_force_armor_artwork")
-	drones := skinsData.GetIndexOfColumn("drone_artwork")
 	credits := skinsData.GetIndexOfColumn("credit")
-	customSkinCSVContents := skinsData.GetContents()
 
 	discordUIDs := getDiscordUIDs()
 	infoMaps := []map[string]string{discordUIDs}
 	mapType := []cred.CreditSource{cred.Discord}
 
-	skins = make([]CustomSkin, 0, skinsData.Rows())
 	reqLength := skinsData.NumHeaders()
+	skins = make([]CustomSkin, 0, skinsData.Rows())
 
-	for _, s := range customSkinCSVContents {
-		if len(s) == reqLength {
+	for row := range skinsData.Rows() {
+		s := skinsData.GetRow(row)
+		skin, err := convertCSVLineToCustomSkin(s, custom_skin_dir, reqLength)
+		if err == nil {
 			// print(i, v, body, forces, drones)
 
-			name := s[names]
-			distance := s[distances]
-			angle := s[angles]
-			skin := NewCustomSkin(name, distance, angle).addBody(s[body]).addForceA(s[forces]).addDrone(s[drones])
+			credit := skinsData.GetCell(row, credits)
+			creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
 
-			credit, creditInfo, creditType := assignCredits(&s, credits, infoMaps, mapType)
 			if !reflect.DeepEqual(creditType, "default") {
 				skin.addCredits(cred.NewCredit(credit, creditInfo, creditType))
 			}
@@ -133,11 +162,9 @@ func GetCustomSkins() (skins []CustomSkin) {
 	return
 }
 
-func assignCredits(s *[]string, cI int, maps []map[string]string, mapTypes []cred.CreditSource) (credit, creditInfo string, creditType cred.CreditSource) {
-	// assign credits
-	credit = (*s)[cI]
-
-	for i, m := range maps {
+func assignCredits(credit string, creditInfoMaps []map[string]string, mapTypes []cred.CreditSource) (creditInfo string, creditType cred.CreditSource) {
+	// assign credit type based on credit info
+	for i, m := range creditInfoMaps {
 		temp, exists := m[credit]
 		if exists {
 			creditInfo = temp
@@ -237,10 +264,17 @@ func (a *AssetsPage) bufferCustomSkins(download bool) {
 		a.Append("`" + skin.toCSVLine() + "`")
 		a.AppendNewLine()
 
-		a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body))
-		a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.forceArmour))
-		a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone))
-		// TODO append links to media  but how do we determine if there are media files?
+		// helpers.Print("Buffering skin: ", skin)
+
+		if skin.body != nil {
+			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body.Name()))
+		}
+		if skin.forceArmour != nil {
+			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.forceArmour.Name()))
+		}
+		if skin.drone != nil {
+			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone.Name()))
+		} // TODO append links to media  but how do we determine if there are media files?
 
 		if download {
 			a.AppendMarkdownLink("Download Me", fileIO.ConstructPath(path, "assets", format("%s.zip", skin.name)))

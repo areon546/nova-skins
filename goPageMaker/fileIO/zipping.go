@@ -2,7 +2,6 @@ package fileIO
 
 import (
 	"archive/zip"
-	"fmt"
 	"io"
 	"os"
 	"path/filepath"
@@ -28,7 +27,7 @@ func ZipFolder(path, output string) *ZipFile {
 	defer w.Close()
 
 	walker := func(path string, info os.FileInfo, err error) error {
-		fmt.Printf("Crawling: %#v\n", path)
+		// fmt.Printf("Crawling: %#v\n", path)
 		if err != nil {
 			return err
 		}

@@ -49,6 +49,14 @@ func (c *CSVFile) GetIndexOfColumn(header string) (index int) {
 	return
 }
 
+func (c *CSVFile) GetRow(i int) string { // TODO make more efficient
+	return strings.Join(c.contents[i], ",")
+}
+
+func (c *CSVFile) GetCell(row, col int) string {
+	return c.contents[row][col]
+}
+
 func (c *CSVFile) NumHeaders() int {
 	return len(c.headings)
 }

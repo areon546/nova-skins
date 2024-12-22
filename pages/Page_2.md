@@ -5,7 +5,7 @@
 
 **Pinch**: []()
 
-`Pinch,pinch.png,pinch_force.png,pinch_drone.png,35,140`
+`Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pinch.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pinch_force.png)
@@ -14,7 +14,7 @@
 
 **Celes**: []()
 
-`Celes,celes.png,celes_force.png,celes_drone.png,25,110`
+`Celes,celes.png,celes_force.png,celes_drone.png,110,25`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/celes.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/celes_force.png)
@@ -23,7 +23,7 @@
 
 **Perseus**: []()
 
-`Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,50,160`
+`Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Perseus.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Perseus_force.png)
@@ -32,7 +32,7 @@
 
 **Lightning**: []()
 
-`Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,30,180`
+`Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Lightning.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Lightning_force.png)
@@ -50,7 +50,7 @@
 
 **Windseeker**: []()
 
-`Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,20,110`
+`Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/windseeker.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/windseeker_force.png)
@@ -59,7 +59,7 @@
 
 **Onslaught**: []()
 
-`Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,45,140`
+`Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Onslaught.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Onslaught_force.png)
@@ -68,7 +68,7 @@
 
 **Artillery**: []()
 
-`Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,40,150`
+`Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Artillery.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Artillery_force.png)
@@ -77,7 +77,7 @@
 
 **Deconstructor**: []()
 
-`Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,42,155`
+`Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor_force.png)
@@ -86,7 +86,7 @@
 
 **Engineer**: []()
 
-`Engineer,engineer.png,engineer_frame.png,engineer_drone.png,35,60`
+`Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35`
 
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer.png)
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/engineer_frame.png)

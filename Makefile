@@ -7,8 +7,7 @@ test:
 	cd goPageMaker && go test -cover
 
 coverage:
-	cd goPageMaker && go test -cover && go tool cover -html=cover.out
-
+	cd goPageMaker && go test -coverprofile cover.out && go tool cover -html=cover.out
 
 hello:
 	echo "Hello, World"

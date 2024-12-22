@@ -3,7 +3,7 @@
 [Page_2](./Page_2.md)
 [Page_3](./Page_3.md)
 
-**Pinch**: []()
+**Pinch**: [@hadiros](https://discord.com/users/266028842395631629)
 
 `Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
 
@@ -12,7 +12,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/pinch_drone.png)
 
 
-**Celes**: []()
+**Celes**: [@cinnamimitime](https://discord.com/users/161502244284530688)
 
 `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
 
@@ -21,7 +21,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/celes_drone.png)
 
 
-**Perseus**: []()
+**Perseus**: 
 
 `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
 
@@ -30,7 +30,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Perseus_drone.png)
 
 
-**Lightning**: []()
+**Lightning**: 
 
 `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30`
 
@@ -39,7 +39,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Lightning_drone.png)
 
 
-**Warden**: []()
+**Warden**: 
 
 `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
 
@@ -48,7 +48,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Warden_drone.png)
 
 
-**Windseeker**: []()
+**Windseeker**: [@anthraax](https://discord.com/users/211671269882462218)
 
 `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20`
 
@@ -57,7 +57,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/windseeker_drone.png)
 
 
-**Onslaught**: []()
+**Onslaught**: 
 
 `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45`
 
@@ -66,7 +66,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Onslaught_drone.png)
 
 
-**Artillery**: []()
+**Artillery**: 
 
 `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40`
 
@@ -75,7 +75,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Artillery_drone.png)
 
 
-**Deconstructor**: []()
+**Deconstructor**: 
 
 `Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42`
 
@@ -84,7 +84,7 @@
 ![](https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main/custom_skins/Deconstructor_drone.png)
 
 
-**Engineer**: []()
+**Engineer**: [@_capstone](https://discord.com/users/551431332253794304)
 
 `Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35`
 

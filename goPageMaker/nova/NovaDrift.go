@@ -147,7 +147,7 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 			credit := skinsData.GetCell(row, credits)
 			creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
 
-			if !reflect.DeepEqual(creditType, "default") {
+			if creditType != cred.Default {
 				skin.addCredits(cred.NewCredit(credit, creditInfo, creditType))
 			}
 
@@ -174,7 +174,6 @@ func assignCredits(credit string, creditInfoMaps []map[string]string, mapTypes [
 	}
 
 	creditType = cred.Default
-
 	return
 }
 

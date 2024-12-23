@@ -22,6 +22,8 @@ type CustomSkin struct {
 	drone       fs.DirEntry
 	angle       string
 	distance    string
+
+	zip fileIO.ZipFile
 }
 
 func NewCustomSkin(name, angle, distance string) *CustomSkin {
@@ -45,6 +47,16 @@ func (c *CustomSkin) addDrone(f fs.DirEntry) *CustomSkin {
 
 func (cs *CustomSkin) addCredits(c cred.CreditType) {
 	cs.credit = c
+}
+
+func (cs *CustomSkin) addMedia(f fileIO.File) {
+	cs.pictures = append(cs.pictures, f)
+}
+
+// TODO This should use the fs.DirEntires to generate a zip file for the individual skin
+func (cs *CustomSkin) generateZipFile() {
+
+	return
 }
 
 func (c *CustomSkin) String() string {
@@ -148,6 +160,8 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 			if creditType != cred.Default {
 				skin.addCredits(cred.NewCredit(credit, creditInfo, creditType))
 			}
+
+			// construct zip file for skin
 
 			skins = append(skins, *skin)
 

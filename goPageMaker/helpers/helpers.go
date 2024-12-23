@@ -28,6 +28,7 @@ func ConvertToInteger(s string) (int, error) {
 func Handle(err error) {
 	helpers.Handle(err)
 }
+
 func AssertEquals(t testing.TB, expected, result fmt.Stringer) {
 	t.Helper()
 	if reflect.DeepEqual(expected, result) {

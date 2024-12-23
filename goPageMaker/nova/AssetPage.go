@@ -65,9 +65,9 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 	return nil
 }
 
-func (a *AssetsPage) bufferCustomSkins(download bool) {
+func (a *AssetsPage) bufferCustomSkins() {
 	// this writes to the custom skins stuff and adds the data, in markdown
-	path := "https://github.com/areon546/NovaDriftCustomSkinRepository/raw/main"
+	path := "https://github.com/areon546/NovaDriftSkins/raw/main"
 
 	for _, skin := range a.skins {
 		a.AppendNewLine()
@@ -90,19 +90,16 @@ func (a *AssetsPage) bufferCustomSkins(download bool) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone.Name()))
 		} // TODO append links to media  but how do we determine if there are media files?
 
-		if download {
-			a.AppendMarkdownLink("Download Me", fileIO.ConstructPath(path, "assets", format("%s.zip", skin.name)))
-		}
+		// a.AppendMarkdownLink("Download Me", fileIO.ConstructPath(path, "assets", skin.zip.GetName()))
 
 		a.AppendNewLine()
 	}
 }
 
 func (a *AssetsPage) writeBuffer() {
-	a.WriteFile()
-
-	// print(a.contentBuffer)
 	helpers.Print("Writing to: ", a)
+	// print(a.contentBuffer)
+	a.WriteFile()
 }
 
 func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
@@ -134,12 +131,12 @@ func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 		helpers.Handle(err)
 
 		a.addCustomSkins(skinSlice)
-		a.bufferCustomSkins(false)
+		a.bufferCustomSkins()
 		a.bufferPageSuffix()
 
 		pages = append(pages, *a)
-		// print(a)
 
+		helpers.Print("a")
 		a.writeBuffer()
 	}
 

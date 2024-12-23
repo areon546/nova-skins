@@ -90,7 +90,7 @@ func (f *File) readLine(lineNum int) (output string, err error) {
 }
 
 func (f *File) WriteFile() {
-	if err := os.WriteFile(f.GetFileName(), []byte(f.bufferToString()), 0666); err != nil {
+	if err := os.WriteFile(f.GetFileName(), []byte(f.bufferToString()), 0664); err != nil {
 		log.Fatal(err)
 	}
 }

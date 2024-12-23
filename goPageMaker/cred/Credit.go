@@ -1,8 +1,8 @@
 package cred
 
 const (
-	Default CreditSource = 0
-	Discord CreditSource = 1
+	Default CreditSource = iota
+	Discord
 )
 
 type CreditType interface {

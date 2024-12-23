@@ -8,6 +8,7 @@ import (
 
 func main() {
 	testing := false
+	// testing = !testing
 
 	if testing {
 		print("Testing")
@@ -23,23 +24,18 @@ func main() {
 	fileIO.ZipFolder("../custom_skins", "../custom_skins")
 
 	// delete the entirety of the pages' folder's contents if present
+	fileIO.RemoveAllWithinDirectory(nova.Pages)
 
 	// returns a list of CustomSkins based on whats in the custom_skins folder
 	print("Compiling Skins")
 	skins := nova.GetCustomSkins(fileIO.ReadDirectory("../custom_skins"))
 
-	// print(skins)
-	_ = nova.ConstructZipFiles(skins) // zipFiles
-
-	nova.ConstructAssetPages(skins)
+	nova.ConstructAssetPages(skins[:1])
 
 }
 
 func test() {
-	fs := fileIO.ReadDirectory("../custom_skins")
-	for _, file := range fs {
-		print(file.Name())
-	}
+	fileIO.RemoveAllWithinDirectory(nova.Pages)
 }
 
 func print(a ...any) {

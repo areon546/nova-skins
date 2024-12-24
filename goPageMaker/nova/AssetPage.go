@@ -67,8 +67,7 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 
 func (a *AssetsPage) bufferCustomSkins() {
 	// this writes to the custom skins stuff and adds the data, in markdown
-	path := "https://github.com/areon546/NovaDriftSkins/raw/main"
-	path = ".."
+	path := ".."
 
 	for _, skin := range a.skins {
 		a.AppendNewLine()

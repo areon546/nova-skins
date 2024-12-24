@@ -33,7 +33,7 @@ func main() {
 	skins := nova.GetCustomSkins(custom_skin_dir)
 
 	print("Making Files")
-	nova.ConstructAssetPages(skins[:1])
+	nova.ConstructAssetPages(skins[:])
 
 }
 

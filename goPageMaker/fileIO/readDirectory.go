@@ -1,6 +1,7 @@
 package fileIO
 
 import (
+	"io/fs"
 	"log"
 	"os"
 )
@@ -21,7 +22,7 @@ func filterFiles(arr []os.DirEntry) (fs []File, folders []os.DirEntry) {
 }
 
 // This function
-func ReadDirectory(dirPath string) (entries []os.DirEntry) {
+func ReadDirectory(dirPath string) (entries []fs.DirEntry) {
 	// read contents of a directory
 	entries, err := os.ReadDir(dirPath)
 	if err != nil {

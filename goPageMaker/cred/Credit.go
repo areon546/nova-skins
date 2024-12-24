@@ -1,12 +1,8 @@
 package cred
 
-import (
-	"reflect"
-)
-
 const (
-	Default CreditSource = 0
-	Discord CreditSource = 1
+	Default CreditSource = iota
+	Discord
 )
 
 type CreditType interface {
@@ -24,10 +20,10 @@ type Credit struct {
 }
 
 func (c Credit) ConstructName() string { return "" }
-func (c Credit) ConstructLink() string { return "" }
+func (c Credit) ConstructLink() string { return "default" }
 
 func NewCredit(name, other string, cType CreditSource) CreditType {
-	if reflect.DeepEqual(cType, "discord") {
+	if cType == Discord {
 		return DiscordCredit{Credit: Credit{name: name, otherInfo: other}}
 	}
 	return &Credit{name: name, otherInfo: other}

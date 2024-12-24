@@ -18,7 +18,7 @@ func ReadCSV(fileName string) (csv CSVFile) {
 	// read fileName into CSVFile
 
 	// file := makeFile(fileName)
-	fileContents := file.readFile()
+	fileContents := file.ReadFile()
 
 	// go through each line in CSV and
 	for i, csvCell := range fileContents {
@@ -47,6 +47,14 @@ func (c *CSVFile) GetIndexOfColumn(header string) (index int) {
 	}
 
 	return
+}
+
+func (c *CSVFile) GetRow(i int) string { // TODO make more efficient
+	return strings.Join(c.contents[i], ",")
+}
+
+func (c *CSVFile) GetCell(row, col int) string {
+	return c.contents[row][col]
 }
 
 func (c *CSVFile) NumHeaders() int {

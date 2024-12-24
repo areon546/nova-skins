@@ -13,9 +13,10 @@ import (
 // ~~~~~~~~~~~~~~~~ File
 
 type File struct {
-	filename      string
-	suffix        string
-	relPath       string
+	filename string
+	suffix   string
+	relPath  string
+
 	contentBuffer []string
 	lines         int
 	hasBeenRead   bool
@@ -28,6 +29,15 @@ func NewFileWithSuffix(fn string, suff string, path string) *File {
 func NewFile(fn string) *File {
 	fn, suff := splitFileName(fn)
 	return &File{filename: fn, suffix: suff, hasBeenRead: false}
+}
+
+func OpenFile(d os.DirEntry) File {
+
+	return *NewFile(d.Name())
+}
+
+func EmptyFile() *File {
+	return &File{}
 }
 
 func splitFileName(filename string) (name, suffix string) {
@@ -45,17 +55,17 @@ func splitFileName(filename string) (name, suffix string) {
 	return
 }
 
-func (f *File) GetFileName() string {
+func (f *File) Name() string {
 	return helpers.Format("%s.%s", f.filename, f.suffix)
 }
 
-func (f *File) GetContents() []string {
+func (f *File) Contents() []string {
 	return f.contentBuffer
 }
 
-func (f *File) readFile() []string {
+func (f *File) ReadFile() []string {
 	if !f.hasBeenRead {
-		data, err := os.ReadFile(f.GetFileName()) // For read access.
+		data, err := os.ReadFile(f.Name()) // For read access.
 		handle(err)
 
 		oneLine := strings.ReplaceAll(string(data), "\r", "")
@@ -65,15 +75,15 @@ func (f *File) readFile() []string {
 	return f.contentBuffer
 }
 
-func (f *File) isEmpty() bool {
+func (f *File) IsEmpty() bool {
 	return len(f.contentBuffer) == 0
 }
 
-func (f *File) readLine(lineNum int) (output string, err error) {
+func (f *File) ReadLine(lineNum int) (output string, err error) {
 	lineNum -= 1 // converted to index notation
 
-	if f.isEmpty() {
-		f.readFile()
+	if f.IsEmpty() {
+		f.ReadFile()
 	}
 
 	if lineNum > f.lines {
@@ -87,12 +97,12 @@ func (f *File) readLine(lineNum int) (output string, err error) {
 }
 
 func (f *File) WriteFile() {
-	if err := os.WriteFile(f.GetFileName(), []byte(f.bufferToString()), 0666); err != nil {
+	if err := os.WriteFile(f.Name(), []byte(f.bufferToString()), 0664); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func (f *File) appendLines(arr []string) {
+func (f *File) AppendLines(arr []string) {
 
 	// f.contentBuffer = append(f.contentBuffer, arr...)
 	for _, v := range arr {
@@ -110,7 +120,7 @@ func (f *File) AppendNewLine() {
 
 func (f *File) bufferLines(arr []string) {
 
-	if f.isEmpty() {
+	if f.IsEmpty() {
 		f.contentBuffer = make([]string, len(arr))
 	}
 
@@ -118,14 +128,14 @@ func (f *File) bufferLines(arr []string) {
 
 }
 
-func (f *File) clearFile() {
-	if err := os.WriteFile(f.GetFileName(), make([]byte, 0), 0666); err != nil {
+func (f *File) ClearFile() {
+	if err := os.WriteFile(f.Name(), make([]byte, 0), 0666); err != nil {
 		log.Fatal(err)
 	}
 }
 
 func (f *File) String() string {
-	return f.GetFileName()
+	return f.Name()
 }
 
 func (f *File) bufferToString() string {
@@ -161,4 +171,8 @@ func ConstructPath(preffix, directory, fileName string) (s string) {
 		s += "/" + fileName
 	}
 	return s
+}
+
+func FilesEqual(a, b File) bool {
+	return reflect.DeepEqual(a, b)
 }

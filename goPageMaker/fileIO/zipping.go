@@ -12,6 +12,10 @@ import (
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 )
 
+func EmptyZip() *ZipFile {
+	return &ZipFile{}
+}
+
 // ~~~~~~~~~~~~~~~~~~~~ ZipFile
 type ZipFile struct {
 	writer zip.Writer

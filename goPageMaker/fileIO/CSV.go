@@ -18,7 +18,7 @@ func ReadCSV(fileName string) (csv CSVFile) {
 	// read fileName into CSVFile
 
 	// file := makeFile(fileName)
-	fileContents := file.readFile()
+	fileContents := file.ReadFile()
 
 	// go through each line in CSV and
 	for i, csvCell := range fileContents {

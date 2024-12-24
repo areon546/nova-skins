@@ -23,7 +23,7 @@ func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
 }
 
 func (a *AssetsPage) String() string {
-	return a.GetFileName()
+	return a.Name()
 }
 
 func (a *AssetsPage) bufferPagePreffix() error {
@@ -68,6 +68,7 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 func (a *AssetsPage) bufferCustomSkins() {
 	// this writes to the custom skins stuff and adds the data, in markdown
 	path := "https://github.com/areon546/NovaDriftSkins/raw/main"
+	// path = "."
 
 	for _, skin := range a.skins {
 		a.AppendNewLine()
@@ -80,13 +81,13 @@ func (a *AssetsPage) bufferCustomSkins() {
 
 		// helpers.Print("Buffering skin: ", skin)
 
-		if skin.body != nil {
+		if !fileIO.FilesEqual(skin.body, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body.Name()))
 		}
-		if skin.forceArmour != nil {
+		if !fileIO.FilesEqual(skin.forceArmour, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.forceArmour.Name()))
 		}
-		if skin.drone != nil {
+		if !fileIO.FilesEqual(skin.drone, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone.Name()))
 		} // TODO append links to media  but how do we determine if there are media files?
 

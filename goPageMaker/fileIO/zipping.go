@@ -2,7 +2,6 @@ package fileIO
 
 import (
 	"archive/zip"
-	"bytes"
 	"errors"
 	"io"
 	"os"
@@ -16,56 +15,77 @@ func EmptyZip() *ZipFile {
 	return &ZipFile{}
 }
 
+// Steps to Zip a File
+// 1. Create the .zip file you want to write to
+// 2. Create the writer to the .zip file
+// 3. In the zip writer, make a virtual file
+// 4. In the virtual file, add the contents to the related physical file
+// 4b. Close the virtual file writer
+// 5. Repeat steps 3 and 4 for each file you want to zip
+// 6. Close
+
 // ~~~~~~~~~~~~~~~~~~~~ ZipFile
 type ZipFile struct {
 	writer zip.Writer
 	name   string
+	file   *os.File
 }
 
 func NewZipFile(name string) *ZipFile {
-	return &ZipFile{writer: *zip.NewWriter(new(bytes.Buffer)), name: name}
+	name = constructZipName(name)
+
+	print(name)
+	f, _ := os.Create("../assets/adda.txt")
+	f.Close()
+	file, err := os.Create(name)
+	handle(err)
+
+	return &ZipFile{writer: *zip.NewWriter(file), name: name, file: file}
+	// return &ZipFile{}
 }
 
-func (z *ZipFile) GetName() string {
-	if helpers.Search("zip", strings.Split(z.name, ".")) > -1 {
-		return z.name
+func constructZipName(name string) string {
+	if helpers.Search("zip", strings.Split(name, ".")) > -1 {
+		return name
 	}
-	return helpers.Format("%s.zip", z.name)
+	return helpers.Format("%s.zip", name)
 }
 
-func (z *ZipFile) AddZipFile(filename string, contents []byte) {
+func (z *ZipFile) GetName() string { return z.name }
+
+func (z *ZipFile) AddZipFile(filename string, contents io.Reader) {
 	fileWriter, err := z.writer.Create(filename)
-
 	handle(err)
 
-	_, err = fileWriter.Write(contents)
-
+	_, err = io.Copy(fileWriter, contents)
 	handle(err)
-
 }
 
 func (z *ZipFile) WriteToZipFile() {
-	file, err := os.Create(z.GetName())
-	handle(err)
-
-	defer file.Close()
+	z.writer.Close()
+	z.file.Close()
 }
 
 func (z *ZipFile) Close() {
-	z.writer.Close()
+	z.file.Close()
 }
 
 func ZipFolder(path, output string) {
-	file, err := os.Create(helpers.Format("%s.zip", output))
+	// TODO tomorrow, we read this, make notes of how it works
+	// TODO then we fix zip file
+
+	// here we create the zip zipFile
+	zipFile, err := os.Create(helpers.Format("%s.zip", output))
 	if err != nil {
 		panic(err)
 	}
-	defer file.Close()
+	defer zipFile.Close()
 
 	// helpers.Print(file.Name())
 
-	w := zip.NewWriter(file)
-	defer w.Close()
+	// here we create the zip writer
+	zipWriter := zip.NewWriter(zipFile)
+	defer zipWriter.Close()
 
 	// action performed at each file
 	walker := func(path string, info os.FileInfo, err error) error {
@@ -76,11 +96,13 @@ func ZipFolder(path, output string) {
 		if info.IsDir() {
 			return nil
 		}
-		file, err := os.Open(path)
+
+		// here we open the fileToZip that we want to zip
+		fileToZip, err := os.Open(path)
 		if err != nil {
 			return err
 		}
-		defer file.Close()
+		defer fileToZip.Close()
 
 		// Ensure that `path` is not absolute; it should not start with "/".
 		// This snippet happens to work because I don't use
@@ -91,13 +113,16 @@ func ZipFolder(path, output string) {
 			return err
 		}
 
-		f, err := w.Create(path)
+		// HERE is the actual file processing, above is error checking
+
+		// here, in the zip Writer, we create the virtual file fileBeingZipped
+		fileBeingZipped, err := zipWriter.Create(path)
 		if err != nil {
 			return err
 		}
 
-		// copy file contents from file to f, the virtual zip file
-		_, err = io.Copy(f, file)
+		// here we copy the contents in the physical file to the virtual file being zipped
+		_, err = io.Copy(fileBeingZipped, fileToZip)
 		if err != nil {
 			return err
 		}

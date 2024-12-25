@@ -10,6 +10,7 @@
 ![](../custom_skins/pinch.png)
 ![](../custom_skins/pinch_force.png)
 ![](../custom_skins/pinch_drone.png)
+[Download Me](../assets/zips/Pinch.zip)
 
 
 **Celes**: [@cinnamimitime](https://discord.com/users/161502244284530688)
@@ -19,6 +20,7 @@
 ![](../custom_skins/celes.png)
 ![](../custom_skins/celes_force.png)
 ![](../custom_skins/celes_drone.png)
+[Download Me](../assets/zips/Celes.zip)
 
 
 **Perseus**: 
@@ -28,6 +30,7 @@
 ![](../custom_skins/Perseus.png)
 ![](../custom_skins/Perseus_force.png)
 ![](../custom_skins/Perseus_drone.png)
+[Download Me](../assets/zips/Perseus.zip)
 
 
 **Lightning**: 
@@ -37,6 +40,7 @@
 ![](../custom_skins/Lightning.png)
 ![](../custom_skins/Lightning_force.png)
 ![](../custom_skins/Lightning_drone.png)
+[Download Me](../assets/zips/Lightning.zip)
 
 
 **Warden**: 
@@ -46,6 +50,7 @@
 ![](../custom_skins/Warden.png)
 ![](../custom_skins/Warden_force.png)
 ![](../custom_skins/Warden_drone.png)
+[Download Me](../assets/zips/Warden.zip)
 
 
 **Windseeker**: [@anthraax](https://discord.com/users/211671269882462218)
@@ -55,6 +60,7 @@
 ![](../custom_skins/windseeker.png)
 ![](../custom_skins/windseeker_force.png)
 ![](../custom_skins/windseeker_drone.png)
+[Download Me](../assets/zips/Windseeker.zip)
 
 
 **Onslaught**: 
@@ -64,6 +70,7 @@
 ![](../custom_skins/Onslaught.png)
 ![](../custom_skins/Onslaught_force.png)
 ![](../custom_skins/Onslaught_drone.png)
+[Download Me](../assets/zips/Onslaught.zip)
 
 
 **Artillery**: 
@@ -73,6 +80,7 @@
 ![](../custom_skins/Artillery.png)
 ![](../custom_skins/Artillery_force.png)
 ![](../custom_skins/Artillery_drone.png)
+[Download Me](../assets/zips/Artillery.zip)
 
 
 **Deconstructor**: 
@@ -82,6 +90,7 @@
 ![](../custom_skins/Deconstructor.png)
 ![](../custom_skins/Deconstructor_force.png)
 ![](../custom_skins/Deconstructor_drone.png)
+[Download Me](../assets/zips/Deconstructor.zip)
 
 
 **Engineer**: [@_capstone](https://discord.com/users/551431332253794304)
@@ -91,6 +100,7 @@
 ![](../custom_skins/engineer.png)
 ![](../custom_skins/engineer_frame.png)
 ![](../custom_skins/engineer_drone.png)
+[Download Me](../assets/zips/Engineer.zip)
 
 [Page_1](./Page_1.md)
 [Page_2](./Page_2.md)

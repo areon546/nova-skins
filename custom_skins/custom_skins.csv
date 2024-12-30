@@ -67,7 +67,6 @@ Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25
 Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,30
 ChitinCondition,condition.png,condition_force.png,condition_drone.png,120,50
 
-guhhh,guhhh5.png,guhhhforce.png,,70,35
 Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30
 Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,115,40
 Moth,moth.png,moth_force.png,moth_drone.png,165,33
@@ -90,9 +89,7 @@ ND Monday,bhm.png,bhm_force.png,bhm_drone.png,122,60
 apollo,apollo (1).png,apollo (1).png,120,0
 Little Nullcreator,nullcreator_1.png,nullcreator_3.png,nullcreator_2.png,120,70
 Fluss,Fluss.png,FlussShield.png,FlussDrone.png,135,75
-UMFxND,UMFxND.png,UMFxND_force.png,UMFxND_drone.png,135,32
 Kagami,kagami.png,kagami_force.png,kagami_drone.png,120,40
-Crucible,crucible_body.png,crucible_force.png,crucible_drone.png,0,0
 Carcible,carcible.png,null.png,carcible_drone.png,0,0
 Antlion,AntlionBody.png,AntlionForce.png,AntlionDrone.png,150,40
 PITRO,pitro.png,pitro_force.png,pitro_drone.png,100,60

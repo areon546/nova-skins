@@ -8,7 +8,7 @@ goPageMaker/cover.out
 
 *.zip
 !custom_skins.zip
-
+!assets/zips/*.zip
 
 
 

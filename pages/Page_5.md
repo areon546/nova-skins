@@ -5,8 +5,8 @@
 
 **Gyaraga**: [@evelo](https://discord.com/users/110564152539377664)
 
-| Body:| GalagaShip.png| 
 | -- | --- | 
+| Body:| GalagaShip.png| 
 | ForceArmour:| GalagaShipShield.png| 
 | Drone:| | 
 | Angle:| 90| 
@@ -20,8 +20,8 @@
 
 **Freefall**: [@akaevertone](https://discord.com/users/235458820845862912)
 
-| Body:| freefall.png| 
 | -- | --- | 
+| Body:| freefall.png| 
 | ForceArmour:| freefall_force.png| 
 | Drone:| freefall_drone.png| 
 | Angle:| 152| 
@@ -36,8 +36,8 @@
 
 **Minotaur**: [@twinstick](https://discord.com/users/538017698861547521)
 
-| Body:| minotaur.png| 
 | -- | --- | 
+| Body:| minotaur.png| 
 | ForceArmour:| minotaur_force.png| 
 | Drone:| | 
 | Angle:| 145| 

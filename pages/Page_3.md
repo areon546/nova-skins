@@ -5,8 +5,8 @@
 
 **Balm**: [@cinnamimitime](https://discord.com/users/161502244284530688)
 
-| Body:| balm.png| 
 | -- | --- | 
+| Body:| balm.png| 
 | ForceArmour:| balm_force.png| 
 | Drone:| balm_drone.png| 
 | Angle:| 160| 
@@ -21,8 +21,8 @@
 
 **Scimitar**: [@fauix](https://discord.com/users/120018768477945856)
 
-| Body:| scimitar.png| 
 | -- | --- | 
+| Body:| scimitar.png| 
 | ForceArmour:| scimitar_force.png| 
 | Drone:| scimitar_drone.png| 
 | Angle:| 140| 
@@ -37,8 +37,8 @@
 
 **SE**: [@tempest153](https://discord.com/users/872292077852061736)
 
-| Body:| SEbody.png| 
 | -- | --- | 
+| Body:| SEbody.png| 
 | ForceArmour:| SEforce.png| 
 | Drone:| | 
 | Angle:| 0| 
@@ -52,8 +52,8 @@
 
 **BAD**: 
 
-| Body:| | 
 | -- | --- | 
+| Body:| | 
 | ForceArmour:| BAD_force.png| 
 | Drone:| BAD_drone.png| 
 | Angle:| 140| 
@@ -67,8 +67,8 @@
 
 **Lanius Cruiser**: 
 
-| Body:| LC.png| 
 | -- | --- | 
+| Body:| LC.png| 
 | ForceArmour:| LC_force.png| 
 | Drone:| LC_drone.png| 
 | Angle:| 145| 
@@ -83,8 +83,8 @@
 
 **Tracer**: [@redcapricorn](https://discord.com/users/889494386721841173)
 
-| Body:| Tracer.png| 
 | -- | --- | 
+| Body:| Tracer.png| 
 | ForceArmour:| Tracer_force.png| 
 | Drone:| | 
 | Angle:| 0| 
@@ -98,8 +98,8 @@
 
 **Divine Avenger**: [@countblaugh](https://discord.com/users/208701691279704066)
 
-| Body:| divineavenger.png| 
 | -- | --- | 
+| Body:| divineavenger.png| 
 | ForceArmour:| divineavenger_force.png| 
 | Drone:| | 
 | Angle:| 180| 
@@ -113,8 +113,8 @@
 
 **Pew**: [@miss_mediocre](https://discord.com/users/251735592734425088)
 
-| Body:| pewsquared.png| 
 | -- | --- | 
+| Body:| pewsquared.png| 
 | ForceArmour:| pewsquared_force.png| 
 | Drone:| | 
 | Angle:| 155| 
@@ -128,8 +128,8 @@
 
 **Wyvern**: [@tempest153](https://discord.com/users/872292077852061736)
 
-| Body:| WyvernBody.png| 
 | -- | --- | 
+| Body:| WyvernBody.png| 
 | ForceArmour:| WyvernForce.png| 
 | Drone:| | 
 | Angle:| 115| 
@@ -143,8 +143,8 @@
 
 **Millenium Falcon**: [@_ltw](https://discord.com/users/268931190667476998)
 
-| Body:| millenium_falcon.png| 
 | -- | --- | 
+| Body:| millenium_falcon.png| 
 | ForceArmour:| millenium_falcon_force.png| 
 | Drone:| millenium_falcon_drone.png| 
 | Angle:| 180| 

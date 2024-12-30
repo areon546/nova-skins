@@ -35,8 +35,6 @@ func NewZipFile(name string) *ZipFile {
 	name = constructZipName(name)
 
 	print(name)
-	f, _ := os.Create("../assets/adda.txt")
-	f.Close()
 	file, err := os.Create(name)
 	handle(err)
 

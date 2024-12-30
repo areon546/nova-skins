@@ -4,8 +4,8 @@
 
 **Saris**: 
 
-| Body:| saris.png| 
 | -- | --- | 
+| Body:| saris.png| 
 | ForceArmour:| saris_force.png| 
 | Drone:| saris_drone.png| 
 | Angle:| 115| 
@@ -20,8 +20,8 @@
 
 **Orbiter**: 
 
-| Body:| orbiter.png| 
 | -- | --- | 
+| Body:| orbiter.png| 
 | ForceArmour:| orbiter_force.png| 
 | Drone:| orbiter_drone.png| 
 | Angle:| 120| 
@@ -36,8 +36,8 @@
 
 **Ultra C**: 
 
-| Body:| ultra_c.png| 
 | -- | --- | 
+| Body:| ultra_c.png| 
 | ForceArmour:| ultra_c_force.png| 
 | Drone:| ultra_c_drone.png| 
 | Angle:| 115| 
@@ -52,8 +52,8 @@
 
 **Lobstar**: [@_capstone](https://discord.com/users/551431332253794304)
 
-| Body:| lobstar.png| 
 | -- | --- | 
+| Body:| lobstar.png| 
 | ForceArmour:| lobstar_frame.png| 
 | Drone:| lobstar_drone.png| 
 | Angle:| 180| 
@@ -68,8 +68,8 @@
 
 **PINGAS**: [@waypastfuture](https://discord.com/users/128605704813543424)
 
-| Body:| PINGAS_body.png| 
 | -- | --- | 
+| Body:| PINGAS_body.png| 
 | ForceArmour:| PINGAS_force.png| 
 | Drone:| | 
 | Angle:| 180| 
@@ -83,8 +83,8 @@
 
 **Skogul**: [@dragonstrive](https://discord.com/users/273142382181220353)
 
-| Body:| skogul.png| 
 | -- | --- | 
+| Body:| skogul.png| 
 | ForceArmour:| skogul_force.png| 
 | Drone:| skogul_drone.png| 
 | Angle:| 115| 
@@ -99,8 +99,8 @@
 
 **Lance**: [@roborogue](https://discord.com/users/690525302312534058)
 
-| Body:| lance.png| 
 | -- | --- | 
+| Body:| lance.png| 
 | ForceArmour:| lance_force.png| 
 | Drone:| | 
 | Angle:| 40| 
@@ -114,8 +114,8 @@
 
 **Thunderax**: [@roborogue](https://discord.com/users/690525302312534058)
 
-| Body:| thunderax.png| 
 | -- | --- | 
+| Body:| thunderax.png| 
 | ForceArmour:| thunderax.png| 
 | Drone:| | 
 | Angle:| | 
@@ -129,8 +129,8 @@
 
 **Dragon**: [@roborogue](https://discord.com/users/690525302312534058)
 
-| Body:| dragon.png| 
 | -- | --- | 
+| Body:| dragon.png| 
 | ForceArmour:| dragon_force.png| 
 | Drone:| | 
 | Angle:| | 
@@ -144,8 +144,8 @@
 
 **Spike**: [@hadiros](https://discord.com/users/266028842395631629)
 
-| Body:| spike.png| 
 | -- | --- | 
+| Body:| spike.png| 
 | ForceArmour:| spike_force.png| 
 | Drone:| spike_drone.png| 
 | Angle:| 125| 

@@ -174,7 +174,7 @@ func (cs *CustomSkin) ToCSVLine() string {
 func (cs *CustomSkin) ToTable() string {
 	body, fA, drone := cs.getBody_FA_Drone()
 
-	return format("| Body:| %s| \n| -- | --- | \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
+	return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 }
 
 func (c *CustomSkin) getAngle() string {

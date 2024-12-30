@@ -1,6 +1,10 @@
 package main
 
 import (
+	"archive/zip"
+	"io"
+	"os"
+
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
@@ -32,7 +36,18 @@ func main() {
 }
 
 func test() {
-	fileIO.ZipFolder("../custom_skins", "../../../assets")
+	skin := nova.Skins[0]
+	filename := "File.png"
+	file, err := os.Create("zipFile.zip")
+	helpers.Handle(err)
+
+	zipWriter := *zip.NewWriter(file)
+
+	virtualFile, err := zipWriter.Create(filename)
+	helpers.Handle(err)
+
+	_, err = io.Copy(virtualFile, skin.Body)
+	helpers.Handle(err)
 }
 
 func print(a ...any) {

@@ -16,6 +16,7 @@
 
 ![](../custom_skins/GalagaShip.png)
 ![](../custom_skins/GalagaShipShield.png)
+[Download Me](../assets/zips/Gyaraga.zip)
 
 
 **Freefall**: [@akaevertone](https://discord.com/users/235458820845862912)
@@ -32,6 +33,7 @@
 ![](../custom_skins/freefall.png)
 ![](../custom_skins/freefall_force.png)
 ![](../custom_skins/freefall_drone.png)
+[Download Me](../assets/zips/Freefall.zip)
 
 
 **Minotaur**: [@twinstick](https://discord.com/users/538017698861547521)
@@ -47,6 +49,7 @@
 
 ![](../custom_skins/minotaur.png)
 ![](../custom_skins/minotaur_force.png)
+[Download Me](../assets/zips/Minotaur.zip)
 
 
 **Crucible**: [@paninja](https://discord.com/users/)
@@ -60,6 +63,7 @@
 
 `Crucible,,,,0,0`
 
+[Download Me](../assets/zips/Crucible.zip)
 
 [Page_4](./Page_4.md)
 [Page_5](./Page_5.md)

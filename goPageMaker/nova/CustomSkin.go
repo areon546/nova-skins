@@ -31,9 +31,9 @@ type CustomSkin struct {
 	credit   cred.CreditType
 
 	name        string
-	body        fileIO.File
-	forceArmour fileIO.File
-	drone       fileIO.File
+	Body        fileIO.File
+	ForceArmour fileIO.File
+	Drone       fileIO.File
 	angle       string
 	distance    string
 
@@ -46,17 +46,17 @@ func NewCustomSkin(name, angle, distance string) (cs *CustomSkin) {
 }
 
 func (cs *CustomSkin) addBody(f fileIO.File) *CustomSkin {
-	cs.body = f
+	cs.Body = f
 	return cs
 }
 
 func (cs *CustomSkin) addForceA(s fileIO.File) *CustomSkin {
-	cs.forceArmour = s
+	cs.ForceArmour = s
 	return cs
 }
 
 func (cs *CustomSkin) addDrone(f fileIO.File) *CustomSkin {
-	cs.drone = f
+	cs.Drone = f
 	return cs
 }
 
@@ -78,14 +78,21 @@ func (cs *CustomSkin) generateZipFile() {
 	path := fileIO.ConstructPath("..", "assets/zips", cs.name)
 	cs.zip = *fileIO.NewZipFile(path)
 
-	// body, fA, drone := cs.getBody_FA_Drone()
+	body, fA, drone := cs.getBody_FA_Drone()
 
-	// cs.zip.AddZipFile(body, cs.body)
-	// cs.zip.AddZipFile(fA, cs.forceArmour)
-	// cs.zip.AddZipFile(drone, cs.drone)
+	if body != "" {
+		cs.zip.AddZipFile(body, cs.Body)
+	}
 
+	if fA != "" {
+		cs.zip.AddZipFile(fA, cs.ForceArmour)
+	}
+
+	if drone != "" {
+		cs.zip.AddZipFile(drone, cs.Drone)
+	}
 	// // helpers.Print(cs.forceArmour.BufferToString())
-	// cs.zip.WriteToZipFile()
+	cs.zip.WriteToZipFile()
 
 	return
 }
@@ -147,16 +154,16 @@ func emptyOSFile() os.File {
 func (cs CustomSkin) getBody_FA_Drone() (body, fA, drone string) {
 	body, fA, drone = "", "", ""
 
-	if !fileIO.FilesEqual(cs.body, *fileIO.EmptyFile()) {
-		body = cs.body.Name()
+	if !fileIO.FilesEqual(cs.Body, *fileIO.EmptyFile()) {
+		body = cs.Body.Name()
 	}
 
-	if !fileIO.FilesEqual(cs.forceArmour, *fileIO.EmptyFile()) {
-		fA = cs.forceArmour.Name()
+	if !fileIO.FilesEqual(cs.ForceArmour, *fileIO.EmptyFile()) {
+		fA = cs.ForceArmour.Name()
 	}
 
-	if !fileIO.FilesEqual(cs.drone, *fileIO.EmptyFile()) {
-		drone = cs.drone.Name()
+	if !fileIO.FilesEqual(cs.Drone, *fileIO.EmptyFile()) {
+		drone = cs.Drone.Name()
 	}
 
 	return

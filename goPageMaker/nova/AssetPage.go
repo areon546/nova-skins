@@ -81,17 +81,17 @@ func (a *AssetsPage) bufferCustomSkins() {
 
 		// helpers.Print("Buffering skin: ", skin)
 
-		if !fileIO.FilesEqual(skin.body, *fileIO.EmptyFile()) {
-			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body.Name()))
+		if !fileIO.FilesEqual(skin.Body, *fileIO.EmptyFile()) {
+			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Body.Name()))
 		}
-		if !fileIO.FilesEqual(skin.forceArmour, *fileIO.EmptyFile()) {
-			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.forceArmour.Name()))
+		if !fileIO.FilesEqual(skin.ForceArmour, *fileIO.EmptyFile()) {
+			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.ForceArmour.Name()))
 		}
-		if !fileIO.FilesEqual(skin.drone, *fileIO.EmptyFile()) {
-			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone.Name()))
+		if !fileIO.FilesEqual(skin.Drone, *fileIO.EmptyFile()) {
+			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Drone.Name()))
 		}
 
-		// a.AppendMarkdownLink("Download Me", skin.zip.GetName())
+		a.AppendMarkdownLink("Download Me", skin.zip.GetName())
 
 		a.AppendNewLine()
 	}
@@ -113,7 +113,7 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 
 func ConstructAssetPages() (pages []AssetsPage) {
 	helpers.Print("Making Files")
-	numSkins := len(skins)
+	numSkins := len(Skins)
 	// print("skins ", numSkins)
 	numFiles := numSkins / 10
 
@@ -129,7 +129,7 @@ func ConstructAssetPages() (pages []AssetsPage) {
 
 		a.bufferPagePreffix()
 
-		skinSlice, err := getNextSlice(skins, i)
+		skinSlice, err := getNextSlice(Skins, i)
 		helpers.Handle(err)
 
 		a.addCustomSkins(skinSlice)

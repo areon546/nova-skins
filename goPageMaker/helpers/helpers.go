@@ -31,7 +31,7 @@ func HandleExcept(err, allowed error) {
 
 func Print(a ...any) { helpers.Print(a...) }
 
-func Printf(s string, a ...any) { helpers.Printf(s, a...) }
+func Printf(s string, a ...any) { helpers.Printf(s, a...); helpers.Print("") }
 
 func Format(s string, a ...any) string { return helpers.Format(s, a...) }
 

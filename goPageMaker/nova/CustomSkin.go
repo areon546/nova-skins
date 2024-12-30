@@ -202,6 +202,7 @@ func (c *CustomSkin) FormatCredits() string {
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
 func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
+	helpers.Print("Compiling Skins")
 	skinsData := fileIO.ReadCSV(inSkinsFolder("custom_skins"))
 
 	credits := skinsData.GetIndexOfColumn("credit")
@@ -216,6 +217,7 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 	for row := range skinsData.Rows() {
 		s := skinsData.GetRow(row)
 		skin, err := CSVLineToCustomSkin(s, custom_skin_dir, reqLength)
+
 		if err != nil {
 			helpers.Print("Get Custom Skin Error", s)
 			helpers.HandleExcept(err, ErrMalformedRow)

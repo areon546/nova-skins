@@ -86,7 +86,7 @@ func ZipFolder(path, output string) {
 
 	// action performed at each file
 	walker := func(path string, info os.FileInfo, err error) error {
-		helpers.Printf("Crawling: %v\n", path)
+		helpers.Printf("Crawling: %v", path)
 		if err != nil {
 			return err
 		}

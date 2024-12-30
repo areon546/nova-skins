@@ -111,7 +111,8 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 	}
 }
 
-func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
+func ConstructAssetPages() (pages []AssetsPage) {
+	helpers.Print("Making Files")
 	numSkins := len(skins)
 	// print("skins ", numSkins)
 	numFiles := numSkins / 10

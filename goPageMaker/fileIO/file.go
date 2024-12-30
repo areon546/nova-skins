@@ -1,7 +1,7 @@
 package fileIO
 
 import (
-	"fmt"
+	"io"
 	"log"
 	"os"
 
@@ -19,6 +19,8 @@ type File struct {
 	lines         int
 	linesRead     int
 	hasBeenRead   bool
+
+	bytesRead int
 }
 
 func NewFileWithSuffix(fn string, suff string, path string) *File {
@@ -43,9 +45,6 @@ func OpenFile(path string, d os.DirEntry) (f *File) { // TODO make the File stru
 
 	osF, err := os.Open(name)
 	handle(err)
-
-	fmt.Printf("f: %v\n", f)
-	helpers.Print(name)
 
 	fInf, _ := osF.Stat()
 	byteArr := make([]byte, fInf.Size())
@@ -133,14 +132,27 @@ func (f *File) Write(p []byte) (n int, err error) {
 // Implementations must not retain p.
 func (f File) Read(p []byte) (n int, err error) {
 	l := len(f.contentBuffer)
+	i := 0
 
-	for i := 0; i <= l; i++ {
+	for ; i < l; i++ {
 		v := f.contentBuffer[i]
 		if i < len(p) {
 			p[i] = v
 			n++
+		} else if i == len(p) {
+			// err
+			err = io.EOF
+			break
 		}
 	}
+
+	if i == l {
+		err = io.EOF
+	}
+
+	f.bytesRead += n
+	// helpers.Print(l, len(p), f.Name(), "bytes read", f.bytesRead)
+	// time.Sleep(time.Millisecond * 400)
 	return
 }
 

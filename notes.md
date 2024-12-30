@@ -19,3 +19,4 @@ Misc Reading:
 ## Zipping
 - [zipping files](https://gosamples.dev/zip-file/)
 - [unzipping files](https://gosamples.dev/unzip-file/)
+- [be careful with zips](https://security.snyk.io/research/zip-slip-vulnerability)

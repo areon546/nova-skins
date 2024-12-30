@@ -5,8 +5,8 @@
 
 **Curvewing**: [@hadiros](https://discord.com/users/266028842395631629)
 
-| Body:| curvewing.png| 
 | -- | --- | 
+| Body:| curvewing.png| 
 | ForceArmour:| curvewing_force.png| 
 | Drone:| curvewing_drone.png| 
 | Angle:| 142| 
@@ -17,12 +17,13 @@
 ![](../custom_skins/curvewing.png)
 ![](../custom_skins/curvewing_force.png)
 ![](../custom_skins/curvewing_drone.png)
+[Download Me](../assets/zips/Curvewing.zip)
 
 
 **Beholder**: [@hungrygremlin](https://discord.com/users/361743580563374080)
 
-| Body:| Behold.png| 
 | -- | --- | 
+| Body:| Behold.png| 
 | ForceArmour:| Behold_force.png| 
 | Drone:| Behold_drone.png| 
 | Angle:| | 
@@ -33,12 +34,13 @@
 ![](../custom_skins/Behold.png)
 ![](../custom_skins/Behold_force.png)
 ![](../custom_skins/Behold_drone.png)
+[Download Me](../assets/zips/Beholder.zip)
 
 
 **Razorflight**: [@hadiros](https://discord.com/users/266028842395631629)
 
-| Body:| razorflight.png| 
 | -- | --- | 
+| Body:| razorflight.png| 
 | ForceArmour:| razorflight_force.png| 
 | Drone:| | 
 | Angle:| 50| 
@@ -48,12 +50,13 @@
 
 ![](../custom_skins/razorflight.png)
 ![](../custom_skins/razorflight_force.png)
+[Download Me](../assets/zips/Razorflight.zip)
 
 
 **Squidship**: [@hungrygremlin](https://discord.com/users/361743580563374080)
 
-| Body:| Squidship.png| 
 | -- | --- | 
+| Body:| Squidship.png| 
 | ForceArmour:| Squidship_force.png| 
 | Drone:| Squidship_drone.png| 
 | Angle:| | 
@@ -64,12 +67,13 @@
 ![](../custom_skins/Squidship.png)
 ![](../custom_skins/Squidship_force.png)
 ![](../custom_skins/Squidship_drone.png)
+[Download Me](../assets/zips/Squidship.zip)
 
 
 **Executor**: [@ceris5](https://discord.com/users/460824601019023360)
 
-| Body:| Executor.png| 
 | -- | --- | 
+| Body:| Executor.png| 
 | ForceArmour:| Executor_Force.png| 
 | Drone:| | 
 | Angle:| 1| 
@@ -79,12 +83,13 @@
 
 ![](../custom_skins/Executor.png)
 ![](../custom_skins/Executor_Force.png)
+[Download Me](../assets/zips/Executor.zip)
 
 
 **Jester**: [@addisonsynth](https://discord.com/users/690582693532008459)
 
-| Body:| Jester.png| 
 | -- | --- | 
+| Body:| Jester.png| 
 | ForceArmour:| Jester_force.png| 
 | Drone:| Jester_drone.png| 
 | Angle:| 0| 
@@ -95,12 +100,13 @@
 ![](../custom_skins/Jester.png)
 ![](../custom_skins/Jester_force.png)
 ![](../custom_skins/Jester_drone.png)
+[Download Me](../assets/zips/Jester.zip)
 
 
 **Eater of Worlds**: [@hadiros](https://discord.com/users/266028842395631629)
 
-| Body:| eater_of_worlds.png| 
 | -- | --- | 
+| Body:| eater_of_worlds.png| 
 | ForceArmour:| eater_of_worlds_force.png| 
 | Drone:| eater_of_worlds_drone.png| 
 | Angle:| 181| 
@@ -111,12 +117,13 @@
 ![](../custom_skins/eater_of_worlds.png)
 ![](../custom_skins/eater_of_worlds_force.png)
 ![](../custom_skins/eater_of_worlds_drone.png)
+[Download Me](../assets/zips/Eater of Worlds.zip)
 
 
 **Lancer**: [@splathero](https://discord.com/users/1088727297755971645)
 
-| Body:| lancer.png| 
 | -- | --- | 
+| Body:| lancer.png| 
 | ForceArmour:| lancer_force.png| 
 | Drone:| lancer_drone.png| 
 | Angle:| 0| 
@@ -127,12 +134,13 @@
 ![](../custom_skins/lancer.png)
 ![](../custom_skins/lancer_force.png)
 ![](../custom_skins/lancer_drone.png)
+[Download Me](../assets/zips/Lancer.zip)
 
 
 **The Devil**: [@babaint](https://discord.com/users/598945877419360266)
 
-| Body:| devil.png| 
 | -- | --- | 
+| Body:| devil.png| 
 | ForceArmour:| devil_force.png| 
 | Drone:| heart_mite.png| 
 | Angle:| | 
@@ -143,12 +151,13 @@
 ![](../custom_skins/devil.png)
 ![](../custom_skins/devil_force.png)
 ![](../custom_skins/heart_mite.png)
+[Download Me](../assets/zips/The Devil.zip)
 
 
 **Poly**: [@splathero](https://discord.com/users/1088727297755971645)
 
-| Body:| poly.png| 
 | -- | --- | 
+| Body:| poly.png| 
 | ForceArmour:| poly_force.png| 
 | Drone:| poly_drone.png| 
 | Angle:| 0| 
@@ -159,6 +168,7 @@
 ![](../custom_skins/poly.png)
 ![](../custom_skins/poly_force.png)
 ![](../custom_skins/poly_drone.png)
+[Download Me](../assets/zips/Poly.zip)
 
 [Page_3](./Page_3.md)
 [Page_4](./Page_4.md)

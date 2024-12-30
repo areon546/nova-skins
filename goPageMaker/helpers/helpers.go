@@ -3,17 +3,35 @@ package helpers
 import (
 	"errors"
 	"fmt"
+	"log"
 	"reflect"
 	"testing"
 
 	"github.com/areon546/go-helpers"
 )
 
+func HandleExcept(err, allowed error) {
+	errorAllowed := errors.Is(err, allowed)
+	if err != nil {
+		if !errorAllowed {
+			log.Fatal(err)
+		}
+	}
+}
+
+// already in helpers
+// a
+//
+// a
+//
+// a
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // helper functions
 
 func Print(a ...any) { helpers.Print(a...) }
 
-func Printf(s string, a ...any) { helpers.Printf(s, a...) }
+func Printf(s string, a ...any) { helpers.Printf(s, a...); helpers.Print("") }
 
 func Format(s string, a ...any) string { return helpers.Format(s, a...) }
 
@@ -28,7 +46,6 @@ func ConvertToInteger(s string) (int, error) {
 func Handle(err error) {
 	helpers.Handle(err)
 }
-
 func AssertEquals(t testing.TB, expected, result fmt.Stringer) {
 	t.Helper()
 	if reflect.DeepEqual(expected, result) {

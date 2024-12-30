@@ -5,8 +5,8 @@
 
 **Pinch**: [@hadiros](https://discord.com/users/266028842395631629)
 
-| Body:| pinch.png| 
 | -- | --- | 
+| Body:| pinch.png| 
 | ForceArmour:| pinch_force.png| 
 | Drone:| pinch_drone.png| 
 | Angle:| 140| 
@@ -17,12 +17,13 @@
 ![](../custom_skins/pinch.png)
 ![](../custom_skins/pinch_force.png)
 ![](../custom_skins/pinch_drone.png)
+[Download Me](../assets/zips/Pinch.zip)
 
 
 **Celes**: [@cinnamimitime](https://discord.com/users/161502244284530688)
 
-| Body:| celes.png| 
 | -- | --- | 
+| Body:| celes.png| 
 | ForceArmour:| celes_force.png| 
 | Drone:| celes_drone.png| 
 | Angle:| 110| 
@@ -33,12 +34,13 @@
 ![](../custom_skins/celes.png)
 ![](../custom_skins/celes_force.png)
 ![](../custom_skins/celes_drone.png)
+[Download Me](../assets/zips/Celes.zip)
 
 
 **Perseus**: 
 
-| Body:| Perseus.png| 
 | -- | --- | 
+| Body:| Perseus.png| 
 | ForceArmour:| Perseus_force.png| 
 | Drone:| Perseus_drone.png| 
 | Angle:| 160| 
@@ -49,12 +51,13 @@
 ![](../custom_skins/Perseus.png)
 ![](../custom_skins/Perseus_force.png)
 ![](../custom_skins/Perseus_drone.png)
+[Download Me](../assets/zips/Perseus.zip)
 
 
 **Lightning**: 
 
-| Body:| Lightning.png| 
 | -- | --- | 
+| Body:| Lightning.png| 
 | ForceArmour:| Lightning_force.png| 
 | Drone:| Lightning_drone.png| 
 | Angle:| 180| 
@@ -65,12 +68,13 @@
 ![](../custom_skins/Lightning.png)
 ![](../custom_skins/Lightning_force.png)
 ![](../custom_skins/Lightning_drone.png)
+[Download Me](../assets/zips/Lightning.zip)
 
 
 **Warden**: 
 
-| Body:| Warden.png| 
 | -- | --- | 
+| Body:| Warden.png| 
 | ForceArmour:| Warden_force.png| 
 | Drone:| Warden_drone.png| 
 | Angle:| 0| 
@@ -81,12 +85,13 @@
 ![](../custom_skins/Warden.png)
 ![](../custom_skins/Warden_force.png)
 ![](../custom_skins/Warden_drone.png)
+[Download Me](../assets/zips/Warden.zip)
 
 
 **Windseeker**: [@anthraax](https://discord.com/users/211671269882462218)
 
-| Body:| windseeker.png| 
 | -- | --- | 
+| Body:| windseeker.png| 
 | ForceArmour:| windseeker_force.png| 
 | Drone:| windseeker_drone.png| 
 | Angle:| 110| 
@@ -97,12 +102,13 @@
 ![](../custom_skins/windseeker.png)
 ![](../custom_skins/windseeker_force.png)
 ![](../custom_skins/windseeker_drone.png)
+[Download Me](../assets/zips/Windseeker.zip)
 
 
 **Onslaught**: 
 
-| Body:| Onslaught.png| 
 | -- | --- | 
+| Body:| Onslaught.png| 
 | ForceArmour:| Onslaught_force.png| 
 | Drone:| Onslaught_drone.png| 
 | Angle:| 140| 
@@ -113,12 +119,13 @@
 ![](../custom_skins/Onslaught.png)
 ![](../custom_skins/Onslaught_force.png)
 ![](../custom_skins/Onslaught_drone.png)
+[Download Me](../assets/zips/Onslaught.zip)
 
 
 **Artillery**: 
 
-| Body:| Artillery.png| 
 | -- | --- | 
+| Body:| Artillery.png| 
 | ForceArmour:| Artillery_force.png| 
 | Drone:| Artillery_drone.png| 
 | Angle:| 150| 
@@ -129,12 +136,13 @@
 ![](../custom_skins/Artillery.png)
 ![](../custom_skins/Artillery_force.png)
 ![](../custom_skins/Artillery_drone.png)
+[Download Me](../assets/zips/Artillery.zip)
 
 
 **Deconstructor**: 
 
-| Body:| Deconstructor.png| 
 | -- | --- | 
+| Body:| Deconstructor.png| 
 | ForceArmour:| Deconstructor_force.png| 
 | Drone:| Deconstructor_drone.png| 
 | Angle:| 155| 
@@ -145,12 +153,13 @@
 ![](../custom_skins/Deconstructor.png)
 ![](../custom_skins/Deconstructor_force.png)
 ![](../custom_skins/Deconstructor_drone.png)
+[Download Me](../assets/zips/Deconstructor.zip)
 
 
 **Engineer**: [@_capstone](https://discord.com/users/551431332253794304)
 
-| Body:| engineer.png| 
 | -- | --- | 
+| Body:| engineer.png| 
 | ForceArmour:| engineer_frame.png| 
 | Drone:| engineer_drone.png| 
 | Angle:| 60| 
@@ -161,6 +170,7 @@
 ![](../custom_skins/engineer.png)
 ![](../custom_skins/engineer_frame.png)
 ![](../custom_skins/engineer_drone.png)
+[Download Me](../assets/zips/Engineer.zip)
 
 [Page_1](./Page_1.md)
 [Page_2](./Page_2.md)

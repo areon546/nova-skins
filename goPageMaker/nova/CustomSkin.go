@@ -31,9 +31,9 @@ type CustomSkin struct {
 	credit   cred.CreditType
 
 	name        string
-	body        fileIO.File
-	forceArmour fileIO.File
-	drone       fileIO.File
+	Body        fileIO.File
+	ForceArmour fileIO.File
+	Drone       fileIO.File
 	angle       string
 	distance    string
 
@@ -42,22 +42,21 @@ type CustomSkin struct {
 
 func NewCustomSkin(name, angle, distance string) (cs *CustomSkin) {
 	cs = &CustomSkin{name: name, angle: angle, distance: distance}
-
-	return cs
+	return
 }
 
 func (cs *CustomSkin) addBody(f fileIO.File) *CustomSkin {
-	cs.body = f
+	cs.Body = f
 	return cs
 }
 
 func (cs *CustomSkin) addForceA(s fileIO.File) *CustomSkin {
-	cs.forceArmour = s
+	cs.ForceArmour = s
 	return cs
 }
 
 func (cs *CustomSkin) addDrone(f fileIO.File) *CustomSkin {
-	cs.drone = f
+	cs.Drone = f
 	return cs
 }
 
@@ -79,19 +78,26 @@ func (cs *CustomSkin) generateZipFile() {
 	path := fileIO.ConstructPath("..", "assets/zips", cs.name)
 	cs.zip = *fileIO.NewZipFile(path)
 
-	// body, fA, drone := cs.getBody_FA_Drone()
+	body, fA, drone := cs.getBody_FA_Drone()
 
-	// cs.zip.AddZipFile(body, cs.body)
-	// cs.zip.AddZipFile(fA, cs.forceArmour)
-	// cs.zip.AddZipFile(drone, cs.drone)
+	if body != "" {
+		cs.zip.AddZipFile(body, cs.Body)
+	}
 
+	if fA != "" {
+		cs.zip.AddZipFile(fA, cs.ForceArmour)
+	}
+
+	if drone != "" {
+		cs.zip.AddZipFile(drone, cs.Drone)
+	}
 	// // helpers.Print(cs.forceArmour.BufferToString())
-	// cs.zip.WriteToZipFile()
+	cs.zip.WriteToZipFile()
 
 	return
 }
 
-func (cs *CustomSkin) String() string {
+func (cs CustomSkin) String() string {
 	return cs.name
 }
 
@@ -116,11 +122,9 @@ func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int)
 	forceArmour, _ := fileIn(forceArmourS, custom_skin_dir)
 	drone, _ := fileIn(droneS, custom_skin_dir)
 
-	helpers.Printf("TYPE: %T", (ss[0]))
 	cs = NewCustomSkin(ss[0], ss[4], ss[5]).addBody(body).addForceA(forceArmour).addDrone(drone)
 
 	cs.generateZipFile()
-	helpers.Print(cs.zip)
 
 	return
 }
@@ -140,7 +144,6 @@ func fileIn(s string, arr []os.DirEntry) (f fileIO.File, err error) {
 			return *openCustomSkin(v), nil
 		}
 	}
-
 	return
 }
 
@@ -151,16 +154,16 @@ func emptyOSFile() os.File {
 func (cs CustomSkin) getBody_FA_Drone() (body, fA, drone string) {
 	body, fA, drone = "", "", ""
 
-	if !fileIO.FilesEqual(cs.body, *fileIO.EmptyFile()) {
-		body = cs.body.Name()
+	if !fileIO.FilesEqual(cs.Body, *fileIO.EmptyFile()) {
+		body = cs.Body.Name()
 	}
 
-	if !fileIO.FilesEqual(cs.forceArmour, *fileIO.EmptyFile()) {
-		fA = cs.forceArmour.Name()
+	if !fileIO.FilesEqual(cs.ForceArmour, *fileIO.EmptyFile()) {
+		fA = cs.ForceArmour.Name()
 	}
 
-	if !fileIO.FilesEqual(cs.drone, *fileIO.EmptyFile()) {
-		drone = cs.drone.Name()
+	if !fileIO.FilesEqual(cs.Drone, *fileIO.EmptyFile()) {
+		drone = cs.Drone.Name()
 	}
 
 	return
@@ -174,7 +177,7 @@ func (cs *CustomSkin) ToCSVLine() string {
 func (cs *CustomSkin) ToTable() string {
 	body, fA, drone := cs.getBody_FA_Drone()
 
-	return format("| Body:| %s| \n| -- | --- | \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
+	return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 }
 
 func (c *CustomSkin) getAngle() string {
@@ -206,7 +209,9 @@ func (c *CustomSkin) FormatCredits() string {
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
 func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
+	helpers.Print("Compiling Skins")
 	skinsData := fileIO.ReadCSV(inSkinsFolder("custom_skins"))
+
 	credits := skinsData.GetIndexOfColumn("credit")
 
 	discordUIDs := getDiscordUIDs()
@@ -219,16 +224,12 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 	for row := range skinsData.Rows() {
 		s := skinsData.GetRow(row)
 		skin, err := CSVLineToCustomSkin(s, custom_skin_dir, reqLength)
-		if err != nil {
-			// printf("malformed csv, required length: %d, length: %d, %s,", reqLength, len(s), s)
-			helpers.Print("Get Custom Skin Error", s)
-			if !errors.Is(err, ErrMalformedRow) {
-				helpers.Handle(err)
-			}
 
+		if err != nil {
+			helpers.Print("Get Custom Skin Error", s)
+			helpers.HandleExcept(err, ErrMalformedRow)
 			continue
 		}
-		// print(i, v, body, forces, drones)
 
 		credit := skinsData.GetCell(row, credits)
 		creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
@@ -237,12 +238,7 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 			skin.addCredits(cred.NewCredit(credit, creditInfo, creditType))
 		}
 
-		// construct zip file for skin
-
 		skins = append(skins, *skin)
-
-		// printf("appropriate length: %d, %s", len(v), skin)
-
 	}
 
 	return

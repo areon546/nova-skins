@@ -42,8 +42,7 @@ type CustomSkin struct {
 
 func NewCustomSkin(name, angle, distance string) (cs *CustomSkin) {
 	cs = &CustomSkin{name: name, angle: angle, distance: distance}
-
-	return cs
+	return
 }
 
 func (cs *CustomSkin) addBody(f fileIO.File) *CustomSkin {
@@ -91,7 +90,7 @@ func (cs *CustomSkin) generateZipFile() {
 	return
 }
 
-func (cs *CustomSkin) String() string {
+func (cs CustomSkin) String() string {
 	return cs.name
 }
 
@@ -116,11 +115,9 @@ func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int)
 	forceArmour, _ := fileIn(forceArmourS, custom_skin_dir)
 	drone, _ := fileIn(droneS, custom_skin_dir)
 
-	helpers.Printf("TYPE: %T", (ss[0]))
 	cs = NewCustomSkin(ss[0], ss[4], ss[5]).addBody(body).addForceA(forceArmour).addDrone(drone)
 
 	cs.generateZipFile()
-	helpers.Print(cs.zip)
 
 	return
 }
@@ -140,7 +137,6 @@ func fileIn(s string, arr []os.DirEntry) (f fileIO.File, err error) {
 			return *openCustomSkin(v), nil
 		}
 	}
-
 	return
 }
 
@@ -207,6 +203,7 @@ func (c *CustomSkin) FormatCredits() string {
 // returns a list of CustomSkins based on whats in the custom_skins folder
 func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 	skinsData := fileIO.ReadCSV(inSkinsFolder("custom_skins"))
+
 	credits := skinsData.GetIndexOfColumn("credit")
 
 	discordUIDs := getDiscordUIDs()
@@ -220,15 +217,10 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 		s := skinsData.GetRow(row)
 		skin, err := CSVLineToCustomSkin(s, custom_skin_dir, reqLength)
 		if err != nil {
-			// printf("malformed csv, required length: %d, length: %d, %s,", reqLength, len(s), s)
 			helpers.Print("Get Custom Skin Error", s)
-			if !errors.Is(err, ErrMalformedRow) {
-				helpers.Handle(err)
-			}
-
+			helpers.HandleExcept(err, ErrMalformedRow)
 			continue
 		}
-		// print(i, v, body, forces, drones)
 
 		credit := skinsData.GetCell(row, credits)
 		creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
@@ -237,12 +229,7 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 			skin.addCredits(cred.NewCredit(credit, creditInfo, creditType))
 		}
 
-		// construct zip file for skin
-
 		skins = append(skins, *skin)
-
-		// printf("appropriate length: %d, %s", len(v), skin)
-
 	}
 
 	return

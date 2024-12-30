@@ -34,7 +34,6 @@ type ZipFile struct {
 func NewZipFile(name string) *ZipFile {
 	name = constructZipName(name)
 
-	print(name)
 	file, err := os.Create(name)
 	handle(err)
 

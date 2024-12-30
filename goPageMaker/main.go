@@ -26,7 +26,6 @@ func main() {
 	// delete the entirety of the pages' folder's contents if present
 	fileIO.RemoveAllWithinDirectory(nova.Pages)
 
-	print("ASDSA")
 	custom_skin_dir := fileIO.ReadDirectory("../custom_skins")
 	// returns a list of CustomSkins based on whats in the custom_skins folder
 	print("Compiling Skins")

@@ -79,7 +79,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.Append("`" + skin.ToCSVLine() + "`")
 		a.AppendNewLine()
 
-		helpers.Print("Buffering skin: ", skin)
+		helpers.Print("Buffering skin: ", skin.String())
 
 		if !fileIO.FilesEqual(skin.body, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body.Name()))

@@ -67,3 +67,11 @@ func AssertNoError(t testing.TB, err error) {
 	t.Helper()
 	AssertError(t, err, nil)
 }
+
+// dont think they are necessary honestly but here still
+func BytesToString(b []byte) (s string) {
+	return string(b)
+}
+func StringToBytes(s string) (b []byte) {
+	return []byte(s)
+}

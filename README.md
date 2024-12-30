@@ -13,4 +13,3 @@ Go to [Page_1](pages/Page_1.md) to see the start of this project.
 
 ---
 Inspired by [Voices of the Printer](https://github.com/madrod228/voicesoftheprinter)
-

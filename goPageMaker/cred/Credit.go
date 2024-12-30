@@ -12,7 +12,6 @@ type CreditType interface {
 
 type CreditSource int
 
-// TODO make this an interface with constructName in it
 type Credit struct {
 	name      string
 	otherInfo string

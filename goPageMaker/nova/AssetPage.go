@@ -75,10 +75,12 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.Append(format("**%s**: %s", skin.name, skin.FormatCredits()))
 		a.AppendNewLine()
 
-		a.Append("`" + skin.toCSVLine() + "`")
+		a.Append(skin.ToTable())
+		a.Append("`" + skin.ToCSVLine() + "`")
 		a.AppendNewLine()
 
 		// helpers.Print("Buffering skin: ", skin)
+		fmt.Println("Buffering skin: ", skin.String())
 
 		if !fileIO.FilesEqual(skin.body, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body.Name()))
@@ -88,9 +90,9 @@ func (a *AssetsPage) bufferCustomSkins() {
 		}
 		if !fileIO.FilesEqual(skin.drone, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone.Name()))
-		} // TODO append links to media  but how do we determine if there are media files?
+		}
 
-		// a.AppendMarkdownLink("Download Me", fileIO.ConstructPath(path, "assets", skin.zip.GetName()))
+		// a.AppendMarkdownLink("Download Me", skin.zip.GetName())
 
 		a.AppendNewLine()
 	}
@@ -99,7 +101,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 func (a *AssetsPage) writeBuffer() {
 	helpers.Print("Writing to: ", a)
 	// print(a.contentBuffer)
-	a.WriteFile()
+	a.Write(a.Contents())
 }
 
 func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
@@ -136,7 +138,6 @@ func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 
 		pages = append(pages, *a)
 
-		helpers.Print("a")
 		a.writeBuffer()
 	}
 
@@ -165,11 +166,4 @@ func getNextSlice(skins []CustomSkin, i int) (subset []CustomSkin, err error) {
 	}
 
 	return skins[min:max], err
-}
-
-func ConstructZipFiles(skins []CustomSkin) []fileIO.File {
-
-	// basically, this could simulate a directory, and use that
-
-	return make([]fileIO.File, 0)
 }

@@ -13,3 +13,9 @@ Misc Reading:
 - [errors](https://www.digitalocean.com/community/tutorials/creating-custom-errors-in-go)
 - credits
     - [discord](https://www.followchain.org/discord-profile-link/)
+
+
+
+## Zipping
+- [zipping files](https://gosamples.dev/zip-file/)
+- [unzipping files](https://gosamples.dev/unzip-file/)

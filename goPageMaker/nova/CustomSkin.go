@@ -75,13 +75,18 @@ func (cs *CustomSkin) HasZip() bool {
 
 // TODO This should use the fs.DirEntires to generate a zip file for the individual skin
 func (cs *CustomSkin) generateZipFile() {
-	cs.zip = *fileIO.NewZipFile(cs.name)
 
-	body, fA, drone := cs.getBody_FA_Drone()
+	path := fileIO.ConstructPath("..", "assets/zips", cs.name)
+	cs.zip = *fileIO.NewZipFile(path)
 
-	cs.zip.AddZipFile(body, []byte(body))
-	cs.zip.AddZipFile(fA, []byte(fA))
-	cs.zip.AddZipFile(drone, []byte(drone))
+	// body, fA, drone := cs.getBody_FA_Drone()
+
+	// cs.zip.AddZipFile(body, cs.body)
+	// cs.zip.AddZipFile(fA, cs.forceArmour)
+	// cs.zip.AddZipFile(drone, cs.drone)
+
+	// // helpers.Print(cs.forceArmour.BufferToString())
+	// cs.zip.WriteToZipFile()
 
 	return
 }
@@ -90,8 +95,8 @@ func (cs *CustomSkin) String() string {
 	return cs.name
 }
 
-func OpenCustomSkin(d fs.DirEntry) fileIO.File {
-	return fileIO.OpenFile(d)
+func openCustomSkin(d fs.DirEntry) *fileIO.File {
+	return fileIO.OpenFile("../custom_skins/", d)
 }
 
 func EmptyCustomSkin() *CustomSkin {
@@ -100,8 +105,6 @@ func EmptyCustomSkin() *CustomSkin {
 
 func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int) (cs *CustomSkin, err error) {
 	ss := strings.Split(s, ",")
-
-	helpers.Print(len(ss), reqLength)
 
 	if len(ss) != reqLength {
 		return EmptyCustomSkin(), ErrMalformedRow
@@ -113,9 +116,11 @@ func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int)
 	forceArmour, _ := fileIn(forceArmourS, custom_skin_dir)
 	drone, _ := fileIn(droneS, custom_skin_dir)
 
+	helpers.Printf("TYPE: %T", (ss[0]))
 	cs = NewCustomSkin(ss[0], ss[4], ss[5]).addBody(body).addForceA(forceArmour).addDrone(drone)
 
 	cs.generateZipFile()
+	helpers.Print(cs.zip)
 
 	return
 }
@@ -124,14 +129,15 @@ func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int)
 func fileIn(s string, arr []os.DirEntry) (f fileIO.File, err error) {
 	f = *fileIO.EmptyFile()
 	err = errors.New("file not found")
-
+	// TODO why are you passing through variables that could simply be part of the nova
+	// make custom_skin directory a nova variable
 	if reflect.DeepEqual("", s) {
 		return f, errors.New("empty file")
 	}
 
 	for _, v := range arr {
 		if reflect.DeepEqual(s, v.Name()) {
-			return fileIO.OpenFile(v), nil
+			return *openCustomSkin(v), nil
 		}
 	}
 
@@ -160,9 +166,15 @@ func (cs CustomSkin) getBody_FA_Drone() (body, fA, drone string) {
 	return
 }
 
-func (cs *CustomSkin) toCSVLine() string {
+func (cs *CustomSkin) ToCSVLine() string {
 	body, fA, drone := cs.getBody_FA_Drone()
 	return format("%s,%s,%s,%s,%s,%s", cs.name, body, fA, drone, cs.getAngle(), cs.getDistance())
+}
+
+func (cs *CustomSkin) ToTable() string {
+	body, fA, drone := cs.getBody_FA_Drone()
+
+	return format("| Body:| %s| \n| -- | --- | \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 }
 
 func (c *CustomSkin) getAngle() string {
@@ -206,7 +218,6 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
 
 	for row := range skinsData.Rows() {
 		s := skinsData.GetRow(row)
-		helpers.Print("[", s, "]")
 		skin, err := CSVLineToCustomSkin(s, custom_skin_dir, reqLength)
 		if err != nil {
 			// printf("malformed csv, required length: %d, length: %d, %s,", reqLength, len(s), s)

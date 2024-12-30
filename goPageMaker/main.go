@@ -38,7 +38,7 @@ func main() {
 }
 
 func test() {
-	fileIO.RemoveAllWithinDirectory(nova.Pages)
+	fileIO.ZipFolder("../custom_skins", "../../../assets")
 }
 
 func print(a ...any) {

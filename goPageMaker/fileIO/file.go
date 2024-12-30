@@ -1,11 +1,9 @@
 package fileIO
 
 import (
-	"errors"
+	"fmt"
 	"log"
 	"os"
-	"reflect"
-	"strings"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 )
@@ -17,115 +15,64 @@ type File struct {
 	suffix   string
 	relPath  string
 
-	contentBuffer []string
+	contentBuffer []byte
 	lines         int
+	linesRead     int
 	hasBeenRead   bool
 }
 
 func NewFileWithSuffix(fn string, suff string, path string) *File {
-	return &File{filename: fn, suffix: suff, relPath: path, hasBeenRead: false}
+	f := &File{filename: fn, suffix: suff, relPath: path}
+	f.setDefaults()
+	return f
 }
 
-func NewFile(fn string) *File {
+func NewFile(path, fn string) *File {
 	fn, suff := splitFileName(fn)
-	return &File{filename: fn, suffix: suff, hasBeenRead: false}
+	return NewFileWithSuffix(fn, suff, path)
 }
 
-func OpenFile(d os.DirEntry) File {
+func (f *File) setDefaults() *File {
+	f.hasBeenRead = false
+	f.linesRead = 0
+	return f
+}
 
-	return *NewFile(d.Name())
+func OpenFile(path string, d os.DirEntry) (f *File) { // TODO make the File struct use byte slice rather than string slice
+	name := path + d.Name()
+
+	osF, err := os.Open(name)
+	handle(err)
+
+	fmt.Printf("f: %v\n", f)
+	helpers.Print(name)
+
+	fInf, _ := osF.Stat()
+	byteArr := make([]byte, fInf.Size())
+	osF.Read(byteArr)
+
+	strArr := helpers.BytesToString(byteArr)
+
+	f = NewFile(path, d.Name())
+	f.Append(strArr)
+
+	return
 }
 
 func EmptyFile() *File {
 	return &File{}
 }
 
-func splitFileName(filename string) (name, suffix string) {
-	stringSections := strings.Split(filename, ".")
-	// print(stringSections)
-
-	if len(stringSections) > 1 {
-		suffix = stringSections[len(stringSections)-1]
-	}
-
-	for i := 0; i < len(stringSections)-1; i++ {
-		name += stringSections[i]
-	}
-
-	return
+func (f *File) IsEmpty() bool {
+	return len(f.contentBuffer) == 0
 }
 
 func (f *File) Name() string {
 	return helpers.Format("%s.%s", f.filename, f.suffix)
 }
 
-func (f *File) Contents() []string {
+func (f *File) Contents() []byte {
 	return f.contentBuffer
-}
-
-func (f *File) ReadFile() []string {
-	if !f.hasBeenRead {
-		data, err := os.ReadFile(f.Name()) // For read access.
-		handle(err)
-
-		oneLine := strings.ReplaceAll(string(data), "\r", "")
-		f.contentBuffer = strings.Split(oneLine, "\n")
-		f.lines = len(f.contentBuffer)
-	}
-	return f.contentBuffer
-}
-
-func (f *File) IsEmpty() bool {
-	return len(f.contentBuffer) == 0
-}
-
-func (f *File) ReadLine(lineNum int) (output string, err error) {
-	lineNum -= 1 // converted to index notation
-
-	if f.IsEmpty() {
-		f.ReadFile()
-	}
-
-	if lineNum > f.lines {
-		return "", errors.New("Index out of bounds for File length")
-	}
-
-	output = f.contentBuffer[lineNum]
-	print(output)
-
-	return
-}
-
-func (f *File) WriteFile() {
-	if err := os.WriteFile(f.Name(), []byte(f.bufferToString()), 0664); err != nil {
-		log.Fatal(err)
-	}
-}
-
-func (f *File) AppendLines(arr []string) {
-
-	// f.contentBuffer = append(f.contentBuffer, arr...)
-	for _, v := range arr {
-		f.contentBuffer = append(f.contentBuffer, v)
-	}
-}
-
-func (f *File) Append(s string) {
-	f.AppendLine(s, len(f.contentBuffer), true)
-}
-
-func (f *File) AppendNewLine() {
-	f.Append("")
-}
-
-func (f *File) bufferLines(arr []string) {
-
-	if f.IsEmpty() {
-		f.contentBuffer = make([]string, len(arr))
-	}
-
-	f.contentBuffer = append(f.contentBuffer, arr...)
-
 }
 
 func (f *File) ClearFile() {
@@ -134,45 +81,80 @@ func (f *File) ClearFile() {
 	}
 }
 
+// copied from io.go
+// Writer is the interface that wraps the basic Write method.
+//
+// Write writes len(p) bytes from p to the underlying data stream.
+// It returns the number of bytes written from p (0 <= n <= len(p))
+// and any error encountered that caused the write to stop early.
+// Write must return a non-nil error if it returns n < len(p).
+// Write must not modify the slice data, even temporarily.
+//
+// Implementations must not retain p.
+func (f *File) Write(p []byte) (n int, err error) {
+	if err := os.WriteFile(f.Name(), p, 0664); err != nil {
+		log.Fatal(err)
+	}
+
+	return
+}
+
+// copied from io.go
+// Reader is the interface that wraps the basic Read method.
+//
+// Read reads up to len(p) bytes into p. It returns the number of bytes
+// read (0 <= n <= len(p)) and any error encountered. Even if Read
+// returns n < len(p), it may use all of p as scratch space during the call.
+// If some data is available but not len(p) bytes, Read conventionally
+// returns what is available instead of waiting for more.
+//
+// When Read encounters an error or end-of-file condition after
+// successfully reading n > 0 bytes, it returns the number of
+// bytes read. It may return the (non-nil) error from the same call
+// or return the error (and n == 0) from a subsequent call.
+// An instance of this general case is that a Reader returning
+// a non-zero number of bytes at the end of the input stream may
+// return either err == EOF or err == nil. The next Read should
+// return 0, EOF.
+//
+// Callers should always process the n > 0 bytes returned before
+// considering the error err. Doing so correctly handles I/O errors
+// that happen after reading some bytes and also both of the
+// allowed EOF behaviors.
+//
+// If len(p) == 0, Read should always return n == 0. It may return a
+// non-nil error if some error condition is known, such as EOF.
+//
+// Implementations of Read are discouraged from returning a
+// zero byte count with a nil error, except when len(p) == 0.
+// Callers should treat a return of 0 and nil as indicating that
+// nothing happened; in particular it does not indicate EOF.
+//
+// Implementations must not retain p.
+func (f File) Read(p []byte) (n int, err error) {
+	l := len(f.contentBuffer)
+
+	for i := 0; i <= l; i++ {
+		v := f.contentBuffer[i]
+		if i < len(p) {
+			p[i] = v
+			n++
+		}
+	}
+	return
+}
+
 func (f *File) String() string {
 	return f.Name()
 }
 
-func (f *File) bufferToString() string {
-	s := ""
-	for _, v := range f.contentBuffer {
-		s += v
-	}
-
-	return s
+func (f *File) Append(s string) {
+	f.AppendLine(s)
 }
 
-func (f *File) AppendLine(s string, i int, nl bool) {
-
-	for i >= len(f.contentBuffer) {
-		f.contentBuffer = append(f.contentBuffer, "")
-	}
-
-	if nl {
-		s += "\n"
-	}
-
-	f.contentBuffer[i] = s
-}
-
-func ConstructPath(preffix, directory, fileName string) (s string) {
-	if !reflect.DeepEqual(preffix, "") {
-		s += preffix + "/"
-	}
-
-	s += directory
-
-	if !reflect.DeepEqual(fileName, "") {
-		s += "/" + fileName
-	}
-	return s
-}
-
-func FilesEqual(a, b File) bool {
-	return reflect.DeepEqual(a, b)
+func (f *File) AppendLine(s string) {
+	// adds string s to the end of the buffer, newline determines if it is the end of a line,
+	// however that really should be determined when writing to the file so lets ignore that
+	// especially since we can use the index we are appending to to determine if it's a new line or now
+	f.contentBuffer = append(f.contentBuffer, []byte(s)...)
 }

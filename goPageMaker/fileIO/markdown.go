@@ -4,11 +4,11 @@ import "fmt"
 
 // ~~~~~~~~~~~~~~~~~~~~ MarkdownFile
 type MarkdownFile struct {
-	File
+	TextFile
 }
 
 func NewMarkdownFile(name, path string) *MarkdownFile {
-	return &MarkdownFile{File: *NewFileWithSuffix(name, "md", path)}
+	return &MarkdownFile{TextFile: *NewTextFileWithSuffix(path, name, "md")}
 }
 
 func (m *MarkdownFile) AppendMarkdownLink(displayText, path string) {

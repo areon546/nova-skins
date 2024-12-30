@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# ^ Note the above "shebang" line. This says "This is an executable shell script"
+# Name this script "pre-commit" and place it in the ".git/hooks/" directory
+
+# If any command fails, exit immediately with that command's exit status
+set -eo pipefail
+
+# run tests
+make

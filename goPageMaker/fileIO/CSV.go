@@ -7,14 +7,14 @@ import (
 
 // ~~~~~~~~~~~~~~~~~~~~ CSVFile
 type CSVFile struct {
-	File
+	TextFile
 	headings []string
 	contents [][]string
 }
 
 // returns an array of headings and a 2d array of
 func ReadCSV(fileName string) (csv CSVFile) {
-	file := File{filename: fileName, suffix: "csv"}
+	file := NewTextFileWithSuffix("", fileName, "csv")
 	// read fileName into CSVFile
 
 	// file := makeFile(fileName)
@@ -51,6 +51,7 @@ func (c *CSVFile) GetIndexOfColumn(header string) (index int) {
 
 func (c *CSVFile) GetRow(i int) string { // TODO make more efficient
 	return strings.Join(c.contents[i], ",")
+	// return c.contentBuffer[i+1] // this is buggy, fix
 }
 
 func (c *CSVFile) GetCell(row, col int) string {

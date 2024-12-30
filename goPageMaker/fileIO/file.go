@@ -1,7 +1,6 @@
 package fileIO
 
 import (
-	"fmt"
 	"log"
 	"os"
 
@@ -43,9 +42,6 @@ func OpenFile(path string, d os.DirEntry) (f *File) { // TODO make the File stru
 
 	osF, err := os.Open(name)
 	handle(err)
-
-	fmt.Printf("f: %v\n", f)
-	helpers.Print(name)
 
 	fInf, _ := osF.Stat()
 	byteArr := make([]byte, fInf.Size())

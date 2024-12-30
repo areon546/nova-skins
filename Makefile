@@ -2,7 +2,6 @@
 run:
 	cd goPageMaker && go build && go run .
 
-
 test:
 	cd goPageMaker && go test -cover
 
@@ -14,3 +13,6 @@ hello:
 
 git:
 	git pull && git push
+
+setup-hooks:
+	git config core.hooksPath hooks

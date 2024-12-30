@@ -75,10 +75,12 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.Append(format("**%s**: %s", skin.name, skin.FormatCredits()))
 		a.AppendNewLine()
 
-		a.Append("`" + skin.toCSVLine() + "`")
+		a.Append(skin.ToTable())
+		a.Append("`" + skin.ToCSVLine() + "`")
 		a.AppendNewLine()
 
 		// helpers.Print("Buffering skin: ", skin)
+		fmt.Println("Buffering skin: ", skin.String())
 
 		if !fileIO.FilesEqual(skin.body, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.body.Name()))
@@ -90,8 +92,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.drone.Name()))
 		}
 
-		a.AppendMarkdownLink("Download Me", skin.zip.GetName())
-		helpers.Print(skin.zip)
+		// a.AppendMarkdownLink("Download Me", skin.zip.GetName())
 
 		a.AppendNewLine()
 	}

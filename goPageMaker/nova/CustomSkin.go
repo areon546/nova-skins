@@ -75,6 +75,7 @@ func (cs *CustomSkin) HasZip() bool {
 
 // TODO This should use the fs.DirEntires to generate a zip file for the individual skin
 func (cs *CustomSkin) generateZipFile() {
+
 	path := fileIO.ConstructPath("..", "assets/zips", cs.name)
 	cs.zip = *fileIO.NewZipFile(path)
 
@@ -115,6 +116,7 @@ func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int)
 	forceArmour, _ := fileIn(forceArmourS, custom_skin_dir)
 	drone, _ := fileIn(droneS, custom_skin_dir)
 
+	helpers.Printf("TYPE: %T", (ss[0]))
 	cs = NewCustomSkin(ss[0], ss[4], ss[5]).addBody(body).addForceA(forceArmour).addDrone(drone)
 
 	cs.generateZipFile()
@@ -164,9 +166,15 @@ func (cs CustomSkin) getBody_FA_Drone() (body, fA, drone string) {
 	return
 }
 
-func (cs *CustomSkin) toCSVLine() string {
+func (cs *CustomSkin) ToCSVLine() string {
 	body, fA, drone := cs.getBody_FA_Drone()
 	return format("%s,%s,%s,%s,%s,%s", cs.name, body, fA, drone, cs.getAngle(), cs.getDistance())
+}
+
+func (cs *CustomSkin) ToTable() string {
+	body, fA, drone := cs.getBody_FA_Drone()
+
+	return format("| Body:| %s| \n| -- | --- | \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 }
 
 func (c *CustomSkin) getAngle() string {

@@ -46,7 +46,19 @@ func ConvertToInteger(s string) (int, error) {
 func Handle(err error) {
 	helpers.Handle(err)
 }
-func AssertEquals(t testing.TB, expected, result fmt.Stringer) {
+
+func AssertEquals(t testing.TB, expected, result string) {
+	t.Helper()
+	if reflect.DeepEqual(expected, result) {
+		return
+	}
+
+	t.Log(expected, result)
+
+	t.Errorf("Variables are not equal, \nexpected: %s \nresult: %s", expected, result)
+}
+
+func AssertObjectEquals(t testing.TB, expected, result fmt.Stringer) {
 	t.Helper()
 	if reflect.DeepEqual(expected, result) {
 		return
@@ -57,7 +69,7 @@ func AssertEquals(t testing.TB, expected, result fmt.Stringer) {
 	t.Errorf("Variables are not equal, \nexpected: %s \nresult: %s", expected, result)
 }
 
-func AssertEqualsInt(t testing.TB, expected, result int) {
+func AssertIntEquals(t testing.TB, expected, result int) {
 	t.Helper()
 
 	if expected == result {

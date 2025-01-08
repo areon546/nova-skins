@@ -7,9 +7,9 @@ import (
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 )
 
-func ConstructAssetPages() (pages []AssetsPage) {
+func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 	helpers.Print("Making Files")
-	numSkins := len(Skins)
+	numSkins := len(skins)
 	// print("skins ", numSkins)
 	numFiles := numSkins / 10
 
@@ -25,7 +25,7 @@ func ConstructAssetPages() (pages []AssetsPage) {
 
 		a.bufferPagePreffix()
 
-		skinSlice, err := getNextSlice(Skins, i)
+		skinSlice, err := getNextSlice(skins, i)
 		helpers.Handle(err)
 
 		a.addCustomSkins(skinSlice)

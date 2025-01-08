@@ -1,10 +1,6 @@
 package main
 
 import (
-	"archive/zip"
-	"io"
-	"os"
-
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
@@ -12,7 +8,7 @@ import (
 
 func main() {
 	testing := false
-	// testing = !testing
+	testing = !testing
 
 	if testing {
 		print("Testing")
@@ -30,24 +26,15 @@ func main() {
 	// delete the entirety of the pages' folder's contents if present
 	fileIO.RemoveAllWithinDirectory(nova.Pages)
 
+	skins := nova.GetCustomSkins(fileIO.ReadDirectory("../custom_skins"))
+
 	// the nova package creates a list of skins based on the custom skins csv in the custom skins folder and uses that to create these
-	nova.ConstructAssetPages()
+	nova.ConstructAssetPages(skins)
 
 }
 
 func test() {
-	skin := nova.Skins[0]
-	filename := "File.png"
-	file, err := os.Create("zipFile.zip")
-	helpers.Handle(err)
-
-	zipWriter := *zip.NewWriter(file)
-
-	virtualFile, err := zipWriter.Create(filename)
-	helpers.Handle(err)
-
-	_, err = io.Copy(virtualFile, skin.Body)
-	helpers.Handle(err)
+	// print(fileIO.MarkdownHeaderDeclarationRow(5))
 }
 
 func print(a ...any) {

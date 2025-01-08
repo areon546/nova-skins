@@ -15,7 +15,9 @@
 `Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35`
 
 ![](../custom_skins/GalagaShip.png)
+
 ![](../custom_skins/GalagaShipShield.png)
+
 [Download Me](../assets/zips/Gyaraga.zip)
 
 
@@ -31,8 +33,11 @@
 `Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40`
 
 ![](../custom_skins/freefall.png)
+
 ![](../custom_skins/freefall_force.png)
+
 ![](../custom_skins/freefall_drone.png)
+
 [Download Me](../assets/zips/Freefall.zip)
 
 
@@ -48,7 +53,9 @@
 `Minotaur,minotaur.png,minotaur_force.png,,145,60`
 
 ![](../custom_skins/minotaur.png)
+
 ![](../custom_skins/minotaur_force.png)
+
 [Download Me](../assets/zips/Minotaur.zip)
 
 

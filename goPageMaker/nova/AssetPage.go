@@ -75,25 +75,22 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.AppendNewLine()
 
 		a.Append(skin.ToTable())
-		a.Append("`" + skin.ToCSVLine() + "`")
+		a.Append("Copy this: `" + skin.ToCSVLine() + "`")
 		a.AppendNewLine()
+		a.AppendMarkdownLink("Download Me", skin.zip.GetName())
 
-		// helpers.Print("Buffering skin: ", skin)
-
+		a.AppendNewLine()
 		if !fileIO.FilesEqual(skin.Body, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Body.Name()))
-			a.AppendNewLine()
 		}
 		if !fileIO.FilesEqual(skin.ForceArmour, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.ForceArmour.Name()))
-			a.AppendNewLine()
-		}
-		if !fileIO.FilesEqual(skin.Drone, *fileIO.EmptyFile()) {
-			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Drone.Name()))
-			a.AppendNewLine()
 		}
 
-		a.AppendMarkdownLink("Download Me", skin.zip.GetName())
+		a.AppendNewLine()
+		if !fileIO.FilesEqual(skin.Drone, *fileIO.EmptyFile()) {
+			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Drone.Name()))
+		}
 
 		a.AppendNewLine()
 	}

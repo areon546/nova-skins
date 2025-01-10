@@ -8,7 +8,7 @@ import (
 
 func main() {
 	testing := false
-	testing = !testing
+	// testing = !testing
 
 	if testing {
 		print("Testing")
@@ -34,7 +34,7 @@ func main() {
 }
 
 func test() {
-	// print(fileIO.MarkdownHeaderDeclarationRow(5))
+
 }
 
 func print(a ...any) {

@@ -10,6 +10,6 @@ func TestNewCustomSkin(t *testing.T) {
 	want := &CustomSkin{name: "", angle: "0", distance: "0"}
 	get := NewCustomSkin("", "0", "0")
 
-	helpers.AssertEquals(t, want, get)
+	helpers.AssertObjectEquals(t, want, get)
 
 }

@@ -1,7 +1,6 @@
 package nova
 
 import (
-	"errors"
 	"fmt"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
@@ -76,22 +75,22 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.AppendNewLine()
 
 		a.Append(skin.ToTable())
-		a.Append("`" + skin.ToCSVLine() + "`")
+		a.Append("Copy this: `" + skin.ToCSVLine() + "`")
 		a.AppendNewLine()
+		a.AppendMarkdownLink("Download Me", skin.zip.GetName())
 
-		// helpers.Print("Buffering skin: ", skin)
-
+		a.AppendNewLine()
 		if !fileIO.FilesEqual(skin.Body, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Body.Name()))
 		}
 		if !fileIO.FilesEqual(skin.ForceArmour, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.ForceArmour.Name()))
 		}
+
+		a.AppendNewLine()
 		if !fileIO.FilesEqual(skin.Drone, *fileIO.EmptyFile()) {
 			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Drone.Name()))
 		}
-
-		a.AppendMarkdownLink("Download Me", skin.zip.GetName())
 
 		a.AppendNewLine()
 	}
@@ -109,61 +108,4 @@ func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
 		a.skins = append(a.skins, cs[a.skinsC])
 		a.skinsC++
 	}
-}
-
-func ConstructAssetPages() (pages []AssetsPage) {
-	helpers.Print("Making Files")
-	numSkins := len(Skins)
-	// print("skins ", numSkins)
-	numFiles := numSkins / 10
-
-	if numSkins%10 != 0 {
-		numFiles++
-	}
-	// print("filesToCreate", numFiles)
-
-	for i := range numFiles {
-		// create a new file
-		pageNum := i + 1
-		a := NewAssetsPage(fileIO.ConstructPath("", pagesFolder(), format("Page_%d", pageNum)), pageNum, "2")
-
-		a.bufferPagePreffix()
-
-		skinSlice, err := getNextSlice(Skins, i)
-		helpers.Handle(err)
-
-		a.addCustomSkins(skinSlice)
-		a.bufferCustomSkins()
-		a.bufferPageSuffix()
-
-		pages = append(pages, *a)
-
-		a.writeBuffer()
-	}
-
-	// a := NewAssetsPage(constructPath("", getPagesFolder(), "test"), 0, "")
-
-	// a.bufferPagePreffix()
-	// a.addCustomSkins(skins)
-	// a.bufferCustomSkins()
-	// a.bufferPageSuffix()
-
-	// pages = append(pages, *a)
-	return
-}
-
-func getNextSlice(skins []CustomSkin, i int) (subset []CustomSkin, err error) {
-	numSkins := len(skins)
-
-	if i < 0 || i > (len(skins)/10+1) {
-		err = errors.New("index out of bounds for CustomSkins array")
-	}
-
-	min, max := i*10, (i+1)*10
-
-	if max > numSkins {
-		max = numSkins
-	}
-
-	return skins[min:max], err
 }

@@ -15,7 +15,7 @@ func handle(err error) {
 }
 
 func print(a ...any) {
-	helpers.Print(a)
+	helpers.Print(a...)
 }
 
 func splitFileName(filename string) (name, suffix string) {

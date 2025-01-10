@@ -12,12 +12,14 @@
 | Angle:| 140| 
 | Distance:| 35| 
 
-`Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
+Copy this: `Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
+
+[Download Me](../assets/zips/Pinch.zip)
 
 ![](../custom_skins/pinch.png)
 ![](../custom_skins/pinch_force.png)
+
 ![](../custom_skins/pinch_drone.png)
-[Download Me](../assets/zips/Pinch.zip)
 
 
 **Celes**: [@cinnamimitime](https://discord.com/users/161502244284530688)
@@ -29,12 +31,14 @@
 | Angle:| 110| 
 | Distance:| 25| 
 
-`Celes,celes.png,celes_force.png,celes_drone.png,110,25`
+Copy this: `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
+
+[Download Me](../assets/zips/Celes.zip)
 
 ![](../custom_skins/celes.png)
 ![](../custom_skins/celes_force.png)
+
 ![](../custom_skins/celes_drone.png)
-[Download Me](../assets/zips/Celes.zip)
 
 
 **Perseus**: 
@@ -46,12 +50,14 @@
 | Angle:| 160| 
 | Distance:| 50| 
 
-`Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
+Copy this: `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
+
+[Download Me](../assets/zips/Perseus.zip)
 
 ![](../custom_skins/Perseus.png)
 ![](../custom_skins/Perseus_force.png)
+
 ![](../custom_skins/Perseus_drone.png)
-[Download Me](../assets/zips/Perseus.zip)
 
 
 **Lightning**: 
@@ -63,12 +69,14 @@
 | Angle:| 180| 
 | Distance:| 30| 
 
-`Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30`
+Copy this: `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30`
+
+[Download Me](../assets/zips/Lightning.zip)
 
 ![](../custom_skins/Lightning.png)
 ![](../custom_skins/Lightning_force.png)
+
 ![](../custom_skins/Lightning_drone.png)
-[Download Me](../assets/zips/Lightning.zip)
 
 
 **Warden**: 
@@ -80,12 +88,14 @@
 | Angle:| 0| 
 | Distance:| 0| 
 
-`Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
+Copy this: `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
+
+[Download Me](../assets/zips/Warden.zip)
 
 ![](../custom_skins/Warden.png)
 ![](../custom_skins/Warden_force.png)
+
 ![](../custom_skins/Warden_drone.png)
-[Download Me](../assets/zips/Warden.zip)
 
 
 **Windseeker**: [@anthraax](https://discord.com/users/211671269882462218)
@@ -97,12 +107,14 @@
 | Angle:| 110| 
 | Distance:| 20| 
 
-`Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20`
+Copy this: `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20`
+
+[Download Me](../assets/zips/Windseeker.zip)
 
 ![](../custom_skins/windseeker.png)
 ![](../custom_skins/windseeker_force.png)
+
 ![](../custom_skins/windseeker_drone.png)
-[Download Me](../assets/zips/Windseeker.zip)
 
 
 **Onslaught**: 
@@ -114,12 +126,14 @@
 | Angle:| 140| 
 | Distance:| 45| 
 
-`Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45`
+Copy this: `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45`
+
+[Download Me](../assets/zips/Onslaught.zip)
 
 ![](../custom_skins/Onslaught.png)
 ![](../custom_skins/Onslaught_force.png)
+
 ![](../custom_skins/Onslaught_drone.png)
-[Download Me](../assets/zips/Onslaught.zip)
 
 
 **Artillery**: 
@@ -131,12 +145,14 @@
 | Angle:| 150| 
 | Distance:| 40| 
 
-`Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40`
+Copy this: `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40`
+
+[Download Me](../assets/zips/Artillery.zip)
 
 ![](../custom_skins/Artillery.png)
 ![](../custom_skins/Artillery_force.png)
+
 ![](../custom_skins/Artillery_drone.png)
-[Download Me](../assets/zips/Artillery.zip)
 
 
 **Deconstructor**: 
@@ -148,12 +164,14 @@
 | Angle:| 155| 
 | Distance:| 42| 
 
-`Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42`
+Copy this: `Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42`
+
+[Download Me](../assets/zips/Deconstructor.zip)
 
 ![](../custom_skins/Deconstructor.png)
 ![](../custom_skins/Deconstructor_force.png)
+
 ![](../custom_skins/Deconstructor_drone.png)
-[Download Me](../assets/zips/Deconstructor.zip)
 
 
 **Engineer**: [@_capstone](https://discord.com/users/551431332253794304)
@@ -165,12 +183,14 @@
 | Angle:| 60| 
 | Distance:| 35| 
 
-`Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35`
+Copy this: `Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35`
+
+[Download Me](../assets/zips/Engineer.zip)
 
 ![](../custom_skins/engineer.png)
 ![](../custom_skins/engineer_frame.png)
+
 ![](../custom_skins/engineer_drone.png)
-[Download Me](../assets/zips/Engineer.zip)
 
 [Page_1](./Page_1.md)
 [Page_2](./Page_2.md)

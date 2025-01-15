@@ -18,6 +18,8 @@ func print(a ...any) {
 	helpers.Print(a...)
 }
 
+func format(s string, a ...any) string { return helpers.Format(s, a...) }
+
 func splitFileName(filename string) (name, suffix string) {
 	stringSections := strings.Split(filename, ".")
 	// print(stringSections)

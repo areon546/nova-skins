@@ -49,7 +49,7 @@ func (f *TextFile) ReadLine(lineNum int) (output string, err error) {
 	return
 }
 
-func (t *TextFile) AppendLine(s string, i int, newline bool) {
+func (t *TextFile) WriteLine(s string, i int, newline bool) {
 
 	for i >= len(t.textBuffer) {
 		t.textBuffer = append(t.textBuffer, "")
@@ -70,44 +70,23 @@ func (t *TextFile) AppendLastLine(s string) {
 		lastLine = 0
 	}
 
-	t.AppendLine(s, lastLine, true)
+	t.WriteLine(s, lastLine, true)
 }
 
-func (t *TextFile) AppendLines(arr []string) {
+func (t *TextFile) AppendLines(arr []string, newline bool) {
 	for _, v := range arr {
-		t.Append(v)
+		t.Append(v, newline)
 	}
 }
 
-func (f *TextFile) Append(s string) {
-	f.AppendLine(s, len(f.contentBuffer), true)
+func (f *TextFile) Append(s string, newline bool) {
+	f.WriteLine(s, len(f.contentBuffer), newline)
 }
 
-func (f *TextFile) AppendNewLine() {
-	f.Append("")
+func (f *TextFile) AppendNewLine(s string) {
+	f.Append(s, true)
 }
 
-// func (f *TextFile) bufferLines(arr []byte) {
-
-// 	if f.IsEmpty() {
-// 		f.contentBuffer = make([]byte, len(arr))
-// 	}
-
-// 	f.contentBuffer = append(f.contentBuffer, arr...)
-
-// }
-
-// func (f *TextFile) BufferToString() string {
-// 	s := ""
-// 	for _, v := range f.textBuffer {
-// 		s += v
-// 	}
-
-// 	return s
-// }
-
-// func (f *TextFile) WriteFile() {
-// 	if err := os.WriteFile(f.Name(), []byte(f.BufferToString()), 0664); err != nil {
-// 		log.Fatal(err)
-// 	}
-// }
+func (t *TextFile) AppendEmptyLine() {
+	t.Append("", true)
+}

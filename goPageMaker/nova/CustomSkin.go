@@ -7,6 +7,7 @@ import (
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/formatter"
 )
 
 var (
@@ -131,7 +132,23 @@ func (cs *CustomSkin) ToCSVLine() string {
 func (cs *CustomSkin) ToTable() string {
 	body, fA, drone := cs.getBody_FA_Drone()
 
-	return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
+	t := formatter.NewTable(2, 0)
+	bodyRow := formatter.NewRow(2)
+	bodyRow.Set(0, "Body:")
+	bodyRow.Set(1, body)
+	t.AddRow(*bodyRow)
+	faRow := formatter.NewRow(2)
+	faRow.Set(0, "Fource Armour:")
+	faRow.Set(1, fA)
+	t.AddRow(*faRow)
+	droneRow := formatter.NewRow(2)
+	droneRow.Set(0, "Drone:")
+	droneRow.Set(1, drone)
+	t.AddRow(*droneRow)
+
+	// return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
+
+	return formatter.NewMarkdownFormatter().FormatTable(*t)
 }
 
 func (c *CustomSkin) getAngle() string {
@@ -154,9 +171,9 @@ func (c *CustomSkin) getDistance() string {
 	}
 }
 
-func (c *CustomSkin) FormatCredits() string {
+func (c *CustomSkin) FormatCredits(fmt formatter.Formatter) string {
 	if c.credit == nil {
 		return ""
 	}
-	return fileIO.ConstructMarkDownLink(false, c.credit.ConstructName(), c.credit.ConstructLink())
+	return fmt.FormatLink(c.credit.ConstructName(), c.credit.ConstructLink())
 }

@@ -5,6 +5,8 @@
  | Body: | saris.png |
  | Fource Armour: | saris_force.png |
  | Drone: | saris_drone.png |
+ | Angle: | 115 |
+ | Distance: | 46 |
 
 Copy this: `Saris,saris.png,saris_force.png,saris_drone.png,115,46`
 
@@ -21,6 +23,8 @@ Copy this: `Saris,saris.png,saris_force.png,saris_drone.png,115,46`
  | Body: | orbiter.png |
  | Fource Armour: | orbiter_force.png |
  | Drone: | orbiter_drone.png |
+ | Angle: | 120 |
+ | Distance: | 40 |
 
 Copy this: `Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40`
 
@@ -37,6 +41,8 @@ Copy this: `Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40`
  | Body: | ultra_c.png |
  | Fource Armour: | ultra_c_force.png |
  | Drone: | ultra_c_drone.png |
+ | Angle: | 115 |
+ | Distance: | 35 |
 
 Copy this: `Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35`
 
@@ -53,6 +59,8 @@ Copy this: `Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35`
  | Body: | lobstar.png |
  | Fource Armour: | lobstar_frame.png |
  | Drone: | lobstar_drone.png |
+ | Angle: | 180 |
+ | Distance: | 45 |
 
 Copy this: `Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45`
 
@@ -69,6 +77,8 @@ Copy this: `Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45`
  | Body: | PINGAS_body.png |
  | Fource Armour: | PINGAS_force.png |
  | Drone: |  |
+ | Angle: | 180 |
+ | Distance: | 20 |
 
 Copy this: `PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20`
 
@@ -84,6 +94,8 @@ Copy this: `PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20`
  | Body: | skogul.png |
  | Fource Armour: | skogul_force.png |
  | Drone: | skogul_drone.png |
+ | Angle: | 115 |
+ | Distance: | 45 |
 
 Copy this: `Skogul,skogul.png,skogul_force.png,skogul_drone.png,115,45`
 
@@ -100,6 +112,8 @@ Copy this: `Skogul,skogul.png,skogul_force.png,skogul_drone.png,115,45`
  | Body: | lance.png |
  | Fource Armour: | lance_force.png |
  | Drone: |  |
+ | Angle: | 40 |
+ | Distance: |  |
 
 Copy this: `Lance,lance.png,lance_force.png,,40,`
 
@@ -115,6 +129,8 @@ Copy this: `Lance,lance.png,lance_force.png,,40,`
  | Body: | thunderax.png |
  | Fource Armour: | thunderax.png |
  | Drone: |  |
+ | Angle: |  |
+ | Distance: |  |
 
 Copy this: `Thunderax,thunderax.png,thunderax.png,,,`
 
@@ -130,6 +146,8 @@ Copy this: `Thunderax,thunderax.png,thunderax.png,,,`
  | Body: | dragon.png |
  | Fource Armour: | dragon_force.png |
  | Drone: |  |
+ | Angle: |  |
+ | Distance: |  |
 
 Copy this: `Dragon,dragon.png,dragon_force.png,,,`
 
@@ -145,6 +163,8 @@ Copy this: `Dragon,dragon.png,dragon_force.png,,,`
  | Body: | spike.png |
  | Fource Armour: | spike_force.png |
  | Drone: | spike_drone.png |
+ | Angle: | 125 |
+ | Distance: | 35 |
 
 Copy this: `Spike,spike.png,spike_force.png,spike_drone.png,125,35`
 

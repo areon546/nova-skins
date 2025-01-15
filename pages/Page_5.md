@@ -5,6 +5,8 @@
  | Body: | GalagaShip.png |
  | Fource Armour: | GalagaShipShield.png |
  | Drone: |  |
+ | Angle: | 90 |
+ | Distance: | 35 |
 
 Copy this: `Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35`
 
@@ -20,6 +22,8 @@ Copy this: `Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35`
  | Body: | freefall.png |
  | Fource Armour: | freefall_force.png |
  | Drone: | freefall_drone.png |
+ | Angle: | 152 |
+ | Distance: | 40 |
 
 Copy this: `Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40`
 
@@ -36,6 +40,8 @@ Copy this: `Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40`
  | Body: | minotaur.png |
  | Fource Armour: | minotaur_force.png |
  | Drone: |  |
+ | Angle: | 145 |
+ | Distance: | 60 |
 
 Copy this: `Minotaur,minotaur.png,minotaur_force.png,,145,60`
 
@@ -51,6 +57,8 @@ Copy this: `Minotaur,minotaur.png,minotaur_force.png,,145,60`
  | Body: |  |
  | Fource Armour: |  |
  | Drone: |  |
+ | Angle: | 0 |
+ | Distance: | 0 |
 
 Copy this: `Crucible,,,,0,0`
 

@@ -5,6 +5,8 @@
  | Body: | balm.png |
  | Fource Armour: | balm_force.png |
  | Drone: | balm_drone.png |
+ | Angle: | 160 |
+ | Distance: | 30 |
 
 Copy this: `Balm,balm.png,balm_force.png,balm_drone.png,160,30`
 
@@ -21,6 +23,8 @@ Copy this: `Balm,balm.png,balm_force.png,balm_drone.png,160,30`
  | Body: | scimitar.png |
  | Fource Armour: | scimitar_force.png |
  | Drone: | scimitar_drone.png |
+ | Angle: | 140 |
+ | Distance: | 50 |
 
 Copy this: `Scimitar,scimitar.png,scimitar_force.png,scimitar_drone.png,140,50`
 
@@ -37,6 +41,8 @@ Copy this: `Scimitar,scimitar.png,scimitar_force.png,scimitar_drone.png,140,50`
  | Body: | SEbody.png |
  | Fource Armour: | SEforce.png |
  | Drone: |  |
+ | Angle: | 0 |
+ | Distance: | 30 |
 
 Copy this: `SE,SEbody.png,SEforce.png,,0,30`
 
@@ -52,6 +58,8 @@ Copy this: `SE,SEbody.png,SEforce.png,,0,30`
  | Body: |  |
  | Fource Armour: | BAD_force.png |
  | Drone: | BAD_drone.png |
+ | Angle: | 140 |
+ | Distance: | 50 |
 
 Copy this: `BAD,,BAD_force.png,BAD_drone.png,140,50`
 
@@ -67,6 +75,8 @@ Copy this: `BAD,,BAD_force.png,BAD_drone.png,140,50`
  | Body: | LC.png |
  | Fource Armour: | LC_force.png |
  | Drone: | LC_drone.png |
+ | Angle: | 145 |
+ | Distance: | 40 |
 
 Copy this: `Lanius Cruiser,LC.png,LC_force.png,LC_drone.png,145,40`
 
@@ -83,6 +93,8 @@ Copy this: `Lanius Cruiser,LC.png,LC_force.png,LC_drone.png,145,40`
  | Body: | Tracer.png |
  | Fource Armour: | Tracer_force.png |
  | Drone: |  |
+ | Angle: | 0 |
+ | Distance: | 0 |
 
 Copy this: `Tracer,Tracer.png,Tracer_force.png,,0,0`
 
@@ -98,6 +110,8 @@ Copy this: `Tracer,Tracer.png,Tracer_force.png,,0,0`
  | Body: | divineavenger.png |
  | Fource Armour: | divineavenger_force.png |
  | Drone: |  |
+ | Angle: | 180 |
+ | Distance: | 160 |
 
 Copy this: `Divine Avenger,divineavenger.png,divineavenger_force.png,,180,160`
 
@@ -113,6 +127,8 @@ Copy this: `Divine Avenger,divineavenger.png,divineavenger_force.png,,180,160`
  | Body: | pewsquared.png |
  | Fource Armour: | pewsquared_force.png |
  | Drone: |  |
+ | Angle: | 155 |
+ | Distance: | 35 |
 
 Copy this: `Pew,pewsquared.png,pewsquared_force.png,,155,35`
 
@@ -128,6 +144,8 @@ Copy this: `Pew,pewsquared.png,pewsquared_force.png,,155,35`
  | Body: | WyvernBody.png |
  | Fource Armour: | WyvernForce.png |
  | Drone: |  |
+ | Angle: | 115 |
+ | Distance: | 46 |
 
 Copy this: `Wyvern,WyvernBody.png,WyvernForce.png,,115,46`
 
@@ -143,6 +161,8 @@ Copy this: `Wyvern,WyvernBody.png,WyvernForce.png,,115,46`
  | Body: | millenium_falcon.png |
  | Fource Armour: | millenium_falcon_force.png |
  | Drone: | millenium_falcon_drone.png |
+ | Angle: | 180 |
+ | Distance: | 50 |
 
 Copy this: `Millenium Falcon,millenium_falcon.png,millenium_falcon_force.png,millenium_falcon_drone.png,180,50`
 

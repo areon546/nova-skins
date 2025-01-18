@@ -76,11 +76,13 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.Append(": ", false)
 		a.Append(skin.FormatCredits(a.Fmt), false)
 		a.AppendEmptyLine()
+		a.AppendEmptyLine()
 
 		a.AppendNewLine(skin.ToTable(a.Fmt))
 		a.AppendNewLine("Copy this: `" + skin.ToCSVLine() + "`")
 		a.AppendEmptyLine()
 		a.AppendLink("Download Me", skin.zip.GetName())
+		a.AppendEmptyLine()
 
 		a.AppendEmptyLine()
 		if !fileIO.FilesEqual(skin.Body, *fileIO.EmptyFile()) {

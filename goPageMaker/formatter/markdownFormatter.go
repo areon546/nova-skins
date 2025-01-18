@@ -25,13 +25,17 @@ func (m markdownFormatter) FormatHeading(tier int, heading string) string {
 	return s + " " + heading
 }
 
-func (m markdownFormatter) FormatTable(t Table) string {
+func (m markdownFormatter) FormatTable(t Table, heading bool) string {
 	s := ""
 
 	headers := constructRow(t.headers)
 	headerDecleration := markdownHeaderDeclarationRow(t.headers.Size())
 
-	s += headers + headerDecleration
+	if heading {
+		s += headers
+	}
+
+	s += headerDecleration
 
 	for i := 0; i < t.Rows(); i++ {
 		r, _ := t.GetRow(i)

@@ -6,7 +6,7 @@ type Formatter interface {
 	FormatLink(displayText, path string) string
 	FormatEmbed(path string) string
 	FormatHeading(tier int, heading string) string
-	FormatTable(t Table) string
+	FormatTable(t Table, headers bool) string
 	FormatBold(s string) string
 	FormatItalic(s string) string
 }

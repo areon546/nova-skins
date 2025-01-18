@@ -160,7 +160,7 @@ func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
 
 	// return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 
-	return fmt.FormatTable(*t)
+	return fmt.FormatTable(*t, false)
 }
 
 func (c *CustomSkin) getBody() string {

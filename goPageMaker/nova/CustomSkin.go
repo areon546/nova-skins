@@ -14,6 +14,11 @@ var (
 	ErrMalformedRow CustomSkinError = CustomSkinError{"malformed row"}
 )
 
+const (
+	msFile      string = "file not found"
+	missingFile string = ""
+)
+
 type CustomSkinError struct {
 	name string
 }
@@ -130,20 +135,19 @@ func (cs *CustomSkin) ToCSVLine() string {
 }
 
 func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
-	body, fA, drone := cs.getBody_FA_Drone()
 
 	t := formatter.NewTable(2, 0)
 	bodyRow := formatter.NewRow(2)
 	bodyRow.Set(0, "Body:")
-	bodyRow.Set(1, body)
+	bodyRow.Set(1, cs.getBody())
 	t.AddRow(*bodyRow)
 	faRow := formatter.NewRow(2)
 	faRow.Set(0, "Fource Armour:")
-	faRow.Set(1, fA)
+	faRow.Set(1, cs.getForceArmour())
 	t.AddRow(*faRow)
 	droneRow := formatter.NewRow(2)
 	droneRow.Set(0, "Drone:")
-	droneRow.Set(1, drone)
+	droneRow.Set(1, cs.getDrone())
 	t.AddRow(*droneRow)
 	angleRow := formatter.NewRow(2)
 	angleRow.Set(0, "Angle:")
@@ -157,6 +161,27 @@ func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
 	// return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 
 	return fmt.FormatTable(*t)
+}
+
+func (c *CustomSkin) getBody() string {
+	if fileIO.FilesEqual(c.Body, *fileIO.EmptyFile()) {
+		return missingFile
+	}
+	return c.Body.Name()
+}
+
+func (c *CustomSkin) getForceArmour() string {
+	if fileIO.FilesEqual(c.ForceArmour, *fileIO.EmptyFile()) {
+		return missingFile
+	}
+	return c.ForceArmour.Name()
+}
+
+func (c *CustomSkin) getDrone() string {
+	if fileIO.FilesEqual(c.Drone, *fileIO.EmptyFile()) {
+		return missingFile
+	}
+	return c.Drone.Name()
 }
 
 func (c *CustomSkin) getAngle() string {

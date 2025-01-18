@@ -25,9 +25,7 @@ func main() {
 
 	// delete the entirety of the pages' folder's contents if present
 	fileIO.RemoveAllWithinDirectory(nova.Pages)
-
 	skins := nova.GetCustomSkins(fileIO.ReadDirectory("../custom_skins"))
-
 	// the nova package creates a list of skins based on the custom skins csv in the custom skins folder and uses that to create these
 	nova.ConstructAssetPages(skins)
 

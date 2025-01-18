@@ -118,6 +118,8 @@ func ZipFolder(path, output string) {
 			return err
 		}
 
+		helpers.Printf("%v", fileBeingZipped)
+
 		// here we copy the contents in the physical file to the virtual file being zipped
 		_, err = io.Copy(fileBeingZipped, fileToZip)
 		if err != nil {

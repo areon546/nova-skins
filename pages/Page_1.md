@@ -53,6 +53,24 @@ Copy this: `Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35`
 ![](../custom_skins/ultra_c_drone.png)
 
 
+## **Freefall**: [@akaevertone](https://discord.com/users/235458820845862912)
+ |  |  |
+ | --- | --- |
+ | Body: | freefall.png |
+ | Fource Armour: | freefall_force.png |
+ | Drone: | freefall_drone.png |
+ | Angle: | 152 |
+ | Distance: | 40 |
+
+Copy this: `Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40`
+
+[Download Me](../assets/zips/Freefall.zip)
+![](../custom_skins/freefall.png)
+![](../custom_skins/freefall_force.png)
+
+![](../custom_skins/freefall_drone.png)
+
+
 ## **Lobstar**: [@_capstone](https://discord.com/users/551431332253794304)
  |  |  |
  | --- | --- |
@@ -155,23 +173,5 @@ Copy this: `Dragon,dragon.png,dragon_force.png,,,`
 ![](../custom_skins/dragon.png)
 ![](../custom_skins/dragon_force.png)
 
-
-
-## **Spike**: [@hadiros](https://discord.com/users/266028842395631629)
- |  |  |
- | --- | --- |
- | Body: | spike.png |
- | Fource Armour: | spike_force.png |
- | Drone: | spike_drone.png |
- | Angle: | 125 |
- | Distance: | 35 |
-
-Copy this: `Spike,spike.png,spike_force.png,spike_drone.png,125,35`
-
-[Download Me](../assets/zips/Spike.zip)
-![](../custom_skins/spike.png)
-![](../custom_skins/spike_force.png)
-
-![](../custom_skins/spike_drone.png)
 
 [Page_1](./Page_1.md)[Page_2](./Page_2.md)

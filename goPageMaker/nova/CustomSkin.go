@@ -7,10 +7,16 @@ import (
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/formatter"
 )
 
 var (
 	ErrMalformedRow CustomSkinError = CustomSkinError{"malformed row"}
+)
+
+const (
+	msFile      string = "file not found"
+	missingFile string = ""
 )
 
 type CustomSkinError struct {
@@ -128,10 +134,54 @@ func (cs *CustomSkin) ToCSVLine() string {
 	return format("%s,%s,%s,%s,%s,%s", cs.name, body, fA, drone, cs.getAngle(), cs.getDistance())
 }
 
-func (cs *CustomSkin) ToTable() string {
-	body, fA, drone := cs.getBody_FA_Drone()
+func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
 
-	return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
+	t := formatter.NewTable(2, 0)
+	bodyRow := formatter.NewRow(2)
+	bodyRow.Set(0, "Body:")
+	bodyRow.Set(1, cs.getBody())
+	t.AddRow(*bodyRow)
+	faRow := formatter.NewRow(2)
+	faRow.Set(0, "Fource Armour:")
+	faRow.Set(1, cs.getForceArmour())
+	t.AddRow(*faRow)
+	droneRow := formatter.NewRow(2)
+	droneRow.Set(0, "Drone:")
+	droneRow.Set(1, cs.getDrone())
+	t.AddRow(*droneRow)
+	angleRow := formatter.NewRow(2)
+	angleRow.Set(0, "Angle:")
+	angleRow.Set(1, cs.getAngle())
+	t.AddRow(*angleRow)
+	distanceRow := formatter.NewRow(2)
+	distanceRow.Set(0, "Distance:")
+	distanceRow.Set(1, cs.getDistance())
+	t.AddRow(*distanceRow)
+
+	// return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
+
+	return fmt.FormatTable(*t)
+}
+
+func (c *CustomSkin) getBody() string {
+	if fileIO.FilesEqual(c.Body, *fileIO.EmptyFile()) {
+		return missingFile
+	}
+	return c.Body.Name()
+}
+
+func (c *CustomSkin) getForceArmour() string {
+	if fileIO.FilesEqual(c.ForceArmour, *fileIO.EmptyFile()) {
+		return missingFile
+	}
+	return c.ForceArmour.Name()
+}
+
+func (c *CustomSkin) getDrone() string {
+	if fileIO.FilesEqual(c.Drone, *fileIO.EmptyFile()) {
+		return missingFile
+	}
+	return c.Drone.Name()
 }
 
 func (c *CustomSkin) getAngle() string {
@@ -154,9 +204,9 @@ func (c *CustomSkin) getDistance() string {
 	}
 }
 
-func (c *CustomSkin) FormatCredits() string {
+func (c *CustomSkin) FormatCredits(fmt formatter.Formatter) string {
 	if c.credit == nil {
 		return ""
 	}
-	return fileIO.ConstructMarkDownLink(false, c.credit.ConstructName(), c.credit.ConstructLink())
+	return fmt.FormatLink(c.credit.ConstructName(), c.credit.ConstructLink())
 }

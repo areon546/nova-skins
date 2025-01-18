@@ -2,7 +2,6 @@ package helpers
 
 import (
 	"errors"
-	"fmt"
 	"log"
 	"reflect"
 	"testing"
@@ -58,15 +57,15 @@ func AssertEquals(t testing.TB, expected, result string) {
 	t.Errorf("Variables are not equal, \nexpected: %s \nresult: %s", expected, result)
 }
 
-func AssertObjectEquals(t testing.TB, expected, result fmt.Stringer) {
+func AssertObjectEquals(t testing.TB, expected, result any) {
 	t.Helper()
 	if reflect.DeepEqual(expected, result) {
 		return
 	}
 
-	t.Log(expected.String(), result.String())
+	t.Log(expected, result)
 
-	t.Errorf("Variables are not equal, \nexpected: %s \nresult: %s", expected, result)
+	t.Errorf("Variables are not equal, \nexpected: %s \nresult:   %s", expected, result)
 }
 
 func AssertIntEquals(t testing.TB, expected, result int) {

@@ -36,15 +36,6 @@ func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 
 		a.writeBuffer()
 	}
-
-	// a := NewAssetsPage(constructPath("", getPagesFolder(), "test"), 0, "")
-
-	// a.bufferPagePreffix()
-	// a.addCustomSkins(skins)
-	// a.bufferCustomSkins()
-	// a.bufferPageSuffix()
-
-	// pages = append(pages, *a)
 	return
 }
 

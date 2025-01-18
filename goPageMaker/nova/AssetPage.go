@@ -1,15 +1,14 @@
 package nova
 
 import (
-	"fmt"
-
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/formatter"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 )
 
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
 type AssetsPage struct {
-	fileIO.MarkdownFile
+	formatter.FormattedFile
 	pageNumber int
 	maxSkins   int
 	skinsC     int
@@ -18,7 +17,7 @@ type AssetsPage struct {
 }
 
 func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
-	return &AssetsPage{MarkdownFile: *fileIO.NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10, skinsC: 0}
+	return &AssetsPage{FormattedFile: *formatter.NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10, skinsC: 0}
 }
 
 func (a *AssetsPage) String() string {
@@ -28,7 +27,7 @@ func (a *AssetsPage) String() string {
 func (a *AssetsPage) bufferPagePreffix() error {
 	// write to file:
 	// Page #
-	a.Append(fmt.Sprintf("# Page %d", a.pageNumber))
+	a.AppendHeading(1, format("# Page %d", a.pageNumber))
 	// prev next
 	err := a.bufferPrevNextPage()
 
@@ -55,11 +54,11 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 
 	if a.pageNumber > 1 {
 
-		a.AppendMarkdownLink(prev, (path + prevF))
+		a.AppendLink(prev, (path + prevF))
 	}
 
-	a.AppendMarkdownLink(curr, (path + currF))
-	a.AppendMarkdownLink(next, (path + nextF))
+	a.AppendLink(curr, (path + currF))
+	a.AppendLink(next, (path + nextF))
 
 	return nil
 }
@@ -69,31 +68,39 @@ func (a *AssetsPage) bufferCustomSkins() {
 	path := ".."
 
 	for _, skin := range a.skins {
-		a.AppendNewLine()
+		a.AppendEmptyLine()
 
-		a.Append(format("**%s**: %s", skin.name, skin.FormatCredits()))
-		a.AppendNewLine()
+		a.AppendHeading(2, "")
+		a.AppendBold(skin.name)
+		a.Append(": ", false)
+		a.Append(skin.FormatCredits(a.Fmt), false)
+		a.AppendEmptyLine()
 
-		a.Append(skin.ToTable())
-		a.Append("Copy this: `" + skin.ToCSVLine() + "`")
-		a.AppendNewLine()
-		a.AppendMarkdownLink("Download Me", skin.zip.GetName())
+		a.AppendNewLine(skin.ToTable(a.Fmt))
+		a.AppendNewLine("Copy this: `" + skin.ToCSVLine() + "`")
+		a.AppendEmptyLine()
+		a.AppendLink("Download Me", skin.zip.GetName())
 
-		a.AppendNewLine()
+		a.AppendEmptyLine()
 		if !fileIO.FilesEqual(skin.Body, *fileIO.EmptyFile()) {
-			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Body.Name()))
+			a.AppendCustomSkinFile(path, skin.Body.Name())
 		}
 		if !fileIO.FilesEqual(skin.ForceArmour, *fileIO.EmptyFile()) {
-			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.ForceArmour.Name()))
+			a.AppendCustomSkinFile(path, skin.ForceArmour.Name())
 		}
 
-		a.AppendNewLine()
+		a.AppendEmptyLine()
 		if !fileIO.FilesEqual(skin.Drone, *fileIO.EmptyFile()) {
-			a.AppendMarkdownEmbed(fileIO.ConstructPath(path, "custom_skins", skin.Drone.Name()))
+			a.AppendCustomSkinFile(path, skin.Drone.Name())
 		}
 
-		a.AppendNewLine()
+		a.AppendEmptyLine()
 	}
+}
+
+func (a *AssetsPage) AppendCustomSkinFile(path, filename string) {
+	a.AppendEmbed(fileIO.ConstructPath(path, "custom_skins", filename))
+	a.AppendEmptyLine()
 }
 
 func (a *AssetsPage) writeBuffer() {

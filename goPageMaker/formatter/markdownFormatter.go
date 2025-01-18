@@ -60,18 +60,19 @@ func markdownLink(embed bool, displayText, path string) (s string) {
 }
 
 func constructRow(r row) (row string) {
+	row += "|"
 	for i := 0; i < r.Size(); i++ {
 		v := r.Get(i)
 		row += constructCell(v)
 	}
 
-	row += " |\n" // since a row needs to start and end with a | on a new line to be valid
+	row += "\n" // since a row needs to start and end with a | on a new line to be valid
 
 	return
 }
 
 func constructCell(cell string) string {
-	return " | " + cell
+	return cell + " | "
 }
 
 func markdownHeaderDeclarationRow(length int) string {

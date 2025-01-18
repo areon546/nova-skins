@@ -28,6 +28,7 @@ func (a *AssetsPage) bufferPagePreffix() error {
 	// write to file:
 	// Page #
 	a.AppendHeading(1, format("# Page %d", a.pageNumber))
+	a.AppendEmptyLine()
 	// prev next
 	err := a.bufferPrevNextPage()
 

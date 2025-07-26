@@ -1,9 +1,10 @@
-package nova
+package processing
 
 import (
-	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
-	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/formatter"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
+	"github.com/areon546/go-files/files"
+	"github.com/areon546/go-files/formatter"
 )
 
 // ~~~~~~~~~~~~~~~~~~~ AssetPage
@@ -13,11 +14,11 @@ type AssetsPage struct {
 	maxSkins   int
 	skinsC     int
 
-	skins []CustomSkin
+	skins []nova.CustomSkin
 }
 
-func NewAssetsPage(filename string, pageNum int, path string) *AssetsPage {
-	return &AssetsPage{FormattedFile: *formatter.NewMarkdownFile(filename, path), pageNumber: pageNum, maxSkins: 10, skinsC: 0}
+func NewAssetsPage(path, filename string, pageNum int) *AssetsPage {
+	return &AssetsPage{FormattedFile: *formatter.NewMarkdownFile(path, filename, ""), pageNumber: pageNum, maxSkins: 10, skinsC: 0}
 }
 
 func (a *AssetsPage) String() string {
@@ -54,7 +55,6 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 	nextF := format("%s.md", next)
 
 	if a.pageNumber > 1 {
-
 		a.AppendLink(prev, (path + prevF))
 	}
 
@@ -72,7 +72,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.AppendEmptyLine()
 
 		a.AppendHeading(2, "")
-		a.AppendBold(skin.name)
+		a.AppendBold(skin.Name())
 		a.Append(": ", false)
 		a.Append(skin.FormatCredits(a.Fmt), false)
 		a.AppendEmptyLine()
@@ -81,20 +81,22 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.AppendNewLine(skin.ToTable(a.Fmt))
 		a.AppendNewLine("Copy this: `" + skin.ToCSVLine() + "`")
 		a.AppendEmptyLine()
-		a.AppendLink("Download Me", skin.zip.GetName())
+		a.AppendLink("Download Me", skin.Zip().Name())
 		a.AppendEmptyLine()
 
 		a.AppendEmptyLine()
-		if !fileIO.FilesEqual(skin.Body, *fileIO.EmptyFile()) {
-			a.AppendCustomSkinFile(path, skin.Body.Name())
+		if !files.FilesEqual(*skin.Body(), *files.EmptyFile()) {
+			a.AppendCustomSkinFile(path, skin.Body().Name())
 		}
-		if !fileIO.FilesEqual(skin.ForceArmour, *fileIO.EmptyFile()) {
-			a.AppendCustomSkinFile(path, skin.ForceArmour.Name())
+		if !files.FilesEqual(*skin.ForceArmour(), *files.EmptyFile()) {
+			a.AppendCustomSkinFile(path, skin.ForceArmour().Name())
 		}
 
+		a.Append("", true)
+
 		a.AppendEmptyLine()
-		if !fileIO.FilesEqual(skin.Drone, *fileIO.EmptyFile()) {
-			a.AppendCustomSkinFile(path, skin.Drone.Name())
+		if !files.FilesEqual(*skin.Drone(), *files.EmptyFile()) {
+			a.AppendCustomSkinFile(path, skin.Drone().Name())
 		}
 
 		a.AppendEmptyLine()
@@ -102,17 +104,17 @@ func (a *AssetsPage) bufferCustomSkins() {
 }
 
 func (a *AssetsPage) AppendCustomSkinFile(path, filename string) {
-	a.AppendEmbed(fileIO.ConstructPath(path, "custom_skins", filename))
+	a.AppendEmbed(files.ConstructFilePath(path+"/custom_skins", filename, ""))
 	a.AppendEmptyLine()
 }
 
 func (a *AssetsPage) writeBuffer() {
 	helpers.Print("Writing to: ", a)
 	// print(a.contentBuffer)
-	a.Write(a.Contents())
+	a.WriteBuffer()
 }
 
-func (a *AssetsPage) addCustomSkins(cs []CustomSkin) {
+func (a *AssetsPage) addCustomSkins(cs []nova.CustomSkin) {
 	numSkins := min(10, len(cs))
 	for a.skinsC < numSkins {
 		a.skins = append(a.skins, cs[a.skinsC])

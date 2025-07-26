@@ -1,14 +1,14 @@
-package nova
+package processing
 
 import (
 	"errors"
 
-	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 )
 
-func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
-	helpers.Print("Making Files")
+func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
+	helpers.Print("Making Asset Pages")
 	numSkins := len(skins)
 	// print("skins ", numSkins)
 	numFiles := numSkins / 10
@@ -21,7 +21,7 @@ func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 	for i := range numFiles {
 		// create a new file
 		pageNum := i + 1
-		a := NewAssetsPage(fileIO.ConstructPath("", pagesFolder(), format("Page_%d", pageNum)), pageNum, "2")
+		a := NewAssetsPage("", pagesFolder()+format("Page_%d.md", pageNum), pageNum)
 
 		a.bufferPagePreffix()
 
@@ -39,7 +39,7 @@ func ConstructAssetPages(skins []CustomSkin) (pages []AssetsPage) {
 	return
 }
 
-func getNextSlice(skins []CustomSkin, i int) (subset []CustomSkin, err error) {
+func getNextSlice(skins []nova.CustomSkin, i int) (subset []nova.CustomSkin, err error) {
 	numSkins := len(skins)
 
 	if i < 0 || i > (len(skins)/10+1) {

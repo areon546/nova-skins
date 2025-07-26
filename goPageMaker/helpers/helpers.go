@@ -2,11 +2,11 @@ package helpers
 
 import (
 	"errors"
+	"fmt"
 	"log"
-	"reflect"
 	"testing"
 
-	"github.com/areon546/go-helpers"
+	"github.com/areon546/go-helpers/helpers"
 )
 
 func HandleExcept(err, allowed error) {
@@ -39,67 +39,33 @@ func Search[T any](item T, arr []T) (index int) {
 }
 
 func ConvertToInteger(s string) (int, error) {
-	return helpers.ConvertToInteger(s)
+	return helpers.StringToInteger(s)
 }
 
 func Handle(err error) {
 	helpers.Handle(err)
 }
 
-func AssertEquals(t testing.TB, expected, result string) {
+func AssertEquals(t testing.TB, expected, result fmt.Stringer) {
 	t.Helper()
-	if reflect.DeepEqual(expected, result) {
-		return
-	}
-
-	t.Log(expected, result)
-
-	t.Errorf("Variables are not equal, \nexpected: %s \nresult: %s", expected, result)
+	helpers.AssertEqualsStringer(t, expected, result)
 }
 
 func AssertObjectEquals(t testing.TB, expected, result any) {
 	t.Helper()
-	if reflect.DeepEqual(expected, result) {
-		return
-	}
-
-	t.Log(expected, result)
-
-	t.Errorf("Variables are not equal, \nexpected: %s \nresult:   %s", expected, result)
+	helpers.AssertEqualsObject(t, expected, result)
 }
 
 func AssertIntEquals(t testing.TB, expected, result int) {
-	t.Helper()
-
-	if expected == result {
-		return
-	}
-
-	t.Log(expected, result)
-
-	t.Errorf("Integers are not equal. \nexpected: %d \nresult: %d", expected, result)
-
+	helpers.AssertEqualsInt(t, expected, result)
 }
 
 func AssertError(t testing.TB, got, want error) {
 	t.Helper()
-
-	// log.Fatalf("\nexpected %q \ngot %q", want, got)
-	if !errors.Is(got, want) {
-		t.Fatalf("got error %q want %q", got, want)
-	}
-
+	helpers.AssertError(t, got, want)
 }
 
 func AssertNoError(t testing.TB, err error) {
 	t.Helper()
 	AssertError(t, err, nil)
-}
-
-// dont think they are necessary honestly but here still
-func BytesToString(b []byte) (s string) {
-	return string(b)
-}
-func StringToBytes(s string) (b []byte) {
-	return []byte(s)
 }

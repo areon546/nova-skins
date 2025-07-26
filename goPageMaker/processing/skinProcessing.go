@@ -1,4 +1,4 @@
-package nova
+package processing
 
 import (
 	"errors"
@@ -8,39 +8,57 @@ import (
 	"strings"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
-	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
+	"github.com/areon546/go-files/files"
 )
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
-func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []CustomSkin) {
-	helpers.Print("Compiling Skins")
-	skinsData := fileIO.ReadCSV(inSkinsFolder("custom_skins"))
+func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
+	helpers.Print("Reading Skins In Directory")
 
-	credits := skinsData.GetIndexOfColumn("credit")
+	filename := inSkinsFolder("custom_skins", "csv")
+
+	print(filename, "in GetCustomSkins")
+
+	skinsData, err := files.ReadCSV(filename, true)
+
+	helpers.Handle(err)
+
+	credits := skinsData.IndexOfCol("credit")
 
 	discordUIDs := getDiscordUIDs()
 	infoMaps := []map[string]string{discordUIDs}
 	mapType := []cred.CreditSource{cred.Discord}
 
-	reqLength := skinsData.NumHeaders()
-	skins = make([]CustomSkin, 0, skinsData.Rows())
+	print("Skinsdata.cols", skinsData.Cols())
+	reqLength := skinsData.Cols()
+	skins = make([]nova.CustomSkin, 0, skinsData.Rows())
 
 	for row := range skinsData.Rows() {
-		s := skinsData.GetRow(row)
-		skin, err := CSVLineToCustomSkin(s, custom_skin_dir, reqLength)
+		s := skinsData.Row(row)
 
-		if err != nil {
-			helpers.Print("Get Custom Skin Error", s)
-			helpers.HandleExcept(err, ErrMalformedRow)
+		// Headers
+		if strings.HasPrefix(s, "name,body_artwork,body_force_armor_artwork,drone_artwork,jet_angle,jet_distance") {
 			continue
 		}
 
-		credit := skinsData.GetCell(row, credits)
+		skin, err := CSVLineToCustomSkin(s, custom_skin_dir, reqLength)
+		if err != nil {
+			helpers.Print("Get Custom Skin Error", s)
+			helpers.HandleExcept(err, nova.ErrMalformedRow)
+			continue
+		}
+
+		print("Processing Skin:", skin.Name())
+		skin.GenerateZipFile()
+		// print("Zip complete")
+
+		credit := skinsData.Cell(row, credits)
 		creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
 
 		if creditType != cred.Default {
-			skin.addCredits(cred.NewCredit(credit, creditInfo, creditType))
+			skin.AddCredits(cred.NewCredit(credit, creditInfo, creditType))
 		}
 
 		skins = append(skins, *skin)
@@ -65,8 +83,10 @@ func assignCredits(credit string, creditInfoMaps []map[string]string, mapTypes [
 }
 
 func getDiscordUIDs() map[string]string {
-	discordCreditData := fileIO.ReadCSV(inAssetsFolder("DISCORD_UIDS"))
-	fileContents := discordCreditData.GetContents()
+	discordCreditData, err := files.ReadCSV(inAssetsFolder("DISCORD_UIDS", "csv"), true)
+	fileContents := discordCreditData.Contents()
+
+	helpers.Handle(err)
 
 	uidMap := make(map[string]string, discordCreditData.Rows())
 
@@ -79,11 +99,11 @@ func getDiscordUIDs() map[string]string {
 	return uidMap
 }
 
-func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int) (cs *CustomSkin, err error) {
+func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int) (cs *nova.CustomSkin, err error) {
 	ss := strings.Split(s, ",")
 
 	if len(ss) != reqLength {
-		return EmptyCustomSkin(), ErrMalformedRow
+		return nova.EmptyCustomSkin(), nova.ErrMalformedRow
 	}
 
 	bodyS, forceArmourS, droneS := ss[1], ss[2], ss[3]
@@ -92,18 +112,16 @@ func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int)
 	forceArmour, _ := fileIn(forceArmourS, custom_skin_dir)
 	drone, _ := fileIn(droneS, custom_skin_dir)
 
-	cs = NewCustomSkin(ss[0], ss[4], ss[5]).addBody(body).addForceA(forceArmour).addDrone(drone)
-
-	cs.generateZipFile()
+	cs = nova.NewCustomSkin(ss[0], ss[4], ss[5]).AddBody(body).AddForceA(forceArmour).AddDrone(drone)
 
 	return
 }
 
-// TODO replace this with the SearchWithFunc when you update the helpers library version used
-func fileIn(s string, arr []os.DirEntry) (f fileIO.File, err error) {
-	f = *fileIO.EmptyFile()
+// TODO: replace this with the SearchWithFunc when you update the helpers library version used
+func fileIn(s string, arr []os.DirEntry) (f files.File, err error) {
+	f = *files.EmptyFile()
 	err = errors.New("file not found")
-	// TODO why are you passing through variables that could simply be part of the nova
+	// TODO: why are you passing through variables that could simply be part of the nova
 	// make custom_skin directory a nova variable
 	if reflect.DeepEqual("", s) {
 		return f, errors.New("empty file")

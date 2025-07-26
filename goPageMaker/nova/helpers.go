@@ -1,35 +1,20 @@
 package nova
 
 import (
-	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/fileIO"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+	"github.com/areon546/go-files/files"
 )
 
 // helper functions
 
 func format(s string, a ...any) string { return helpers.Format(s, a...) }
 
-func pagesFolder() string {
-	return "../pages"
-
-	// reads what files are in the assets folder
-	// assets := readDirectory(skinFolder())
-	// assetsAsFiles, _ := filterFiles(assets)
-
-	// print("assets", assets)
-	// printf("%s", "abba")
-	// for _, v := range assetsAsFiles {
-	// 	print(v.String())
-	// }
-
-}
-
-func inSkinsFolder(file string) string {
-	return fileIO.ConstructPath("..", "custom_skins", file)
+func print(a ...any) {
+	helpers.Print(a...)
 }
 
 func inAssetsFolder(file string) string {
-	return fileIO.ConstructPath("..", "assets", file)
+	return files.ConstructFilePath("../assets", file, "")
 }
 
 func AssetsCSVPath() string {

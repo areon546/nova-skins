@@ -20,6 +20,7 @@ func main() {
 	if testing {
 		print("Testing")
 		test()
+		return
 	}
 
 	print("Running")
@@ -29,15 +30,13 @@ func main() {
 }
 
 func test() {
-	// zip.ZipFolderO("../pages", "../main")
-	helpers.Print(files.ConstructFilePath(compiled_pages, "asd", ""))
+	file := files.NewTextFile("../testing.txt")
+	file.Append("asdasd", false)
+	file.Append("asdasd", false)
+	file.Append("asdasd", false)
+	file.Append("asdasd", false)
 
-	txt := files.NewTextFile("../404.md")
-	print(txt.Name())
-
-	result := txt.ReadFile()
-
-	helpers.Print(result)
+	file.WriteBuffer()
 }
 
 func print(a ...any) {
@@ -50,14 +49,15 @@ func compileSkins() {
 
 	// compiles a list of skins based on the files in the custom skins directory
 	skins := processing.GetCustomSkins(files.ReadDirectory(custom_skins_dir))
+	print(len(skins), len(skins[0:1]))
 
 	// the processing package creates a list of skins based on the custom skins csv in the custom skins folder and uses that to create these
-	processing.ConstructAssetPages(skins)
+	processing.ConstructAssetPages(skins[0:1])
 }
 
 func zipAllSkins() {
 	// zips custom_skins folder
-	zip.ZipFolder(custom_skins_dir, "../custom_skins")
+	zip.ZipFolder(custom_skins_dir, "../custom_skins/")
 	// TODO: currently I do not like how the two arguments have the same name, and that is because the function adds a zip at the end
 	// solution: make it check if there is a zip or .ZIP in the function already
 }

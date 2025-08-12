@@ -175,27 +175,27 @@ func (c *CustomSkin) FormatCredits(fmt formatter.Formatter) string {
 }
 
 func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
-	t := table.NewTable(2, 0, true)
+	t := table.NewTable(2)
 	bodyRow := table.NewRow(2)
 	bodyRow.Set(0, "Body:")
 	bodyRow.Set(1, cs.Body().Name())
-	t.AddRow(*bodyRow)
+	t.AddRecord(bodyRow)
 	faRow := table.NewRow(2)
 	faRow.Set(0, "Fource Armour:")
 	faRow.Set(1, cs.ForceArmour().Name())
-	t.AddRow(*faRow)
+	t.AddRecord(faRow)
 	droneRow := table.NewRow(2)
 	droneRow.Set(0, "Drone:")
 	droneRow.Set(1, cs.Drone().Name())
-	t.AddRow(*droneRow)
+	t.AddRecord(droneRow)
 	angleRow := table.NewRow(2)
 	angleRow.Set(0, "Angle:")
 	angleRow.Set(1, cs.Angle())
-	t.AddRow(*angleRow)
+	t.AddRecord(angleRow)
 	distanceRow := table.NewRow(2)
 	distanceRow.Set(0, "Distance:")
 	distanceRow.Set(1, cs.Distance())
-	t.AddRow(*distanceRow)
+	t.AddRecord(distanceRow)
 
 	// return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 

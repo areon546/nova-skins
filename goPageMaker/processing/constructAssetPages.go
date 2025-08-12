@@ -21,20 +21,25 @@ func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
 	for i := range numFiles {
 		// create a new file
 		pageNum := i + 1
-		a := NewAssetsPage("", pagesFolder()+format("Page_%d.md", pageNum), pageNum)
-
-		a.bufferPagePreffix()
-
-		skinSlice, err := getNextSlice(skins, i)
+		a := NewAssetsPage(pagesFolder(), format("Page_%d.md", pageNum), pageNum)
+		err := a.ClearFile()
 		helpers.Handle(err)
 
-		a.addCustomSkins(skinSlice)
-		a.bufferCustomSkins()
-		a.bufferPageSuffix()
+		a.bufferPagePreffix()
+		print(a.Contents())
 
-		pages = append(pages, *a)
-
+		// skinSlice, err := getNextSlice(skins, i)
+		// helpers.Handle(err)
+		//
+		// a.addCustomSkins(skinSlice)
+		// a.bufferCustomSkins()
+		// a.bufferPageSuffix()
+		//
+		// pages = append(pages, *a)
+		//
 		a.writeBuffer()
+
+		print(len(a.Contents()))
 	}
 	return
 }

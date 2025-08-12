@@ -5,12 +5,12 @@ import (
 	"io/fs"
 	"os"
 	"reflect"
-	"strings"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 	"github.com/areon546/go-files/files"
+	"github.com/areon546/go-files/table"
 )
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
@@ -25,27 +25,21 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 
 	helpers.Handle(err)
 
-	credits := skinsData.IndexOfCol("credit")
+	credits := skinsData.IndexOf("credit")
 
 	discordUIDs := getDiscordUIDs()
 	infoMaps := []map[string]string{discordUIDs}
 	mapType := []cred.CreditSource{cred.Discord}
 
-	print("Skinsdata.cols", skinsData.Cols())
-	reqLength := skinsData.Cols()
-	skins = make([]nova.CustomSkin, 0, skinsData.Rows())
+	print("Skinsdata.cols", skinsData.Width())
+	reqLength := skinsData.Width()
+	skins = make([]nova.CustomSkin, 0, skinsData.Entries())
 
-	for row := range skinsData.Rows() {
-		s := skinsData.Row(row)
+	for rowNumber, record := range skinsData.Iter() {
 
-		// Headers
-		if strings.HasPrefix(s, "name,body_artwork,body_force_armor_artwork,drone_artwork,jet_angle,jet_distance") {
-			continue
-		}
-
-		skin, err := CSVLineToCustomSkin(s, custom_skin_dir, reqLength)
+		skin, err := recordToCustomSkin(&record, custom_skin_dir, reqLength)
 		if err != nil {
-			helpers.Print("Get Custom Skin Error", s)
+			helpers.Print("Get Custom Skin Error", skin)
 			helpers.HandleExcept(err, nova.ErrMalformedRow)
 			continue
 		}
@@ -54,7 +48,7 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 		skin.GenerateZipFile()
 		// print("Zip complete")
 
-		credit := skinsData.Cell(row, credits)
+		credit, _ := skinsData.Cell(rowNumber, credits)
 		creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
 
 		if creditType != cred.Default {
@@ -84,37 +78,57 @@ func assignCredits(credit string, creditInfoMaps []map[string]string, mapTypes [
 
 func getDiscordUIDs() map[string]string {
 	discordCreditData, err := files.ReadCSV(inAssetsFolder("DISCORD_UIDS", "csv"), true)
-	fileContents := discordCreditData.Contents()
 
 	helpers.Handle(err)
 
-	uidMap := make(map[string]string, discordCreditData.Rows())
+	uidMap := make(map[string]string, discordCreditData.Entries())
 
-	for _, row := range fileContents {
-		discordName := row[0]
-		UID := row[1]
+	for _, row := range discordCreditData.Iter() {
+		discordName, _ := row.Get(0)
+		UID, _ := row.Get(1)
 		uidMap[discordName] = UID
 	}
 
 	return uidMap
 }
 
-func CSVLineToCustomSkin(s string, custom_skin_dir []os.DirEntry, reqLength int) (cs *nova.CustomSkin, err error) {
-	ss := strings.Split(s, ",")
-
-	if len(ss) != reqLength {
+func recordToCustomSkin(record *table.Row, custom_skin_dir []os.DirEntry, reqLength int) (*nova.CustomSkin, error) {
+	var err, e error
+	if record.Size() != reqLength {
 		return nova.EmptyCustomSkin(), nova.ErrMalformedRow
 	}
+	// name,body_artwork,body_force_armor_artwork,drone_artwork,jet_angle,jet_distance,credit
+	var name, bodyFn, forceArmourFn, droneFn, angle, distance string
 
-	bodyS, forceArmourS, droneS := ss[1], ss[2], ss[3]
+	for index := range reqLength {
+		print(index)
+		switch index {
+		case 0:
+			print("ASD")
+		default:
+			print("DEFAULT")
+		}
+	}
 
-	body, _ := fileIn(bodyS, custom_skin_dir)
-	forceArmour, _ := fileIn(forceArmourS, custom_skin_dir)
-	drone, _ := fileIn(droneS, custom_skin_dir)
+	name, e = record.Get(0)
+	bodyFn, e = record.Get(1)
+	forceArmourFn, e = record.Get(2)
+	droneFn, e = record.Get(3)
+	angle, e = record.Get(4)
+	distance, e = record.Get(5)
 
-	cs = nova.NewCustomSkin(ss[0], ss[4], ss[5]).AddBody(body).AddForceA(forceArmour).AddDrone(drone)
+	body, e := fileIn(bodyFn, custom_skin_dir)
+	forceArmour, e := fileIn(forceArmourFn, custom_skin_dir)
+	drone, e := fileIn(droneFn, custom_skin_dir)
 
-	return
+	print(e)
+
+	cs := nova.NewCustomSkin(name, angle, distance)
+	cs.AddBody(body)
+	cs.AddForceA(forceArmour)
+	cs.AddDrone(drone)
+
+	return cs, err
 }
 
 // TODO: replace this with the SearchWithFunc when you update the helpers library version used

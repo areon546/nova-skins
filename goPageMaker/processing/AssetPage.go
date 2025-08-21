@@ -1,7 +1,6 @@
 package processing
 
 import (
-	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 	"github.com/areon546/go-files/files"
 	"github.com/areon546/go-files/formatter"
@@ -28,7 +27,8 @@ func (a *AssetsPage) String() string {
 func (a *AssetsPage) bufferPagePreffix() error {
 	// write to file:
 	// Page #
-	a.AppendHeading(1, format("# Page %d", a.pageNumber))
+	a.AppendHeading(1, format("Page %d", a.pageNumber))
+
 	a.AppendEmptyLine()
 	// prev next
 	err := a.bufferPrevNextPage()
@@ -104,14 +104,14 @@ func (a *AssetsPage) bufferCustomSkins() {
 }
 
 func (a *AssetsPage) AppendCustomSkinFile(path, filename string) {
-	a.AppendEmbed(files.ConstructFilePath(path+"/custom_skins", filename, ""))
+	a.AppendEmbed(files.ConstructFilePath(path+"/custom_skins", filename, ""), filename)
 	a.AppendEmptyLine()
 }
 
 func (a *AssetsPage) writeBuffer() {
-	helpers.Print("Writing to: ", a)
+	broadcast("Writing to: ", a)
 	// print(a.contentBuffer)
-	a.WriteBuffer()
+	a.WriteContents()
 }
 
 func (a *AssetsPage) addCustomSkins(cs []nova.CustomSkin) {

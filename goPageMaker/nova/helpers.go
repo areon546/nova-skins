@@ -9,8 +9,8 @@ import (
 
 func format(s string, a ...any) string { return helpers.Format(s, a...) }
 
-func print(a ...any) {
-	helpers.Print(a...)
+func broadcast(a ...any) {
+	helpers.Broadcast(a...)
 }
 
 func inAssetsFolder(file string) string {

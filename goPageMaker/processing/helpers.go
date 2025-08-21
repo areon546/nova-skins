@@ -4,6 +4,7 @@ import (
 	"io/fs"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 	"github.com/areon546/go-files/files"
 )
 
@@ -11,8 +12,11 @@ import (
 
 func format(s string, a ...any) string { return helpers.Format(s, a...) }
 
-func print(a ...any) {
-	helpers.Print(a...)
+func broadcast(a ...any) {
+	helpers.Broadcast(a...)
+
+	logString := format("Broadcasting: %s", a)
+	log.Info(logString)
 }
 
 func pagesFolder() string {
@@ -21,9 +25,6 @@ func pagesFolder() string {
 
 func inSkinsFolder(filename, filetype string) string {
 	s := files.ConstructFilePath("../custom_skins/", filename, filetype)
-
-	print(s)
-
 	return s
 }
 

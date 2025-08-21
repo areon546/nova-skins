@@ -2,45 +2,50 @@ package processing
 
 import (
 	"errors"
+	"fmt"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 )
 
 func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
-	helpers.Print("Making Asset Pages")
+	broadcast("Making Asset Pages")
 	numSkins := len(skins)
-	// print("skins ", numSkins)
 	numFiles := numSkins / 10
 
+	// Count number of files expected to create.
 	if numSkins%10 != 0 {
 		numFiles++
 	}
-	// print("filesToCreate", numFiles)
 
 	for i := range numFiles {
 		// create a new file
 		pageNum := i + 1
 		a := NewAssetsPage(pagesFolder(), format("Page_%d.md", pageNum), pageNum)
-		err := a.ClearFile()
-		helpers.Handle(err)
+		_ = a.ClearFile() // don't care about this error
 
-		a.bufferPagePreffix()
-		print(a.Contents())
-
-		// skinSlice, err := getNextSlice(skins, i)
-		// helpers.Handle(err)
-		//
-		// a.addCustomSkins(skinSlice)
-		// a.bufferCustomSkins()
-		// a.bufferPageSuffix()
-		//
-		// pages = append(pages, *a)
-		//
-		a.writeBuffer()
+		writeToAssetPage(a, skins, i)
+		pages = append(pages, *a)
 
 		print(len(a.Contents()))
 	}
+	return
+}
+
+func writeToAssetPage(a *AssetsPage, skins []nova.CustomSkin, i int) {
+	fmt.Println("Wrote to page", a)
+	a.bufferPagePreffix()
+	//
+	skinSlice, err := getNextSlice(skins, i)
+	helpers.Handle(err)
+
+	a.addCustomSkins(skinSlice)
+	a.bufferCustomSkins()
+	a.bufferPageSuffix()
+	//
+	a.writeBuffer()
+	fmt.Println("BufferPagePreffix", a.Contents())
+
 	return
 }
 

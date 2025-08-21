@@ -1,10 +1,14 @@
 package main
 
 import (
+	"fmt"
+	"log/slog"
+
 	"github.com/areon546/go-files/files"
 	"github.com/areon546/go-files/files/zip"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/processing"
 )
 
@@ -25,6 +29,8 @@ func main() {
 
 	print("Running")
 
+	log.ClearLogFile()
+	log.SetLogger(slog.LevelDebug)
 	// zipAllSkins()
 	compileSkins()
 }
@@ -36,23 +42,28 @@ func test() {
 	file.Append("asdasd", false)
 	file.Append("asdasd", false)
 
-	file.WriteBuffer()
+	fmt.Println(file.Contents())
+
+	file.WriteContents()
 }
 
 func print(a ...any) {
-	helpers.Print(a...)
+	helpers.Broadcast(a...)
 }
 
 func compileSkins() {
+	log.Info("Compiling Skins")
 	// delete the entirety of the pages' folder's contents if present
 	files.RemoveAllWithinDirectory(compiled_pages)
+	log.Info("Removed from pages directory", "pages", compiled_pages)
 
 	// compiles a list of skins based on the files in the custom skins directory
 	skins := processing.GetCustomSkins(files.ReadDirectory(custom_skins_dir))
-	print(len(skins), len(skins[0:1]))
+	log.Info("Read Custom Skin directory")
+	print(len(skins), len(skins))
 
 	// the processing package creates a list of skins based on the custom skins csv in the custom skins folder and uses that to create these
-	processing.ConstructAssetPages(skins[0:1])
+	processing.ConstructAssetPages(skins)
 }
 
 func zipAllSkins() {

@@ -8,6 +8,7 @@ import (
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 	"github.com/areon546/go-files/files"
 	"github.com/areon546/go-files/table"
@@ -15,38 +16,37 @@ import (
 
 // returns a list of CustomSkins based on whats in the custom_skins folder
 func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
-	helpers.Print("Reading Skins In Directory")
+	broadcast("Reading Skins In Directory")
 
 	filename := inSkinsFolder("custom_skins", "csv")
 
-	print(filename, "in GetCustomSkins")
+	broadcast("Reading Custom Skin CSV", filename)
 
 	skinsData, err := files.ReadCSV(filename, true)
-
 	helpers.Handle(err)
 
 	credits := skinsData.IndexOf("credit")
 
+	// Setup variables for Crediting authors
 	discordUIDs := getDiscordUIDs()
 	infoMaps := []map[string]string{discordUIDs}
 	mapType := []cred.CreditSource{cred.Discord}
 
-	print("Skinsdata.cols", skinsData.Width())
 	reqLength := skinsData.Width()
-	skins = make([]nova.CustomSkin, 0, skinsData.Entries())
+	log.Debug("SkinProcessing GetCustomSkins", "expected column width:", 7, "column width", reqLength)
 
+	skins = make([]nova.CustomSkin, 0, skinsData.Entries())
 	for rowNumber, record := range skinsData.Iter() {
 
 		skin, err := recordToCustomSkin(&record, custom_skin_dir, reqLength)
 		if err != nil {
-			helpers.Print("Get Custom Skin Error", skin)
+			log.Error("processing GetCustomSkins", "skin", skin.Name(), "error", err)
 			helpers.HandleExcept(err, nova.ErrMalformedRow)
 			continue
 		}
 
-		print("Processing Skin:", skin.Name())
+		broadcast("Processing Skin:", skin.Name())
 		skin.GenerateZipFile()
-		// print("Zip complete")
 
 		credit, _ := skinsData.Cell(rowNumber, credits)
 		creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
@@ -94,61 +94,70 @@ func getDiscordUIDs() map[string]string {
 
 func recordToCustomSkin(record *table.Row, custom_skin_dir []os.DirEntry, reqLength int) (*nova.CustomSkin, error) {
 	var err, e error
+	var cs *nova.CustomSkin
 	if record.Size() != reqLength {
 		return nova.EmptyCustomSkin(), nova.ErrMalformedRow
 	}
 	// name,body_artwork,body_force_armor_artwork,drone_artwork,jet_angle,jet_distance,credit
-	var name, bodyFn, forceArmourFn, droneFn, angle, distance string
 
+	log.Debug("processing/skinProcessing.recordToCustomSkin", "record input", record)
 	for index := range reqLength {
-		print(index)
+		s, e := record.Get(index)
+		if e != nil {
+			errors.Join(err, e)
+		}
 		switch index {
-		case 0:
-			print("ASD")
+		case 0: // NAME
+			cs = nova.NewCustomSkin(s)
+		case 1: // BODY
+			body := fileIn(s, custom_skin_dir) // NOTE: We check
+
+			cs.AddBody(body)
+		case 2: // FORCE ARMOUR
+			forceArmour := fileIn(s, custom_skin_dir)
+
+			cs.AddForceA(forceArmour)
+		case 3: // DRONE
+			drone := fileIn(s, custom_skin_dir)
+
+			cs.AddDrone(drone)
+		case 4: // ANGLE
+			cs.AddAngle(s)
+		case 5: // DISTANCE
+			cs.AddDistance(s)
+		case 6: // CREDITS
+			credits := s
+			broadcast(credits)
 		default:
-			print("DEFAULT")
+			broadcast("DEFAULT")
 		}
 	}
 
-	name, e = record.Get(0)
-	bodyFn, e = record.Get(1)
-	forceArmourFn, e = record.Get(2)
-	droneFn, e = record.Get(3)
-	angle, e = record.Get(4)
-	distance, e = record.Get(5)
-
-	body, e := fileIn(bodyFn, custom_skin_dir)
-	forceArmour, e := fileIn(forceArmourFn, custom_skin_dir)
-	drone, e := fileIn(droneFn, custom_skin_dir)
-
-	print(e)
-
-	cs := nova.NewCustomSkin(name, angle, distance)
-	cs.AddBody(body)
-	cs.AddForceA(forceArmour)
-	cs.AddDrone(drone)
+	log.Error("processing/skinProcessing.recordToCustomSkin", "error", e)
 
 	return cs, err
 }
 
 // TODO: replace this with the SearchWithFunc when you update the helpers library version used
-func fileIn(s string, arr []os.DirEntry) (f files.File, err error) {
+func fileIn(filename string, arr []os.DirEntry) (f files.File) {
 	f = *files.EmptyFile()
-	err = errors.New("file not found")
-	// TODO: why are you passing through variables that could simply be part of the nova
-	// make custom_skin directory a nova variable
-	if reflect.DeepEqual("", s) {
-		return f, errors.New("empty file")
+
+	// If filename empty, return the
+	filenameEmpty := reflect.DeepEqual(filename, "")
+	if filenameEmpty {
+		return f
 	}
 
-	for _, v := range arr {
-		if reflect.DeepEqual(s, v.Name()) {
-			return *openCustomSkin(v), nil
+	// Go through
+	for _, dirEntry := range arr {
+
+		filenameMatch := reflect.DeepEqual(filename, dirEntry.Name())
+		notDirectory := !dirEntry.IsDir()
+		if filenameMatch && notDirectory {
+			return *openCustomSkin(dirEntry)
 		}
 	}
-	return
-}
 
-func emptyOSFile() os.File {
-	return os.File{}
+	// Return emptyFile to deal with potential edge casts
+	return
 }

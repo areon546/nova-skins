@@ -10,20 +10,21 @@ import (
 	"github.com/areon546/go-files/table"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 )
 
 var (
-	emptySkin = files.EmptyFile().Name()
+	emptySkinFile = files.EmptyFile().Name()
 
 	ErrMalformedRow CustomSkinError = CustomSkinError{"malformed row"}
 
-	defaultFileNames   map[string]string = map[string]string{"body": emptySkin, "forceArmour": emptySkin, "drone": emptySkin, "angle": "", "distance": ""}
-	missingBody        string            = defaultFileNames["body"]
-	missingForceArmour string            = defaultFileNames["forceArmour"]
-	missingDrone       string            = defaultFileNames["drone"]
-	missingAngle       string            = defaultFileNames["angle"]
+	defaultSkinNames   map[string]string = map[string]string{"body": emptySkinFile, "forceArmour": emptySkinFile, "drone": emptySkinFile, "angle": "", "distance": ""}
+	missingBody        string            = defaultSkinNames["body"]
+	missingForceArmour string            = defaultSkinNames["forceArmour"]
+	missingDrone       string            = defaultSkinNames["drone"]
+	missingAngle       string            = defaultSkinNames["angle"]
 
-	missingDistance string = defaultFileNames["distance"]
+	missingDistance string = defaultSkinNames["distance"]
 
 	missingCredits string = ""
 )
@@ -39,7 +40,7 @@ func (err CustomSkinError) Error() string {
 // ~~~~~~~~~~~~~~~~~ CustomSkin
 type CustomSkin struct {
 	pictures []files.File
-	credit   cred.CreditType
+	credit   []cred.CreditType
 
 	name        string
 	body        files.File
@@ -51,29 +52,34 @@ type CustomSkin struct {
 	zip zip.ZipFile
 }
 
-func NewCustomSkin(name, angle, distance string) (cs *CustomSkin) {
-	cs = &CustomSkin{name: name, angle: angle, distance: distance}
+func NewCustomSkin(name string) (cs *CustomSkin) {
+	cs = &CustomSkin{name: name, credit: []cred.CreditType{}}
 	return
 }
 
 // ~~~ Setters
-func (cs *CustomSkin) AddBody(f files.File) *CustomSkin {
+func (cs *CustomSkin) AddBody(f files.File) {
 	cs.body = f
-	return cs
 }
 
-func (cs *CustomSkin) AddForceA(s files.File) *CustomSkin {
+func (cs *CustomSkin) AddForceA(s files.File) {
 	cs.forceArmour = s
-	return cs
 }
 
-func (cs *CustomSkin) AddDrone(f files.File) *CustomSkin {
+func (cs *CustomSkin) AddDrone(f files.File) {
 	cs.drone = f
-	return cs
+}
+
+func (cs *CustomSkin) AddAngle(s string) {
+	cs.angle = s
+}
+
+func (cs *CustomSkin) AddDistance(s string) {
+	cs.distance = s
 }
 
 func (cs *CustomSkin) AddCredits(c cred.CreditType) {
-	cs.credit = c
+	cs.credit = append(cs.credit, c)
 }
 
 func (cs *CustomSkin) AddMedia(f files.File) {
@@ -149,7 +155,7 @@ func (cs *CustomSkin) GenerateZipFile() {
 	path := "../assets/zips/" + cs.name
 	cs.zip = *zip.NewZipFile(path)
 
-	print("Generating ZIP: ", cs.Name())
+	broadcast("Generating ZIP: ", cs.Name())
 	body, fA, drone := cs.getBody_FA_Drone()
 
 	if body != missingBody {
@@ -165,13 +171,20 @@ func (cs *CustomSkin) GenerateZipFile() {
 	}
 
 	cs.zip.WriteAndClose()
+	log.Debug("Wrote zip file", "skin", cs.name)
 }
 
 func (c *CustomSkin) FormatCredits(fmt formatter.Formatter) string {
-	if c.credit == nil {
+	if len(c.credit) == 0 {
 		return missingCredits
 	}
-	return fmt.FormatLink(c.credit.ConstructName(), c.credit.ConstructLink())
+
+	var credits string
+	for _, credit := range c.credit {
+		credits += fmt.Link(credit.ConstructName(), credit.ConstructLink())
+	}
+
+	return credits
 }
 
 func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
@@ -199,7 +212,7 @@ func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
 
 	// return format("| -- | --- | \n| Body:| %s| \n| ForceArmour:| %s| \n| Drone:| %s| \n| Angle:| %s| \n| Distance:| %s| \n", body, fA, drone, cs.getAngle(), cs.getDistance())
 
-	return fmt.FormatTable(*t, false)
+	return fmt.Table(*t)
 }
 
 // Not class related

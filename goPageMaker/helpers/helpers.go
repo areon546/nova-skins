@@ -28,9 +28,10 @@ func HandleExcept(err, allowed error) {
 
 // helper functions
 
-func Print(a ...any) { helpers.Print(a...) }
+// Here to conceptually separates the concept of printing and logging.
+func Broadcast(a ...any) { helpers.Print(a...) }
 
-func Printf(s string, a ...any) { helpers.Printf(s, a...); helpers.Print("") }
+func Broadcastf(s string, a ...any) { helpers.Printf(s, a...); helpers.Print("") }
 
 func Format(s string, a ...any) string { return helpers.Format(s, a...) }
 

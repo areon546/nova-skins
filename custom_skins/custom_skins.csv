@@ -41,4 +41,27 @@ Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0,splathero
 The Devil,devil.png,devil_force.png,heart_mite.png,,,babaint
 Poly,poly.png,poly_force.png,poly_drone.png,0,-45,splathero
 Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35,evelo
+Battery,battery.png,battery_force.png,battery.png,151,40,winstick
+Wraith,wraith.png,wraith_force.png,wraith_drone.png,250,35,digicube
+Death Star,deathstar.png,deathstar_force.png,,115,20,exotreus
+Wasp Hive,wasphive.png,wasphive_force.png,wasphive_drone.png,178,90,fourpointedstar
+Wojciech Mann,mann.png,mann_force.png,,,,exotreus
+Buka,buka.png,buka_force.png,,,,exotreus
+Crabbo,crabbo.png,crabbo.png,crabbo_drone.png,80,105,0uro6oro5
+avtraxi.png,avtraxi_force.png,avtraxi_drone.png,,90,30, avtraxi
+Jormungandr,jormungandr_body.png,jormungandr_force.png,,130,55, avtraxi
+GWclaw,GWclaw.png,GWclaw_force.png,GWattack_drone.png,87,20, flu_nog_777
+Thresher,thresher.png,thresher_force.png,,126,48, hadiros
+The Pentagon,pentagon.png,pentagonforce.png,pentagondrone.png,103,55, _oneleaf_
+Ophanim,ophanim.png,ophanim_force.png,ophanim_drone.png,155,33, fourpointedstar
+Inferno,inferno.png,inferno_force.png,inferno_drone.png,0,0, apoligen
+Cherub,cherub.png,cherub_force.png,cherub_drone.png,0,0, 0uro6oro5
+XS-01 Artemis,XS_01_Artemis_Body.png,XS_01_Artemis_Shield.png,,120,0, xuany08
+Warforge,warforge.png,warforge_force.png,warforge_drone.png,,, tempest153
+Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,100, akaevertone
+Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25, technomax
+Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,30, avtraxi
+ChitinCondition,condition.png,condition_force.png,condition_drone.png,120,50, zeaaon
+Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30, reginoobi
+Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,115,40, krysmun
 Minotaur,minotaur.png,minotaur_force.png,,145,60,twinstick

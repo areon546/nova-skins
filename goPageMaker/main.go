@@ -37,10 +37,9 @@ func main() {
 
 func test() {
 	file := files.NewTextFile("../testing.txt")
-	file.Append("asdasd", false)
-	file.Append("asdasd", false)
-	file.Append("asdasd", false)
-	file.Append("asdasd", false)
+	file.Append("asdasd")
+	file.Append("asdasd")
+	file.Append("asdasd")
 
 	fmt.Println(file.Contents())
 

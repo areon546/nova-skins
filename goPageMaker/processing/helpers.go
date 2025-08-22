@@ -20,16 +20,20 @@ func broadcast(a ...any) {
 }
 
 func pagesFolder() string {
-	return "../pages/"
+	return "../www/content/pages/"
+}
+
+func skinsFolder() string {
+	return "../custom_skins/"
 }
 
 func inSkinsFolder(filename, filetype string) string {
-	s := files.ConstructFilePath("../custom_skins/", filename, filetype)
+	s := files.ConstructFilePath(skinsFolder(), filename, filetype)
 	return s
 }
 
 func inAssetsFolder(file, filetype string) string {
-	return files.ConstructFilePath("../assets", file, filetype)
+	return files.ConstructFilePath("../assets/", file, filetype)
 }
 
 func AssetsCSVPath() string {
@@ -37,7 +41,7 @@ func AssetsCSVPath() string {
 }
 
 func openCustomSkin(d fs.DirEntry) *files.File {
-	f, _ := files.OpenFile(files.ConstructFilePath("../custom_skins", d.Name(), ""))
+	f, _ := files.OpenFile(skinsFolder() + d.Name())
 
 	return f
 }

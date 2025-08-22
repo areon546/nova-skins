@@ -66,14 +66,13 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 
 func (a *AssetsPage) bufferCustomSkins() {
 	// this writes to the custom skins stuff and adds the data, in markdown
-	path := ".."
 
 	for _, skin := range a.skins {
 		a.AppendEmptyLine()
 
 		heading := a.Fmt.Bold(skin.Name()) + ":"
 		a.AppendHeading(2, heading)
-		a.Append(skin.FormatCredits(a.Fmt), false)
+		a.Append(skin.FormatCredits(a.Fmt))
 		a.AppendEmptyLine()
 		a.AppendEmptyLine()
 
@@ -85,28 +84,28 @@ func (a *AssetsPage) bufferCustomSkins() {
 
 		a.AppendEmptyLine()
 		if !files.FilesEqual(*skin.Body(), *files.EmptyFile()) {
-			a.AppendCustomSkinFile(path, skin.Body().Name())
+			a.AppendCustomSkinFile(skin.Body())
 		}
 		if !files.FilesEqual(*skin.ForceArmour(), *files.EmptyFile()) {
-			a.AppendCustomSkinFile(path, skin.ForceArmour().Name())
+			a.AppendCustomSkinFile(skin.ForceArmour())
 		}
 
 		a.AppendEmptyLine()
 		if !files.FilesEqual(*skin.Drone(), *files.EmptyFile()) {
-			a.AppendCustomSkinFile(path, skin.Drone().Name())
+			a.AppendCustomSkinFile(skin.Drone())
 		}
 
 		a.AppendEmptyLine()
 	}
 }
 
-func (a *AssetsPage) AppendCustomSkinFile(path, filename string) {
-	a.AppendEmbed(path+"/custom_skins/"+filename, filename)
+func (a *AssetsPage) AppendCustomSkinFile(f *files.File) {
+	a.AppendEmbed(f.FullName(), f.Name())
 	a.AppendEmptyLine()
 }
 
 func (a *AssetsPage) writeBuffer() {
-	broadcast("Writing to: ", a)
+	broadcast("Writing to: ", a.FullName())
 	// print(a.contentBuffer)
 	a.WriteContents()
 }

@@ -10,6 +10,8 @@ github.com/areon546/go-files v0.0.0-20250821042518-26b9dd91191c h1:7C5Cm/DfEzk24
 github.com/areon546/go-files v0.0.0-20250821042518-26b9dd91191c/go.mod h1:92DiRBRMTS35iJnbyW0qPjYa4x/dAdlo+7SwsmBep2A=
 github.com/areon546/go-files v0.0.0-20250821091359-0d6af2f25b68 h1:uYI2SNu3Kp1bbNBO5STo/YusyoXm+mFwGEmIfbMeVlI=
 github.com/areon546/go-files v0.0.0-20250821091359-0d6af2f25b68/go.mod h1:92DiRBRMTS35iJnbyW0qPjYa4x/dAdlo+7SwsmBep2A=
+github.com/areon546/go-files v0.0.0-20250822173549-e2eb8da59e96 h1:qqlErDhWaQb+6zt9jOi35CcZKEE3KyDh+mu/Ouh+b5M=
+github.com/areon546/go-files v0.0.0-20250822173549-e2eb8da59e96/go.mod h1:92DiRBRMTS35iJnbyW0qPjYa4x/dAdlo+7SwsmBep2A=
 github.com/areon546/go-helpers v0.0.0-20250820120313-8a98e4eca6e5 h1:djA5yPn2QbiY/GLFkq+HPql6oFFFHbWnZe4Ys7Um25c=
 github.com/areon546/go-helpers v0.0.0-20250820120313-8a98e4eca6e5/go.mod h1:pN+CQkoKXPG5/CV6P19/T3T9xcsKCtdj38zabkFuspA=
 github.com/areon546/go-helpers/helpers v0.0.0-20250725224349-3881283c15e3 h1:Omv1ZAPP2wHtP4SJfGgWK6+giRkLvzBCtrF9rMPz2vc=

@@ -27,7 +27,6 @@ func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
 		writeToAssetPage(a, skins, i)
 		pages = append(pages, *a)
 
-		print(len(a.Contents()))
 	}
 	return
 }
@@ -44,8 +43,6 @@ func writeToAssetPage(a *AssetsPage, skins []nova.CustomSkin, i int) {
 	a.bufferPageSuffix()
 	//
 	a.writeBuffer()
-
-	return
 }
 
 func getNextSlice(skins []nova.CustomSkin, i int) (subset []nova.CustomSkin, err error) {

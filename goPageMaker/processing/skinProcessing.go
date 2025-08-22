@@ -45,7 +45,7 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 			continue
 		}
 
-		broadcast("Processing Skin:", skin.Name())
+		broadcast("Processing Skin:", skin.Name(), skin.Body().Name())
 		skin.GenerateZipFile()
 
 		credit, _ := skinsData.Cell(rowNumber, credits)

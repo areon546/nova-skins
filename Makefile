@@ -11,10 +11,18 @@ coverage:
 get:
 	cd goPageMaker && go get -u
 
-hello:
-	echo "Hello, World"
 git:
 	git pull && git push
 
 setup-hooks:
 	git config core.hooksPath hooks
+
+build:
+	make run 
+	make html
+
+html:
+	# copy relevant files over to contents
+
+	# compile templates 
+	cd www && ./template-compiler -c content -t content -o output

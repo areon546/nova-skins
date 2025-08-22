@@ -44,7 +44,6 @@ func writeToAssetPage(a *AssetsPage, skins []nova.CustomSkin, i int) {
 	a.bufferPageSuffix()
 	//
 	a.writeBuffer()
-	fmt.Println("BufferPagePreffix", a.Contents())
 
 	return
 }

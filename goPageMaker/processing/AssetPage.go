@@ -71,9 +71,8 @@ func (a *AssetsPage) bufferCustomSkins() {
 	for _, skin := range a.skins {
 		a.AppendEmptyLine()
 
-		a.AppendHeading(2, "")
-		a.AppendBold(skin.Name())
-		a.Append(": ", false)
+		heading := a.Fmt.Bold(skin.Name()) + ":"
+		a.AppendHeading(2, heading)
 		a.Append(skin.FormatCredits(a.Fmt), false)
 		a.AppendEmptyLine()
 		a.AppendEmptyLine()
@@ -92,8 +91,6 @@ func (a *AssetsPage) bufferCustomSkins() {
 			a.AppendCustomSkinFile(path, skin.ForceArmour().Name())
 		}
 
-		a.Append("", true)
-
 		a.AppendEmptyLine()
 		if !files.FilesEqual(*skin.Drone(), *files.EmptyFile()) {
 			a.AppendCustomSkinFile(path, skin.Drone().Name())
@@ -104,7 +101,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 }
 
 func (a *AssetsPage) AppendCustomSkinFile(path, filename string) {
-	a.AppendEmbed(files.ConstructFilePath(path+"/custom_skins", filename, ""), filename)
+	a.AppendEmbed(path+"/custom_skins/"+filename, filename)
 	a.AppendEmptyLine()
 }
 

@@ -6,17 +6,22 @@
 [Page_7](./Page_7.md)
 
 
-## 
-**Jormungandr**
-: 
+## **Jormungandr**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/jormungandr_body.png.|||Fource Armour:|./../custom_skins/jormungandr_force.png.|||Drone:||||Angle:|130|||Distance:|55||
+||
+|---|---||
+|Body:|jormungandr_body.png.||
+|Force Armour:|jormungandr_force.png.||
+|Drone:|||
+|Angle:|130||
+|Distance:|55||
 
-Copy this: `Jormungandr,./../custom_skins/jormungandr_body.png.,./../custom_skins/jormungandr_force.png.,,130,55`
+
+Copy this: `Jormungandr,jormungandr_body.png.,jormungandr_force.png.,,130,55`
 
 
 
@@ -25,12 +30,10 @@ Copy this: `Jormungandr,./../custom_skins/jormungandr_body.png.,./../custom_skin
 
 
 
-![./../custom_skins/jormungandr_body.png.](../custom_skins/./../custom_skins/jormungandr_body.png..)
+![jormungandr_body.png.](../custom_skins/jormungandr_body.png.)
 
 
-![./../custom_skins/jormungandr_force.png.](../custom_skins/./../custom_skins/jormungandr_force.png..)
-
-
+![jormungandr_force.png.](../custom_skins/jormungandr_force.png.)
 
 
 
@@ -39,17 +42,22 @@ Copy this: `Jormungandr,./../custom_skins/jormungandr_body.png.,./../custom_skin
 
 
 
-## 
-**GWclaw**
-: 
+## **GWclaw**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/GWclaw.png.|||Fource Armour:|./../custom_skins/GWclaw_force.png.|||Drone:|./../custom_skins/GWattack_drone.png.|||Angle:|87|||Distance:|20||
+||
+|---|---||
+|Body:|GWclaw.png.||
+|Force Armour:|GWclaw_force.png.||
+|Drone:|GWattack_drone.png.||
+|Angle:|87||
+|Distance:|20||
 
-Copy this: `GWclaw,./../custom_skins/GWclaw.png.,./../custom_skins/GWclaw_force.png.,./../custom_skins/GWattack_drone.png.,87,20`
+
+Copy this: `GWclaw,GWclaw.png.,GWclaw_force.png.,GWattack_drone.png.,87,20`
 
 
 
@@ -58,34 +66,37 @@ Copy this: `GWclaw,./../custom_skins/GWclaw.png.,./../custom_skins/GWclaw_force.
 
 
 
-![./../custom_skins/GWclaw.png.](../custom_skins/./../custom_skins/GWclaw.png..)
+![GWclaw.png.](../custom_skins/GWclaw.png.)
 
 
-![./../custom_skins/GWclaw_force.png.](../custom_skins/./../custom_skins/GWclaw_force.png..)
-
-
+![GWclaw_force.png.](../custom_skins/GWclaw_force.png.)
 
 
 
 
-![./../custom_skins/GWattack_drone.png.](../custom_skins/./../custom_skins/GWattack_drone.png..)
+![GWattack_drone.png.](../custom_skins/GWattack_drone.png.)
 
 
 
 
 
 
-## 
-**Thresher**
-: 
+## **Thresher**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/thresher.png.|||Fource Armour:|./../custom_skins/thresher_force.png.|||Drone:||||Angle:|126|||Distance:|48||
+||
+|---|---||
+|Body:|thresher.png.||
+|Force Armour:|thresher_force.png.||
+|Drone:|||
+|Angle:|126||
+|Distance:|48||
 
-Copy this: `Thresher,./../custom_skins/thresher.png.,./../custom_skins/thresher_force.png.,,126,48`
+
+Copy this: `Thresher,thresher.png.,thresher_force.png.,,126,48`
 
 
 
@@ -94,12 +105,10 @@ Copy this: `Thresher,./../custom_skins/thresher.png.,./../custom_skins/thresher_
 
 
 
-![./../custom_skins/thresher.png.](../custom_skins/./../custom_skins/thresher.png..)
+![thresher.png.](../custom_skins/thresher.png.)
 
 
-![./../custom_skins/thresher_force.png.](../custom_skins/./../custom_skins/thresher_force.png..)
-
-
+![thresher_force.png.](../custom_skins/thresher_force.png.)
 
 
 
@@ -108,17 +117,22 @@ Copy this: `Thresher,./../custom_skins/thresher.png.,./../custom_skins/thresher_
 
 
 
-## 
-**The Pentagon**
-: 
+## **The Pentagon**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/pentagon.png.|||Fource Armour:|./../custom_skins/pentagonforce.png.|||Drone:|./../custom_skins/pentagondrone.png.|||Angle:|103|||Distance:|55||
+||
+|---|---||
+|Body:|pentagon.png.||
+|Force Armour:|pentagonforce.png.||
+|Drone:|pentagondrone.png.||
+|Angle:|103||
+|Distance:|55||
 
-Copy this: `The Pentagon,./../custom_skins/pentagon.png.,./../custom_skins/pentagonforce.png.,./../custom_skins/pentagondrone.png.,103,55`
+
+Copy this: `The Pentagon,pentagon.png.,pentagonforce.png.,pentagondrone.png.,103,55`
 
 
 
@@ -127,34 +141,37 @@ Copy this: `The Pentagon,./../custom_skins/pentagon.png.,./../custom_skins/penta
 
 
 
-![./../custom_skins/pentagon.png.](../custom_skins/./../custom_skins/pentagon.png..)
+![pentagon.png.](../custom_skins/pentagon.png.)
 
 
-![./../custom_skins/pentagonforce.png.](../custom_skins/./../custom_skins/pentagonforce.png..)
-
-
+![pentagonforce.png.](../custom_skins/pentagonforce.png.)
 
 
 
 
-![./../custom_skins/pentagondrone.png.](../custom_skins/./../custom_skins/pentagondrone.png..)
+![pentagondrone.png.](../custom_skins/pentagondrone.png.)
 
 
 
 
 
 
-## 
-**Ophanim**
-: 
+## **Ophanim**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/ophanim.png.|||Fource Armour:|./../custom_skins/ophanim_force.png.|||Drone:|./../custom_skins/ophanim_drone.png.|||Angle:|155|||Distance:|33||
+||
+|---|---||
+|Body:|ophanim.png.||
+|Force Armour:|ophanim_force.png.||
+|Drone:|ophanim_drone.png.||
+|Angle:|155||
+|Distance:|33||
 
-Copy this: `Ophanim,./../custom_skins/ophanim.png.,./../custom_skins/ophanim_force.png.,./../custom_skins/ophanim_drone.png.,155,33`
+
+Copy this: `Ophanim,ophanim.png.,ophanim_force.png.,ophanim_drone.png.,155,33`
 
 
 
@@ -163,34 +180,37 @@ Copy this: `Ophanim,./../custom_skins/ophanim.png.,./../custom_skins/ophanim_for
 
 
 
-![./../custom_skins/ophanim.png.](../custom_skins/./../custom_skins/ophanim.png..)
+![ophanim.png.](../custom_skins/ophanim.png.)
 
 
-![./../custom_skins/ophanim_force.png.](../custom_skins/./../custom_skins/ophanim_force.png..)
-
-
+![ophanim_force.png.](../custom_skins/ophanim_force.png.)
 
 
 
 
-![./../custom_skins/ophanim_drone.png.](../custom_skins/./../custom_skins/ophanim_drone.png..)
+![ophanim_drone.png.](../custom_skins/ophanim_drone.png.)
 
 
 
 
 
 
-## 
-**Inferno**
-: 
+## **Inferno**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/inferno.png.|||Fource Armour:|./../custom_skins/inferno_force.png.|||Drone:|./../custom_skins/inferno_drone.png.|||Angle:|0|||Distance:|0||
+||
+|---|---||
+|Body:|inferno.png.||
+|Force Armour:|inferno_force.png.||
+|Drone:|inferno_drone.png.||
+|Angle:|0||
+|Distance:|0||
 
-Copy this: `Inferno,./../custom_skins/inferno.png.,./../custom_skins/inferno_force.png.,./../custom_skins/inferno_drone.png.,0,0`
+
+Copy this: `Inferno,inferno.png.,inferno_force.png.,inferno_drone.png.,0,0`
 
 
 
@@ -199,34 +219,37 @@ Copy this: `Inferno,./../custom_skins/inferno.png.,./../custom_skins/inferno_for
 
 
 
-![./../custom_skins/inferno.png.](../custom_skins/./../custom_skins/inferno.png..)
+![inferno.png.](../custom_skins/inferno.png.)
 
 
-![./../custom_skins/inferno_force.png.](../custom_skins/./../custom_skins/inferno_force.png..)
-
-
+![inferno_force.png.](../custom_skins/inferno_force.png.)
 
 
 
 
-![./../custom_skins/inferno_drone.png.](../custom_skins/./../custom_skins/inferno_drone.png..)
+![inferno_drone.png.](../custom_skins/inferno_drone.png.)
 
 
 
 
 
 
-## 
-**Cherub**
-: 
+## **Cherub**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/cherub.png.|||Fource Armour:|./../custom_skins/cherub_force.png.|||Drone:|./../custom_skins/cherub_drone.png.|||Angle:|0|||Distance:|0||
+||
+|---|---||
+|Body:|cherub.png.||
+|Force Armour:|cherub_force.png.||
+|Drone:|cherub_drone.png.||
+|Angle:|0||
+|Distance:|0||
 
-Copy this: `Cherub,./../custom_skins/cherub.png.,./../custom_skins/cherub_force.png.,./../custom_skins/cherub_drone.png.,0,0`
+
+Copy this: `Cherub,cherub.png.,cherub_force.png.,cherub_drone.png.,0,0`
 
 
 
@@ -235,34 +258,37 @@ Copy this: `Cherub,./../custom_skins/cherub.png.,./../custom_skins/cherub_force.
 
 
 
-![./../custom_skins/cherub.png.](../custom_skins/./../custom_skins/cherub.png..)
+![cherub.png.](../custom_skins/cherub.png.)
 
 
-![./../custom_skins/cherub_force.png.](../custom_skins/./../custom_skins/cherub_force.png..)
-
-
+![cherub_force.png.](../custom_skins/cherub_force.png.)
 
 
 
 
-![./../custom_skins/cherub_drone.png.](../custom_skins/./../custom_skins/cherub_drone.png..)
+![cherub_drone.png.](../custom_skins/cherub_drone.png.)
 
 
 
 
 
 
-## 
-**XS-01 Artemis**
-: 
+## **XS-01 Artemis**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/XS_01_Artemis_Body.png.|||Fource Armour:|./../custom_skins/XS_01_Artemis_Shield.png.|||Drone:||||Angle:|120|||Distance:|0||
+||
+|---|---||
+|Body:|XS_01_Artemis_Body.png.||
+|Force Armour:|XS_01_Artemis_Shield.png.||
+|Drone:|||
+|Angle:|120||
+|Distance:|0||
 
-Copy this: `XS-01 Artemis,./../custom_skins/XS_01_Artemis_Body.png.,./../custom_skins/XS_01_Artemis_Shield.png.,,120,0`
+
+Copy this: `XS-01 Artemis,XS_01_Artemis_Body.png.,XS_01_Artemis_Shield.png.,,120,0`
 
 
 
@@ -271,12 +297,10 @@ Copy this: `XS-01 Artemis,./../custom_skins/XS_01_Artemis_Body.png.,./../custom_
 
 
 
-![./../custom_skins/XS_01_Artemis_Body.png.](../custom_skins/./../custom_skins/XS_01_Artemis_Body.png..)
+![XS_01_Artemis_Body.png.](../custom_skins/XS_01_Artemis_Body.png.)
 
 
-![./../custom_skins/XS_01_Artemis_Shield.png.](../custom_skins/./../custom_skins/XS_01_Artemis_Shield.png..)
-
-
+![XS_01_Artemis_Shield.png.](../custom_skins/XS_01_Artemis_Shield.png.)
 
 
 
@@ -285,17 +309,22 @@ Copy this: `XS-01 Artemis,./../custom_skins/XS_01_Artemis_Body.png.,./../custom_
 
 
 
-## 
-**Warforge**
-: 
+## **Warforge**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/warforge.png.|||Fource Armour:|./../custom_skins/warforge_force.png.|||Drone:|./../custom_skins/warforge_drone.png.|||Angle:||||Distance:|||
+||
+|---|---||
+|Body:|warforge.png.||
+|Force Armour:|warforge_force.png.||
+|Drone:|warforge_drone.png.||
+|Angle:|||
+|Distance:|||
 
-Copy this: `Warforge,./../custom_skins/warforge.png.,./../custom_skins/warforge_force.png.,./../custom_skins/warforge_drone.png.,,`
+
+Copy this: `Warforge,warforge.png.,warforge_force.png.,warforge_drone.png.,,`
 
 
 
@@ -304,34 +333,37 @@ Copy this: `Warforge,./../custom_skins/warforge.png.,./../custom_skins/warforge_
 
 
 
-![./../custom_skins/warforge.png.](../custom_skins/./../custom_skins/warforge.png..)
+![warforge.png.](../custom_skins/warforge.png.)
 
 
-![./../custom_skins/warforge_force.png.](../custom_skins/./../custom_skins/warforge_force.png..)
-
-
+![warforge_force.png.](../custom_skins/warforge_force.png.)
 
 
 
 
-![./../custom_skins/warforge_drone.png.](../custom_skins/./../custom_skins/warforge_drone.png..)
+![warforge_drone.png.](../custom_skins/warforge_drone.png.)
 
 
 
 
 
 
-## 
-**Insurgent**
-: 
+## **Insurgent**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/insurgent.png.|||Fource Armour:|./../custom_skins/insurgent_force.png.|||Drone:|./../custom_skins/insurgent_drone.png.|||Angle:|115|||Distance:|100||
+||
+|---|---||
+|Body:|insurgent.png.||
+|Force Armour:|insurgent_force.png.||
+|Drone:|insurgent_drone.png.||
+|Angle:|115||
+|Distance:|100||
 
-Copy this: `Insurgent,./../custom_skins/insurgent.png.,./../custom_skins/insurgent_force.png.,./../custom_skins/insurgent_drone.png.,115,100`
+
+Copy this: `Insurgent,insurgent.png.,insurgent_force.png.,insurgent_drone.png.,115,100`
 
 
 
@@ -340,17 +372,15 @@ Copy this: `Insurgent,./../custom_skins/insurgent.png.,./../custom_skins/insurge
 
 
 
-![./../custom_skins/insurgent.png.](../custom_skins/./../custom_skins/insurgent.png..)
+![insurgent.png.](../custom_skins/insurgent.png.)
 
 
-![./../custom_skins/insurgent_force.png.](../custom_skins/./../custom_skins/insurgent_force.png..)
-
-
+![insurgent_force.png.](../custom_skins/insurgent_force.png.)
 
 
 
 
-![./../custom_skins/insurgent_drone.png.](../custom_skins/./../custom_skins/insurgent_drone.png..)
+![insurgent_drone.png.](../custom_skins/insurgent_drone.png.)
 
 
 

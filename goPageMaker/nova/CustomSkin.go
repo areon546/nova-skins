@@ -194,7 +194,7 @@ func (cs *CustomSkin) ToTable(fmt formatter.Formatter) string {
 	bodyRow.Set(1, cs.Body().Name())
 	t.AddRecord(bodyRow)
 	faRow := table.NewRow(2)
-	faRow.Set(0, "Fource Armour:")
+	faRow.Set(0, "Force Armour:")
 	faRow.Set(1, cs.ForceArmour().Name())
 	t.AddRecord(faRow)
 	droneRow := table.NewRow(2)

@@ -6,17 +6,22 @@
 [Page_3](./Page_3.md)
 
 
-## 
-**Spike**
-: 
+## **Spike**:
 [@hadiros](https://discord.com/users/266028842395631629)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/spike.png.|||Fource Armour:|./../custom_skins/spike_force.png.|||Drone:|./../custom_skins/spike_drone.png.|||Angle:|125|||Distance:|35||
+||
+|---|---||
+|Body:|spike.png.||
+|Force Armour:|spike_force.png.||
+|Drone:|spike_drone.png.||
+|Angle:|125||
+|Distance:|35||
 
-Copy this: `Spike,./../custom_skins/spike.png.,./../custom_skins/spike_force.png.,./../custom_skins/spike_drone.png.,125,35`
+
+Copy this: `Spike,spike.png.,spike_force.png.,spike_drone.png.,125,35`
 
 
 
@@ -25,34 +30,37 @@ Copy this: `Spike,./../custom_skins/spike.png.,./../custom_skins/spike_force.png
 
 
 
-![./../custom_skins/spike.png.](../custom_skins/./../custom_skins/spike.png..)
+![spike.png.](../custom_skins/spike.png.)
 
 
-![./../custom_skins/spike_force.png.](../custom_skins/./../custom_skins/spike_force.png..)
-
-
+![spike_force.png.](../custom_skins/spike_force.png.)
 
 
 
 
-![./../custom_skins/spike_drone.png.](../custom_skins/./../custom_skins/spike_drone.png..)
+![spike_drone.png.](../custom_skins/spike_drone.png.)
 
 
 
 
 
 
-## 
-**Pinch**
-: 
+## **Pinch**:
 [@hadiros](https://discord.com/users/266028842395631629)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/pinch.png.|||Fource Armour:|./../custom_skins/pinch_force.png.|||Drone:|./../custom_skins/pinch_drone.png.|||Angle:|140|||Distance:|35||
+||
+|---|---||
+|Body:|pinch.png.||
+|Force Armour:|pinch_force.png.||
+|Drone:|pinch_drone.png.||
+|Angle:|140||
+|Distance:|35||
 
-Copy this: `Pinch,./../custom_skins/pinch.png.,./../custom_skins/pinch_force.png.,./../custom_skins/pinch_drone.png.,140,35`
+
+Copy this: `Pinch,pinch.png.,pinch_force.png.,pinch_drone.png.,140,35`
 
 
 
@@ -61,34 +69,37 @@ Copy this: `Pinch,./../custom_skins/pinch.png.,./../custom_skins/pinch_force.png
 
 
 
-![./../custom_skins/pinch.png.](../custom_skins/./../custom_skins/pinch.png..)
+![pinch.png.](../custom_skins/pinch.png.)
 
 
-![./../custom_skins/pinch_force.png.](../custom_skins/./../custom_skins/pinch_force.png..)
-
-
+![pinch_force.png.](../custom_skins/pinch_force.png.)
 
 
 
 
-![./../custom_skins/pinch_drone.png.](../custom_skins/./../custom_skins/pinch_drone.png..)
+![pinch_drone.png.](../custom_skins/pinch_drone.png.)
 
 
 
 
 
 
-## 
-**Celes**
-: 
+## **Celes**:
 [@cinnamimitime](https://discord.com/users/161502244284530688)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/celes.png.|||Fource Armour:|./../custom_skins/celes_force.png.|||Drone:|./../custom_skins/celes_drone.png.|||Angle:|110|||Distance:|25||
+||
+|---|---||
+|Body:|celes.png.||
+|Force Armour:|celes_force.png.||
+|Drone:|celes_drone.png.||
+|Angle:|110||
+|Distance:|25||
 
-Copy this: `Celes,./../custom_skins/celes.png.,./../custom_skins/celes_force.png.,./../custom_skins/celes_drone.png.,110,25`
+
+Copy this: `Celes,celes.png.,celes_force.png.,celes_drone.png.,110,25`
 
 
 
@@ -97,34 +108,37 @@ Copy this: `Celes,./../custom_skins/celes.png.,./../custom_skins/celes_force.png
 
 
 
-![./../custom_skins/celes.png.](../custom_skins/./../custom_skins/celes.png..)
+![celes.png.](../custom_skins/celes.png.)
 
 
-![./../custom_skins/celes_force.png.](../custom_skins/./../custom_skins/celes_force.png..)
-
-
+![celes_force.png.](../custom_skins/celes_force.png.)
 
 
 
 
-![./../custom_skins/celes_drone.png.](../custom_skins/./../custom_skins/celes_drone.png..)
+![celes_drone.png.](../custom_skins/celes_drone.png.)
 
 
 
 
 
 
-## 
-**Perseus**
-: 
+## **Perseus**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/Perseus.png.|||Fource Armour:|./../custom_skins/Perseus_force.png.|||Drone:|./../custom_skins/Perseus_drone.png.|||Angle:|160|||Distance:|50||
+||
+|---|---||
+|Body:|Perseus.png.||
+|Force Armour:|Perseus_force.png.||
+|Drone:|Perseus_drone.png.||
+|Angle:|160||
+|Distance:|50||
 
-Copy this: `Perseus,./../custom_skins/Perseus.png.,./../custom_skins/Perseus_force.png.,./../custom_skins/Perseus_drone.png.,160,50`
+
+Copy this: `Perseus,Perseus.png.,Perseus_force.png.,Perseus_drone.png.,160,50`
 
 
 
@@ -133,34 +147,37 @@ Copy this: `Perseus,./../custom_skins/Perseus.png.,./../custom_skins/Perseus_for
 
 
 
-![./../custom_skins/Perseus.png.](../custom_skins/./../custom_skins/Perseus.png..)
+![Perseus.png.](../custom_skins/Perseus.png.)
 
 
-![./../custom_skins/Perseus_force.png.](../custom_skins/./../custom_skins/Perseus_force.png..)
-
-
+![Perseus_force.png.](../custom_skins/Perseus_force.png.)
 
 
 
 
-![./../custom_skins/Perseus_drone.png.](../custom_skins/./../custom_skins/Perseus_drone.png..)
+![Perseus_drone.png.](../custom_skins/Perseus_drone.png.)
 
 
 
 
 
 
-## 
-**Lightning**
-: 
+## **Lightning**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/Lightning.png.|||Fource Armour:|./../custom_skins/Lightning_force.png.|||Drone:|./../custom_skins/Lightning_drone.png.|||Angle:|180|||Distance:|30||
+||
+|---|---||
+|Body:|Lightning.png.||
+|Force Armour:|Lightning_force.png.||
+|Drone:|Lightning_drone.png.||
+|Angle:|180||
+|Distance:|30||
 
-Copy this: `Lightning,./../custom_skins/Lightning.png.,./../custom_skins/Lightning_force.png.,./../custom_skins/Lightning_drone.png.,180,30`
+
+Copy this: `Lightning,Lightning.png.,Lightning_force.png.,Lightning_drone.png.,180,30`
 
 
 
@@ -169,34 +186,37 @@ Copy this: `Lightning,./../custom_skins/Lightning.png.,./../custom_skins/Lightni
 
 
 
-![./../custom_skins/Lightning.png.](../custom_skins/./../custom_skins/Lightning.png..)
+![Lightning.png.](../custom_skins/Lightning.png.)
 
 
-![./../custom_skins/Lightning_force.png.](../custom_skins/./../custom_skins/Lightning_force.png..)
-
-
+![Lightning_force.png.](../custom_skins/Lightning_force.png.)
 
 
 
 
-![./../custom_skins/Lightning_drone.png.](../custom_skins/./../custom_skins/Lightning_drone.png..)
+![Lightning_drone.png.](../custom_skins/Lightning_drone.png.)
 
 
 
 
 
 
-## 
-**Warden**
-: 
+## **Warden**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/Warden.png.|||Fource Armour:|./../custom_skins/Warden_force.png.|||Drone:|./../custom_skins/Warden_drone.png.|||Angle:|0|||Distance:|0||
+||
+|---|---||
+|Body:|Warden.png.||
+|Force Armour:|Warden_force.png.||
+|Drone:|Warden_drone.png.||
+|Angle:|0||
+|Distance:|0||
 
-Copy this: `Warden,./../custom_skins/Warden.png.,./../custom_skins/Warden_force.png.,./../custom_skins/Warden_drone.png.,0,0`
+
+Copy this: `Warden,Warden.png.,Warden_force.png.,Warden_drone.png.,0,0`
 
 
 
@@ -205,34 +225,37 @@ Copy this: `Warden,./../custom_skins/Warden.png.,./../custom_skins/Warden_force.
 
 
 
-![./../custom_skins/Warden.png.](../custom_skins/./../custom_skins/Warden.png..)
+![Warden.png.](../custom_skins/Warden.png.)
 
 
-![./../custom_skins/Warden_force.png.](../custom_skins/./../custom_skins/Warden_force.png..)
-
-
+![Warden_force.png.](../custom_skins/Warden_force.png.)
 
 
 
 
-![./../custom_skins/Warden_drone.png.](../custom_skins/./../custom_skins/Warden_drone.png..)
+![Warden_drone.png.](../custom_skins/Warden_drone.png.)
 
 
 
 
 
 
-## 
-**Windseeker**
-: 
+## **Windseeker**:
 [@anthraax](https://discord.com/users/211671269882462218)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/windseeker.png.|||Fource Armour:|./../custom_skins/windseeker_force.png.|||Drone:|./../custom_skins/windseeker_drone.png.|||Angle:|110|||Distance:|20||
+||
+|---|---||
+|Body:|windseeker.png.||
+|Force Armour:|windseeker_force.png.||
+|Drone:|windseeker_drone.png.||
+|Angle:|110||
+|Distance:|20||
 
-Copy this: `Windseeker,./../custom_skins/windseeker.png.,./../custom_skins/windseeker_force.png.,./../custom_skins/windseeker_drone.png.,110,20`
+
+Copy this: `Windseeker,windseeker.png.,windseeker_force.png.,windseeker_drone.png.,110,20`
 
 
 
@@ -241,34 +264,37 @@ Copy this: `Windseeker,./../custom_skins/windseeker.png.,./../custom_skins/winds
 
 
 
-![./../custom_skins/windseeker.png.](../custom_skins/./../custom_skins/windseeker.png..)
+![windseeker.png.](../custom_skins/windseeker.png.)
 
 
-![./../custom_skins/windseeker_force.png.](../custom_skins/./../custom_skins/windseeker_force.png..)
-
-
+![windseeker_force.png.](../custom_skins/windseeker_force.png.)
 
 
 
 
-![./../custom_skins/windseeker_drone.png.](../custom_skins/./../custom_skins/windseeker_drone.png..)
+![windseeker_drone.png.](../custom_skins/windseeker_drone.png.)
 
 
 
 
 
 
-## 
-**Onslaught**
-: 
+## **Onslaught**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/Onslaught.png.|||Fource Armour:|./../custom_skins/Onslaught_force.png.|||Drone:|./../custom_skins/Onslaught_drone.png.|||Angle:|140|||Distance:|45||
+||
+|---|---||
+|Body:|Onslaught.png.||
+|Force Armour:|Onslaught_force.png.||
+|Drone:|Onslaught_drone.png.||
+|Angle:|140||
+|Distance:|45||
 
-Copy this: `Onslaught,./../custom_skins/Onslaught.png.,./../custom_skins/Onslaught_force.png.,./../custom_skins/Onslaught_drone.png.,140,45`
+
+Copy this: `Onslaught,Onslaught.png.,Onslaught_force.png.,Onslaught_drone.png.,140,45`
 
 
 
@@ -277,34 +303,37 @@ Copy this: `Onslaught,./../custom_skins/Onslaught.png.,./../custom_skins/Onslaug
 
 
 
-![./../custom_skins/Onslaught.png.](../custom_skins/./../custom_skins/Onslaught.png..)
+![Onslaught.png.](../custom_skins/Onslaught.png.)
 
 
-![./../custom_skins/Onslaught_force.png.](../custom_skins/./../custom_skins/Onslaught_force.png..)
-
-
+![Onslaught_force.png.](../custom_skins/Onslaught_force.png.)
 
 
 
 
-![./../custom_skins/Onslaught_drone.png.](../custom_skins/./../custom_skins/Onslaught_drone.png..)
+![Onslaught_drone.png.](../custom_skins/Onslaught_drone.png.)
 
 
 
 
 
 
-## 
-**Artillery**
-: 
+## **Artillery**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/Artillery.png.|||Fource Armour:|./../custom_skins/Artillery_force.png.|||Drone:|./../custom_skins/Artillery_drone.png.|||Angle:|150|||Distance:|40||
+||
+|---|---||
+|Body:|Artillery.png.||
+|Force Armour:|Artillery_force.png.||
+|Drone:|Artillery_drone.png.||
+|Angle:|150||
+|Distance:|40||
 
-Copy this: `Artillery,./../custom_skins/Artillery.png.,./../custom_skins/Artillery_force.png.,./../custom_skins/Artillery_drone.png.,150,40`
+
+Copy this: `Artillery,Artillery.png.,Artillery_force.png.,Artillery_drone.png.,150,40`
 
 
 
@@ -313,34 +342,37 @@ Copy this: `Artillery,./../custom_skins/Artillery.png.,./../custom_skins/Artille
 
 
 
-![./../custom_skins/Artillery.png.](../custom_skins/./../custom_skins/Artillery.png..)
+![Artillery.png.](../custom_skins/Artillery.png.)
 
 
-![./../custom_skins/Artillery_force.png.](../custom_skins/./../custom_skins/Artillery_force.png..)
-
-
+![Artillery_force.png.](../custom_skins/Artillery_force.png.)
 
 
 
 
-![./../custom_skins/Artillery_drone.png.](../custom_skins/./../custom_skins/Artillery_drone.png..)
+![Artillery_drone.png.](../custom_skins/Artillery_drone.png.)
 
 
 
 
 
 
-## 
-**Deconstructor**
-: 
+## **Deconstructor**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/Deconstructor.png.|||Fource Armour:|./../custom_skins/Deconstructor_force.png.|||Drone:|./../custom_skins/Deconstructor_drone.png.|||Angle:|155|||Distance:|42||
+||
+|---|---||
+|Body:|Deconstructor.png.||
+|Force Armour:|Deconstructor_force.png.||
+|Drone:|Deconstructor_drone.png.||
+|Angle:|155||
+|Distance:|42||
 
-Copy this: `Deconstructor,./../custom_skins/Deconstructor.png.,./../custom_skins/Deconstructor_force.png.,./../custom_skins/Deconstructor_drone.png.,155,42`
+
+Copy this: `Deconstructor,Deconstructor.png.,Deconstructor_force.png.,Deconstructor_drone.png.,155,42`
 
 
 
@@ -349,17 +381,15 @@ Copy this: `Deconstructor,./../custom_skins/Deconstructor.png.,./../custom_skins
 
 
 
-![./../custom_skins/Deconstructor.png.](../custom_skins/./../custom_skins/Deconstructor.png..)
+![Deconstructor.png.](../custom_skins/Deconstructor.png.)
 
 
-![./../custom_skins/Deconstructor_force.png.](../custom_skins/./../custom_skins/Deconstructor_force.png..)
-
-
+![Deconstructor_force.png.](../custom_skins/Deconstructor_force.png.)
 
 
 
 
-![./../custom_skins/Deconstructor_drone.png.](../custom_skins/./../custom_skins/Deconstructor_drone.png..)
+![Deconstructor_drone.png.](../custom_skins/Deconstructor_drone.png.)
 
 
 

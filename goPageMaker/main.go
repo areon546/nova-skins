@@ -62,8 +62,9 @@ func compileSkins() {
 	log.Info("Read Custom Skin directory")
 	print(len(skins), len(skins))
 
+	skinsToDisplay := len(skins)
 	// the processing package creates a list of skins based on the custom skins csv in the custom skins folder and uses that to create these
-	processing.ConstructAssetPages(skins)
+	processing.ConstructAssetPages(skins[:skinsToDisplay])
 }
 
 func zipAllSkins() {

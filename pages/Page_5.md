@@ -6,17 +6,22 @@
 [Page_6](./Page_6.md)
 
 
-## 
-**Poly**
-: 
+## **Poly**:
 [@splathero](https://discord.com/users/1088727297755971645)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/poly.png.|||Fource Armour:|./../custom_skins/poly_force.png.|||Drone:|./../custom_skins/poly_drone.png.|||Angle:|0|||Distance:|-45||
+||
+|---|---||
+|Body:|poly.png.||
+|Force Armour:|poly_force.png.||
+|Drone:|poly_drone.png.||
+|Angle:|0||
+|Distance:|-45||
 
-Copy this: `Poly,./../custom_skins/poly.png.,./../custom_skins/poly_force.png.,./../custom_skins/poly_drone.png.,0,-45`
+
+Copy this: `Poly,poly.png.,poly_force.png.,poly_drone.png.,0,-45`
 
 
 
@@ -25,34 +30,37 @@ Copy this: `Poly,./../custom_skins/poly.png.,./../custom_skins/poly_force.png.,.
 
 
 
-![./../custom_skins/poly.png.](../custom_skins/./../custom_skins/poly.png..)
+![poly.png.](../custom_skins/poly.png.)
 
 
-![./../custom_skins/poly_force.png.](../custom_skins/./../custom_skins/poly_force.png..)
-
-
+![poly_force.png.](../custom_skins/poly_force.png.)
 
 
 
 
-![./../custom_skins/poly_drone.png.](../custom_skins/./../custom_skins/poly_drone.png..)
+![poly_drone.png.](../custom_skins/poly_drone.png.)
 
 
 
 
 
 
-## 
-**Gyaraga**
-: 
+## **Gyaraga**:
 [@evelo](https://discord.com/users/110564152539377664)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/GalagaShip.png.|||Fource Armour:|./../custom_skins/GalagaShipShield.png.|||Drone:||||Angle:|90|||Distance:|35||
+||
+|---|---||
+|Body:|GalagaShip.png.||
+|Force Armour:|GalagaShipShield.png.||
+|Drone:|||
+|Angle:|90||
+|Distance:|35||
 
-Copy this: `Gyaraga,./../custom_skins/GalagaShip.png.,./../custom_skins/GalagaShipShield.png.,,90,35`
+
+Copy this: `Gyaraga,GalagaShip.png.,GalagaShipShield.png.,,90,35`
 
 
 
@@ -61,12 +69,10 @@ Copy this: `Gyaraga,./../custom_skins/GalagaShip.png.,./../custom_skins/GalagaSh
 
 
 
-![./../custom_skins/GalagaShip.png.](../custom_skins/./../custom_skins/GalagaShip.png..)
+![GalagaShip.png.](../custom_skins/GalagaShip.png.)
 
 
-![./../custom_skins/GalagaShipShield.png.](../custom_skins/./../custom_skins/GalagaShipShield.png..)
-
-
+![GalagaShipShield.png.](../custom_skins/GalagaShipShield.png.)
 
 
 
@@ -75,17 +81,22 @@ Copy this: `Gyaraga,./../custom_skins/GalagaShip.png.,./../custom_skins/GalagaSh
 
 
 
-## 
-**Battery**
-: 
+## **Battery**:
 [@winstick](https://discord.com/users/ 335148664953765888)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/battery.png.|||Fource Armour:|./../custom_skins/battery_force.png.|||Drone:|./../custom_skins/battery.png.|||Angle:|151|||Distance:|40||
+||
+|---|---||
+|Body:|battery.png.||
+|Force Armour:|battery_force.png.||
+|Drone:|battery.png.||
+|Angle:|151||
+|Distance:|40||
 
-Copy this: `Battery,./../custom_skins/battery.png.,./../custom_skins/battery_force.png.,./../custom_skins/battery.png.,151,40`
+
+Copy this: `Battery,battery.png.,battery_force.png.,battery.png.,151,40`
 
 
 
@@ -94,34 +105,37 @@ Copy this: `Battery,./../custom_skins/battery.png.,./../custom_skins/battery_for
 
 
 
-![./../custom_skins/battery.png.](../custom_skins/./../custom_skins/battery.png..)
+![battery.png.](../custom_skins/battery.png.)
 
 
-![./../custom_skins/battery_force.png.](../custom_skins/./../custom_skins/battery_force.png..)
-
-
+![battery_force.png.](../custom_skins/battery_force.png.)
 
 
 
 
-![./../custom_skins/battery.png.](../custom_skins/./../custom_skins/battery.png..)
+![battery.png.](../custom_skins/battery.png.)
 
 
 
 
 
 
-## 
-**Wraith**
-: 
+## **Wraith**:
 [@digicube](https://discord.com/users/ 1075087519961591881)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/wraith.png.|||Fource Armour:|./../custom_skins/wraith_force.png.|||Drone:|./../custom_skins/wraith_drone.png.|||Angle:|250|||Distance:|35||
+||
+|---|---||
+|Body:|wraith.png.||
+|Force Armour:|wraith_force.png.||
+|Drone:|wraith_drone.png.||
+|Angle:|250||
+|Distance:|35||
 
-Copy this: `Wraith,./../custom_skins/wraith.png.,./../custom_skins/wraith_force.png.,./../custom_skins/wraith_drone.png.,250,35`
+
+Copy this: `Wraith,wraith.png.,wraith_force.png.,wraith_drone.png.,250,35`
 
 
 
@@ -130,34 +144,37 @@ Copy this: `Wraith,./../custom_skins/wraith.png.,./../custom_skins/wraith_force.
 
 
 
-![./../custom_skins/wraith.png.](../custom_skins/./../custom_skins/wraith.png..)
+![wraith.png.](../custom_skins/wraith.png.)
 
 
-![./../custom_skins/wraith_force.png.](../custom_skins/./../custom_skins/wraith_force.png..)
-
-
+![wraith_force.png.](../custom_skins/wraith_force.png.)
 
 
 
 
-![./../custom_skins/wraith_drone.png.](../custom_skins/./../custom_skins/wraith_drone.png..)
+![wraith_drone.png.](../custom_skins/wraith_drone.png.)
 
 
 
 
 
 
-## 
-**Death Star**
-: 
+## **Death Star**:
 [@exotreus](https://discord.com/users/ 773152446562172959)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/deathstar.png.|||Fource Armour:|./../custom_skins/deathstar_force.png.|||Drone:||||Angle:|115|||Distance:|20||
+||
+|---|---||
+|Body:|deathstar.png.||
+|Force Armour:|deathstar_force.png.||
+|Drone:|||
+|Angle:|115||
+|Distance:|20||
 
-Copy this: `Death Star,./../custom_skins/deathstar.png.,./../custom_skins/deathstar_force.png.,,115,20`
+
+Copy this: `Death Star,deathstar.png.,deathstar_force.png.,,115,20`
 
 
 
@@ -166,12 +183,10 @@ Copy this: `Death Star,./../custom_skins/deathstar.png.,./../custom_skins/deaths
 
 
 
-![./../custom_skins/deathstar.png.](../custom_skins/./../custom_skins/deathstar.png..)
+![deathstar.png.](../custom_skins/deathstar.png.)
 
 
-![./../custom_skins/deathstar_force.png.](../custom_skins/./../custom_skins/deathstar_force.png..)
-
-
+![deathstar_force.png.](../custom_skins/deathstar_force.png.)
 
 
 
@@ -180,17 +195,22 @@ Copy this: `Death Star,./../custom_skins/deathstar.png.,./../custom_skins/deaths
 
 
 
-## 
-**Wasp Hive**
-: 
+## **Wasp Hive**:
 [@fourpointedstar](https://discord.com/users/ 379031746811002881)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/wasphive.png.|||Fource Armour:|./../custom_skins/wasphive_force.png.|||Drone:|./../custom_skins/wasphive_drone.png.|||Angle:|178|||Distance:|90||
+||
+|---|---||
+|Body:|wasphive.png.||
+|Force Armour:|wasphive_force.png.||
+|Drone:|wasphive_drone.png.||
+|Angle:|178||
+|Distance:|90||
 
-Copy this: `Wasp Hive,./../custom_skins/wasphive.png.,./../custom_skins/wasphive_force.png.,./../custom_skins/wasphive_drone.png.,178,90`
+
+Copy this: `Wasp Hive,wasphive.png.,wasphive_force.png.,wasphive_drone.png.,178,90`
 
 
 
@@ -199,34 +219,37 @@ Copy this: `Wasp Hive,./../custom_skins/wasphive.png.,./../custom_skins/wasphive
 
 
 
-![./../custom_skins/wasphive.png.](../custom_skins/./../custom_skins/wasphive.png..)
+![wasphive.png.](../custom_skins/wasphive.png.)
 
 
-![./../custom_skins/wasphive_force.png.](../custom_skins/./../custom_skins/wasphive_force.png..)
-
-
+![wasphive_force.png.](../custom_skins/wasphive_force.png.)
 
 
 
 
-![./../custom_skins/wasphive_drone.png.](../custom_skins/./../custom_skins/wasphive_drone.png..)
+![wasphive_drone.png.](../custom_skins/wasphive_drone.png.)
 
 
 
 
 
 
-## 
-**Wojciech Mann**
-: 
+## **Wojciech Mann**:
 [@exotreus](https://discord.com/users/ 773152446562172959)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/mann.png.|||Fource Armour:|./../custom_skins/mann_force.png.|||Drone:||||Angle:||||Distance:|||
+||
+|---|---||
+|Body:|mann.png.||
+|Force Armour:|mann_force.png.||
+|Drone:|||
+|Angle:|||
+|Distance:|||
 
-Copy this: `Wojciech Mann,./../custom_skins/mann.png.,./../custom_skins/mann_force.png.,,,`
+
+Copy this: `Wojciech Mann,mann.png.,mann_force.png.,,,`
 
 
 
@@ -235,12 +258,10 @@ Copy this: `Wojciech Mann,./../custom_skins/mann.png.,./../custom_skins/mann_for
 
 
 
-![./../custom_skins/mann.png.](../custom_skins/./../custom_skins/mann.png..)
+![mann.png.](../custom_skins/mann.png.)
 
 
-![./../custom_skins/mann_force.png.](../custom_skins/./../custom_skins/mann_force.png..)
-
-
+![mann_force.png.](../custom_skins/mann_force.png.)
 
 
 
@@ -249,17 +270,22 @@ Copy this: `Wojciech Mann,./../custom_skins/mann.png.,./../custom_skins/mann_for
 
 
 
-## 
-**Buka**
-: 
+## **Buka**:
 [@exotreus](https://discord.com/users/ 773152446562172959)
 
 
 
 
-|||---|---|||Body:|./../custom_skins/buka.png.|||Fource Armour:|./../custom_skins/buka_force.png.|||Drone:||||Angle:||||Distance:|||
+||
+|---|---||
+|Body:|buka.png.||
+|Force Armour:|buka_force.png.||
+|Drone:|||
+|Angle:|||
+|Distance:|||
 
-Copy this: `Buka,./../custom_skins/buka.png.,./../custom_skins/buka_force.png.,,,`
+
+Copy this: `Buka,buka.png.,buka_force.png.,,,`
 
 
 
@@ -268,12 +294,10 @@ Copy this: `Buka,./../custom_skins/buka.png.,./../custom_skins/buka_force.png.,,
 
 
 
-![./../custom_skins/buka.png.](../custom_skins/./../custom_skins/buka.png..)
+![buka.png.](../custom_skins/buka.png.)
 
 
-![./../custom_skins/buka_force.png.](../custom_skins/./../custom_skins/buka_force.png..)
-
-
+![buka_force.png.](../custom_skins/buka_force.png.)
 
 
 
@@ -282,17 +306,22 @@ Copy this: `Buka,./../custom_skins/buka.png.,./../custom_skins/buka_force.png.,,
 
 
 
-## 
-**Crabbo**
-: 
+## **Crabbo**:
 [@0uro6oro5](https://discord.com/users/ 922635486001004594)
 
 
 
 
-|||---|---|||Body:||||Fource Armour:||||Drone:|./../custom_skins/crabbo_drone.png.|||Angle:|80|||Distance:|105||
+||
+|---|---||
+|Body:|||
+|Force Armour:|||
+|Drone:|crabbo_drone.png.||
+|Angle:|80||
+|Distance:|105||
 
-Copy this: `Crabbo,,,./../custom_skins/crabbo_drone.png.,80,105`
+
+Copy this: `Crabbo,,,crabbo_drone.png.,80,105`
 
 
 
@@ -303,26 +332,29 @@ Copy this: `Crabbo,,,./../custom_skins/crabbo_drone.png.,80,105`
 
 
 
-
-
-![./../custom_skins/crabbo_drone.png.](../custom_skins/./../custom_skins/crabbo_drone.png..)
+![crabbo_drone.png.](../custom_skins/crabbo_drone.png.)
 
 
 
 
 
 
-## 
-**avtraxi.png**
-: 
+## **avtraxi.png**:
 
 
 
 
 
-|||---|---|||Body:|./../custom_skins/avtraxi_force.png.|||Fource Armour:|./../custom_skins/avtraxi_drone.png.|||Drone:||||Angle:|90|||Distance:|30||
+||
+|---|---||
+|Body:|avtraxi_force.png.||
+|Force Armour:|avtraxi_drone.png.||
+|Drone:|||
+|Angle:|90||
+|Distance:|30||
 
-Copy this: `avtraxi.png,./../custom_skins/avtraxi_force.png.,./../custom_skins/avtraxi_drone.png.,,90,30`
+
+Copy this: `avtraxi.png,avtraxi_force.png.,avtraxi_drone.png.,,90,30`
 
 
 
@@ -331,12 +363,10 @@ Copy this: `avtraxi.png,./../custom_skins/avtraxi_force.png.,./../custom_skins/a
 
 
 
-![./../custom_skins/avtraxi_force.png.](../custom_skins/./../custom_skins/avtraxi_force.png..)
+![avtraxi_force.png.](../custom_skins/avtraxi_force.png.)
 
 
-![./../custom_skins/avtraxi_drone.png.](../custom_skins/./../custom_skins/avtraxi_drone.png..)
-
-
+![avtraxi_drone.png.](../custom_skins/avtraxi_drone.png.)
 
 
 

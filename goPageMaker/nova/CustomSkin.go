@@ -10,6 +10,7 @@ import (
 	"github.com/areon546/go-files/table"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 )
 
@@ -152,7 +153,7 @@ func (skin *CustomSkin) Zip() *zip.ZipFile {
 
 // TODO: This should use the fs.DirEntires to generate a zip file for the individual skin
 func (cs *CustomSkin) GenerateZipFile() {
-	path := "../assets/zips/" + cs.name
+	path := dirs.AssetsFolder() + "zips/" + cs.name
 	cs.zip = *zip.NewZipFile(path)
 
 	broadcast("Generating ZIP: ", cs.Name())

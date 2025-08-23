@@ -17,15 +17,15 @@
 
 Copy this: `Poly,poly.png,poly_force.png,poly_drone.png,0,-45`
 
-[Download Me](../assets/zips/Poly.zip)
+[Download Me](/nova-skins/static/assets/zips/Poly.zip)
 
 
-![poly.png](./../custom_skins/poly.png)
+![poly.png](/nova-skins/custom_skins/poly.png)
 
-![poly_force.png](./../custom_skins/poly_force.png)
+![poly_force.png](/nova-skins/custom_skins/poly_force.png)
 
 
-![poly_drone.png](./../custom_skins/poly_drone.png)
+![poly_drone.png](/nova-skins/custom_skins/poly_drone.png)
 
 
 
@@ -42,12 +42,12 @@ Copy this: `Poly,poly.png,poly_force.png,poly_drone.png,0,-45`
 
 Copy this: `Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35`
 
-[Download Me](../assets/zips/Gyaraga.zip)
+[Download Me](/nova-skins/static/assets/zips/Gyaraga.zip)
 
 
-![GalagaShip.png](./../custom_skins/GalagaShip.png)
+![GalagaShip.png](/nova-skins/custom_skins/GalagaShip.png)
 
-![GalagaShipShield.png](./../custom_skins/GalagaShipShield.png)
+![GalagaShipShield.png](/nova-skins/custom_skins/GalagaShipShield.png)
 
 
 
@@ -65,15 +65,15 @@ Copy this: `Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35`
 
 Copy this: `Battery,battery.png,battery_force.png,battery.png,151,40`
 
-[Download Me](../assets/zips/Battery.zip)
+[Download Me](/nova-skins/static/assets/zips/Battery.zip)
 
 
-![battery.png](./../custom_skins/battery.png)
+![battery.png](/nova-skins/custom_skins/battery.png)
 
-![battery_force.png](./../custom_skins/battery_force.png)
+![battery_force.png](/nova-skins/custom_skins/battery_force.png)
 
 
-![battery.png](./../custom_skins/battery.png)
+![battery.png](/nova-skins/custom_skins/battery.png)
 
 
 
@@ -90,15 +90,15 @@ Copy this: `Battery,battery.png,battery_force.png,battery.png,151,40`
 
 Copy this: `Wraith,wraith.png,wraith_force.png,wraith_drone.png,250,35`
 
-[Download Me](../assets/zips/Wraith.zip)
+[Download Me](/nova-skins/static/assets/zips/Wraith.zip)
 
 
-![wraith.png](./../custom_skins/wraith.png)
+![wraith.png](/nova-skins/custom_skins/wraith.png)
 
-![wraith_force.png](./../custom_skins/wraith_force.png)
+![wraith_force.png](/nova-skins/custom_skins/wraith_force.png)
 
 
-![wraith_drone.png](./../custom_skins/wraith_drone.png)
+![wraith_drone.png](/nova-skins/custom_skins/wraith_drone.png)
 
 
 
@@ -115,12 +115,12 @@ Copy this: `Wraith,wraith.png,wraith_force.png,wraith_drone.png,250,35`
 
 Copy this: `Death Star,deathstar.png,deathstar_force.png,,115,20`
 
-[Download Me](../assets/zips/Death Star.zip)
+[Download Me](/nova-skins/static/assets/zips/Death Star.zip)
 
 
-![deathstar.png](./../custom_skins/deathstar.png)
+![deathstar.png](/nova-skins/custom_skins/deathstar.png)
 
-![deathstar_force.png](./../custom_skins/deathstar_force.png)
+![deathstar_force.png](/nova-skins/custom_skins/deathstar_force.png)
 
 
 
@@ -138,15 +138,15 @@ Copy this: `Death Star,deathstar.png,deathstar_force.png,,115,20`
 
 Copy this: `Wasp Hive,wasphive.png,wasphive_force.png,wasphive_drone.png,178,90`
 
-[Download Me](../assets/zips/Wasp Hive.zip)
+[Download Me](/nova-skins/static/assets/zips/Wasp Hive.zip)
 
 
-![wasphive.png](./../custom_skins/wasphive.png)
+![wasphive.png](/nova-skins/custom_skins/wasphive.png)
 
-![wasphive_force.png](./../custom_skins/wasphive_force.png)
+![wasphive_force.png](/nova-skins/custom_skins/wasphive_force.png)
 
 
-![wasphive_drone.png](./../custom_skins/wasphive_drone.png)
+![wasphive_drone.png](/nova-skins/custom_skins/wasphive_drone.png)
 
 
 
@@ -163,12 +163,12 @@ Copy this: `Wasp Hive,wasphive.png,wasphive_force.png,wasphive_drone.png,178,90`
 
 Copy this: `Wojciech Mann,mann.png,mann_force.png,,,`
 
-[Download Me](../assets/zips/Wojciech Mann.zip)
+[Download Me](/nova-skins/static/assets/zips/Wojciech Mann.zip)
 
 
-![mann.png](./../custom_skins/mann.png)
+![mann.png](/nova-skins/custom_skins/mann.png)
 
-![mann_force.png](./../custom_skins/mann_force.png)
+![mann_force.png](/nova-skins/custom_skins/mann_force.png)
 
 
 
@@ -186,12 +186,12 @@ Copy this: `Wojciech Mann,mann.png,mann_force.png,,,`
 
 Copy this: `Buka,buka.png,buka_force.png,,,`
 
-[Download Me](../assets/zips/Buka.zip)
+[Download Me](/nova-skins/static/assets/zips/Buka.zip)
 
 
-![buka.png](./../custom_skins/buka.png)
+![buka.png](/nova-skins/custom_skins/buka.png)
 
-![buka_force.png](./../custom_skins/buka_force.png)
+![buka_force.png](/nova-skins/custom_skins/buka_force.png)
 
 
 
@@ -209,11 +209,11 @@ Copy this: `Buka,buka.png,buka_force.png,,,`
 
 Copy this: `Crabbo,,,crabbo_drone.png,80,105`
 
-[Download Me](../assets/zips/Crabbo.zip)
+[Download Me](/nova-skins/static/assets/zips/Crabbo.zip)
 
 
 
-![crabbo_drone.png](./../custom_skins/crabbo_drone.png)
+![crabbo_drone.png](/nova-skins/custom_skins/crabbo_drone.png)
 
 
 
@@ -230,12 +230,12 @@ Copy this: `Crabbo,,,crabbo_drone.png,80,105`
 
 Copy this: `avtraxi.png,avtraxi_force.png,avtraxi_drone.png,,90,30`
 
-[Download Me](../assets/zips/avtraxi.png.zip)
+[Download Me](/nova-skins/static/assets/zips/avtraxi.png.zip)
 
 
-![avtraxi_force.png](./../custom_skins/avtraxi_force.png)
+![avtraxi_force.png](/nova-skins/custom_skins/avtraxi_force.png)
 
-![avtraxi_drone.png](./../custom_skins/avtraxi_drone.png)
+![avtraxi_drone.png](/nova-skins/custom_skins/avtraxi_drone.png)
 
 
 

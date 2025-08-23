@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 )
@@ -21,7 +22,7 @@ func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
 	for i := range numFiles {
 		// create a new file
 		pageNum := i + 1
-		a := NewAssetsPage(pagesFolder(), format("Page_%d.md", pageNum), pageNum)
+		a := NewAssetsPage(dirs.PagesFolder(), format("Page_%d.md", pageNum), pageNum)
 		_ = a.ClearFile() // don't care about this error
 
 		writeToAssetPage(a, skins, i)

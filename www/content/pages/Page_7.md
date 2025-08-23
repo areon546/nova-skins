@@ -17,15 +17,15 @@
 
 Copy this: `Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25`
 
-[Download Me](../assets/zips/Tech 15.zip)
+[Download Me](/nova-skins/static/assets/zips/Tech 15.zip)
 
 
-![tech_15.png](./../custom_skins/tech_15.png)
+![tech_15.png](/nova-skins/custom_skins/tech_15.png)
 
-![tech_15_force.png](./../custom_skins/tech_15_force.png)
+![tech_15_force.png](/nova-skins/custom_skins/tech_15_force.png)
 
 
-![tech_15_drone.png](./../custom_skins/tech_15_drone.png)
+![tech_15_drone.png](/nova-skins/custom_skins/tech_15_drone.png)
 
 
 
@@ -42,15 +42,15 @@ Copy this: `Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25`
 
 Copy this: `Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,30`
 
-[Download Me](../assets/zips/Tesseract.zip)
+[Download Me](/nova-skins/static/assets/zips/Tesseract.zip)
 
 
-![tesseract.png](./../custom_skins/tesseract.png)
+![tesseract.png](/nova-skins/custom_skins/tesseract.png)
 
-![tesseract_force.png](./../custom_skins/tesseract_force.png)
+![tesseract_force.png](/nova-skins/custom_skins/tesseract_force.png)
 
 
-![tesseract_drone.png](./../custom_skins/tesseract_drone.png)
+![tesseract_drone.png](/nova-skins/custom_skins/tesseract_drone.png)
 
 
 
@@ -67,15 +67,15 @@ Copy this: `Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,3
 
 Copy this: `ChitinCondition,condition.png,condition_force.png,condition_drone.png,120,50`
 
-[Download Me](../assets/zips/ChitinCondition.zip)
+[Download Me](/nova-skins/static/assets/zips/ChitinCondition.zip)
 
 
-![condition.png](./../custom_skins/condition.png)
+![condition.png](/nova-skins/custom_skins/condition.png)
 
-![condition_force.png](./../custom_skins/condition_force.png)
+![condition_force.png](/nova-skins/custom_skins/condition_force.png)
 
 
-![condition_drone.png](./../custom_skins/condition_drone.png)
+![condition_drone.png](/nova-skins/custom_skins/condition_drone.png)
 
 
 
@@ -92,15 +92,15 @@ Copy this: `ChitinCondition,condition.png,condition_force.png,condition_drone.pn
 
 Copy this: `Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30`
 
-[Download Me](../assets/zips/Wasp.zip)
+[Download Me](/nova-skins/static/assets/zips/Wasp.zip)
 
 
-![wasp.png](./../custom_skins/wasp.png)
+![wasp.png](/nova-skins/custom_skins/wasp.png)
 
-![wasp_force.png](./../custom_skins/wasp_force.png)
+![wasp_force.png](/nova-skins/custom_skins/wasp_force.png)
 
 
-![wasp_drone.png](./../custom_skins/wasp_drone.png)
+![wasp_drone.png](/nova-skins/custom_skins/wasp_drone.png)
 
 
 
@@ -117,15 +117,15 @@ Copy this: `Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30`
 
 Copy this: `Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,115,40`
 
-[Download Me](../assets/zips/Krystallix.zip)
+[Download Me](/nova-skins/static/assets/zips/Krystallix.zip)
 
 
-![krystallix.png](./../custom_skins/krystallix.png)
+![krystallix.png](/nova-skins/custom_skins/krystallix.png)
 
-![krystallix_force.png](./../custom_skins/krystallix_force.png)
+![krystallix_force.png](/nova-skins/custom_skins/krystallix_force.png)
 
 
-![krystallix_drone.png](./../custom_skins/krystallix_drone.png)
+![krystallix_drone.png](/nova-skins/custom_skins/krystallix_drone.png)
 
 
 
@@ -142,12 +142,12 @@ Copy this: `Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,
 
 Copy this: `Minotaur,minotaur.png,minotaur_force.png,,145,60`
 
-[Download Me](../assets/zips/Minotaur.zip)
+[Download Me](/nova-skins/static/assets/zips/Minotaur.zip)
 
 
-![minotaur.png](./../custom_skins/minotaur.png)
+![minotaur.png](/nova-skins/custom_skins/minotaur.png)
 
-![minotaur_force.png](./../custom_skins/minotaur_force.png)
+![minotaur_force.png](/nova-skins/custom_skins/minotaur_force.png)
 
 
 

@@ -17,15 +17,15 @@
 
 Copy this: `Millenium Falcon,millenium_falcon.png,millenium_falcon_force.png,millenium_falcon_drone.png,180,50`
 
-[Download Me](../assets/zips/Millenium Falcon.zip)
+[Download Me](/nova-skins/static/assets/zips/Millenium Falcon.zip)
 
 
-![millenium_falcon.png](./../custom_skins/millenium_falcon.png)
+![millenium_falcon.png](/nova-skins/custom_skins/millenium_falcon.png)
 
-![millenium_falcon_force.png](./../custom_skins/millenium_falcon_force.png)
+![millenium_falcon_force.png](/nova-skins/custom_skins/millenium_falcon_force.png)
 
 
-![millenium_falcon_drone.png](./../custom_skins/millenium_falcon_drone.png)
+![millenium_falcon_drone.png](/nova-skins/custom_skins/millenium_falcon_drone.png)
 
 
 
@@ -42,15 +42,15 @@ Copy this: `Millenium Falcon,millenium_falcon.png,millenium_falcon_force.png,mil
 
 Copy this: `Curvewing,curvewing.png,curvewing_force.png,curvewing_drone.png,142,31`
 
-[Download Me](../assets/zips/Curvewing.zip)
+[Download Me](/nova-skins/static/assets/zips/Curvewing.zip)
 
 
-![curvewing.png](./../custom_skins/curvewing.png)
+![curvewing.png](/nova-skins/custom_skins/curvewing.png)
 
-![curvewing_force.png](./../custom_skins/curvewing_force.png)
+![curvewing_force.png](/nova-skins/custom_skins/curvewing_force.png)
 
 
-![curvewing_drone.png](./../custom_skins/curvewing_drone.png)
+![curvewing_drone.png](/nova-skins/custom_skins/curvewing_drone.png)
 
 
 
@@ -67,15 +67,15 @@ Copy this: `Curvewing,curvewing.png,curvewing_force.png,curvewing_drone.png,142,
 
 Copy this: `Beholder,Behold.png,Behold_force.png,Behold_drone.png,,`
 
-[Download Me](../assets/zips/Beholder.zip)
+[Download Me](/nova-skins/static/assets/zips/Beholder.zip)
 
 
-![Behold.png](./../custom_skins/Behold.png)
+![Behold.png](/nova-skins/custom_skins/Behold.png)
 
-![Behold_force.png](./../custom_skins/Behold_force.png)
+![Behold_force.png](/nova-skins/custom_skins/Behold_force.png)
 
 
-![Behold_drone.png](./../custom_skins/Behold_drone.png)
+![Behold_drone.png](/nova-skins/custom_skins/Behold_drone.png)
 
 
 
@@ -92,12 +92,12 @@ Copy this: `Beholder,Behold.png,Behold_force.png,Behold_drone.png,,`
 
 Copy this: `Razorflight,razorflight.png,razorflight_force.png,,50,100`
 
-[Download Me](../assets/zips/Razorflight.zip)
+[Download Me](/nova-skins/static/assets/zips/Razorflight.zip)
 
 
-![razorflight.png](./../custom_skins/razorflight.png)
+![razorflight.png](/nova-skins/custom_skins/razorflight.png)
 
-![razorflight_force.png](./../custom_skins/razorflight_force.png)
+![razorflight_force.png](/nova-skins/custom_skins/razorflight_force.png)
 
 
 
@@ -115,15 +115,15 @@ Copy this: `Razorflight,razorflight.png,razorflight_force.png,,50,100`
 
 Copy this: `Squidship,Squidship.png,Squidship_force.png,Squidship_drone.png,,`
 
-[Download Me](../assets/zips/Squidship.zip)
+[Download Me](/nova-skins/static/assets/zips/Squidship.zip)
 
 
-![Squidship.png](./../custom_skins/Squidship.png)
+![Squidship.png](/nova-skins/custom_skins/Squidship.png)
 
-![Squidship_force.png](./../custom_skins/Squidship_force.png)
+![Squidship_force.png](/nova-skins/custom_skins/Squidship_force.png)
 
 
-![Squidship_drone.png](./../custom_skins/Squidship_drone.png)
+![Squidship_drone.png](/nova-skins/custom_skins/Squidship_drone.png)
 
 
 
@@ -140,12 +140,12 @@ Copy this: `Squidship,Squidship.png,Squidship_force.png,Squidship_drone.png,,`
 
 Copy this: `Executor,Executor.png,Executor_Force.png,,1,135`
 
-[Download Me](../assets/zips/Executor.zip)
+[Download Me](/nova-skins/static/assets/zips/Executor.zip)
 
 
-![Executor.png](./../custom_skins/Executor.png)
+![Executor.png](/nova-skins/custom_skins/Executor.png)
 
-![Executor_Force.png](./../custom_skins/Executor_Force.png)
+![Executor_Force.png](/nova-skins/custom_skins/Executor_Force.png)
 
 
 
@@ -163,15 +163,15 @@ Copy this: `Executor,Executor.png,Executor_Force.png,,1,135`
 
 Copy this: `Jester,Jester.png,Jester_force.png,Jester_drone.png,0,0`
 
-[Download Me](../assets/zips/Jester.zip)
+[Download Me](/nova-skins/static/assets/zips/Jester.zip)
 
 
-![Jester.png](./../custom_skins/Jester.png)
+![Jester.png](/nova-skins/custom_skins/Jester.png)
 
-![Jester_force.png](./../custom_skins/Jester_force.png)
+![Jester_force.png](/nova-skins/custom_skins/Jester_force.png)
 
 
-![Jester_drone.png](./../custom_skins/Jester_drone.png)
+![Jester_drone.png](/nova-skins/custom_skins/Jester_drone.png)
 
 
 
@@ -188,15 +188,15 @@ Copy this: `Jester,Jester.png,Jester_force.png,Jester_drone.png,0,0`
 
 Copy this: `Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_of_worlds_drone.png,181,40`
 
-[Download Me](../assets/zips/Eater of Worlds.zip)
+[Download Me](/nova-skins/static/assets/zips/Eater of Worlds.zip)
 
 
-![eater_of_worlds.png](./../custom_skins/eater_of_worlds.png)
+![eater_of_worlds.png](/nova-skins/custom_skins/eater_of_worlds.png)
 
-![eater_of_worlds_force.png](./../custom_skins/eater_of_worlds_force.png)
+![eater_of_worlds_force.png](/nova-skins/custom_skins/eater_of_worlds_force.png)
 
 
-![eater_of_worlds_drone.png](./../custom_skins/eater_of_worlds_drone.png)
+![eater_of_worlds_drone.png](/nova-skins/custom_skins/eater_of_worlds_drone.png)
 
 
 
@@ -213,15 +213,15 @@ Copy this: `Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_
 
 Copy this: `Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0`
 
-[Download Me](../assets/zips/Lancer.zip)
+[Download Me](/nova-skins/static/assets/zips/Lancer.zip)
 
 
-![lancer.png](./../custom_skins/lancer.png)
+![lancer.png](/nova-skins/custom_skins/lancer.png)
 
-![lancer_force.png](./../custom_skins/lancer_force.png)
+![lancer_force.png](/nova-skins/custom_skins/lancer_force.png)
 
 
-![lancer_drone.png](./../custom_skins/lancer_drone.png)
+![lancer_drone.png](/nova-skins/custom_skins/lancer_drone.png)
 
 
 
@@ -238,15 +238,15 @@ Copy this: `Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0`
 
 Copy this: `The Devil,devil.png,devil_force.png,heart_mite.png,,`
 
-[Download Me](../assets/zips/The Devil.zip)
+[Download Me](/nova-skins/static/assets/zips/The Devil.zip)
 
 
-![devil.png](./../custom_skins/devil.png)
+![devil.png](/nova-skins/custom_skins/devil.png)
 
-![devil_force.png](./../custom_skins/devil_force.png)
+![devil_force.png](/nova-skins/custom_skins/devil_force.png)
 
 
-![heart_mite.png](./../custom_skins/heart_mite.png)
+![heart_mite.png](/nova-skins/custom_skins/heart_mite.png)
 
 
 [Page_3](./Page_3.md)

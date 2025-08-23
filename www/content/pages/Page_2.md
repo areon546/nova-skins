@@ -17,15 +17,15 @@
 
 Copy this: `Spike,spike.png,spike_force.png,spike_drone.png,125,35`
 
-[Download Me](../assets/zips/Spike.zip)
+[Download Me](/nova-skins/static/assets/zips/Spike.zip)
 
 
-![spike.png](./../custom_skins/spike.png)
+![spike.png](/nova-skins/custom_skins/spike.png)
 
-![spike_force.png](./../custom_skins/spike_force.png)
+![spike_force.png](/nova-skins/custom_skins/spike_force.png)
 
 
-![spike_drone.png](./../custom_skins/spike_drone.png)
+![spike_drone.png](/nova-skins/custom_skins/spike_drone.png)
 
 
 
@@ -42,15 +42,15 @@ Copy this: `Spike,spike.png,spike_force.png,spike_drone.png,125,35`
 
 Copy this: `Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
 
-[Download Me](../assets/zips/Pinch.zip)
+[Download Me](/nova-skins/static/assets/zips/Pinch.zip)
 
 
-![pinch.png](./../custom_skins/pinch.png)
+![pinch.png](/nova-skins/custom_skins/pinch.png)
 
-![pinch_force.png](./../custom_skins/pinch_force.png)
+![pinch_force.png](/nova-skins/custom_skins/pinch_force.png)
 
 
-![pinch_drone.png](./../custom_skins/pinch_drone.png)
+![pinch_drone.png](/nova-skins/custom_skins/pinch_drone.png)
 
 
 
@@ -67,15 +67,15 @@ Copy this: `Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
 
 Copy this: `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
 
-[Download Me](../assets/zips/Celes.zip)
+[Download Me](/nova-skins/static/assets/zips/Celes.zip)
 
 
-![celes.png](./../custom_skins/celes.png)
+![celes.png](/nova-skins/custom_skins/celes.png)
 
-![celes_force.png](./../custom_skins/celes_force.png)
+![celes_force.png](/nova-skins/custom_skins/celes_force.png)
 
 
-![celes_drone.png](./../custom_skins/celes_drone.png)
+![celes_drone.png](/nova-skins/custom_skins/celes_drone.png)
 
 
 
@@ -92,15 +92,15 @@ Copy this: `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
 
 Copy this: `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
 
-[Download Me](../assets/zips/Perseus.zip)
+[Download Me](/nova-skins/static/assets/zips/Perseus.zip)
 
 
-![Perseus.png](./../custom_skins/Perseus.png)
+![Perseus.png](/nova-skins/custom_skins/Perseus.png)
 
-![Perseus_force.png](./../custom_skins/Perseus_force.png)
+![Perseus_force.png](/nova-skins/custom_skins/Perseus_force.png)
 
 
-![Perseus_drone.png](./../custom_skins/Perseus_drone.png)
+![Perseus_drone.png](/nova-skins/custom_skins/Perseus_drone.png)
 
 
 
@@ -117,15 +117,15 @@ Copy this: `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
 
 Copy this: `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30`
 
-[Download Me](../assets/zips/Lightning.zip)
+[Download Me](/nova-skins/static/assets/zips/Lightning.zip)
 
 
-![Lightning.png](./../custom_skins/Lightning.png)
+![Lightning.png](/nova-skins/custom_skins/Lightning.png)
 
-![Lightning_force.png](./../custom_skins/Lightning_force.png)
+![Lightning_force.png](/nova-skins/custom_skins/Lightning_force.png)
 
 
-![Lightning_drone.png](./../custom_skins/Lightning_drone.png)
+![Lightning_drone.png](/nova-skins/custom_skins/Lightning_drone.png)
 
 
 
@@ -142,15 +142,15 @@ Copy this: `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,
 
 Copy this: `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
 
-[Download Me](../assets/zips/Warden.zip)
+[Download Me](/nova-skins/static/assets/zips/Warden.zip)
 
 
-![Warden.png](./../custom_skins/Warden.png)
+![Warden.png](/nova-skins/custom_skins/Warden.png)
 
-![Warden_force.png](./../custom_skins/Warden_force.png)
+![Warden_force.png](/nova-skins/custom_skins/Warden_force.png)
 
 
-![Warden_drone.png](./../custom_skins/Warden_drone.png)
+![Warden_drone.png](/nova-skins/custom_skins/Warden_drone.png)
 
 
 
@@ -167,15 +167,15 @@ Copy this: `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
 
 Copy this: `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20`
 
-[Download Me](../assets/zips/Windseeker.zip)
+[Download Me](/nova-skins/static/assets/zips/Windseeker.zip)
 
 
-![windseeker.png](./../custom_skins/windseeker.png)
+![windseeker.png](/nova-skins/custom_skins/windseeker.png)
 
-![windseeker_force.png](./../custom_skins/windseeker_force.png)
+![windseeker_force.png](/nova-skins/custom_skins/windseeker_force.png)
 
 
-![windseeker_drone.png](./../custom_skins/windseeker_drone.png)
+![windseeker_drone.png](/nova-skins/custom_skins/windseeker_drone.png)
 
 
 
@@ -192,15 +192,15 @@ Copy this: `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,
 
 Copy this: `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45`
 
-[Download Me](../assets/zips/Onslaught.zip)
+[Download Me](/nova-skins/static/assets/zips/Onslaught.zip)
 
 
-![Onslaught.png](./../custom_skins/Onslaught.png)
+![Onslaught.png](/nova-skins/custom_skins/Onslaught.png)
 
-![Onslaught_force.png](./../custom_skins/Onslaught_force.png)
+![Onslaught_force.png](/nova-skins/custom_skins/Onslaught_force.png)
 
 
-![Onslaught_drone.png](./../custom_skins/Onslaught_drone.png)
+![Onslaught_drone.png](/nova-skins/custom_skins/Onslaught_drone.png)
 
 
 
@@ -217,15 +217,15 @@ Copy this: `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,
 
 Copy this: `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40`
 
-[Download Me](../assets/zips/Artillery.zip)
+[Download Me](/nova-skins/static/assets/zips/Artillery.zip)
 
 
-![Artillery.png](./../custom_skins/Artillery.png)
+![Artillery.png](/nova-skins/custom_skins/Artillery.png)
 
-![Artillery_force.png](./../custom_skins/Artillery_force.png)
+![Artillery_force.png](/nova-skins/custom_skins/Artillery_force.png)
 
 
-![Artillery_drone.png](./../custom_skins/Artillery_drone.png)
+![Artillery_drone.png](/nova-skins/custom_skins/Artillery_drone.png)
 
 
 
@@ -242,15 +242,15 @@ Copy this: `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,
 
 Copy this: `Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42`
 
-[Download Me](../assets/zips/Deconstructor.zip)
+[Download Me](/nova-skins/static/assets/zips/Deconstructor.zip)
 
 
-![Deconstructor.png](./../custom_skins/Deconstructor.png)
+![Deconstructor.png](/nova-skins/custom_skins/Deconstructor.png)
 
-![Deconstructor_force.png](./../custom_skins/Deconstructor_force.png)
+![Deconstructor_force.png](/nova-skins/custom_skins/Deconstructor_force.png)
 
 
-![Deconstructor_drone.png](./../custom_skins/Deconstructor_drone.png)
+![Deconstructor_drone.png](/nova-skins/custom_skins/Deconstructor_drone.png)
 
 
 [Page_1](./Page_1.md)

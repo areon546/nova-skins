@@ -3,6 +3,7 @@ package processing
 import (
 	"io/fs"
 
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 	"github.com/areon546/go-files/files"
@@ -19,29 +20,20 @@ func broadcast(a ...any) {
 	log.Info(logString)
 }
 
-func pagesFolder() string {
-	return "../www/content/pages/"
+func inSkinsFolder(filename string) string {
+	return dirs.SkinsFolder() + filename
 }
 
-func skinsFolder() string {
-	return "../custom_skins/"
-}
-
-func inSkinsFolder(filename, filetype string) string {
-	s := files.ConstructFilePath(skinsFolder(), filename, filetype)
-	return s
-}
-
-func inAssetsFolder(file, filetype string) string {
-	return files.ConstructFilePath("../assets/", file, filetype)
+func inAssetsFolder(filename string) string {
+	return "../assets/" + filename
 }
 
 func AssetsCSVPath() string {
-	return inAssetsFolder("assets", "csv")
+	return inAssetsFolder("assets.csv")
 }
 
 func openCustomSkin(d fs.DirEntry) *files.File {
-	f, _ := files.OpenFile(skinsFolder() + d.Name())
+	f, _ := files.OpenFile(dirs.SkinsFolder() + d.Name())
 
 	return f
 }

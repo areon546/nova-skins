@@ -1,6 +1,7 @@
 package processing
 
 import (
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 	"github.com/areon546/go-files/files"
 	"github.com/areon546/go-files/formatter"
@@ -79,7 +80,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.AppendNewLine(skin.ToTable(a.Fmt))
 		a.AppendNewLine("Copy this: `" + skin.ToCSVLine() + "`")
 		a.AppendEmptyLine()
-		a.AppendLink("Download Me", skin.Zip().Name())
+		a.AppendLink("Download Me", dirs.WwwAssetsFolder()+"zips/"+skin.Name()+".zip")
 		a.AppendEmptyLine()
 
 		a.AppendEmptyLine()
@@ -100,7 +101,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 }
 
 func (a *AssetsPage) AppendCustomSkinFile(f *files.File) {
-	a.AppendEmbed(f.FullName(), f.Name())
+	a.AppendEmbed(dirs.WwwSkinsFolder()+f.Name(), f.Name())
 	a.AppendEmptyLine()
 }
 

@@ -7,14 +7,15 @@ import (
 	"github.com/areon546/go-files/files"
 	"github.com/areon546/go-files/files/zip"
 
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/processing"
 )
 
 var (
-	custom_skins_dir string = "../custom_skins/"
-	compiled_pages   string = "../compiled/pages"
+	custom_skins_dir string = dirs.SkinsFolder()
+	compiled_pages   string = dirs.PagesFolder()
 )
 
 func main() {

@@ -7,6 +7,7 @@ import (
 	"reflect"
 
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
@@ -18,7 +19,7 @@ import (
 func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 	broadcast("Reading Skins In Directory")
 
-	filename := inSkinsFolder("custom_skins", "csv")
+	filename := dirs.SkinsFolder() + "custom_skins.csv"
 
 	broadcast("Reading Custom Skin CSV", filename)
 
@@ -77,7 +78,7 @@ func assignCredits(credit string, creditInfoMaps []map[string]string, mapTypes [
 }
 
 func getDiscordUIDs() map[string]string {
-	discordCreditData, err := files.ReadCSV(inAssetsFolder("DISCORD_UIDS", "csv"), true)
+	discordCreditData, err := files.ReadCSV(dirs.AssetsFolder()+"DISCORD_UIDS.csv", true)
 
 	helpers.Handle(err)
 

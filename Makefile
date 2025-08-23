@@ -25,4 +25,4 @@ html:
 	# copy relevant files over to contents
 
 	# compile templates 
-	./www/template-compiler -c www/content -t www/content
+	./www/template-compiler -c www/content -t www/content -o www/output

@@ -8,13 +8,12 @@
 
 
 
-||
-|---|---||
-|Body:|tech_15.png||
-|Force Armour:|tech_15_force.png||
-|Drone:|tech_15_drone.png||
-|Angle:|120||
-|Distance:|25||
+|---|---|
+|Body:|tech_15.png|
+|Force Armour:|tech_15_force.png|
+|Drone:|tech_15_drone.png|
+|Angle:|120|
+|Distance:|25|
 
 Copy this: `Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25`
 
@@ -34,13 +33,12 @@ Copy this: `Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25`
 
 
 
-||
-|---|---||
-|Body:|tesseract.png||
-|Force Armour:|tesseract_force.png||
-|Drone:|tesseract_drone.png||
-|Angle:|90||
-|Distance:|30||
+|---|---|
+|Body:|tesseract.png|
+|Force Armour:|tesseract_force.png|
+|Drone:|tesseract_drone.png|
+|Angle:|90|
+|Distance:|30|
 
 Copy this: `Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,30`
 
@@ -60,13 +58,12 @@ Copy this: `Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,3
 
 
 
-||
-|---|---||
-|Body:|condition.png||
-|Force Armour:|condition_force.png||
-|Drone:|condition_drone.png||
-|Angle:|120||
-|Distance:|50||
+|---|---|
+|Body:|condition.png|
+|Force Armour:|condition_force.png|
+|Drone:|condition_drone.png|
+|Angle:|120|
+|Distance:|50|
 
 Copy this: `ChitinCondition,condition.png,condition_force.png,condition_drone.png,120,50`
 
@@ -86,13 +83,12 @@ Copy this: `ChitinCondition,condition.png,condition_force.png,condition_drone.pn
 
 
 
-||
-|---|---||
-|Body:|wasp.png||
-|Force Armour:|wasp_force.png||
-|Drone:|wasp_drone.png||
-|Angle:|140||
-|Distance:|30||
+|---|---|
+|Body:|wasp.png|
+|Force Armour:|wasp_force.png|
+|Drone:|wasp_drone.png|
+|Angle:|140|
+|Distance:|30|
 
 Copy this: `Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30`
 
@@ -112,13 +108,12 @@ Copy this: `Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30`
 
 
 
-||
-|---|---||
-|Body:|krystallix.png||
-|Force Armour:|krystallix_force.png||
-|Drone:|krystallix_drone.png||
-|Angle:|115||
-|Distance:|40||
+|---|---|
+|Body:|krystallix.png|
+|Force Armour:|krystallix_force.png|
+|Drone:|krystallix_drone.png|
+|Angle:|115|
+|Distance:|40|
 
 Copy this: `Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,115,40`
 
@@ -138,13 +133,12 @@ Copy this: `Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,
 [@twinstick](https://discord.com/users/538017698861547521)
 
 
-||
-|---|---||
-|Body:|minotaur.png||
-|Force Armour:|minotaur_force.png||
-|Drone:|||
-|Angle:|145||
-|Distance:|60||
+|---|---|
+|Body:|minotaur.png|
+|Force Armour:|minotaur_force.png|
+|Drone:||
+|Angle:|145|
+|Distance:|60|
 
 Copy this: `Minotaur,minotaur.png,minotaur_force.png,,145,60`
 

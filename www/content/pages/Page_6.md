@@ -8,13 +8,12 @@
 
 
 
-||
-|---|---||
-|Body:|jormungandr_body.png||
-|Force Armour:|jormungandr_force.png||
-|Drone:|||
-|Angle:|130||
-|Distance:|55||
+|---|---|
+|Body:|jormungandr_body.png|
+|Force Armour:|jormungandr_force.png|
+|Drone:||
+|Angle:|130|
+|Distance:|55|
 
 Copy this: `Jormungandr,jormungandr_body.png,jormungandr_force.png,,130,55`
 
@@ -32,13 +31,12 @@ Copy this: `Jormungandr,jormungandr_body.png,jormungandr_force.png,,130,55`
 
 
 
-||
-|---|---||
-|Body:|GWclaw.png||
-|Force Armour:|GWclaw_force.png||
-|Drone:|GWattack_drone.png||
-|Angle:|87||
-|Distance:|20||
+|---|---|
+|Body:|GWclaw.png|
+|Force Armour:|GWclaw_force.png|
+|Drone:|GWattack_drone.png|
+|Angle:|87|
+|Distance:|20|
 
 Copy this: `GWclaw,GWclaw.png,GWclaw_force.png,GWattack_drone.png,87,20`
 
@@ -58,13 +56,12 @@ Copy this: `GWclaw,GWclaw.png,GWclaw_force.png,GWattack_drone.png,87,20`
 
 
 
-||
-|---|---||
-|Body:|thresher.png||
-|Force Armour:|thresher_force.png||
-|Drone:|||
-|Angle:|126||
-|Distance:|48||
+|---|---|
+|Body:|thresher.png|
+|Force Armour:|thresher_force.png|
+|Drone:||
+|Angle:|126|
+|Distance:|48|
 
 Copy this: `Thresher,thresher.png,thresher_force.png,,126,48`
 
@@ -82,13 +79,12 @@ Copy this: `Thresher,thresher.png,thresher_force.png,,126,48`
 
 
 
-||
-|---|---||
-|Body:|pentagon.png||
-|Force Armour:|pentagonforce.png||
-|Drone:|pentagondrone.png||
-|Angle:|103||
-|Distance:|55||
+|---|---|
+|Body:|pentagon.png|
+|Force Armour:|pentagonforce.png|
+|Drone:|pentagondrone.png|
+|Angle:|103|
+|Distance:|55|
 
 Copy this: `The Pentagon,pentagon.png,pentagonforce.png,pentagondrone.png,103,55`
 
@@ -108,13 +104,12 @@ Copy this: `The Pentagon,pentagon.png,pentagonforce.png,pentagondrone.png,103,55
 
 
 
-||
-|---|---||
-|Body:|ophanim.png||
-|Force Armour:|ophanim_force.png||
-|Drone:|ophanim_drone.png||
-|Angle:|155||
-|Distance:|33||
+|---|---|
+|Body:|ophanim.png|
+|Force Armour:|ophanim_force.png|
+|Drone:|ophanim_drone.png|
+|Angle:|155|
+|Distance:|33|
 
 Copy this: `Ophanim,ophanim.png,ophanim_force.png,ophanim_drone.png,155,33`
 
@@ -134,13 +129,12 @@ Copy this: `Ophanim,ophanim.png,ophanim_force.png,ophanim_drone.png,155,33`
 
 
 
-||
-|---|---||
-|Body:|inferno.png||
-|Force Armour:|inferno_force.png||
-|Drone:|inferno_drone.png||
-|Angle:|0||
-|Distance:|0||
+|---|---|
+|Body:|inferno.png|
+|Force Armour:|inferno_force.png|
+|Drone:|inferno_drone.png|
+|Angle:|0|
+|Distance:|0|
 
 Copy this: `Inferno,inferno.png,inferno_force.png,inferno_drone.png,0,0`
 
@@ -160,13 +154,12 @@ Copy this: `Inferno,inferno.png,inferno_force.png,inferno_drone.png,0,0`
 
 
 
-||
-|---|---||
-|Body:|cherub.png||
-|Force Armour:|cherub_force.png||
-|Drone:|cherub_drone.png||
-|Angle:|0||
-|Distance:|0||
+|---|---|
+|Body:|cherub.png|
+|Force Armour:|cherub_force.png|
+|Drone:|cherub_drone.png|
+|Angle:|0|
+|Distance:|0|
 
 Copy this: `Cherub,cherub.png,cherub_force.png,cherub_drone.png,0,0`
 
@@ -186,13 +179,12 @@ Copy this: `Cherub,cherub.png,cherub_force.png,cherub_drone.png,0,0`
 
 
 
-||
-|---|---||
-|Body:|XS_01_Artemis_Body.png||
-|Force Armour:|XS_01_Artemis_Shield.png||
-|Drone:|||
-|Angle:|120||
-|Distance:|0||
+|---|---|
+|Body:|XS_01_Artemis_Body.png|
+|Force Armour:|XS_01_Artemis_Shield.png|
+|Drone:||
+|Angle:|120|
+|Distance:|0|
 
 Copy this: `XS-01 Artemis,XS_01_Artemis_Body.png,XS_01_Artemis_Shield.png,,120,0`
 
@@ -210,13 +202,12 @@ Copy this: `XS-01 Artemis,XS_01_Artemis_Body.png,XS_01_Artemis_Shield.png,,120,0
 
 
 
-||
-|---|---||
-|Body:|warforge.png||
-|Force Armour:|warforge_force.png||
-|Drone:|warforge_drone.png||
-|Angle:|||
-|Distance:|||
+|---|---|
+|Body:|warforge.png|
+|Force Armour:|warforge_force.png|
+|Drone:|warforge_drone.png|
+|Angle:||
+|Distance:||
 
 Copy this: `Warforge,warforge.png,warforge_force.png,warforge_drone.png,,`
 
@@ -236,13 +227,12 @@ Copy this: `Warforge,warforge.png,warforge_force.png,warforge_drone.png,,`
 
 
 
-||
-|---|---||
-|Body:|insurgent.png||
-|Force Armour:|insurgent_force.png||
-|Drone:|insurgent_drone.png||
-|Angle:|115||
-|Distance:|100||
+|---|---|
+|Body:|insurgent.png|
+|Force Armour:|insurgent_force.png|
+|Drone:|insurgent_drone.png|
+|Angle:|115|
+|Distance:|100|
 
 Copy this: `Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,100`
 

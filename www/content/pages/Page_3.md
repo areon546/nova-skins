@@ -8,13 +8,12 @@
 [@_capstone](https://discord.com/users/551431332253794304)
 
 
-||
-|---|---||
-|Body:|engineer.png||
-|Force Armour:|engineer_frame.png||
-|Drone:|engineer_drone.png||
-|Angle:|60||
-|Distance:|35||
+|---|---|
+|Body:|engineer.png|
+|Force Armour:|engineer_frame.png|
+|Drone:|engineer_drone.png|
+|Angle:|60|
+|Distance:|35|
 
 Copy this: `Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35`
 
@@ -34,13 +33,12 @@ Copy this: `Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35`
 [@cinnamimitime](https://discord.com/users/161502244284530688)
 
 
-||
-|---|---||
-|Body:|balm.png||
-|Force Armour:|balm_force.png||
-|Drone:|balm_drone.png||
-|Angle:|160||
-|Distance:|30||
+|---|---|
+|Body:|balm.png|
+|Force Armour:|balm_force.png|
+|Drone:|balm_drone.png|
+|Angle:|160|
+|Distance:|30|
 
 Copy this: `Balm,balm.png,balm_force.png,balm_drone.png,160,30`
 
@@ -60,13 +58,12 @@ Copy this: `Balm,balm.png,balm_force.png,balm_drone.png,160,30`
 [@fauix](https://discord.com/users/120018768477945856)
 
 
-||
-|---|---||
-|Body:|scimitar.png||
-|Force Armour:|scimitar_force.png||
-|Drone:|scimitar_drone.png||
-|Angle:|140||
-|Distance:|50||
+|---|---|
+|Body:|scimitar.png|
+|Force Armour:|scimitar_force.png|
+|Drone:|scimitar_drone.png|
+|Angle:|140|
+|Distance:|50|
 
 Copy this: `Scimitar,scimitar.png,scimitar_force.png,scimitar_drone.png,140,50`
 
@@ -86,13 +83,12 @@ Copy this: `Scimitar,scimitar.png,scimitar_force.png,scimitar_drone.png,140,50`
 [@tempest153](https://discord.com/users/872292077852061736)
 
 
-||
-|---|---||
-|Body:|SEbody.png||
-|Force Armour:|SEforce.png||
-|Drone:|||
-|Angle:|0||
-|Distance:|30||
+|---|---|
+|Body:|SEbody.png|
+|Force Armour:|SEforce.png|
+|Drone:||
+|Angle:|0|
+|Distance:|30|
 
 Copy this: `SE,SEbody.png,SEforce.png,,0,30`
 
@@ -110,13 +106,12 @@ Copy this: `SE,SEbody.png,SEforce.png,,0,30`
 
 
 
-||
-|---|---||
-|Body:|BAD.png||
-|Force Armour:|BAD_force.png||
-|Drone:|BAD_drone.png||
-|Angle:|140||
-|Distance:|50||
+|---|---|
+|Body:|BAD.png|
+|Force Armour:|BAD_force.png|
+|Drone:|BAD_drone.png|
+|Angle:|140|
+|Distance:|50|
 
 Copy this: `BAD,BAD.png,BAD_force.png,BAD_drone.png,140,50`
 
@@ -136,13 +131,12 @@ Copy this: `BAD,BAD.png,BAD_force.png,BAD_drone.png,140,50`
 
 
 
-||
-|---|---||
-|Body:|LC.png||
-|Force Armour:|LC_force.png||
-|Drone:|LC_drone.png||
-|Angle:|145||
-|Distance:|40||
+|---|---|
+|Body:|LC.png|
+|Force Armour:|LC_force.png|
+|Drone:|LC_drone.png|
+|Angle:|145|
+|Distance:|40|
 
 Copy this: `Lanius Cruiser,LC.png,LC_force.png,LC_drone.png,145,40`
 
@@ -162,13 +156,12 @@ Copy this: `Lanius Cruiser,LC.png,LC_force.png,LC_drone.png,145,40`
 [@redcapricorn](https://discord.com/users/889494386721841173)
 
 
-||
-|---|---||
-|Body:|Tracer.png||
-|Force Armour:|Tracer_force.png||
-|Drone:|||
-|Angle:|0||
-|Distance:|0||
+|---|---|
+|Body:|Tracer.png|
+|Force Armour:|Tracer_force.png|
+|Drone:||
+|Angle:|0|
+|Distance:|0|
 
 Copy this: `Tracer,Tracer.png,Tracer_force.png,,0,0`
 
@@ -186,13 +179,12 @@ Copy this: `Tracer,Tracer.png,Tracer_force.png,,0,0`
 [@countblaugh](https://discord.com/users/208701691279704066)
 
 
-||
-|---|---||
-|Body:|divineavenger.png||
-|Force Armour:|divineavenger_force.png||
-|Drone:|||
-|Angle:|180||
-|Distance:|160||
+|---|---|
+|Body:|divineavenger.png|
+|Force Armour:|divineavenger_force.png|
+|Drone:||
+|Angle:|180|
+|Distance:|160|
 
 Copy this: `Divine Avenger,divineavenger.png,divineavenger_force.png,,180,160`
 
@@ -210,13 +202,12 @@ Copy this: `Divine Avenger,divineavenger.png,divineavenger_force.png,,180,160`
 [@miss_mediocre](https://discord.com/users/251735592734425088)
 
 
-||
-|---|---||
-|Body:|pewsquared.png||
-|Force Armour:|pewsquared_force.png||
-|Drone:|||
-|Angle:|155||
-|Distance:|35||
+|---|---|
+|Body:|pewsquared.png|
+|Force Armour:|pewsquared_force.png|
+|Drone:||
+|Angle:|155|
+|Distance:|35|
 
 Copy this: `Pew,pewsquared.png,pewsquared_force.png,,155,35`
 
@@ -234,13 +225,12 @@ Copy this: `Pew,pewsquared.png,pewsquared_force.png,,155,35`
 [@tempest153](https://discord.com/users/872292077852061736)
 
 
-||
-|---|---||
-|Body:|WyvernBody.png||
-|Force Armour:|WyvernForce.png||
-|Drone:|||
-|Angle:|115||
-|Distance:|46||
+|---|---|
+|Body:|WyvernBody.png|
+|Force Armour:|WyvernForce.png|
+|Drone:||
+|Angle:|115|
+|Distance:|46|
 
 Copy this: `Wyvern,WyvernBody.png,WyvernForce.png,,115,46`
 

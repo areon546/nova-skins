@@ -5,19 +5,19 @@ func PagesFolder() string {
 }
 
 func SkinsFolder() string {
-	return "../www/content/custom_skins/"
+	return "../media/custom_skins/"
 }
 
 // This is the link used to show the resources on the website.
 // Could alternatively use a github URL link.
 func WwwSkinsFolder() string {
-	return "/nova-skins/custom_skins/"
+	return "https://github.com/areon546/nova-skins/blob/main/media/custom_skins/"
 }
 
 func AssetsFolder() string {
-	return "../www/content/static/assets/"
+	return "../media/assets/"
 }
 
 func WwwAssetsFolder() string {
-	return "/nova-skins/static/assets/"
+	return "https://github.com/areon546/nova-skins/blob/main/media/assets/"
 }

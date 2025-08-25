@@ -14,8 +14,8 @@ import (
 )
 
 var (
-	custom_skins_dir string = dirs.SkinsFolder()
-	compiled_pages   string = dirs.PagesFolder()
+	custom_skins_dir string = dirs.Skins()
+	compiled_pages   string = dirs.Pages()
 )
 
 func main() {

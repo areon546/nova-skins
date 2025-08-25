@@ -1,8 +1,8 @@
 # Page 6
 
 [Page_5](./Page_5.html)
-[Page_6](./Page_5.html)
-[Page_7](./Page_5.html)
+[Page_6](./Page_6.html)
+[Page_7](./Page_7.html)
 
 ## **Jormungandr**:
 
@@ -17,12 +17,12 @@
 
 Copy this: `Jormungandr,jormungandr_body.png,jormungandr_force.png,,130,55`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/Jormungandr.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Jormungandr.zip)
 
 
-![jormungandr_body.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/jormungandr_body.png)
+![jormungandr_body.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/jormungandr_body.png)
 
-![jormungandr_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/jormungandr_force.png)
+![jormungandr_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/jormungandr_force.png)
 
 
 
@@ -40,15 +40,15 @@ Copy this: `Jormungandr,jormungandr_body.png,jormungandr_force.png,,130,55`
 
 Copy this: `GWclaw,GWclaw.png,GWclaw_force.png,GWattack_drone.png,87,20`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/GWclaw.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/GWclaw.zip)
 
 
-![GWclaw.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/GWclaw.png)
+![GWclaw.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWclaw.png)
 
-![GWclaw_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/GWclaw_force.png)
+![GWclaw_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWclaw_force.png)
 
 
-![GWattack_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/GWattack_drone.png)
+![GWattack_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWattack_drone.png)
 
 
 
@@ -65,12 +65,12 @@ Copy this: `GWclaw,GWclaw.png,GWclaw_force.png,GWattack_drone.png,87,20`
 
 Copy this: `Thresher,thresher.png,thresher_force.png,,126,48`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/Thresher.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Thresher.zip)
 
 
-![thresher.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/thresher.png)
+![thresher.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/thresher.png)
 
-![thresher_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/thresher_force.png)
+![thresher_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/thresher_force.png)
 
 
 
@@ -88,15 +88,15 @@ Copy this: `Thresher,thresher.png,thresher_force.png,,126,48`
 
 Copy this: `The Pentagon,pentagon.png,pentagonforce.png,pentagondrone.png,103,55`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/The Pentagon.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/The Pentagon.zip)
 
 
-![pentagon.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/pentagon.png)
+![pentagon.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagon.png)
 
-![pentagonforce.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/pentagonforce.png)
+![pentagonforce.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagonforce.png)
 
 
-![pentagondrone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/pentagondrone.png)
+![pentagondrone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagondrone.png)
 
 
 
@@ -113,15 +113,15 @@ Copy this: `The Pentagon,pentagon.png,pentagonforce.png,pentagondrone.png,103,55
 
 Copy this: `Ophanim,ophanim.png,ophanim_force.png,ophanim_drone.png,155,33`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/Ophanim.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Ophanim.zip)
 
 
-![ophanim.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/ophanim.png)
+![ophanim.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim.png)
 
-![ophanim_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/ophanim_force.png)
+![ophanim_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim_force.png)
 
 
-![ophanim_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/ophanim_drone.png)
+![ophanim_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim_drone.png)
 
 
 
@@ -138,15 +138,15 @@ Copy this: `Ophanim,ophanim.png,ophanim_force.png,ophanim_drone.png,155,33`
 
 Copy this: `Inferno,inferno.png,inferno_force.png,inferno_drone.png,0,0`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/Inferno.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Inferno.zip)
 
 
-![inferno.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/inferno.png)
+![inferno.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno.png)
 
-![inferno_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/inferno_force.png)
+![inferno_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno_force.png)
 
 
-![inferno_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/inferno_drone.png)
+![inferno_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno_drone.png)
 
 
 
@@ -163,15 +163,15 @@ Copy this: `Inferno,inferno.png,inferno_force.png,inferno_drone.png,0,0`
 
 Copy this: `Cherub,cherub.png,cherub_force.png,cherub_drone.png,0,0`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/Cherub.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Cherub.zip)
 
 
-![cherub.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/cherub.png)
+![cherub.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub.png)
 
-![cherub_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/cherub_force.png)
+![cherub_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub_force.png)
 
 
-![cherub_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/cherub_drone.png)
+![cherub_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub_drone.png)
 
 
 
@@ -188,12 +188,12 @@ Copy this: `Cherub,cherub.png,cherub_force.png,cherub_drone.png,0,0`
 
 Copy this: `XS-01 Artemis,XS_01_Artemis_Body.png,XS_01_Artemis_Shield.png,,120,0`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/XS-01 Artemis.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/XS-01 Artemis.zip)
 
 
-![XS_01_Artemis_Body.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/XS_01_Artemis_Body.png)
+![XS_01_Artemis_Body.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/XS_01_Artemis_Body.png)
 
-![XS_01_Artemis_Shield.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/XS_01_Artemis_Shield.png)
+![XS_01_Artemis_Shield.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/XS_01_Artemis_Shield.png)
 
 
 
@@ -211,15 +211,15 @@ Copy this: `XS-01 Artemis,XS_01_Artemis_Body.png,XS_01_Artemis_Shield.png,,120,0
 
 Copy this: `Warforge,warforge.png,warforge_force.png,warforge_drone.png,,`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/Warforge.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Warforge.zip)
 
 
-![warforge.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/warforge.png)
+![warforge.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge.png)
 
-![warforge_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/warforge_force.png)
+![warforge_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_force.png)
 
 
-![warforge_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/warforge_drone.png)
+![warforge_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_drone.png)
 
 
 
@@ -236,17 +236,17 @@ Copy this: `Warforge,warforge.png,warforge_force.png,warforge_drone.png,,`
 
 Copy this: `Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,100`
 
-[Download Me](https://github.com/areon546/nova-skins/blob/main/media/assets/zips/Insurgent.zip)
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Insurgent.zip)
 
 
-![insurgent.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/insurgent.png)
+![insurgent.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent.png)
 
-![insurgent_force.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/insurgent_force.png)
+![insurgent_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_force.png)
 
 
-![insurgent_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/insurgent_drone.png)
+![insurgent_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_drone.png)
 
 
 [Page_5](./Page_5.html)
-[Page_6](./Page_5.html)
-[Page_7](./Page_5.html)
+[Page_6](./Page_6.html)
+[Page_7](./Page_7.html)

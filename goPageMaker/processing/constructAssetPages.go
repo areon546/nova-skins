@@ -22,7 +22,7 @@ func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
 	for i := range numFiles {
 		// create a new file
 		pageNum := i + 1
-		a := NewAssetsPage(dirs.PagesFolder(), format("Page_%d.md", pageNum), pageNum)
+		a := NewAssetsPage(dirs.Pages(), format("Page_%d.md", pageNum), pageNum)
 		_ = a.ClearFile() // don't care about this error
 
 		writeToAssetPage(a, skins, i)

@@ -153,7 +153,7 @@ func (skin *CustomSkin) Zip() *zip.ZipFile {
 
 // TODO: This should use the fs.DirEntires to generate a zip file for the individual skin
 func (cs *CustomSkin) GenerateZipFile() {
-	path := dirs.AssetsFolder() + "zips/" + cs.name
+	path := dirs.Assets() + "zips/" + cs.name
 	cs.zip = *zip.NewZipFile(path)
 
 	broadcast("Generating ZIP: ", cs.Name())

@@ -1,5 +1,12 @@
-
 run:
+	make compile-md 
+	make html
+
+copy:
+	cd www && make cp-local 
+	cd www && make reload
+
+md compile-md:
 	cd goPageMaker && go build && go run .
 
 test:
@@ -17,11 +24,8 @@ git:
 setup-hooks:
 	git config core.hooksPath hooks
 
-build:
-	make run 
-	make html
 
-html:
+html compile-html:
 	# copy relevant files over to contents
 
 	# compile templates 

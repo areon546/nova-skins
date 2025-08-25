@@ -20,20 +20,20 @@ func broadcast(a ...any) {
 	log.Info(logString)
 }
 
-func inSkinsFolder(filename string) string {
-	return dirs.SkinsFolder() + filename
+func inSkins(filename string) string {
+	return dirs.Skins() + filename
 }
 
-func inAssetsFolder(filename string) string {
+func inAssets(filename string) string {
 	return "../assets/" + filename
 }
 
 func AssetsCSVPath() string {
-	return inAssetsFolder("assets.csv")
+	return inAssets("assets.csv")
 }
 
 func openCustomSkin(d fs.DirEntry) *files.File {
-	f, _ := files.OpenFile(dirs.SkinsFolder() + d.Name())
+	f, _ := files.OpenFile(dirs.Skins() + d.Name())
 
 	return f
 }

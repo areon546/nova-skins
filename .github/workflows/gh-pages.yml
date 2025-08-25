@@ -43,7 +43,7 @@ jobs:
         run: tree -d
 
       - name: Compile Markdown Pages
-        run: make run
+        run: make md
 
       - name: Compile HTML pages
         run: make html

@@ -1,27 +1,39 @@
 package dirs
 
+func content() string {
+	return "../www/content/"
+}
+
+func Pages() string {
+	return content() + "pages/"
+}
+
+// Media
+
 func media() string {
 	return "../media/"
 }
 
-func PagesFolder() string {
-	return "../www/content/pages/"
+func Skins() string {
+	return media() + "custom_skins/"
 }
 
-func SkinsFolder() string {
-	return media() + "custom_skins/"
+func Assets() string {
+	return media() + "assets/"
+}
+
+// WWW Raw
+
+func rawMedia() string {
+	return "https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/"
 }
 
 // This is the link used to show the resources on the website.
 // Could alternatively use a github URL link.
-func WwwSkinsFolder() string {
-	return "https://github.com/areon546/nova-skins/blob/main/media/custom_skins/"
+func WwwSkins() string {
+	return rawMedia() + "custom_skins/"
 }
 
-func AssetsFolder() string {
-	return media() + "assets/"
-}
-
-func WwwAssetsFolder() string {
-	return "https://github.com/areon546/nova-skins/blob/main/media/assets/"
+func WwwAssets() string {
+	return rawMedia() + "assets/"
 }

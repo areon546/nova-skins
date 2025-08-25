@@ -2,3 +2,27 @@ body {
   background-color: black;
   color: white;
 }
+
+main {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: var(--white);
+  border-radius: var(--corner-rad);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited, a:active {
+  
+
+}
+
+a:hover, a:focus{
+
+}

@@ -1,8 +1,6 @@
 package processing
 
 import (
-	"fmt"
-
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 	"github.com/areon546/go-files/files"
@@ -51,8 +49,6 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 	path := "./"
 	suff := "html"
 
-	fmt.Println(a.pageNumber)
-
 	prev := format("Page_%d", a.pageNumber-1)
 	prevF := format("%s.%s", prev, suff)
 	curr := format("Page_%d", a.pageNumber)
@@ -85,7 +81,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.AppendNewLine(skin.ToTable(a.Fmt))
 		a.AppendNewLine("Copy this: `" + skin.ToCSVLine() + "`")
 		a.AppendEmptyLine()
-		a.AppendLink("Download Me", dirs.WwwAssetsFolder()+"zips/"+skin.Name()+".zip")
+		a.AppendLink("Download Me", dirs.WwwAssets()+"zips/"+skin.Name()+".zip")
 		a.AppendEmptyLine()
 
 		a.AppendEmptyLine()
@@ -106,7 +102,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 }
 
 func (a *AssetsPage) AppendCustomSkinFile(f *files.File) {
-	a.AppendEmbed(dirs.WwwSkinsFolder()+f.Name(), f.Name())
+	a.AppendEmbed(dirs.WwwSkins()+f.Name(), f.Name())
 	a.AppendEmptyLine()
 }
 

@@ -19,7 +19,7 @@ import (
 func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 	broadcast("Reading Skins In Directory")
 
-	filename := dirs.SkinsFolder() + "custom_skins.csv"
+	filename := dirs.Skins() + "custom_skins.csv"
 
 	broadcast("Reading Custom Skin CSV", filename)
 
@@ -78,7 +78,7 @@ func assignCredits(credit string, creditInfoMaps []map[string]string, mapTypes [
 }
 
 func getDiscordUIDs() map[string]string {
-	discordCreditData, err := files.ReadCSV(dirs.AssetsFolder()+"DISCORD_UIDS.csv", true)
+	discordCreditData, err := files.ReadCSV(dirs.Assets()+"DISCORD_UIDS.csv", true)
 
 	helpers.Handle(err)
 

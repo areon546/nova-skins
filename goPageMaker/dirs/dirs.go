@@ -1,11 +1,15 @@
 package dirs
 
+func media() string {
+	return "../media/"
+}
+
 func PagesFolder() string {
 	return "../www/content/pages/"
 }
 
 func SkinsFolder() string {
-	return "../media/custom_skins/"
+	return media() + "custom_skins/"
 }
 
 // This is the link used to show the resources on the website.
@@ -15,7 +19,7 @@ func WwwSkinsFolder() string {
 }
 
 func AssetsFolder() string {
-	return "../media/assets/"
+	return media() + "assets/"
 }
 
 func WwwAssetsFolder() string {

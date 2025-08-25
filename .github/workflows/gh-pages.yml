@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check what exists
-        run: tree -L 2
+        run: tree
 
       - name: Compile Markdown Pages
         run: make run

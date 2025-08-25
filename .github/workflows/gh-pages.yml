@@ -39,8 +39,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check what exists
+        run: tree -L 2
+
+      - name: Compile Markdown Pages
+        run: make run
+
       - name: Compile HTML pages
-        run: make build
+        run: make html
 
       - name: Upload Docs folder
         uses: actions/upload-artifact@v4

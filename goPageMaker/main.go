@@ -69,7 +69,7 @@ func compileSkins() {
 
 func zipAllSkins() {
 	// zips custom_skins folder
-	zip.ZipFolder(custom_skins_dir, "../custom_skins/")
+	zip.ZipFolder(custom_skins_dir, dirs.Assets()+"custom_skins")
 	// TODO: currently I do not like how the two arguments have the same name, and that is because the function adds a zip at the end
 	// solution: make it check if there is a zip or .ZIP in the function already
 }

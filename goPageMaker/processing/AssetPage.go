@@ -56,12 +56,13 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 	next := format("Page_%d", a.pageNumber+1)
 	nextF := format("%s.%s", next, suff)
 
+	a.Append("<section class=\"nav\">")
 	if a.pageNumber > 1 {
 		a.AppendLink(prev, (path + prevF))
 	}
-
 	a.AppendLink(curr, (path + currF))
 	a.AppendLink(next, (path + nextF))
+	a.Append("</section>")
 
 	return nil
 }
@@ -70,7 +71,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 	// this writes to the custom skins stuff and adds the data, in markdown
 
 	for _, skin := range a.skins {
-		a.AppendEmptyLine()
+		a.Append("<section class=\"skin\">")
 
 		heading := a.Fmt.Bold(skin.Name()) + ":"
 		a.AppendHeading(2, heading)
@@ -84,7 +85,7 @@ func (a *AssetsPage) bufferCustomSkins() {
 		a.AppendLink("Download Me", dirs.WwwAssets()+"zips/"+skin.Name()+".zip")
 		a.AppendEmptyLine()
 
-		a.AppendEmptyLine()
+		a.Append("<section class=\"media\">")
 		if !files.FilesEqual(*skin.Body(), *files.EmptyFile()) {
 			a.AppendCustomSkinFile(skin.Body())
 		}
@@ -92,18 +93,18 @@ func (a *AssetsPage) bufferCustomSkins() {
 			a.AppendCustomSkinFile(skin.ForceArmour())
 		}
 
-		a.AppendEmptyLine()
 		if !files.FilesEqual(*skin.Drone(), *files.EmptyFile()) {
 			a.AppendCustomSkinFile(skin.Drone())
 		}
 
 		a.AppendEmptyLine()
+		a.Append("</section>")
+		a.Append("</section>")
 	}
 }
 
 func (a *AssetsPage) AppendCustomSkinFile(f *files.File) {
 	a.AppendEmbed(dirs.WwwSkins()+f.Name(), f.Name())
-	a.AppendEmptyLine()
 }
 
 func (a *AssetsPage) writeBuffer() {

@@ -1,5 +1,11 @@
+:root {
+  --background-color: black;
+  --foreground-color: white;
+
+}
+
 body {
-  background-color: black;
+  background-color: var(--background-color);
   color: white;
 }
 
@@ -13,16 +19,31 @@ main {
 }
 
 
+/* LINKS */ 
+
 a {
-  color: white;
-  text-decoration: underline;
+  color: #aaddff;
+  text-decoration: none;
 }
 
 a:visited, a:active {
-  
-
+  color: #9aff9a;
+  text-decoration: underline;
 }
 
 a:hover, a:focus{
+  text-decoration: underline;
+}
 
+
+/* SKINS */ 
+
+#skin {
+  border: 5px white dashed;
+}
+
+/* TABLE */ 
+
+table td:nth-of-type(odd) {
+  background-color: ;
 }

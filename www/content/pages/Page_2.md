@@ -1,9 +1,11 @@
 # Page 2
 
+<section class="nav">
 [Page_1](./Page_1.html)
 [Page_2](./Page_2.html)
 [Page_3](./Page_3.html)
-
+</section>
+<section class="skin">
 ## **Spike**:
 [@hadiros](https://discord.com/users/266028842395631629)
 
@@ -19,16 +21,14 @@ Copy this: `Spike,spike.png,spike_force.png,spike_drone.png,125,35`
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Spike.zip)
 
-
+<section class="media">
 ![spike.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike.png)
-
 ![spike_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike_force.png)
-
-
 ![spike_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Pinch**:
 [@hadiros](https://discord.com/users/266028842395631629)
 
@@ -44,16 +44,14 @@ Copy this: `Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Pinch.zip)
 
-
+<section class="media">
 ![pinch.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch.png)
-
 ![pinch_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch_force.png)
-
-
 ![pinch_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Celes**:
 [@cinnamimitime](https://discord.com/users/161502244284530688)
 
@@ -69,16 +67,14 @@ Copy this: `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Celes.zip)
 
-
+<section class="media">
 ![celes.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/celes.png)
-
 ![celes_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/celes_force.png)
-
-
 ![celes_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/celes_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Perseus**:
 
 
@@ -94,16 +90,14 @@ Copy this: `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Perseus.zip)
 
-
+<section class="media">
 ![Perseus.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Perseus.png)
-
 ![Perseus_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Perseus_force.png)
-
-
 ![Perseus_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Perseus_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Lightning**:
 
 
@@ -119,16 +113,14 @@ Copy this: `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Lightning.zip)
 
-
+<section class="media">
 ![Lightning.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Lightning.png)
-
 ![Lightning_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Lightning_force.png)
-
-
 ![Lightning_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Lightning_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Warden**:
 
 
@@ -144,16 +136,14 @@ Copy this: `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Warden.zip)
 
-
+<section class="media">
 ![Warden.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Warden.png)
-
 ![Warden_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Warden_force.png)
-
-
 ![Warden_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Warden_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Windseeker**:
 [@anthraax](https://discord.com/users/211671269882462218)
 
@@ -169,16 +159,14 @@ Copy this: `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Windseeker.zip)
 
-
+<section class="media">
 ![windseeker.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/windseeker.png)
-
 ![windseeker_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/windseeker_force.png)
-
-
 ![windseeker_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/windseeker_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Onslaught**:
 
 
@@ -194,16 +182,14 @@ Copy this: `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Onslaught.zip)
 
-
+<section class="media">
 ![Onslaught.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Onslaught.png)
-
 ![Onslaught_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Onslaught_force.png)
-
-
 ![Onslaught_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Onslaught_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Artillery**:
 
 
@@ -219,16 +205,14 @@ Copy this: `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Artillery.zip)
 
-
+<section class="media">
 ![Artillery.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Artillery.png)
-
 ![Artillery_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Artillery_force.png)
-
-
 ![Artillery_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Artillery_drone.png)
 
-
-
+</section>
+</section>
+<section class="skin">
 ## **Deconstructor**:
 
 
@@ -244,15 +228,15 @@ Copy this: `Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructo
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Deconstructor.zip)
 
-
+<section class="media">
 ![Deconstructor.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Deconstructor.png)
-
 ![Deconstructor_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Deconstructor_force.png)
-
-
 ![Deconstructor_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Deconstructor_drone.png)
 
-
+</section>
+</section>
+<section class="nav">
 [Page_1](./Page_1.html)
 [Page_2](./Page_2.html)
 [Page_3](./Page_3.html)
+</section>

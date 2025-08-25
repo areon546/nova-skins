@@ -1,0 +1,38 @@
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it.
+#
+
+
+# 	location ~* \.(js|jpg|png|css)$ {
+#       root static;
+#       expires 30d;
+#   }
+
+
+# NOTE: sometimes NGINX doesn't have the correct access rights to traverse directories
+# the execute access right is what is used to determine being able to traverse into directories
+# thus: 
+# SOLUTION: https://serverfault.com/questions/748561/nginx-doesnt-have-permission-to-access-files-with-the-same-ownership
+server {
+ 	listen 85 default_server;
+ 	listen [::]:85 default_server;
+
+ 	server_name _; 
+
+ 	root /home/dragons-den/Desktop/git/go/NovaDriftSkins/www/output/;
+ 	index index.html;
+
+  location /nova-skins/static/ {
+    alias /home/dragons-den/Desktop/git/go/NovaDriftSkins/www/output/static;
+  }
+
+  location = / {
+ 	  try_files $uri $uri/ =404;
+ 	}
+
+  error_page 404 /404.html;
+  location /404.html {
+      internal;
+    }
+}
+

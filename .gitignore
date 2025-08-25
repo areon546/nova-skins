@@ -4,17 +4,20 @@
 goPageMaker/goPageMaker
 goPageMaker/cover.out
 
+# Hide unneeded zip files. 
 *.zip
 !custom_skins.zip
 !media/assets/zips/*.zip
 www/output
 
 
+# Hide Logs 
 *.lg
 *.log
 
 
-
+# Hide output, clogs up push size
+!www/output/*
 
 
 

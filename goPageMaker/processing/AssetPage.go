@@ -47,13 +47,14 @@ func (a *AssetsPage) bufferPageSuffix() error {
 
 func (a *AssetsPage) bufferPrevNextPage() error {
 	path := "./"
+	suff := "html"
 
 	prev := format("Page_%d", a.pageNumber-1)
-	prevF := format("%s.md", prev)
+	prevF := format("%s.%s", prev, suff)
 	curr := format("Page_%d", a.pageNumber)
-	currF := format("%s.md", curr)
+	currF := format("%s.%s", prev, suff)
 	next := format("Page_%d", a.pageNumber+1)
-	nextF := format("%s.md", next)
+	nextF := format("%s.%s", prev, suff)
 
 	if a.pageNumber > 1 {
 		a.AppendLink(prev, (path + prevF))

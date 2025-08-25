@@ -1,8 +1,8 @@
 # Page 6
 
-[Page_5](./Page_5.md)
-[Page_6](./Page_6.md)
-[Page_7](./Page_7.md)
+[Page_5](./Page_5.html)
+[Page_6](./Page_5.html)
+[Page_7](./Page_5.html)
 
 ## **Jormungandr**:
 
@@ -247,6 +247,6 @@ Copy this: `Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,
 ![insurgent_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/insurgent_drone.png)
 
 
-[Page_5](./Page_5.md)
-[Page_6](./Page_6.md)
-[Page_7](./Page_7.md)
+[Page_5](./Page_5.html)
+[Page_6](./Page_5.html)
+[Page_7](./Page_5.html)

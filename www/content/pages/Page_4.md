@@ -1,8 +1,8 @@
 # Page 4
 
-[Page_3](./Page_3.md)
-[Page_4](./Page_4.md)
-[Page_5](./Page_5.md)
+[Page_3](./Page_3.html)
+[Page_4](./Page_3.html)
+[Page_5](./Page_3.html)
 
 ## **Millenium Falcon**:
 [@_ltw](https://discord.com/users/268931190667476998)
@@ -249,6 +249,6 @@ Copy this: `The Devil,devil.png,devil_force.png,heart_mite.png,,`
 ![heart_mite.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/heart_mite.png)
 
 
-[Page_3](./Page_3.md)
-[Page_4](./Page_4.md)
-[Page_5](./Page_5.md)
+[Page_3](./Page_3.html)
+[Page_4](./Page_3.html)
+[Page_5](./Page_3.html)

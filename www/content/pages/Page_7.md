@@ -1,8 +1,8 @@
 # Page 7
 
-[Page_6](./Page_6.md)
-[Page_7](./Page_7.md)
-[Page_8](./Page_8.md)
+[Page_6](./Page_6.html)
+[Page_7](./Page_6.html)
+[Page_8](./Page_6.html)
 
 ## **Tech 15**:
 
@@ -151,6 +151,6 @@ Copy this: `Minotaur,minotaur.png,minotaur_force.png,,145,60`
 
 
 
-[Page_6](./Page_6.md)
-[Page_7](./Page_7.md)
-[Page_8](./Page_8.md)
+[Page_6](./Page_6.html)
+[Page_7](./Page_6.html)
+[Page_8](./Page_6.html)

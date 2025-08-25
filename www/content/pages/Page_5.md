@@ -1,8 +1,8 @@
 # Page 5
 
-[Page_4](./Page_4.md)
-[Page_5](./Page_5.md)
-[Page_6](./Page_6.md)
+[Page_4](./Page_4.html)
+[Page_5](./Page_4.html)
+[Page_6](./Page_4.html)
 
 ## **Poly**:
 [@splathero](https://discord.com/users/1088727297755971645)
@@ -239,6 +239,6 @@ Copy this: `avtraxi.png,avtraxi_force.png,avtraxi_drone.png,,90,30`
 
 
 
-[Page_4](./Page_4.md)
-[Page_5](./Page_5.md)
-[Page_6](./Page_6.md)
+[Page_4](./Page_4.html)
+[Page_5](./Page_4.html)
+[Page_6](./Page_4.html)

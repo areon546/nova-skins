@@ -1,8 +1,8 @@
 # Page 3
 
-[Page_2](./Page_2.md)
-[Page_3](./Page_3.md)
-[Page_4](./Page_4.md)
+[Page_2](./Page_2.html)
+[Page_3](./Page_2.html)
+[Page_4](./Page_2.html)
 
 ## **Engineer**:
 [@_capstone](https://discord.com/users/551431332253794304)
@@ -243,6 +243,6 @@ Copy this: `Wyvern,WyvernBody.png,WyvernForce.png,,115,46`
 
 
 
-[Page_2](./Page_2.md)
-[Page_3](./Page_3.md)
-[Page_4](./Page_4.md)
+[Page_2](./Page_2.html)
+[Page_3](./Page_2.html)
+[Page_4](./Page_2.html)

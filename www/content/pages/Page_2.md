@@ -1,8 +1,8 @@
 # Page 2
 
-[Page_1](./Page_1.md)
-[Page_2](./Page_2.md)
-[Page_3](./Page_3.md)
+[Page_1](./Page_1.html)
+[Page_2](./Page_1.html)
+[Page_3](./Page_1.html)
 
 ## **Spike**:
 [@hadiros](https://discord.com/users/266028842395631629)
@@ -253,6 +253,6 @@ Copy this: `Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructo
 ![Deconstructor_drone.png](https://github.com/areon546/nova-skins/blob/main/media/custom_skins/Deconstructor_drone.png)
 
 
-[Page_1](./Page_1.md)
-[Page_2](./Page_2.md)
-[Page_3](./Page_3.md)
+[Page_1](./Page_1.html)
+[Page_2](./Page_1.html)
+[Page_3](./Page_1.html)

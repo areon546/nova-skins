@@ -1,7 +1,7 @@
 # Page 1
 
-[Page_1](./Page_1.md)
-[Page_2](./Page_2.md)
+[Page_1](./Page_0.html)
+[Page_2](./Page_0.html)
 
 ## **Saris**:
 
@@ -244,5 +244,5 @@ Copy this: `Dragon,dragon.png,dragon_force.png,,,`
 
 
 
-[Page_1](./Page_1.md)
-[Page_2](./Page_2.md)
+[Page_1](./Page_0.html)
+[Page_2](./Page_0.html)

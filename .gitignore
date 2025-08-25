@@ -6,7 +6,7 @@ goPageMaker/cover.out
 
 *.zip
 !custom_skins.zip
-!assets/zips/*.zip
+!media/assets/zips/*.zip
 www/output
 
 

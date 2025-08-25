@@ -1,6 +1,8 @@
 package processing
 
 import (
+	"fmt"
+
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 	"github.com/areon546/go-files/files"
@@ -49,12 +51,14 @@ func (a *AssetsPage) bufferPrevNextPage() error {
 	path := "./"
 	suff := "html"
 
+	fmt.Println(a.pageNumber)
+
 	prev := format("Page_%d", a.pageNumber-1)
 	prevF := format("%s.%s", prev, suff)
 	curr := format("Page_%d", a.pageNumber)
-	currF := format("%s.%s", prev, suff)
+	currF := format("%s.%s", curr, suff)
 	next := format("Page_%d", a.pageNumber+1)
-	nextF := format("%s.%s", prev, suff)
+	nextF := format("%s.%s", next, suff)
 
 	if a.pageNumber > 1 {
 		a.AppendLink(prev, (path + prevF))

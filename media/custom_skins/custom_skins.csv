@@ -92,9 +92,10 @@ AE-86,ae_86.png,ae_86_force.png,ae_86_drone.png,199,70, breaby
 Moredo,moredo.png,moredo_armor.png,moredo_drone.png,,, .suntinel
 Mars,mars.png,mars_force.png,mars_drone.png,107,58, fourpointedstar
 Daedalus,daedalus.png,daedalus_force.png,daedalus_drone.png,179,40, fourpointedstar
-Hyper,hyper.png,hyper_force.png,80,100, .silvyar
+Hyper,hyper.png,hyper_force.png,,80,100, .silvyar
 Cargo Train,cargo.png,cargo_force.png,,115,20, winstick
 Lightseeker,LightseekerBody.png,LightseekerForce.png,LightseekerDrone.png,180,15, onehundredfiftythree
-Egg,egg.png,egg_force.png,110,120, recruit75
+Egg,egg.png,egg_force.png,,110,120, recruit75
 Eggcelent Flier,eggcelent.png,eggcelent_force.png,eggcelent_drone.png,130,80, winstick
 Prykar,Prykar_body.png,Prykar_force.png,Prykar_drone.png,115,45, shadowpack
+

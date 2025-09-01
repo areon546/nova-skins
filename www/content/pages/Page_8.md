@@ -32,7 +32,7 @@ Copy CSV: <button class='copier' csv='Carcible,carcible.png,null.png,,0,0'><img 
 </section>
 <section class='skin'>
 ## **Antlion**:
-[unknown](/404.html)
+[@onehundredfiftythree](https://discord.com/users/ 872292077852061736)
 
 
 |---|---|
@@ -57,7 +57,7 @@ Copy CSV: <button class='copier' csv='Antlion,AntlionBody.png,AntlionForce.png,A
 </section>
 <section class='skin'>
 ## **PITRO**:
-[unknown](/404.html)
+[@back.bone](https://discord.com/users/ 800038380498976798)
 
 
 |---|---|
@@ -82,7 +82,7 @@ Copy CSV: <button class='copier' csv='PITRO,pitro.png,pitro_force.png,pitro_dron
 </section>
 <section class='skin'>
 ## **Relikt**:
-[unknown](/404.html)
+[@_redkon_](https://discord.com/users/ 885757425599258696)
 
 
 |---|---|
@@ -107,7 +107,7 @@ Copy CSV: <button class='copier' csv='Relikt,relikt.png,relikt_force.png,Relikt_
 </section>
 <section class='skin'>
 ## **Lunaria**:
-[unknown](/404.html)
+[@ciphr_vcaos](https://discord.com/users/ 345300952930320397)
 
 
 |---|---|
@@ -131,7 +131,7 @@ Copy CSV: <button class='copier' csv='Lunaria,Lunaria.png,Lunaria_Force.png,,135
 </section>
 <section class='skin'>
 ## **AE-86**:
-[unknown](/404.html)
+[@breaby](https://discord.com/users/ 139429231917662208)
 
 
 |---|---|
@@ -156,7 +156,7 @@ Copy CSV: <button class='copier' csv='AE-86,ae_86.png,ae_86_force.png,ae_86_dron
 </section>
 <section class='skin'>
 ## **Moredo**:
-[unknown](/404.html)
+[@.suntinel](https://discord.com/users/ 691917577714139206)
 
 
 |---|---|
@@ -181,7 +181,7 @@ Copy CSV: <button class='copier' csv='Moredo,moredo.png,moredo_armor.png,moredo_
 </section>
 <section class='skin'>
 ## **Mars**:
-[unknown](/404.html)
+[@fourpointedstar](https://discord.com/users/ 379031746811002881)
 
 
 |---|---|
@@ -206,7 +206,7 @@ Copy CSV: <button class='copier' csv='Mars,mars.png,mars_force.png,mars_drone.pn
 </section>
 <section class='skin'>
 ## **Daedalus**:
-[unknown](/404.html)
+[@fourpointedstar](https://discord.com/users/ 379031746811002881)
 
 
 |---|---|
@@ -231,7 +231,7 @@ Copy CSV: <button class='copier' csv='Daedalus,daedalus.png,daedalus_force.png,d
 </section>
 <section class='skin'>
 ## **Hyper**:
-[unknown](/404.html)
+[@.silvyar](https://discord.com/users/ 720141999407235094)
 
 
 |---|---|
@@ -255,7 +255,7 @@ Copy CSV: <button class='copier' csv='Hyper,hyper.png,hyper_force.png,,80,100'><
 </section>
 <section class='skin'>
 ## **Cargo Train**:
-[unknown](/404.html)
+[@winstick](https://discord.com/users/ 335148664953765888)
 
 
 |---|---|
@@ -279,7 +279,7 @@ Copy CSV: <button class='copier' csv='Cargo Train,cargo.png,cargo_force.png,,115
 </section>
 <section class='skin'>
 ## **Lightseeker**:
-[unknown](/404.html)
+[@onehundredfiftythree](https://discord.com/users/ 872292077852061736)
 
 
 |---|---|

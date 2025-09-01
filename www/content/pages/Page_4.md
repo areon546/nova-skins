@@ -8,7 +8,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **Jester**:
-[@addisonsynth](https://discord.com/users/690582693532008459)
+[@addisonsynth](https://discord.com/users/ 690582693532008459)
 
 
 |---|---|
@@ -33,7 +33,7 @@ Copy CSV: <button class='copier' csv='Jester,Jester.png,Jester_force.png,Jester_
 </section>
 <section class='skin'>
 ## **Eater of Worlds**:
-[@hadiros](https://discord.com/users/266028842395631629)
+[@hadiros](https://discord.com/users/ 266028842395631629)
 
 
 |---|---|
@@ -58,7 +58,7 @@ Copy CSV: <button class='copier' csv='Eater of Worlds,eater_of_worlds.png,eater_
 </section>
 <section class='skin'>
 ## **Lancer**:
-[@splathero](https://discord.com/users/1088727297755971645)
+[@splathero](https://discord.com/users/ 1088727297755971645)
 
 
 |---|---|
@@ -83,7 +83,7 @@ Copy CSV: <button class='copier' csv='Lancer,lancer.png,lancer_force.png,lancer_
 </section>
 <section class='skin'>
 ## **The Devil**:
-[@babaint](https://discord.com/users/598945877419360266)
+[@babaint](https://discord.com/users/ 598945877419360266)
 
 
 |---|---|
@@ -108,7 +108,7 @@ Copy CSV: <button class='copier' csv='The Devil,devil.png,devil_force.png,heart_
 </section>
 <section class='skin'>
 ## **Poly**:
-[@splathero](https://discord.com/users/1088727297755971645)
+[@splathero](https://discord.com/users/ 1088727297755971645)
 
 
 |---|---|
@@ -133,7 +133,7 @@ Copy CSV: <button class='copier' csv='Poly,poly.png,poly_force.png,poly_drone.pn
 </section>
 <section class='skin'>
 ## **Gyaraga**:
-[@evelo](https://discord.com/users/110564152539377664)
+[@evelo](https://discord.com/users/ 110564152539377664)
 
 
 |---|---|
@@ -182,7 +182,7 @@ Copy CSV: <button class='copier' csv='Battery,battery.png,battery_force.png,batt
 </section>
 <section class='skin'>
 ## **Minotaur**:
-[@twinstick](https://discord.com/users/538017698861547521)
+[@twinstick](https://discord.com/users/ 538017698861547521)
 
 
 |---|---|

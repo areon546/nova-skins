@@ -8,7 +8,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **Insurgent**:
-[unknown](/404.html)
+[@akaevertone](https://discord.com/users/ 235458820845862912)
 
 
 |---|---|
@@ -33,7 +33,7 @@ Copy CSV: <button class='copier' csv='Insurgent,insurgent.png,insurgent_force.pn
 </section>
 <section class='skin'>
 ## **Tech 15**:
-[unknown](/404.html)
+[@technomax](https://discord.com/users/ 411416927529861120)
 
 
 |---|---|
@@ -58,7 +58,7 @@ Copy CSV: <button class='copier' csv='Tech 15,tech_15.png,tech_15_force.png,tech
 </section>
 <section class='skin'>
 ## **Tesseract**:
-[unknown](/404.html)
+[@avtraxi](https://discord.com/users/ 720857220254007337)
 
 
 |---|---|
@@ -83,7 +83,7 @@ Copy CSV: <button class='copier' csv='Tesseract,tesseract.png,tesseract_force.pn
 </section>
 <section class='skin'>
 ## **ChitinCondition**:
-[unknown](/404.html)
+[@zeaaon](https://discord.com/users/ 679507664824565869)
 
 
 |---|---|
@@ -108,7 +108,7 @@ Copy CSV: <button class='copier' csv='ChitinCondition,condition.png,condition_fo
 </section>
 <section class='skin'>
 ## **Wasp**:
-[unknown](/404.html)
+[@reginoobi](https://discord.com/users/ 374546280958918657)
 
 
 |---|---|
@@ -133,7 +133,7 @@ Copy CSV: <button class='copier' csv='Wasp,wasp.png,wasp_force.png,wasp_drone.pn
 </section>
 <section class='skin'>
 ## **Krystallix**:
-[unknown](/404.html)
+[@krysmun](https://discord.com/users/ 158285750033448960)
 
 
 |---|---|
@@ -158,7 +158,7 @@ Copy CSV: <button class='copier' csv='Krystallix,krystallix.png,krystallix_force
 </section>
 <section class='skin'>
 ## **Moth**:
-[unknown](/404.html)
+[@reginoobi](https://discord.com/users/ 374546280958918657)
 
 
 |---|---|
@@ -183,7 +183,7 @@ Copy CSV: <button class='copier' csv='Moth,moth.png,moth_force.png,moth_drone.pn
 </section>
 <section class='skin'>
 ## **Radiant**:
-[unknown](/404.html)
+[@reginoobi](https://discord.com/users/ 374546280958918657)
 
 
 |---|---|
@@ -208,7 +208,7 @@ Copy CSV: <button class='copier' csv='Radiant,radiant.png,radiant_force.png,radi
 </section>
 <section class='skin'>
 ## **Marauder**:
-[unknown](/404.html)
+[@winstick](https://discord.com/users/ 335148664953765888)
 
 
 |---|---|
@@ -232,7 +232,7 @@ Copy CSV: <button class='copier' csv='Marauder,marauder.png,marauder_force.png,,
 </section>
 <section class='skin'>
 ## **Chimera Cruiser**:
-[unknown](/404.html)
+[@shazberries](https://discord.com/users/ 401506039674961930)
 
 
 |---|---|
@@ -257,7 +257,7 @@ Copy CSV: <button class='copier' csv='Chimera Cruiser,Chimera_Cruiser__Body.png,
 </section>
 <section class='skin'>
 ## **Dustoff**:
-[unknown](/404.html)
+[@winstick](https://discord.com/users/ 335148664953765888)
 
 
 |---|---|
@@ -282,7 +282,7 @@ Copy CSV: <button class='copier' csv='Dustoff,medivac.png,medivac_force.png,medi
 </section>
 <section class='skin'>
 ## **Areus**:
-[unknown](/404.html)
+[@areusdlh](https://discord.com/users/ 732482332761522258)
 
 
 |---|---|

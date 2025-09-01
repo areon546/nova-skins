@@ -58,7 +58,7 @@ Copy CSV: <button class='copier' csv='Lanius Cruiser,LC.png,LC_force.png,LC_dron
 </section>
 <section class='skin'>
 ## **Tracer**:
-[@redcapricorn](https://discord.com/users/889494386721841173)
+[@redcapricorn](https://discord.com/users/ 889494386721841173)
 
 
 |---|---|
@@ -82,7 +82,7 @@ Copy CSV: <button class='copier' csv='Tracer,Tracer.png,Tracer_force.png,,0,0'><
 </section>
 <section class='skin'>
 ## **Divine Avenger**:
-[@countblaugh](https://discord.com/users/208701691279704066)
+[@countblaugh](https://discord.com/users/ 208701691279704066)
 
 
 |---|---|
@@ -106,7 +106,7 @@ Copy CSV: <button class='copier' csv='Divine Avenger,divineavenger.png,divineave
 </section>
 <section class='skin'>
 ## **Pew**:
-[@miss_mediocre](https://discord.com/users/251735592734425088)
+[@miss_mediocre](https://discord.com/users/ 251735592734425088)
 
 
 |---|---|
@@ -130,7 +130,7 @@ Copy CSV: <button class='copier' csv='Pew,pewsquared.png,pewsquared_force.png,,1
 </section>
 <section class='skin'>
 ## **Wyvern**:
-[@tempest153](https://discord.com/users/872292077852061736)
+[@tempest153](https://discord.com/users/ 872292077852061736)
 
 
 |---|---|
@@ -154,7 +154,7 @@ Copy CSV: <button class='copier' csv='Wyvern,WyvernBody.png,WyvernForce.png,,115
 </section>
 <section class='skin'>
 ## **Millenium Falcon**:
-[@_ltw](https://discord.com/users/268931190667476998)
+[@_ltw](https://discord.com/users/ 268931190667476998)
 
 
 |---|---|
@@ -179,7 +179,7 @@ Copy CSV: <button class='copier' csv='Millenium Falcon,millenium_falcon.png,mill
 </section>
 <section class='skin'>
 ## **Curvewing**:
-[@hadiros](https://discord.com/users/266028842395631629)
+[@hadiros](https://discord.com/users/ 266028842395631629)
 
 
 |---|---|
@@ -204,7 +204,7 @@ Copy CSV: <button class='copier' csv='Curvewing,curvewing.png,curvewing_force.pn
 </section>
 <section class='skin'>
 ## **Beholder**:
-[@hungrygremlin](https://discord.com/users/361743580563374080)
+[@hungrygremlin](https://discord.com/users/ 361743580563374080)
 
 
 |---|---|
@@ -229,7 +229,7 @@ Copy CSV: <button class='copier' csv='Beholder,Behold.png,Behold_force.png,Behol
 </section>
 <section class='skin'>
 ## **Razorflight**:
-[@hadiros](https://discord.com/users/266028842395631629)
+[@hadiros](https://discord.com/users/ 266028842395631629)
 
 
 |---|---|
@@ -253,7 +253,7 @@ Copy CSV: <button class='copier' csv='Razorflight,razorflight.png,razorflight_fo
 </section>
 <section class='skin'>
 ## **Squidship**:
-[@hungrygremlin](https://discord.com/users/361743580563374080)
+[@hungrygremlin](https://discord.com/users/ 361743580563374080)
 
 
 |---|---|
@@ -278,7 +278,7 @@ Copy CSV: <button class='copier' csv='Squidship,Squidship.png,Squidship_force.pn
 </section>
 <section class='skin'>
 ## **Executor**:
-[@ceris5](https://discord.com/users/460824601019023360)
+[@ceris5](https://discord.com/users/ 460824601019023360)
 
 
 |---|---|

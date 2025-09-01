@@ -8,7 +8,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **Egg**:
-[unknown](/404.html)
+[@recruit75](https://discord.com/users/ 605971510963863563)
 
 
 |---|---|
@@ -32,7 +32,7 @@ Copy CSV: <button class='copier' csv='Egg,egg.png,egg_force.png,,110,120'><img s
 </section>
 <section class='skin'>
 ## **Eggcelent Flier**:
-[unknown](/404.html)
+[@winstick](https://discord.com/users/ 335148664953765888)
 
 
 |---|---|

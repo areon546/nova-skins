@@ -55,7 +55,7 @@ Copy CSV: <button class='copier' csv='Crabbo,,,crabbo_drone.png,80,105'><img src
 </section>
 <section class='skin'>
 ## **avtraxi.png**:
-[unknown](/404.html)
+[@avtraxi](https://discord.com/users/ 720857220254007337)
 
 
 |---|---|
@@ -79,7 +79,7 @@ Copy CSV: <button class='copier' csv='avtraxi.png,avtraxi_force.png,avtraxi_dron
 </section>
 <section class='skin'>
 ## **Jormungandr**:
-[unknown](/404.html)
+[@avtraxi](https://discord.com/users/ 720857220254007337)
 
 
 |---|---|
@@ -103,7 +103,7 @@ Copy CSV: <button class='copier' csv='Jormungandr,jormungandr_body.png,jormungan
 </section>
 <section class='skin'>
 ## **GWclaw**:
-[unknown](/404.html)
+[@flu_nog_777](https://discord.com/users/ 937074914505162815)
 
 
 |---|---|
@@ -128,7 +128,7 @@ Copy CSV: <button class='copier' csv='GWclaw,GWclaw.png,GWclaw_force.png,GWattac
 </section>
 <section class='skin'>
 ## **Thresher**:
-[unknown](/404.html)
+[@hadiros](https://discord.com/users/ 266028842395631629)
 
 
 |---|---|
@@ -152,7 +152,7 @@ Copy CSV: <button class='copier' csv='Thresher,thresher.png,thresher_force.png,,
 </section>
 <section class='skin'>
 ## **The Pentagon**:
-[unknown](/404.html)
+[@_oneleaf_](https://discord.com/users/ 776462786200600586)
 
 
 |---|---|
@@ -177,7 +177,7 @@ Copy CSV: <button class='copier' csv='The Pentagon,pentagon.png,pentagonforce.pn
 </section>
 <section class='skin'>
 ## **Ophanim**:
-[unknown](/404.html)
+[@fourpointedstar](https://discord.com/users/ 379031746811002881)
 
 
 |---|---|
@@ -202,7 +202,7 @@ Copy CSV: <button class='copier' csv='Ophanim,ophanim.png,ophanim_force.png,opha
 </section>
 <section class='skin'>
 ## **Inferno**:
-[unknown](/404.html)
+[@apoligen](https://discord.com/users/ 842521911317757961)
 
 
 |---|---|
@@ -227,7 +227,7 @@ Copy CSV: <button class='copier' csv='Inferno,inferno.png,inferno_force.png,infe
 </section>
 <section class='skin'>
 ## **Cherub**:
-[unknown](/404.html)
+[@0uro6oro5](https://discord.com/users/ 922635486001004594)
 
 
 |---|---|
@@ -252,7 +252,7 @@ Copy CSV: <button class='copier' csv='Cherub,cherub.png,cherub_force.png,cherub_
 </section>
 <section class='skin'>
 ## **XS-01 Artemis**:
-[unknown](/404.html)
+[@xuany08](https://discord.com/users/ 849937974727933962)
 
 
 |---|---|
@@ -276,7 +276,7 @@ Copy CSV: <button class='copier' csv='XS-01 Artemis,XS_01_Artemis_Body.png,XS_01
 </section>
 <section class='skin'>
 ## **Warforge**:
-[unknown](/404.html)
+[@tempest153](https://discord.com/users/ 872292077852061736)
 
 
 |---|---|

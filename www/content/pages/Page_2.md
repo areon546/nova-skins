@@ -8,7 +8,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **Celes**:
-[@cinnamimitime](https://discord.com/users/161502244284530688)
+[@cinnamimitime](https://discord.com/users/ 161502244284530688)
 
 
 |---|---|
@@ -108,7 +108,7 @@ Copy CSV: <button class='copier' csv='Warden,Warden.png,Warden_force.png,Warden_
 </section>
 <section class='skin'>
 ## **Windseeker**:
-[@anthraax](https://discord.com/users/211671269882462218)
+[@anthraax](https://discord.com/users/ 211671269882462218)
 
 
 |---|---|
@@ -208,7 +208,7 @@ Copy CSV: <button class='copier' csv='Deconstructor,Deconstructor.png,Deconstruc
 </section>
 <section class='skin'>
 ## **Engineer**:
-[@_capstone](https://discord.com/users/551431332253794304)
+[@_capstone](https://discord.com/users/ 551431332253794304)
 
 
 |---|---|
@@ -233,7 +233,7 @@ Copy CSV: <button class='copier' csv='Engineer,engineer.png,engineer_frame.png,e
 </section>
 <section class='skin'>
 ## **Balm**:
-[@cinnamimitime](https://discord.com/users/161502244284530688)
+[@cinnamimitime](https://discord.com/users/ 161502244284530688)
 
 
 |---|---|
@@ -258,7 +258,7 @@ Copy CSV: <button class='copier' csv='Balm,balm.png,balm_force.png,balm_drone.pn
 </section>
 <section class='skin'>
 ## **Scimitar**:
-[@fauix](https://discord.com/users/120018768477945856)
+[@fauix](https://discord.com/users/ 120018768477945856)
 
 
 |---|---|
@@ -283,7 +283,7 @@ Copy CSV: <button class='copier' csv='Scimitar,scimitar.png,scimitar_force.png,s
 </section>
 <section class='skin'>
 ## **SE**:
-[@tempest153](https://discord.com/users/872292077852061736)
+[@tempest153](https://discord.com/users/ 872292077852061736)
 
 
 |---|---|

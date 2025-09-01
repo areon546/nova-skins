@@ -8,7 +8,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **DoG**:
-[unknown](/404.html)
+[@xuany08](https://discord.com/users/ 849937974727933962)
 
 
 |---|---|
@@ -32,7 +32,7 @@ Copy CSV: <button class='copier' csv='DoG,DoG_body.png,DoG_head.png,,115,40'><im
 </section>
 <section class='skin'>
 ## **Goliath**:
-[unknown](/404.html)
+[@0uro6oro5](https://discord.com/users/ 922635486001004594)
 
 
 |---|---|
@@ -55,7 +55,7 @@ Copy CSV: <button class='copier' csv='Goliath,,null.png,,140,80'><img src='/stat
 </section>
 <section class='skin'>
 ## **Benefactor**:
-[unknown](/404.html)
+[@areusdlh](https://discord.com/users/ 732482332761522258)
 
 
 |---|---|
@@ -80,7 +80,7 @@ Copy CSV: <button class='copier' csv='Benefactor,BenefactorandDelta.png,Benefact
 </section>
 <section class='skin'>
 ## **Space Whale**:
-[unknown](/404.html)
+[@0uro6oro5](https://discord.com/users/ 922635486001004594)
 
 
 |---|---|
@@ -104,7 +104,7 @@ Copy CSV: <button class='copier' csv='Space Whale,SWBody.png,SWForce.png,,110,50
 </section>
 <section class='skin'>
 ## **XM-05 Thanatos**:
-[unknown](/404.html)
+[@xuany08](https://discord.com/users/ 849937974727933962)
 
 
 |---|---|
@@ -128,7 +128,7 @@ Copy CSV: <button class='copier' csv='XM-05 Thanatos,XM_05_Thanatos.png,XM_05_Th
 </section>
 <section class='skin'>
 ## **ND Monday**:
-[unknown](/404.html)
+[@nep45](https://discord.com/users/ 591382031959719946)
 
 
 |---|---|
@@ -177,7 +177,7 @@ Copy CSV: <button class='copier' csv='apollo,apollo.png,apollo_force.png,,120,0'
 </section>
 <section class='skin'>
 ## **EX-Titan**:
-[unknown](/404.html)
+[@jere1001](https://discord.com/users/ 317421123450961941)
 
 
 |---|---|
@@ -202,7 +202,7 @@ Copy CSV: <button class='copier' csv='EX-Titan,ex-titan.png,ex-titan_force.png,e
 </section>
 <section class='skin'>
 ## **Little Nullcreator**:
-[unknown](/404.html)
+[@areusdlh](https://discord.com/users/ 732482332761522258)
 
 
 |---|---|
@@ -227,7 +227,7 @@ Copy CSV: <button class='copier' csv='Little Nullcreator,nullcreator_1.png,nullc
 </section>
 <section class='skin'>
 ## **Fluss**:
-[unknown](/404.html)
+[@evelo](https://discord.com/users/ 110564152539377664)
 
 
 |---|---|
@@ -252,7 +252,7 @@ Copy CSV: <button class='copier' csv='Fluss,Fluss.png,FlussShield.png,FlussDrone
 </section>
 <section class='skin'>
 ## **Kagami**:
-[unknown](/404.html)
+[@.silvyar](https://discord.com/users/ 720141999407235094)
 
 
 |---|---|

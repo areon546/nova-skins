@@ -82,7 +82,7 @@ Copy CSV: <button class='copier' csv='Ultra C,ultra_c.png,ultra_c_force.png,ultr
 </section>
 <section class='skin'>
 ## **Freefall**:
-[@akaevertone](https://discord.com/users/235458820845862912)
+[@akaevertone](https://discord.com/users/ 235458820845862912)
 
 
 |---|---|
@@ -107,7 +107,7 @@ Copy CSV: <button class='copier' csv='Freefall,freefall.png,freefall_force.png,f
 </section>
 <section class='skin'>
 ## **Lobstar**:
-[@_capstone](https://discord.com/users/551431332253794304)
+[@_capstone](https://discord.com/users/ 551431332253794304)
 
 
 |---|---|
@@ -132,7 +132,7 @@ Copy CSV: <button class='copier' csv='Lobstar,lobstar.png,lobstar_frame.png,lobs
 </section>
 <section class='skin'>
 ## **PINGAS**:
-[@waypastfuture](https://discord.com/users/128605704813543424)
+[@waypastfuture](https://discord.com/users/ 128605704813543424)
 
 
 |---|---|
@@ -156,7 +156,7 @@ Copy CSV: <button class='copier' csv='PINGAS,PINGAS_body.png,PINGAS_force.png,,1
 </section>
 <section class='skin'>
 ## **Skogul**:
-[@dragonstrive](https://discord.com/users/273142382181220353)
+[@dragonstrive](https://discord.com/users/ 273142382181220353)
 
 
 |---|---|
@@ -181,7 +181,7 @@ Copy CSV: <button class='copier' csv='Skogul,skogul.png,skogul_force.png,skogul_
 </section>
 <section class='skin'>
 ## **Lance**:
-[@roborogue](https://discord.com/users/690525302312534058)
+[@roborogue](https://discord.com/users/ 690525302312534058)
 
 
 |---|---|
@@ -205,7 +205,7 @@ Copy CSV: <button class='copier' csv='Lance,lance.png,lance_force.png,,40,'><img
 </section>
 <section class='skin'>
 ## **Thunderax**:
-[@roborogue](https://discord.com/users/690525302312534058)
+[@roborogue](https://discord.com/users/ 690525302312534058)
 
 
 |---|---|
@@ -229,7 +229,7 @@ Copy CSV: <button class='copier' csv='Thunderax,thunderax.png,thunderax.png,,,'>
 </section>
 <section class='skin'>
 ## **Dragon**:
-[@roborogue](https://discord.com/users/690525302312534058)
+[@roborogue](https://discord.com/users/ 690525302312534058)
 
 
 |---|---|
@@ -253,7 +253,7 @@ Copy CSV: <button class='copier' csv='Dragon,dragon.png,dragon_force.png,,,'><im
 </section>
 <section class='skin'>
 ## **Spike**:
-[@hadiros](https://discord.com/users/266028842395631629)
+[@hadiros](https://discord.com/users/ 266028842395631629)
 
 
 |---|---|
@@ -278,7 +278,7 @@ Copy CSV: <button class='copier' csv='Spike,spike.png,spike_force.png,spike_dron
 </section>
 <section class='skin'>
 ## **Pinch**:
-[@hadiros](https://discord.com/users/266028842395631629)
+[@hadiros](https://discord.com/users/ 266028842395631629)
 
 
 |---|---|

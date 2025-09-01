@@ -49,52 +49,52 @@ Wasp Hive,wasphive.png,wasphive_force.png,wasphive_drone.png,178,90,fourpointeds
 Wojciech Mann,mann.png,mann_force.png,,,,exotreus
 Buka,buka.png,buka_force.png,,,,exotreus
 Crabbo,crabbo.png,crabbo.png,crabbo_drone.png,80,105,0uro6oro5
-avtraxi.png,avtraxi_force.png,avtraxi_drone.png,,90,30, avtraxi
-Jormungandr,jormungandr_body.png,jormungandr_force.png,,130,55, avtraxi
-GWclaw,GWclaw.png,GWclaw_force.png,GWattack_drone.png,87,20, flu_nog_777
-Thresher,thresher.png,thresher_force.png,,126,48, hadiros
-The Pentagon,pentagon.png,pentagonforce.png,pentagondrone.png,103,55, _oneleaf_
-Ophanim,ophanim.png,ophanim_force.png,ophanim_drone.png,155,33, fourpointedstar
-Inferno,inferno.png,inferno_force.png,inferno_drone.png,0,0, apoligen
-Cherub,cherub.png,cherub_force.png,cherub_drone.png,0,0, 0uro6oro5
-XS-01 Artemis,XS_01_Artemis_Body.png,XS_01_Artemis_Shield.png,,120,0, xuany08
-Warforge,warforge.png,warforge_force.png,warforge_drone.png,,, tempest153
-Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,100, akaevertone
-Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25, technomax
-Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,30, avtraxi
-ChitinCondition,condition.png,condition_force.png,condition_drone.png,120,50, zeaaon
-Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30, reginoobi
-Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,115,40, krysmun
-Moth,moth.png,moth_force.png,moth_drone.png,165,33, reginoobi
-Radiant,radiant.png,radiant_force.png,radiant_drone.png,180,29, reginoobi
-Marauder,marauder.png,marauder_force.png,,160,55, winstick
-Chimera Cruiser,Chimera_Cruiser__Body.png,Chimera_Cruiser__Force_Armor.png,Chimera_Cruiser__Drone.png,120,45, shazberries
-Dustoff,medivac.png,medivac_force.png,medivac_drone.png,123,37, winstick
-Areus,areus.png,areus_force.png,areus_drone.png,115,35, areusdlh
-DoG,DoG_body.png,DoG_head.png,,115,40, xuany08
-Goliath,goliath.png,null.png,,140,80, 0uro6oro5
-Benefactor,BenefactorandDelta.png,BenefactorandDelta_force.png,BenefactorandDelta_drone.png,,, areusdlh
-Space Whale,SWBody.png,SWForce.png,0,110,50, 0uro6oro5
-XM-05 Thanatos,XM_05_Thanatos.png,XM_05_Thanatos_Head.png,,120,0, xuany08
-ND Monday,bhm.png,bhm_force.png,bhm_drone.png,122,60, nep45
-apollo,apollo.png,apollo_force.png,,120,0, 
-EX-Titan,ex-titan.png,ex-titan_force.png,ex-titan_drone.png,,, jere1001
-Little Nullcreator,nullcreator_1.png,nullcreator_3.png,nullcreator_2.png,120,70, areusdlh
-Fluss,Fluss.png,FlussShield.png,FlussDrone.png,135,75, evelo
-Kagami,kagami.png,kagami_force.png,kagami_drone.png,120,40, .silvyar
-Crucible,crucible_body.png,crucible_force.png,crucible_drone.png,0,0, paninja
-Carcible,carcible.png,null.png,carcible_drone.png,0,0, deleted
-Antlion,AntlionBody.png,AntlionForce.png,AntlionDrone.png,150,40, onehundredfiftythree
-PITRO,pitro.png,pitro_force.png,pitro_drone.png,100,60, back.bone
-Relikt,relikt.png,relikt_force.png,Relikt_Drone.png,150,40, _redkon_
-Lunaria,Lunaria.png,Lunaria_Force.png,Lunaria_drone.png,135,35, ciphr_vcaos
-AE-86,ae_86.png,ae_86_force.png,ae_86_drone.png,199,70, breaby
-Moredo,moredo.png,moredo_armor.png,moredo_drone.png,,, .suntinel
-Mars,mars.png,mars_force.png,mars_drone.png,107,58, fourpointedstar
-Daedalus,daedalus.png,daedalus_force.png,daedalus_drone.png,179,40, fourpointedstar
-Hyper,hyper.png,hyper_force.png,,80,100, .silvyar
-Cargo Train,cargo.png,cargo_force.png,,115,20, winstick
-Lightseeker,LightseekerBody.png,LightseekerForce.png,LightseekerDrone.png,180,15, onehundredfiftythree
-Egg,egg.png,egg_force.png,,110,120, recruit75
-Eggcelent Flier,eggcelent.png,eggcelent_force.png,eggcelent_drone.png,130,80, winstick
-Prykar,Prykar_body.png,Prykar_force.png,Prykar_drone.png,115,45, shadowpack
+avtraxi.png,avtraxi_force.png,avtraxi_drone.png,,90,30,avtraxi
+Jormungandr,jormungandr_body.png,jormungandr_force.png,,130,55,avtraxi
+GWclaw,GWclaw.png,GWclaw_force.png,GWattack_drone.png,87,20,flu_nog_777
+Thresher,thresher.png,thresher_force.png,,126,48,hadiros
+The Pentagon,pentagon.png,pentagonforce.png,pentagondrone.png,103,55,_oneleaf_
+Ophanim,ophanim.png,ophanim_force.png,ophanim_drone.png,155,33,fourpointedstar
+Inferno,inferno.png,inferno_force.png,inferno_drone.png,0,0,apoligen
+Cherub,cherub.png,cherub_force.png,cherub_drone.png,0,0,0uro6oro5
+XS-01 Artemis,XS_01_Artemis_Body.png,XS_01_Artemis_Shield.png,,120,0,xuany08
+Warforge,warforge.png,warforge_force.png,warforge_drone.png,,,tempest153
+Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,100,akaevertone
+Tech 15,tech_15.png,tech_15_force.png,tech_15_drone.png,120,25,technomax
+Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,30,avtraxi
+ChitinCondition,condition.png,condition_force.png,condition_drone.png,120,50,zeaaon
+Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30,reginoobi
+Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,115,40,krysmun
+Moth,moth.png,moth_force.png,moth_drone.png,165,33,reginoobi
+Radiant,radiant.png,radiant_force.png,radiant_drone.png,180,29,reginoobi
+Marauder,marauder.png,marauder_force.png,,160,55,winstick
+Chimera Cruiser,Chimera_Cruiser__Body.png,Chimera_Cruiser__Force_Armor.png,Chimera_Cruiser__Drone.png,120,45,shazberries
+Dustoff,medivac.png,medivac_force.png,medivac_drone.png,123,37,winstick
+Areus,areus.png,areus_force.png,areus_drone.png,115,35,areusdlh
+DoG,DoG_body.png,DoG_head.png,,115,40,xuany08
+Goliath,goliath.png,null.png,,140,80,0uro6oro5
+Benefactor,BenefactorandDelta.png,BenefactorandDelta_force.png,BenefactorandDelta_drone.png,,,areusdlh
+Space Whale,SWBody.png,SWForce.png,0,110,50,0uro6oro5
+XM-05 Thanatos,XM_05_Thanatos.png,XM_05_Thanatos_Head.png,,120,0,xuany08
+ND Monday,bhm.png,bhm_force.png,bhm_drone.png,122,60,nep45
+apollo,apollo.png,apollo_force.png,,120,0,
+EX-Titan,ex-titan.png,ex-titan_force.png,ex-titan_drone.png,,,jere1001
+Little Nullcreator,nullcreator_1.png,nullcreator_3.png,nullcreator_2.png,120,70,areusdlh
+Fluss,Fluss.png,FlussShield.png,FlussDrone.png,135,75,evelo
+Kagami,kagami.png,kagami_force.png,kagami_drone.png,120,40,.silvyar
+Crucible,crucible_body.png,crucible_force.png,crucible_drone.png,0,0,paninja
+Carcible,carcible.png,null.png,carcible_drone.png,0,0,deleted
+Antlion,AntlionBody.png,AntlionForce.png,AntlionDrone.png,150,40,onehundredfiftythree
+PITRO,pitro.png,pitro_force.png,pitro_drone.png,100,60,back.bone
+Relikt,relikt.png,relikt_force.png,Relikt_Drone.png,150,40,_redkon_
+Lunaria,Lunaria.png,Lunaria_Force.png,Lunaria_drone.png,135,35,ciphr_vcaos
+AE-86,ae_86.png,ae_86_force.png,ae_86_drone.png,199,70,breaby
+Moredo,moredo.png,moredo_armor.png,moredo_drone.png,,,.suntinel
+Mars,mars.png,mars_force.png,mars_drone.png,107,58,fourpointedstar
+Daedalus,daedalus.png,daedalus_force.png,daedalus_drone.png,179,40,fourpointedstar
+Hyper,hyper.png,hyper_force.png,,80,100,.silvyar
+Cargo Train,cargo.png,cargo_force.png,,115,20,winstick
+Lightseeker,LightseekerBody.png,LightseekerForce.png,LightseekerDrone.png,180,15,onehundredfiftythree
+Egg,egg.png,egg_force.png,,110,120,recruit75
+Eggcelent Flier,eggcelent.png,eggcelent_force.png,eggcelent_drone.png,130,80,winstick
+Prykar,Prykar_body.png,Prykar_force.png,Prykar_drone.png,115,45,shadowpack

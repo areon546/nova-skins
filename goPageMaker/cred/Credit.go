@@ -1,7 +1,8 @@
 package cred
 
 const (
-	Default CreditSource = iota
+	Unknown CreditSource = iota
+	Default
 	Discord
 )
 
@@ -13,20 +14,31 @@ type CreditType interface {
 type CreditSource int
 
 type Credit struct {
-	name      string
-	otherInfo string
+	name      Creditor
+	otherInfo CreditorInfo
 	CreditType
 }
 
-func (c Credit) ConstructName() string { return "" }
-func (c Credit) ConstructLink() string { return "default" }
+func (c Credit) ConstructName() string { return "unknown" }
+func (c Credit) ConstructLink() string { return "/404.html" }
 
-func NewCredit(name, other string, cType CreditSource) CreditType {
-	if cType == Discord {
+func NewCredit(name Creditor, other CreditorInfo, cType CreditSource) CreditType {
+	switch cType {
+	case Discord:
 		return DiscordCredit{Credit: Credit{name: name, otherInfo: other}}
+	case Default:
+		return DefaultCredit{}
+	case Unknown:
+		fallthrough
+	default:
+		return &Credit{name: name, otherInfo: other}
 	}
-	return &Credit{name: name, otherInfo: other}
 }
+
+type DefaultCredit struct{ Credit }
+
+func (c DefaultCredit) ConstructName() string { return "Default Skin" }
+func (c DefaultCredit) ConstructLink() string { return "https://novadrift.io/" }
 
 type DiscordCredit struct{ Credit }
 

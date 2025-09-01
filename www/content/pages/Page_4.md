@@ -254,6 +254,54 @@ Copy CSV: <button class='copier' csv='Wasp Hive,wasphive.png,wasphive_force.png,
 
 </section>
 </section>
+<section class='skin'>
+## **Wojciech Mann**:
+[@exotreus](https://discord.com/users/ 773152446562172959)
+
+
+|---|---|
+|Body:|mann.png|
+|Force Armour:|mann_force.png|
+|Drone:||
+|Angle:||
+|Distance:||
+
+Copy CSV: <button class='copier' csv='Wojciech Mann,mann.png,mann_force.png,,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Wojciech Mann,mann.png,mann_force.png,,,</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Wojciech Mann.zip)
+
+<section class="media">
+![mann.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/mann.png)
+![mann_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/mann_force.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Buka**:
+[@exotreus](https://discord.com/users/ 773152446562172959)
+
+
+|---|---|
+|Body:|buka.png|
+|Force Armour:|buka_force.png|
+|Drone:||
+|Angle:||
+|Distance:||
+
+Copy CSV: <button class='copier' csv='Buka,buka.png,buka_force.png,,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Buka,buka.png,buka_force.png,,,</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Buka.zip)
+
+<section class="media">
+![buka.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/buka.png)
+![buka_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/buka_force.png)
+
+</section>
+</section>
 </section
 <section class="nav">
 [Page_3](./Page_3.html)

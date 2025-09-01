@@ -2,6 +2,8 @@
 
 [![Build and Deploy](https://github.com/areon546/nova-skins/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/areon546/nova-skins/actions/workflows/gh-pages.yml)
 
+This website is hosted at: <https://nova.areon546.co.uk>
+
 To download all skins, click [here](https://github.com/areon546/NovaDriftSkins/raw/main/media/custom_skins.zip). It may take a while however since there are a lot of files to download.
 
 You can then just replace the custom_skins folder already present in NovaDrift with the unzipped download, and hey presto you have all the skins in the repo.

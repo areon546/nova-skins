@@ -27,7 +27,7 @@ var (
 
 	missingDistance string = defaultSkinNames["distance"]
 
-	missingCredits string = ""
+	missingCredits string = "Unkown Credit Type"
 )
 
 type CustomSkinError struct {

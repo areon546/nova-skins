@@ -7,6 +7,7 @@ import (
 	"github.com/areon546/go-files/files"
 	"github.com/areon546/go-files/files/zip"
 
+	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/cred"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/dirs"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/helpers"
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/log"
@@ -16,6 +17,9 @@ import (
 var (
 	custom_skins_dir string = dirs.Skins()
 	compiled_pages   string = dirs.Pages()
+
+	skinsToDisplay = 500000
+	skinsPerPage   = 12
 )
 
 func main() {
@@ -23,7 +27,7 @@ func main() {
 	// testing = !testing
 
 	if testing {
-		print("Testing")
+		fmt.Println(cred.GetDiscordUIDs())
 		test()
 		return
 	}
@@ -62,8 +66,7 @@ func compileSkins() {
 	log.Info("Read Custom Skin directory")
 	print(len(skins), len(skins))
 
-	skinsToDisplay := len(skins)
-	skinsPerPage := 12
+	skinsToDisplay = min(len(skins), skinsToDisplay)
 	// the processing package creates a list of skins based on the custom skins csv in the custom skins folder and uses that to create these
 	processing.ConstructAssetPages(skins[:skinsToDisplay], skinsPerPage)
 }

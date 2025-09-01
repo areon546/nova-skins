@@ -7,7 +7,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **Saris**:
-
+[Default Skin](https://novadrift.io/)
 
 
 |---|---|
@@ -32,7 +32,7 @@ Copy CSV: <button class='copier' csv='Saris,saris.png,saris_force.png,saris_dron
 </section>
 <section class='skin'>
 ## **Orbiter**:
-
+[Default Skin](https://novadrift.io/)
 
 
 |---|---|
@@ -57,7 +57,7 @@ Copy CSV: <button class='copier' csv='Orbiter,orbiter.png,orbiter_force.png,orbi
 </section>
 <section class='skin'>
 ## **Ultra C**:
-
+[Default Skin](https://novadrift.io/)
 
 
 |---|---|
@@ -248,6 +248,56 @@ Copy CSV: <button class='copier' csv='Dragon,dragon.png,dragon_force.png,,,'><im
 <section class="media">
 ![dragon.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/dragon.png)
 ![dragon_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/dragon_force.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Spike**:
+[@hadiros](https://discord.com/users/266028842395631629)
+
+
+|---|---|
+|Body:|spike.png|
+|Force Armour:|spike_force.png|
+|Drone:|spike_drone.png|
+|Angle:|125|
+|Distance:|35|
+
+Copy CSV: <button class='copier' csv='Spike,spike.png,spike_force.png,spike_drone.png,125,35'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Spike,spike.png,spike_force.png,spike_drone.png,125,35</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Spike.zip)
+
+<section class="media">
+![spike.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike.png)
+![spike_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike_force.png)
+![spike_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike_drone.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Pinch**:
+[@hadiros](https://discord.com/users/266028842395631629)
+
+
+|---|---|
+|Body:|pinch.png|
+|Force Armour:|pinch_force.png|
+|Drone:|pinch_drone.png|
+|Angle:|140|
+|Distance:|35|
+
+Copy CSV: <button class='copier' csv='Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Pinch.zip)
+
+<section class="media">
+![pinch.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch.png)
+![pinch_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch_force.png)
+![pinch_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch_drone.png)
 
 </section>
 </section>

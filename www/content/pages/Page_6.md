@@ -8,7 +8,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **Tech 15**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -33,7 +33,7 @@ Copy CSV: <button class='copier' csv='Tech 15,tech_15.png,tech_15_force.png,tech
 </section>
 <section class='skin'>
 ## **Tesseract**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -58,7 +58,7 @@ Copy CSV: <button class='copier' csv='Tesseract,tesseract.png,tesseract_force.pn
 </section>
 <section class='skin'>
 ## **ChitinCondition**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -83,7 +83,7 @@ Copy CSV: <button class='copier' csv='ChitinCondition,condition.png,condition_fo
 </section>
 <section class='skin'>
 ## **Wasp**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -108,7 +108,7 @@ Copy CSV: <button class='copier' csv='Wasp,wasp.png,wasp_force.png,wasp_drone.pn
 </section>
 <section class='skin'>
 ## **Krystallix**:
-
+[unknown](/404.html)
 
 
 |---|---|

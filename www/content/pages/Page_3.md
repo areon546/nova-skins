@@ -8,7 +8,7 @@
 <section class='skins'>
 <section class='skin'>
 ## **BAD**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -33,7 +33,7 @@ Copy CSV: <button class='copier' csv='BAD,BAD.png,BAD_force.png,BAD_drone.png,14
 </section>
 <section class='skin'>
 ## **Lanius Cruiser**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -248,6 +248,55 @@ Copy CSV: <button class='copier' csv='Razorflight,razorflight.png,razorflight_fo
 <section class="media">
 ![razorflight.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/razorflight.png)
 ![razorflight_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/razorflight_force.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Squidship**:
+[@hungrygremlin](https://discord.com/users/361743580563374080)
+
+
+|---|---|
+|Body:|Squidship.png|
+|Force Armour:|Squidship_force.png|
+|Drone:|Squidship_drone.png|
+|Angle:||
+|Distance:||
+
+Copy CSV: <button class='copier' csv='Squidship,Squidship.png,Squidship_force.png,Squidship_drone.png,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Squidship,Squidship.png,Squidship_force.png,Squidship_drone.png,,</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Squidship.zip)
+
+<section class="media">
+![Squidship.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Squidship.png)
+![Squidship_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Squidship_force.png)
+![Squidship_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Squidship_drone.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Executor**:
+[@ceris5](https://discord.com/users/460824601019023360)
+
+
+|---|---|
+|Body:|Executor.png|
+|Force Armour:|Executor_Force.png|
+|Drone:||
+|Angle:|1|
+|Distance:|135|
+
+Copy CSV: <button class='copier' csv='Executor,Executor.png,Executor_Force.png,,1,135'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Executor,Executor.png,Executor_Force.png,,1,135</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Executor.zip)
+
+<section class="media">
+![Executor.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Executor.png)
+![Executor_Force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Executor_Force.png)
 
 </section>
 </section>

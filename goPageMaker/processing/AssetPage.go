@@ -25,8 +25,8 @@ func (a *AssetsPage) String() string {
 	return a.Name()
 }
 
-func (a *AssetsPage) AddCustomSkins(cs []nova.CustomSkin) {
-	numSkins := min(10, len(cs))
+func (a *AssetsPage) AddCustomSkins(cs []nova.CustomSkin, skins int) {
+	numSkins := min(skins, len(cs))
 	for a.skinsC < numSkins {
 		a.skins = append(a.skins, cs[a.skinsC])
 		a.skinsC++

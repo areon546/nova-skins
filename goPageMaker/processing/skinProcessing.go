@@ -15,6 +15,15 @@ import (
 	"github.com/areon546/go-files/table"
 )
 
+var (
+	defaultCredits = cred.GetDefault()
+	discordUIDs    = cred.GetDiscordUIDs()
+
+	// parallel arrays of credits to the credit source to have custom handlers of various credit types.
+	creditMaps    = []cred.CreditMap{defaultCredits, discordUIDs}
+	creditSources = []cred.CreditSource{cred.Default, cred.Discord}
+)
+
 // returns a list of CustomSkins based on whats in the custom_skins folder
 func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 	broadcast("Reading Skins In Directory")
@@ -26,18 +35,13 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 	skinsData, err := files.ReadCSV(filename, true)
 	helpers.Handle(err)
 
-	credits := skinsData.IndexOf("credit")
-
 	// Setup variables for Crediting authors
-	discordUIDs := getDiscordUIDs()
-	infoMaps := []map[string]string{discordUIDs}
-	mapType := []cred.CreditSource{cred.Discord}
 
 	reqLength := skinsData.Width()
 	log.Debug("SkinProcessing GetCustomSkins", "expected column width:", 7, "column width", reqLength)
 
 	skins = make([]nova.CustomSkin, 0, skinsData.Entries())
-	for rowNumber, record := range skinsData.Iter() {
+	for _, record := range skinsData.Iter() {
 
 		skin, err := recordToCustomSkin(&record, custom_skin_dir, reqLength)
 		if err != nil {
@@ -49,48 +53,25 @@ func GetCustomSkins(custom_skin_dir []fs.DirEntry) (skins []nova.CustomSkin) {
 		broadcast("Processing Skin:", skin.Name(), skin.Body().Name())
 		skin.GenerateZipFile()
 
-		credit, _ := skinsData.Cell(rowNumber, credits)
-		creditInfo, creditType := assignCredits(credit, infoMaps, mapType)
-
-		if creditType != cred.Default {
-			skin.AddCredits(cred.NewCredit(credit, creditInfo, creditType))
-		}
-
 		skins = append(skins, *skin)
 	}
 
 	return
 }
 
-func assignCredits(credit string, creditInfoMaps []map[string]string, mapTypes []cred.CreditSource) (creditInfo string, creditType cred.CreditSource) {
+func assignCredits(credit cred.Creditor) (creditInfo cred.CreditorInfo, creditType cred.CreditSource) {
 	// assign credit type based on credit info
-	for i, m := range creditInfoMaps {
+	for i, m := range creditMaps {
 		temp, exists := m[credit]
 		if exists {
 			creditInfo = temp
-			creditType = mapTypes[i]
+			creditType = creditSources[i]
 			return
 		}
 	}
 
-	creditType = cred.Default
+	creditType = cred.Unknown
 	return
-}
-
-func getDiscordUIDs() map[string]string {
-	discordCreditData, err := files.ReadCSV(dirs.Assets()+"DISCORD_UIDS.csv", true)
-
-	helpers.Handle(err)
-
-	uidMap := make(map[string]string, discordCreditData.Entries())
-
-	for _, row := range discordCreditData.Iter() {
-		discordName, _ := row.Get(0)
-		UID, _ := row.Get(1)
-		uidMap[discordName] = UID
-	}
-
-	return uidMap
 }
 
 func recordToCustomSkin(record *table.Row, custom_skin_dir []os.DirEntry, reqLength int) (*nova.CustomSkin, error) {
@@ -127,10 +108,11 @@ func recordToCustomSkin(record *table.Row, custom_skin_dir []os.DirEntry, reqLen
 		case 5: // DISTANCE
 			cs.AddDistance(s)
 		case 6: // CREDITS
-			credits := s
-			broadcast(credits)
+			credit := cred.Creditor(s)
+			creditInfo, creditType := assignCredits(credit)
+
+			cs.AddCredits(cred.NewCredit(credit, creditInfo, creditType))
 		default:
-			broadcast("DEFAULT")
 		}
 	}
 

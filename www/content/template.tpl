@@ -11,7 +11,12 @@
 </head>
 <body>
 <main>
+<header>
+To download all the skins in this project: <a href="https://github.com/areon546/nova-skins/raw/refs/heads/main/media/assets/custom_skins.zip" download="true">All the Skins</a>
+</header>
   {{.}}
+<footer>
+</footer>
 </main>
 </body>
 </html>

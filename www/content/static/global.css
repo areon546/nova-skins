@@ -59,6 +59,10 @@ a:hover, a:focus{
   border: 5px white solid;
 }
 
+.skin .media img {
+  max-width: 50%;
+}
+
 
 .skins {
   display: flex;
@@ -69,8 +73,10 @@ a:hover, a:focus{
 
 .csv {
   max-width: inherit;
-   word-wrap: break-word;
+  word-wrap: break-word;
 }
+
+
 
 /* TABLE */ 
 

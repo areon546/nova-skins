@@ -18,6 +18,7 @@ func ConstructAssetPages(skins []nova.CustomSkin, skinsPerPage int) (pages []Ass
 	if numSkins%skinsPerPage != 0 {
 		numFiles++
 	}
+	fmt.Println(numSkins % skinsPerPage)
 
 	for i := range numFiles {
 		// create a new file
@@ -32,14 +33,14 @@ func ConstructAssetPages(skins []nova.CustomSkin, skinsPerPage int) (pages []Ass
 	return
 }
 
-func writeToAssetPage(a *AssetsPage, skins []nova.CustomSkin, i, l int) {
+func writeToAssetPage(a *AssetsPage, skins []nova.CustomSkin, i, numSkins int) {
 	fmt.Println("Wrote to page", a)
 	a.BufferPagePreffix()
 	//
-	skinSlice, err := getNextSlice(skins, i, l)
+	skinSlice, err := getNextSlice(skins, i, numSkins)
 	helpers.Handle(err)
 
-	a.AddCustomSkins(skinSlice)
+	a.AddCustomSkins(skinSlice, numSkins)
 	a.BufferCustomSkins()
 	a.BufferPageSuffix()
 	//

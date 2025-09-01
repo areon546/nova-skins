@@ -33,7 +33,7 @@ Copy CSV: <button class='copier' csv='Celes,celes.png,celes_force.png,celes_dron
 </section>
 <section class='skin'>
 ## **Perseus**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -58,7 +58,7 @@ Copy CSV: <button class='copier' csv='Perseus,Perseus.png,Perseus_force.png,Pers
 </section>
 <section class='skin'>
 ## **Lightning**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -83,7 +83,7 @@ Copy CSV: <button class='copier' csv='Lightning,Lightning.png,Lightning_force.pn
 </section>
 <section class='skin'>
 ## **Warden**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -133,7 +133,7 @@ Copy CSV: <button class='copier' csv='Windseeker,windseeker.png,windseeker_force
 </section>
 <section class='skin'>
 ## **Onslaught**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -158,7 +158,7 @@ Copy CSV: <button class='copier' csv='Onslaught,Onslaught.png,Onslaught_force.pn
 </section>
 <section class='skin'>
 ## **Artillery**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -183,7 +183,7 @@ Copy CSV: <button class='copier' csv='Artillery,Artillery.png,Artillery_force.pn
 </section>
 <section class='skin'>
 ## **Deconstructor**:
-
+[unknown](/404.html)
 
 
 |---|---|
@@ -253,6 +253,55 @@ Copy CSV: <button class='copier' csv='Balm,balm.png,balm_force.png,balm_drone.pn
 ![balm.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/balm.png)
 ![balm_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/balm_force.png)
 ![balm_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/balm_drone.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Scimitar**:
+[@fauix](https://discord.com/users/120018768477945856)
+
+
+|---|---|
+|Body:|scimitar.png|
+|Force Armour:|scimitar_force.png|
+|Drone:|scimitar_drone.png|
+|Angle:|140|
+|Distance:|50|
+
+Copy CSV: <button class='copier' csv='Scimitar,scimitar.png,scimitar_force.png,scimitar_drone.png,140,50'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Scimitar,scimitar.png,scimitar_force.png,scimitar_drone.png,140,50</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Scimitar.zip)
+
+<section class="media">
+![scimitar.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/scimitar.png)
+![scimitar_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/scimitar_force.png)
+![scimitar_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/scimitar_drone.png)
+
+</section>
+</section>
+<section class='skin'>
+## **SE**:
+[@tempest153](https://discord.com/users/872292077852061736)
+
+
+|---|---|
+|Body:|SEbody.png|
+|Force Armour:|SEforce.png|
+|Drone:||
+|Angle:|0|
+|Distance:|30|
+
+Copy CSV: <button class='copier' csv='SE,SEbody.png,SEforce.png,,0,30'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>SE,SEbody.png,SEforce.png,,0,30</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/SE.zip)
+
+<section class="media">
+![SEbody.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/SEbody.png)
+![SEforce.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/SEforce.png)
 
 </section>
 </section>

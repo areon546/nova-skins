@@ -53,7 +53,6 @@ a:hover, a:focus{
 .skin {
   padding: 10px;
   width: auto;
-  max-width: 20%;
   margin: 10px;
 
   border: 5px white solid;
@@ -64,18 +63,46 @@ a:hover, a:focus{
 }
 
 
+.csv {
+  max-width: inherit;
+  overflow-wrap: break-word;
+}
+
 .skins {
   display: flex;
   flex-wrap: wrap;
 
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
-.csv {
-  max-width: inherit;
-  word-wrap: break-word;
+/* Desktop */ 
+@media screen and (min-width: 1100px) {
+  .skin {
+    max-width: 20%;
+  }
+
+  .skins {}
 }
 
+/* Mobile */ 
+@media screen and (max-width: 1100px) {
+  .skin {
+    max-width: 90%;
+    min-height: 70%;
+  }
+
+  .skin .media {
+    padding-bottom: 50px;
+  }
+  
+  .skin .media img {
+    max-width: 20%;
+  }
+
+  .skins {
+    flex-direction: column;
+  }
+}
 
 
 /* TABLE */ 
@@ -84,6 +111,6 @@ table {
   text-align: left;
 }
 
-table td:nth-of-type(odd) {
-  background-color: ;
+table td {
 }
+

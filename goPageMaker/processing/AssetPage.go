@@ -126,7 +126,7 @@ func (a *AssetsPage) appendDownloadLink(skin nova.CustomSkin) {
 }
 
 func (a *AssetsPage) appendMedia(skin nova.CustomSkin) {
-	a.Append("<section class=\"media\">")
+	a.Append("<section class='media'>")
 	if !files.FilesEqual(*skin.Body(), *files.EmptyFile()) {
 		a.appendCustomSkinFile(skin.Body())
 	}

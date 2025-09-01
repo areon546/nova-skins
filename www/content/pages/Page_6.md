@@ -24,7 +24,7 @@ Copy CSV: <button class='copier' csv='Tech 15,tech_15.png,tech_15_force.png,tech
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Tech 15.zip)
 
-<section class="media">
+<section class='media'>
 ![tech_15.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/tech_15.png)
 ![tech_15_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/tech_15_force.png)
 ![tech_15_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/tech_15_drone.png)
@@ -49,7 +49,7 @@ Copy CSV: <button class='copier' csv='Tesseract,tesseract.png,tesseract_force.pn
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Tesseract.zip)
 
-<section class="media">
+<section class='media'>
 ![tesseract.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/tesseract.png)
 ![tesseract_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/tesseract_force.png)
 ![tesseract_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/tesseract_drone.png)
@@ -74,7 +74,7 @@ Copy CSV: <button class='copier' csv='ChitinCondition,condition.png,condition_fo
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/ChitinCondition.zip)
 
-<section class="media">
+<section class='media'>
 ![condition.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/condition.png)
 ![condition_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/condition_force.png)
 ![condition_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/condition_drone.png)
@@ -99,7 +99,7 @@ Copy CSV: <button class='copier' csv='Wasp,wasp.png,wasp_force.png,wasp_drone.pn
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Wasp.zip)
 
-<section class="media">
+<section class='media'>
 ![wasp.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wasp.png)
 ![wasp_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wasp_force.png)
 ![wasp_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wasp_drone.png)
@@ -124,7 +124,7 @@ Copy CSV: <button class='copier' csv='Krystallix,krystallix.png,krystallix_force
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Krystallix.zip)
 
-<section class="media">
+<section class='media'>
 ![krystallix.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/krystallix.png)
 ![krystallix_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/krystallix_force.png)
 ![krystallix_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/krystallix_drone.png)
@@ -149,7 +149,7 @@ Copy CSV: <button class='copier' csv='Minotaur,minotaur.png,minotaur_force.png,,
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Minotaur.zip)
 
-<section class="media">
+<section class='media'>
 ![minotaur.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/minotaur.png)
 ![minotaur_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/minotaur_force.png)
 

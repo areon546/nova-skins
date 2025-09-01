@@ -42,6 +42,7 @@ The Devil,devil.png,devil_force.png,heart_mite.png,,,babaint
 Poly,poly.png,poly_force.png,poly_drone.png,0,-45,splathero
 Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35,evelo
 Battery,battery.png,battery_force.png,battery.png,151,40,winstick
+Minotaur,minotaur.png,minotaur_force.png,,145,60,twinstick
 Wraith,wraith.png,wraith_force.png,wraith_drone.png,250,35,digicube
 Death Star,deathstar.png,deathstar_force.png,,115,20,exotreus
 Wasp Hive,wasphive.png,wasphive_force.png,wasphive_drone.png,178,90,fourpointedstar
@@ -64,4 +65,4 @@ Tesseract,tesseract.png,tesseract_force.png,tesseract_drone.png,90,30, avtraxi
 ChitinCondition,condition.png,condition_force.png,condition_drone.png,120,50, zeaaon
 Wasp,wasp.png,wasp_force.png,wasp_drone.png,140,30, reginoobi
 Krystallix,krystallix.png,krystallix_force.png,krystallix_drone.png,115,40, krysmun
-Minotaur,minotaur.png,minotaur_force.png,,145,60,twinstick
+

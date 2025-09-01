@@ -128,22 +128,21 @@ func (a *AssetsPage) appendDownloadLink(skin nova.CustomSkin) {
 func (a *AssetsPage) appendMedia(skin nova.CustomSkin) {
 	a.Append("<section class='media'>")
 	if !files.FilesEqual(*skin.Body(), *files.EmptyFile()) {
-		a.appendCustomSkinFile(skin.Body())
+		a.appendCustomSkinFile(skin.Body(), "body")
 	}
 	if !files.FilesEqual(*skin.ForceArmour(), *files.EmptyFile()) {
-		a.appendCustomSkinFile(skin.ForceArmour())
+		a.appendCustomSkinFile(skin.ForceArmour(), "force")
 	}
-
 	if !files.FilesEqual(*skin.Drone(), *files.EmptyFile()) {
-		a.appendCustomSkinFile(skin.Drone())
+		a.appendCustomSkinFile(skin.Drone(), "drone")
 	}
-
 	a.AppendEmptyLine()
 	a.Append("</section>")
 }
 
-func (a *AssetsPage) appendCustomSkinFile(f *files.File) {
-	a.AppendEmbed(dirs.WwwSkins()+f.Name(), f.Name())
+func (a *AssetsPage) appendCustomSkinFile(f *files.File, class string) {
+	a.Append("<img src='" + dirs.WwwSkins() + f.Name() + "' alt='" + f.Name() + "' class='" + class + "'></img>")
+	// a.AppendEmbed(dirs.WwwSkins()+f.Name(), f.Name())
 }
 
 func (a *AssetsPage) writeBuffer() {

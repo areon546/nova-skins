@@ -4,7 +4,8 @@
 [Page_1](./Page_1.html)
 [Page_2](./Page_2.html)
 </section>
-<section class="skin">
+<section class='skins'>
+<section class='skin'>
 ## **Saris**:
 
 
@@ -16,7 +17,9 @@
 |Angle:|115|
 |Distance:|46|
 
-Copy this: `Saris,saris.png,saris_force.png,saris_drone.png,115,46`
+Copy CSV: <button class='copier' csv='Saris,saris.png,saris_force.png,saris_drone.png,115,46'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Saris,saris.png,saris_force.png,saris_drone.png,115,46</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Saris.zip)
 
@@ -27,7 +30,7 @@ Copy this: `Saris,saris.png,saris_force.png,saris_drone.png,115,46`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Orbiter**:
 
 
@@ -39,7 +42,9 @@ Copy this: `Saris,saris.png,saris_force.png,saris_drone.png,115,46`
 |Angle:|120|
 |Distance:|40|
 
-Copy this: `Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40`
+Copy CSV: <button class='copier' csv='Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Orbiter.zip)
 
@@ -50,7 +55,7 @@ Copy this: `Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Ultra C**:
 
 
@@ -62,7 +67,9 @@ Copy this: `Orbiter,orbiter.png,orbiter_force.png,orbiter_drone.png,120,40`
 |Angle:|115|
 |Distance:|35|
 
-Copy this: `Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35`
+Copy CSV: <button class='copier' csv='Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Ultra C.zip)
 
@@ -73,7 +80,7 @@ Copy this: `Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Freefall**:
 [@akaevertone](https://discord.com/users/235458820845862912)
 
@@ -85,7 +92,9 @@ Copy this: `Ultra C,ultra_c.png,ultra_c_force.png,ultra_c_drone.png,115,35`
 |Angle:|152|
 |Distance:|40|
 
-Copy this: `Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40`
+Copy CSV: <button class='copier' csv='Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Freefall.zip)
 
@@ -96,7 +105,7 @@ Copy this: `Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Lobstar**:
 [@_capstone](https://discord.com/users/551431332253794304)
 
@@ -108,7 +117,9 @@ Copy this: `Freefall,freefall.png,freefall_force.png,freefall_drone.png,152,40`
 |Angle:|180|
 |Distance:|45|
 
-Copy this: `Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45`
+Copy CSV: <button class='copier' csv='Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Lobstar.zip)
 
@@ -119,7 +130,7 @@ Copy this: `Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **PINGAS**:
 [@waypastfuture](https://discord.com/users/128605704813543424)
 
@@ -131,7 +142,9 @@ Copy this: `Lobstar,lobstar.png,lobstar_frame.png,lobstar_drone.png,180,45`
 |Angle:|180|
 |Distance:|20|
 
-Copy this: `PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20`
+Copy CSV: <button class='copier' csv='PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/PINGAS.zip)
 
@@ -141,7 +154,7 @@ Copy this: `PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Skogul**:
 [@dragonstrive](https://discord.com/users/273142382181220353)
 
@@ -153,7 +166,9 @@ Copy this: `PINGAS,PINGAS_body.png,PINGAS_force.png,,180,20`
 |Angle:|115|
 |Distance:|45|
 
-Copy this: `Skogul,skogul.png,skogul_force.png,skogul_drone.png,115,45`
+Copy CSV: <button class='copier' csv='Skogul,skogul.png,skogul_force.png,skogul_drone.png,115,45'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Skogul,skogul.png,skogul_force.png,skogul_drone.png,115,45</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Skogul.zip)
 
@@ -164,7 +179,7 @@ Copy this: `Skogul,skogul.png,skogul_force.png,skogul_drone.png,115,45`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Lance**:
 [@roborogue](https://discord.com/users/690525302312534058)
 
@@ -176,7 +191,9 @@ Copy this: `Skogul,skogul.png,skogul_force.png,skogul_drone.png,115,45`
 |Angle:|40|
 |Distance:||
 
-Copy this: `Lance,lance.png,lance_force.png,,40,`
+Copy CSV: <button class='copier' csv='Lance,lance.png,lance_force.png,,40,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Lance,lance.png,lance_force.png,,40,</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Lance.zip)
 
@@ -186,7 +203,7 @@ Copy this: `Lance,lance.png,lance_force.png,,40,`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Thunderax**:
 [@roborogue](https://discord.com/users/690525302312534058)
 
@@ -198,7 +215,9 @@ Copy this: `Lance,lance.png,lance_force.png,,40,`
 |Angle:||
 |Distance:||
 
-Copy this: `Thunderax,thunderax.png,thunderax.png,,,`
+Copy CSV: <button class='copier' csv='Thunderax,thunderax.png,thunderax.png,,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Thunderax,thunderax.png,thunderax.png,,,</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Thunderax.zip)
 
@@ -208,7 +227,7 @@ Copy this: `Thunderax,thunderax.png,thunderax.png,,,`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Dragon**:
 [@roborogue](https://discord.com/users/690525302312534058)
 
@@ -220,7 +239,9 @@ Copy this: `Thunderax,thunderax.png,thunderax.png,,,`
 |Angle:||
 |Distance:||
 
-Copy this: `Dragon,dragon.png,dragon_force.png,,,`
+Copy CSV: <button class='copier' csv='Dragon,dragon.png,dragon_force.png,,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Dragon,dragon.png,dragon_force.png,,,</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Dragon.zip)
 
@@ -230,6 +251,7 @@ Copy this: `Dragon,dragon.png,dragon_force.png,,,`
 
 </section>
 </section>
+</section
 <section class="nav">
 [Page_1](./Page_1.html)
 [Page_2](./Page_2.html)

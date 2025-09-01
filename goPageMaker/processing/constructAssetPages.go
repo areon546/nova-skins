@@ -9,13 +9,13 @@ import (
 	"github.com/areon546/NovaDriftCustomSkins/goPageMaker/nova"
 )
 
-func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
+func ConstructAssetPages(skins []nova.CustomSkin, skinsPerPage int) (pages []AssetsPage) {
 	broadcast("Making Asset Pages")
 	numSkins := len(skins)
-	numFiles := numSkins / 10
+	numFiles := numSkins / skinsPerPage
 
 	// Count number of files expected to create.
-	if numSkins%10 != 0 {
+	if numSkins%skinsPerPage != 0 {
 		numFiles++
 	}
 
@@ -25,35 +25,36 @@ func ConstructAssetPages(skins []nova.CustomSkin) (pages []AssetsPage) {
 		a := NewAssetsPage(dirs.Pages(), format("Page_%d.md", pageNum), pageNum)
 		_ = a.ClearFile() // don't care about this error
 
-		writeToAssetPage(a, skins, i)
+		writeToAssetPage(a, skins, i, skinsPerPage)
 		pages = append(pages, *a)
 
 	}
 	return
 }
 
-func writeToAssetPage(a *AssetsPage, skins []nova.CustomSkin, i int) {
+func writeToAssetPage(a *AssetsPage, skins []nova.CustomSkin, i, l int) {
 	fmt.Println("Wrote to page", a)
-	a.bufferPagePreffix()
+	a.BufferPagePreffix()
 	//
-	skinSlice, err := getNextSlice(skins, i)
+	skinSlice, err := getNextSlice(skins, i, l)
 	helpers.Handle(err)
 
-	a.addCustomSkins(skinSlice)
-	a.bufferCustomSkins()
-	a.bufferPageSuffix()
+	a.AddCustomSkins(skinSlice)
+	a.BufferCustomSkins()
+	a.BufferPageSuffix()
 	//
 	a.writeBuffer()
 }
 
-func getNextSlice(skins []nova.CustomSkin, i int) (subset []nova.CustomSkin, err error) {
+func getNextSlice(skins []nova.CustomSkin, i, l int) (subset []nova.CustomSkin, err error) {
 	numSkins := len(skins)
 
-	if i < 0 || i > (len(skins)/10+1) {
+	if i < 0 || i > (len(skins)/l+1) {
 		err = errors.New("index out of bounds for CustomSkins array")
 	}
 
-	min, max := i*10, (i+1)*10
+	min, max := i*l, (i+1)*l
+	fmt.Println(min, max)
 
 	if max > numSkins {
 		max = numSkins

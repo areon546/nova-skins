@@ -5,53 +5,8 @@
 [Page_2](./Page_2.html)
 [Page_3](./Page_3.html)
 </section>
-<section class="skin">
-## **Spike**:
-[@hadiros](https://discord.com/users/266028842395631629)
-
-
-|---|---|
-|Body:|spike.png|
-|Force Armour:|spike_force.png|
-|Drone:|spike_drone.png|
-|Angle:|125|
-|Distance:|35|
-
-Copy this: `Spike,spike.png,spike_force.png,spike_drone.png,125,35`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Spike.zip)
-
-<section class="media">
-![spike.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike.png)
-![spike_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike_force.png)
-![spike_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/spike_drone.png)
-
-</section>
-</section>
-<section class="skin">
-## **Pinch**:
-[@hadiros](https://discord.com/users/266028842395631629)
-
-
-|---|---|
-|Body:|pinch.png|
-|Force Armour:|pinch_force.png|
-|Drone:|pinch_drone.png|
-|Angle:|140|
-|Distance:|35|
-
-Copy this: `Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Pinch.zip)
-
-<section class="media">
-![pinch.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch.png)
-![pinch_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch_force.png)
-![pinch_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pinch_drone.png)
-
-</section>
-</section>
-<section class="skin">
+<section class='skins'>
+<section class='skin'>
 ## **Celes**:
 [@cinnamimitime](https://discord.com/users/161502244284530688)
 
@@ -63,7 +18,9 @@ Copy this: `Pinch,pinch.png,pinch_force.png,pinch_drone.png,140,35`
 |Angle:|110|
 |Distance:|25|
 
-Copy this: `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
+Copy CSV: <button class='copier' csv='Celes,celes.png,celes_force.png,celes_drone.png,110,25'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Celes,celes.png,celes_force.png,celes_drone.png,110,25</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Celes.zip)
 
@@ -74,7 +31,7 @@ Copy this: `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Perseus**:
 
 
@@ -86,7 +43,9 @@ Copy this: `Celes,celes.png,celes_force.png,celes_drone.png,110,25`
 |Angle:|160|
 |Distance:|50|
 
-Copy this: `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
+Copy CSV: <button class='copier' csv='Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Perseus.zip)
 
@@ -97,7 +56,7 @@ Copy this: `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Lightning**:
 
 
@@ -109,7 +68,9 @@ Copy this: `Perseus,Perseus.png,Perseus_force.png,Perseus_drone.png,160,50`
 |Angle:|180|
 |Distance:|30|
 
-Copy this: `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30`
+Copy CSV: <button class='copier' csv='Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,30</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Lightning.zip)
 
@@ -120,7 +81,7 @@ Copy this: `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Warden**:
 
 
@@ -132,7 +93,9 @@ Copy this: `Lightning,Lightning.png,Lightning_force.png,Lightning_drone.png,180,
 |Angle:|0|
 |Distance:|0|
 
-Copy this: `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
+Copy CSV: <button class='copier' csv='Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Warden.zip)
 
@@ -143,7 +106,7 @@ Copy this: `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Windseeker**:
 [@anthraax](https://discord.com/users/211671269882462218)
 
@@ -155,7 +118,9 @@ Copy this: `Warden,Warden.png,Warden_force.png,Warden_drone.png,0,0`
 |Angle:|110|
 |Distance:|20|
 
-Copy this: `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20`
+Copy CSV: <button class='copier' csv='Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,110,20</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Windseeker.zip)
 
@@ -166,7 +131,7 @@ Copy this: `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Onslaught**:
 
 
@@ -178,7 +143,9 @@ Copy this: `Windseeker,windseeker.png,windseeker_force.png,windseeker_drone.png,
 |Angle:|140|
 |Distance:|45|
 
-Copy this: `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45`
+Copy CSV: <button class='copier' csv='Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,45</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Onslaught.zip)
 
@@ -189,7 +156,7 @@ Copy this: `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Artillery**:
 
 
@@ -201,7 +168,9 @@ Copy this: `Onslaught,Onslaught.png,Onslaught_force.png,Onslaught_drone.png,140,
 |Angle:|150|
 |Distance:|40|
 
-Copy this: `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40`
+Copy CSV: <button class='copier' csv='Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,40</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Artillery.zip)
 
@@ -212,7 +181,7 @@ Copy this: `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Deconstructor**:
 
 
@@ -224,7 +193,9 @@ Copy this: `Artillery,Artillery.png,Artillery_force.png,Artillery_drone.png,150,
 |Angle:|155|
 |Distance:|42|
 
-Copy this: `Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42`
+Copy CSV: <button class='copier' csv='Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructor_drone.png,155,42</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Deconstructor.zip)
 
@@ -235,6 +206,57 @@ Copy this: `Deconstructor,Deconstructor.png,Deconstructor_force.png,Deconstructo
 
 </section>
 </section>
+<section class='skin'>
+## **Engineer**:
+[@_capstone](https://discord.com/users/551431332253794304)
+
+
+|---|---|
+|Body:|engineer.png|
+|Force Armour:|engineer_frame.png|
+|Drone:|engineer_drone.png|
+|Angle:|60|
+|Distance:|35|
+
+Copy CSV: <button class='copier' csv='Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Engineer,engineer.png,engineer_frame.png,engineer_drone.png,60,35</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Engineer.zip)
+
+<section class="media">
+![engineer.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/engineer.png)
+![engineer_frame.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/engineer_frame.png)
+![engineer_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/engineer_drone.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Balm**:
+[@cinnamimitime](https://discord.com/users/161502244284530688)
+
+
+|---|---|
+|Body:|balm.png|
+|Force Armour:|balm_force.png|
+|Drone:|balm_drone.png|
+|Angle:|160|
+|Distance:|30|
+
+Copy CSV: <button class='copier' csv='Balm,balm.png,balm_force.png,balm_drone.png,160,30'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Balm,balm.png,balm_force.png,balm_drone.png,160,30</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Balm.zip)
+
+<section class="media">
+![balm.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/balm.png)
+![balm_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/balm_force.png)
+![balm_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/balm_drone.png)
+
+</section>
+</section>
+</section
 <section class="nav">
 [Page_1](./Page_1.html)
 [Page_2](./Page_2.html)

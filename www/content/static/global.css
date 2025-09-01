@@ -12,12 +12,24 @@ body {
 main {
   padding: 20px;
   margin: 20px auto;
-  max-width: 900px;
   background-color: var(--white);
   border-radius: var(--corner-rad);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
+/* Headings */ 
+
+h1 {
+  /* Page numer */
+  text-align: center;
+  
+}
+
+h2 {
+  /* Skin Name */ 
+  text-align: center;
+}
 
 /* LINKS */ 
 
@@ -38,11 +50,33 @@ a:hover, a:focus{
 
 /* SKINS */ 
 
-#skin {
-  border: 5px white dashed;
+.skin {
+  padding: 10px;
+  width: auto;
+  max-width: 20%;
+  margin: 10px;
+
+  border: 5px white solid;
+}
+
+
+.skins {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+
+.csv {
+  max-width: inherit;
+   word-wrap: break-word;
 }
 
 /* TABLE */ 
+
+table {
+  text-align: left;
+}
 
 table td:nth-of-type(odd) {
   background-color: ;

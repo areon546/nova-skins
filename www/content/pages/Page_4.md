@@ -5,143 +5,8 @@
 [Page_4](./Page_4.html)
 [Page_5](./Page_5.html)
 </section>
-<section class="skin">
-## **Millenium Falcon**:
-[@_ltw](https://discord.com/users/268931190667476998)
-
-
-|---|---|
-|Body:|millenium_falcon.png|
-|Force Armour:|millenium_falcon_force.png|
-|Drone:|millenium_falcon_drone.png|
-|Angle:|180|
-|Distance:|50|
-
-Copy this: `Millenium Falcon,millenium_falcon.png,millenium_falcon_force.png,millenium_falcon_drone.png,180,50`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Millenium Falcon.zip)
-
-<section class="media">
-![millenium_falcon.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/millenium_falcon.png)
-![millenium_falcon_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/millenium_falcon_force.png)
-![millenium_falcon_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/millenium_falcon_drone.png)
-
-</section>
-</section>
-<section class="skin">
-## **Curvewing**:
-[@hadiros](https://discord.com/users/266028842395631629)
-
-
-|---|---|
-|Body:|curvewing.png|
-|Force Armour:|curvewing_force.png|
-|Drone:|curvewing_drone.png|
-|Angle:|142|
-|Distance:|31|
-
-Copy this: `Curvewing,curvewing.png,curvewing_force.png,curvewing_drone.png,142,31`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Curvewing.zip)
-
-<section class="media">
-![curvewing.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/curvewing.png)
-![curvewing_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/curvewing_force.png)
-![curvewing_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/curvewing_drone.png)
-
-</section>
-</section>
-<section class="skin">
-## **Beholder**:
-[@hungrygremlin](https://discord.com/users/361743580563374080)
-
-
-|---|---|
-|Body:|Behold.png|
-|Force Armour:|Behold_force.png|
-|Drone:|Behold_drone.png|
-|Angle:||
-|Distance:||
-
-Copy this: `Beholder,Behold.png,Behold_force.png,Behold_drone.png,,`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Beholder.zip)
-
-<section class="media">
-![Behold.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Behold.png)
-![Behold_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Behold_force.png)
-![Behold_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Behold_drone.png)
-
-</section>
-</section>
-<section class="skin">
-## **Razorflight**:
-[@hadiros](https://discord.com/users/266028842395631629)
-
-
-|---|---|
-|Body:|razorflight.png|
-|Force Armour:|razorflight_force.png|
-|Drone:||
-|Angle:|50|
-|Distance:|100|
-
-Copy this: `Razorflight,razorflight.png,razorflight_force.png,,50,100`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Razorflight.zip)
-
-<section class="media">
-![razorflight.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/razorflight.png)
-![razorflight_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/razorflight_force.png)
-
-</section>
-</section>
-<section class="skin">
-## **Squidship**:
-[@hungrygremlin](https://discord.com/users/361743580563374080)
-
-
-|---|---|
-|Body:|Squidship.png|
-|Force Armour:|Squidship_force.png|
-|Drone:|Squidship_drone.png|
-|Angle:||
-|Distance:||
-
-Copy this: `Squidship,Squidship.png,Squidship_force.png,Squidship_drone.png,,`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Squidship.zip)
-
-<section class="media">
-![Squidship.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Squidship.png)
-![Squidship_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Squidship_force.png)
-![Squidship_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Squidship_drone.png)
-
-</section>
-</section>
-<section class="skin">
-## **Executor**:
-[@ceris5](https://discord.com/users/460824601019023360)
-
-
-|---|---|
-|Body:|Executor.png|
-|Force Armour:|Executor_Force.png|
-|Drone:||
-|Angle:|1|
-|Distance:|135|
-
-Copy this: `Executor,Executor.png,Executor_Force.png,,1,135`
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Executor.zip)
-
-<section class="media">
-![Executor.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Executor.png)
-![Executor_Force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/Executor_Force.png)
-
-</section>
-</section>
-<section class="skin">
+<section class='skins'>
+<section class='skin'>
 ## **Jester**:
 [@addisonsynth](https://discord.com/users/690582693532008459)
 
@@ -153,7 +18,9 @@ Copy this: `Executor,Executor.png,Executor_Force.png,,1,135`
 |Angle:|0|
 |Distance:|0|
 
-Copy this: `Jester,Jester.png,Jester_force.png,Jester_drone.png,0,0`
+Copy CSV: <button class='copier' csv='Jester,Jester.png,Jester_force.png,Jester_drone.png,0,0'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Jester,Jester.png,Jester_force.png,Jester_drone.png,0,0</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Jester.zip)
 
@@ -164,7 +31,7 @@ Copy this: `Jester,Jester.png,Jester_force.png,Jester_drone.png,0,0`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Eater of Worlds**:
 [@hadiros](https://discord.com/users/266028842395631629)
 
@@ -176,7 +43,9 @@ Copy this: `Jester,Jester.png,Jester_force.png,Jester_drone.png,0,0`
 |Angle:|181|
 |Distance:|40|
 
-Copy this: `Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_of_worlds_drone.png,181,40`
+Copy CSV: <button class='copier' csv='Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_of_worlds_drone.png,181,40'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_of_worlds_drone.png,181,40</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Eater of Worlds.zip)
 
@@ -187,7 +56,7 @@ Copy this: `Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **Lancer**:
 [@splathero](https://discord.com/users/1088727297755971645)
 
@@ -199,7 +68,9 @@ Copy this: `Eater of Worlds,eater_of_worlds.png,eater_of_worlds_force.png,eater_
 |Angle:|0|
 |Distance:|0|
 
-Copy this: `Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0`
+Copy CSV: <button class='copier' csv='Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Lancer.zip)
 
@@ -210,7 +81,7 @@ Copy this: `Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0`
 
 </section>
 </section>
-<section class="skin">
+<section class='skin'>
 ## **The Devil**:
 [@babaint](https://discord.com/users/598945877419360266)
 
@@ -222,7 +93,9 @@ Copy this: `Lancer,lancer.png,lancer_force.png,lancer_drone.png,0,0`
 |Angle:||
 |Distance:||
 
-Copy this: `The Devil,devil.png,devil_force.png,heart_mite.png,,`
+Copy CSV: <button class='copier' csv='The Devil,devil.png,devil_force.png,heart_mite.png,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>The Devil,devil.png,devil_force.png,heart_mite.png,,</code>
 
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/The Devil.zip)
 
@@ -233,6 +106,155 @@ Copy this: `The Devil,devil.png,devil_force.png,heart_mite.png,,`
 
 </section>
 </section>
+<section class='skin'>
+## **Poly**:
+[@splathero](https://discord.com/users/1088727297755971645)
+
+
+|---|---|
+|Body:|poly.png|
+|Force Armour:|poly_force.png|
+|Drone:|poly_drone.png|
+|Angle:|0|
+|Distance:|-45|
+
+Copy CSV: <button class='copier' csv='Poly,poly.png,poly_force.png,poly_drone.png,0,-45'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Poly,poly.png,poly_force.png,poly_drone.png,0,-45</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Poly.zip)
+
+<section class="media">
+![poly.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/poly.png)
+![poly_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/poly_force.png)
+![poly_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/poly_drone.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Gyaraga**:
+[@evelo](https://discord.com/users/110564152539377664)
+
+
+|---|---|
+|Body:|GalagaShip.png|
+|Force Armour:|GalagaShipShield.png|
+|Drone:||
+|Angle:|90|
+|Distance:|35|
+
+Copy CSV: <button class='copier' csv='Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Gyaraga,GalagaShip.png,GalagaShipShield.png,,90,35</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Gyaraga.zip)
+
+<section class="media">
+![GalagaShip.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GalagaShip.png)
+![GalagaShipShield.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GalagaShipShield.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Battery**:
+[@winstick](https://discord.com/users/ 335148664953765888)
+
+
+|---|---|
+|Body:|battery.png|
+|Force Armour:|battery_force.png|
+|Drone:|battery.png|
+|Angle:|151|
+|Distance:|40|
+
+Copy CSV: <button class='copier' csv='Battery,battery.png,battery_force.png,battery.png,151,40'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Battery,battery.png,battery_force.png,battery.png,151,40</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Battery.zip)
+
+<section class="media">
+![battery.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/battery.png)
+![battery_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/battery_force.png)
+![battery.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/battery.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Wraith**:
+[@digicube](https://discord.com/users/ 1075087519961591881)
+
+
+|---|---|
+|Body:|wraith.png|
+|Force Armour:|wraith_force.png|
+|Drone:|wraith_drone.png|
+|Angle:|250|
+|Distance:|35|
+
+Copy CSV: <button class='copier' csv='Wraith,wraith.png,wraith_force.png,wraith_drone.png,250,35'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Wraith,wraith.png,wraith_force.png,wraith_drone.png,250,35</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Wraith.zip)
+
+<section class="media">
+![wraith.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wraith.png)
+![wraith_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wraith_force.png)
+![wraith_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wraith_drone.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Death Star**:
+[@exotreus](https://discord.com/users/ 773152446562172959)
+
+
+|---|---|
+|Body:|deathstar.png|
+|Force Armour:|deathstar_force.png|
+|Drone:||
+|Angle:|115|
+|Distance:|20|
+
+Copy CSV: <button class='copier' csv='Death Star,deathstar.png,deathstar_force.png,,115,20'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Death Star,deathstar.png,deathstar_force.png,,115,20</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Death Star.zip)
+
+<section class="media">
+![deathstar.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/deathstar.png)
+![deathstar_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/deathstar_force.png)
+
+</section>
+</section>
+<section class='skin'>
+## **Wasp Hive**:
+[@fourpointedstar](https://discord.com/users/ 379031746811002881)
+
+
+|---|---|
+|Body:|wasphive.png|
+|Force Armour:|wasphive_force.png|
+|Drone:|wasphive_drone.png|
+|Angle:|178|
+|Distance:|90|
+
+Copy CSV: <button class='copier' csv='Wasp Hive,wasphive.png,wasphive_force.png,wasphive_drone.png,178,90'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Wasp Hive,wasphive.png,wasphive_force.png,wasphive_drone.png,178,90</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Wasp Hive.zip)
+
+<section class="media">
+![wasphive.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wasphive.png)
+![wasphive_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wasphive_force.png)
+![wasphive_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/wasphive_drone.png)
+
+</section>
+</section>
+</section
 <section class="nav">
 [Page_3](./Page_3.html)
 [Page_4](./Page_4.html)

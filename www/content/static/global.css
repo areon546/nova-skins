@@ -56,6 +56,9 @@ a:hover, a:focus{
   margin: 10px;
 
   border: 5px white solid;
+  
+  background-image: url(https://novadrift.io/img/bg.jpg);
+
 }
 
 .skin .media img {

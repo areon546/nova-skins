@@ -25,7 +25,7 @@ Copy CSV: <button class='copier' csv='Crabbo,,,crabbo_drone.png,80,105'><img src
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Crabbo.zip)
 
 <section class='media'>
-![crabbo_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/crabbo_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/crabbo_drone.png' alt='crabbo_drone.png' class='drone'></img>
 
 </section>
 </section>
@@ -48,8 +48,8 @@ Copy CSV: <button class='copier' csv='avtraxi.png,avtraxi_force.png,avtraxi_dron
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/avtraxi.png.zip)
 
 <section class='media'>
-![avtraxi_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/avtraxi_force.png)
-![avtraxi_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/avtraxi_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/avtraxi_force.png' alt='avtraxi_force.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/avtraxi_drone.png' alt='avtraxi_drone.png' class='force'></img>
 
 </section>
 </section>
@@ -72,8 +72,8 @@ Copy CSV: <button class='copier' csv='Jormungandr,jormungandr_body.png,jormungan
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Jormungandr.zip)
 
 <section class='media'>
-![jormungandr_body.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/jormungandr_body.png)
-![jormungandr_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/jormungandr_force.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/jormungandr_body.png' alt='jormungandr_body.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/jormungandr_force.png' alt='jormungandr_force.png' class='force'></img>
 
 </section>
 </section>
@@ -96,9 +96,9 @@ Copy CSV: <button class='copier' csv='GWclaw,GWclaw.png,GWclaw_force.png,GWattac
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/GWclaw.zip)
 
 <section class='media'>
-![GWclaw.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWclaw.png)
-![GWclaw_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWclaw_force.png)
-![GWattack_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWattack_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWclaw.png' alt='GWclaw.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWclaw_force.png' alt='GWclaw_force.png' class='force'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/GWattack_drone.png' alt='GWattack_drone.png' class='drone'></img>
 
 </section>
 </section>
@@ -121,8 +121,8 @@ Copy CSV: <button class='copier' csv='Thresher,thresher.png,thresher_force.png,,
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Thresher.zip)
 
 <section class='media'>
-![thresher.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/thresher.png)
-![thresher_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/thresher_force.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/thresher.png' alt='thresher.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/thresher_force.png' alt='thresher_force.png' class='force'></img>
 
 </section>
 </section>
@@ -145,9 +145,9 @@ Copy CSV: <button class='copier' csv='The Pentagon,pentagon.png,pentagonforce.pn
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/The Pentagon.zip)
 
 <section class='media'>
-![pentagon.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagon.png)
-![pentagonforce.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagonforce.png)
-![pentagondrone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagondrone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagon.png' alt='pentagon.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagonforce.png' alt='pentagonforce.png' class='force'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/pentagondrone.png' alt='pentagondrone.png' class='drone'></img>
 
 </section>
 </section>
@@ -170,9 +170,9 @@ Copy CSV: <button class='copier' csv='Ophanim,ophanim.png,ophanim_force.png,opha
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Ophanim.zip)
 
 <section class='media'>
-![ophanim.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim.png)
-![ophanim_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim_force.png)
-![ophanim_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim.png' alt='ophanim.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim_force.png' alt='ophanim_force.png' class='force'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/ophanim_drone.png' alt='ophanim_drone.png' class='drone'></img>
 
 </section>
 </section>
@@ -195,9 +195,9 @@ Copy CSV: <button class='copier' csv='Inferno,inferno.png,inferno_force.png,infe
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Inferno.zip)
 
 <section class='media'>
-![inferno.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno.png)
-![inferno_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno_force.png)
-![inferno_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno.png' alt='inferno.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno_force.png' alt='inferno_force.png' class='force'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/inferno_drone.png' alt='inferno_drone.png' class='drone'></img>
 
 </section>
 </section>
@@ -220,9 +220,9 @@ Copy CSV: <button class='copier' csv='Cherub,cherub.png,cherub_force.png,cherub_
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Cherub.zip)
 
 <section class='media'>
-![cherub.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub.png)
-![cherub_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub_force.png)
-![cherub_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub.png' alt='cherub.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub_force.png' alt='cherub_force.png' class='force'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/cherub_drone.png' alt='cherub_drone.png' class='drone'></img>
 
 </section>
 </section>
@@ -245,8 +245,8 @@ Copy CSV: <button class='copier' csv='XS-01 Artemis,XS_01_Artemis_Body.png,XS_01
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/XS-01 Artemis.zip)
 
 <section class='media'>
-![XS_01_Artemis_Body.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/XS_01_Artemis_Body.png)
-![XS_01_Artemis_Shield.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/XS_01_Artemis_Shield.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/XS_01_Artemis_Body.png' alt='XS_01_Artemis_Body.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/XS_01_Artemis_Shield.png' alt='XS_01_Artemis_Shield.png' class='force'></img>
 
 </section>
 </section>
@@ -269,9 +269,9 @@ Copy CSV: <button class='copier' csv='Warforge,warforge.png,warforge_force.png,w
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Warforge.zip)
 
 <section class='media'>
-![warforge.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge.png)
-![warforge_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_force.png)
-![warforge_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge.png' alt='warforge.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_force.png' alt='warforge_force.png' class='force'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_drone.png' alt='warforge_drone.png' class='drone'></img>
 
 </section>
 </section>
@@ -294,9 +294,9 @@ Copy CSV: <button class='copier' csv='Insurgent,insurgent.png,insurgent_force.pn
 [Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Insurgent.zip)
 
 <section class='media'>
-![insurgent.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent.png)
-![insurgent_force.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_force.png)
-![insurgent_drone.png](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_drone.png)
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent.png' alt='insurgent.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_force.png' alt='insurgent_force.png' class='force'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_drone.png' alt='insurgent_drone.png' class='drone'></img>
 
 </section>
 </section>

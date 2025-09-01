@@ -19,11 +19,11 @@ server {
 
  	server_name _; 
 
- 	root /home/dragons-den/Desktop/git/go/NovaDriftSkins/www/output/;
+ 	root /home/dragons-den/Desktop/git/web/nova.areon546.co.uk/www/output/;
  	index index.html;
 
   location /nova-skins/static/ {
-    alias /home/dragons-den/Desktop/git/go/NovaDriftSkins/www/output/static;
+    alias /home/dragons-den/Desktop/git/web/nova.areon546.co.uk/www/output/static;
   }
 
   location = / {

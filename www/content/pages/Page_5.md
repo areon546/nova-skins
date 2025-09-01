@@ -7,6 +7,30 @@
 </section>
 <section class='skins'>
 <section class='skin'>
+## **Buka**:
+[@exotreus](https://discord.com/users/ 773152446562172959)
+
+
+|---|---|
+|Body:|buka.png|
+|Force Armour:|buka_force.png|
+|Drone:||
+|Angle:||
+|Distance:||
+
+Copy CSV: <button class='copier' csv='Buka,buka.png,buka_force.png,,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Buka,buka.png,buka_force.png,,,</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Buka.zip)
+
+<section class='media'>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/buka.png' alt='buka.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/buka_force.png' alt='buka_force.png' class='force'></img>
+
+</section>
+</section>
+<section class='skin'>
 ## **Crabbo**:
 [@0uro6oro5](https://discord.com/users/ 922635486001004594)
 
@@ -272,31 +296,6 @@ Copy CSV: <button class='copier' csv='Warforge,warforge.png,warforge_force.png,w
 <img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge.png' alt='warforge.png' class='body'></img>
 <img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_force.png' alt='warforge_force.png' class='force'></img>
 <img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/warforge_drone.png' alt='warforge_drone.png' class='drone'></img>
-
-</section>
-</section>
-<section class='skin'>
-## **Insurgent**:
-[unknown](/404.html)
-
-
-|---|---|
-|Body:|insurgent.png|
-|Force Armour:|insurgent_force.png|
-|Drone:|insurgent_drone.png|
-|Angle:|115|
-|Distance:|100|
-
-Copy CSV: <button class='copier' csv='Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,100'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
-
-<code class='csv'>Insurgent,insurgent.png,insurgent_force.png,insurgent_drone.png,115,100</code>
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Insurgent.zip)
-
-<section class='media'>
-<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent.png' alt='insurgent.png' class='body'></img>
-<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_force.png' alt='insurgent_force.png' class='force'></img>
-<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/insurgent_drone.png' alt='insurgent_drone.png' class='drone'></img>
 
 </section>
 </section>

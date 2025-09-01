@@ -181,6 +181,30 @@ Copy CSV: <button class='copier' csv='Battery,battery.png,battery_force.png,batt
 </section>
 </section>
 <section class='skin'>
+## **Minotaur**:
+[@twinstick](https://discord.com/users/538017698861547521)
+
+
+|---|---|
+|Body:|minotaur.png|
+|Force Armour:|minotaur_force.png|
+|Drone:||
+|Angle:|145|
+|Distance:|60|
+
+Copy CSV: <button class='copier' csv='Minotaur,minotaur.png,minotaur_force.png,,145,60'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
+
+<code class='csv'>Minotaur,minotaur.png,minotaur_force.png,,145,60</code>
+
+[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Minotaur.zip)
+
+<section class='media'>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/minotaur.png' alt='minotaur.png' class='body'></img>
+<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/minotaur_force.png' alt='minotaur_force.png' class='force'></img>
+
+</section>
+</section>
+<section class='skin'>
 ## **Wraith**:
 [@digicube](https://discord.com/users/ 1075087519961591881)
 
@@ -275,30 +299,6 @@ Copy CSV: <button class='copier' csv='Wojciech Mann,mann.png,mann_force.png,,,'>
 <section class='media'>
 <img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/mann.png' alt='mann.png' class='body'></img>
 <img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/mann_force.png' alt='mann_force.png' class='force'></img>
-
-</section>
-</section>
-<section class='skin'>
-## **Buka**:
-[@exotreus](https://discord.com/users/ 773152446562172959)
-
-
-|---|---|
-|Body:|buka.png|
-|Force Armour:|buka_force.png|
-|Drone:||
-|Angle:||
-|Distance:||
-
-Copy CSV: <button class='copier' csv='Buka,buka.png,buka_force.png,,,'><img src='/static/svg/copy.svg' alt='Clipboard SVG'></img></button>
-
-<code class='csv'>Buka,buka.png,buka_force.png,,,</code>
-
-[Download Me](https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/assets/zips/Buka.zip)
-
-<section class='media'>
-<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/buka.png' alt='buka.png' class='body'></img>
-<img src='https://raw.githubusercontent.com/areon546/nova-skins/refs/heads/main/media/custom_skins/buka_force.png' alt='buka_force.png' class='force'></img>
 
 </section>
 </section>
